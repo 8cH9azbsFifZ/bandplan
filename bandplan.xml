@@ -18,11 +18,13 @@
 	<channel name="QRP CW" freq=3560000 mode="cw"/>
 	<channel name="QRS" freq=3555000 mode="cw"/>
 </band>
+<band name="70cm" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<channel name="DB0VA" freq=439325000 mode="FM" repeater_shift="yes" lat=50.109122 lon=8.133403/>	
+</band>
 <!---
 	  http://www.darc.de/uploads/media/Bandplan_deutsch_farbig_1_seitig_17Aug11.pdf
 // structure of the actual configured bands
 const t_band bands[] = {
-  {"80m",    3500000,    3580000, FT817_MODE_CW_NARROW},
   {"40m",    7000000,    7100000, FT817_MODE_CW_NARROW},
   {"30m",   10100000,   10200000, FT817_MODE_CW_NARROW},
   {"20m",   14000000,   14070000, FT817_MODE_CW_NARROW},
@@ -87,7 +89,6 @@ const t_channel channels[] = {
   {"CB 39",           2737500,    FT817_MODE_FM, NULL},
   {"CB 40",           2740500,    FT817_MODE_FM, NULL},
   {"2m Ch1",         14521250,    FT817_MODE_FM, NULL}, // 12,5kHz distance, simplex channels  
-  {"DB0VA",          43932500,    FT817_MODE_FM, FT817_RPT_MINUS}, //, 50.109122, 8.133403}, // repeaters
   {"PMR 1",          44600625,    FT817_MODE_FM, NULL},
   {"PMR 2",          44601875,    FT817_MODE_FM, NULL},
   {"PMR 3",          44603125,    FT817_MODE_FM, NULL},
