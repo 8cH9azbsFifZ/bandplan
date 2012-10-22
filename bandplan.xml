@@ -21,23 +21,62 @@
 <band name="70cm" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<channel name="DB0VA" freq=439325000 mode="FM" repeater_shift="yes" lat=50.109122 lon=8.133403/>	
 </band>
+<band name="40m" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<freq_range min=7000000 max=7100000/>
+</band>
+<band name="30m" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<freq_range min=10100000 max=10200000/>
+</band>
+<band name="20m" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<freq_range min=14000000 max=14070000/>
+</band>
+<band name="17m" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<freq_range min=18068000 max=18095000/>
+</band>
+<band name="15m" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<freq_range min=21000000 max=21070000/>
+</band>
+<band name="12m" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<freq_range min=24890000 max=24915000/>
+</band>
+<band name="10m" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<freq_range min=28000000 max=28070000/>
+	<channel name="APRS 10m" freq=29250000 mode="fm"/>
+</band>
+<band name="CB" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<freq_range min=26565000 max=27405000/>
+</band>
+<band name="2m" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<freq_range min=144000000 max=146000000/>
+	<channel name="S1" freq=145212500 mode="fm" comment="simplex"/>
+	<channel name="ARPS 2m" freq=14480000 mode="fm"/>
+</band>
+<band name="LPD" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<freq_range min=446006200 max=446093750/>
+	<channel name="1" freq=446006200 mode="FM"/>
+	<channel name="2" freq=446018750 mode="FM"/>
+	<channel name="3" freq=446031250 mode="FM"/>
+	<channel name="4" freq=446043750 mode="FM"/>
+	<channel name="5" freq=446056250 mode="FM"/>
+	<channel name="6" freq=446068750 mode="FM"/>
+	<channel name="7" freq=446081250 mode="FM"/>
+	<channel name="8" freq=446093750 mode="FM"/>
+	<!--16 Kanäle Digital  6,25 KHz steps 446.103125 MHz - 446.196875 MHz-->
+</band>
+<band name="PMR" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<freq_range min=433075000 max=433300000/>
+	<channel name="1" freq=433075000 mode="FM"/>
+	<channel name="2" freq=433100000 mode="FM"/>
+	<channel name="3" freq=433125000 mode="FM"/>
+	<channel name="4" freq=433150000 mode="FM"/>
+	<channel name="5" freq=433175000 mode="FM"/>
+	<channel name="6" freq=433200000 mode="FM"/>
+	<channel name="7" freq=433225000 mode="FM"/>
+	<channel name="8" freq=433250000 mode="FM"/>
+	<channel name="9" freq=433275000 mode="FM"/>
+	<channel name="10" freq=433300000 mode="FM"/>
+</band>
 <!---
-	  http://www.darc.de/uploads/media/Bandplan_deutsch_farbig_1_seitig_17Aug11.pdf
-// structure of the actual configured bands
-const t_band bands[] = {
-  {"40m",    7000000,    7100000, FT817_MODE_CW_NARROW},
-  {"30m",   10100000,   10200000, FT817_MODE_CW_NARROW},
-  {"20m",   14000000,   14070000, FT817_MODE_CW_NARROW},
-  {"17m",   18068000,   18095000, FT817_MODE_CW_NARROW},
-  {"15m",   21000000,   21070000, FT817_MODE_CW_NARROW},
-  {"12m",   24890000,   24915000, FT817_MODE_CW_NARROW},
-  {"10m",   28000000,   28070000, FT817_MODE_CW_NARROW},
-  {"CB",    26565000,   27405000, FT817_MODE_FM},
-  {"2m",   144000000,  146000000, FT817_MODE_FM},
-  {"70cm", 430000000,  440000000, FT817_MODE_FM},
-};
-int nbands = 11;//sizeof(bands)/sizeof(bands[0]);
-
 const t_channel channels[] = {
   {"QRP 40m",          703000,   FT817_MODE_CW, NULL},
   {"QRP 30m",         1011600,   FT817_MODE_CW, NULL},
@@ -46,8 +85,6 @@ const t_channel channels[] = {
   {"QRP 15m",         2106000,   FT817_MODE_CW, NULL},
   {"QRP 12m",         2490600,   FT817_MODE_CW, NULL},
   {"QRP 10m",         2806000,   FT817_MODE_CW, NULL}, 
-  {"APRS 10m",        2925000,   FT817_MODE_FM, NULL},
-  {"ARPS 2m",         1448000,   FT817_MODE_FM, NULL},  
   {"CB 1",            2696500,    FT817_MODE_FM, NULL},
   {"CB 2",            2697500,    FT817_MODE_FM, NULL},
   {"CB 3",            2698500,    FT817_MODE_FM, NULL},
@@ -88,24 +125,5 @@ const t_channel channels[] = {
   {"CB 38",           2738500,    FT817_MODE_FM, NULL},
   {"CB 39",           2737500,    FT817_MODE_FM, NULL},
   {"CB 40",           2740500,    FT817_MODE_FM, NULL},
-  {"2m Ch1",         14521250,    FT817_MODE_FM, NULL}, // 12,5kHz distance, simplex channels  
-  {"PMR 1",          44600625,    FT817_MODE_FM, NULL},
-  {"PMR 2",          44601875,    FT817_MODE_FM, NULL},
-  {"PMR 3",          44603125,    FT817_MODE_FM, NULL},
-  {"PMR 4",          44604375,    FT817_MODE_FM, NULL},
-  {"PMR 5",          44605625,    FT817_MODE_FM, NULL},
-  {"PMR 6",          44606875,    FT817_MODE_FM, NULL},
-  {"PMR 7",          44608125,    FT817_MODE_FM, NULL},
-  {"PMR 8",          44609375,    FT817_MODE_FM, NULL},  // 16 Kanäle Digital  6,25 KHz steps 446.103125 MHz - 446.196875 MHz
-  {"LPD 1",          43307500,    FT817_MODE_FM, NULL},  
-  {"LPD 2",          43310000,    FT817_MODE_FM, NULL},  
-  {"LPD 3",          43312500,    FT817_MODE_FM, NULL},  
-  {"LPD 4",          43315000,    FT817_MODE_FM, NULL},  
-  {"LPD 5",          43317500,    FT817_MODE_FM, NULL},  
-  {"LPD 6",          43320000,    FT817_MODE_FM, NULL},  
-  {"LPD 7",          43322500,    FT817_MODE_FM, NULL},  
-  {"LPD 8",          43325000,    FT817_MODE_FM, NULL},  
-  {"LPD 9",          43327500,    FT817_MODE_FM, NULL},  
-  {"LPD 10",         43330000,    FT817_MODE_FM, NULL},  
-}; 
+ }; 
 -->
