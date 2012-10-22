@@ -56,7 +56,7 @@
 
 	<xsl:template match="source">
 		<xsl:variable name="filename" select="@file"/>
-		<xsl:apply-templates select="document($filename)"/>
+		<xsl:apply-templates select="document($filename)/bandplan"/>
 	</xsl:template>
 
 </xsl:stylesheet>

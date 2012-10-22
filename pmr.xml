@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<bandplan version="0.1" comment="This is a general version tag of the following content"/>
-<status="not done yet"/>
-<band name="PMR" author="DG6FL" region="DE" created="21102010" valid="01012013">
-	<freq_range min=433075000 max=433300000/>
-	<source href="http://www.funkfrequenzen01.de/index010.htm"/>
-	<channel name="1" freq=433075000 mode="FM"/>
-	<channel name="2" freq=433100000 mode="FM"/>
-	<channel name="3" freq=433125000 mode="FM"/>
-	<channel name="4" freq=433150000 mode="FM"/>
-	<channel name="5" freq=433175000 mode="FM"/>
-	<channel name="6" freq=433200000 mode="FM"/>
-	<channel name="7" freq=433225000 mode="FM"/>
-	<channel name="8" freq=433250000 mode="FM"/>
-	<channel name="9" freq=433275000 mode="FM"/>
-	<channel name="10" freq=433300000 mode="FM"/>
+<bandplan version="0.6">
+<band name="PMR" min="433075000" max="433300000" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<channel name="1" freq="433075000"><mode>FM</mode><channel>
+	<channel name="2" freq="433100000"><mode>FM</mode></channel>
+	<channel name="3" freq="433125000"><mode>FM</mode></channel>
+	<channel name="4" freq="433150000"><mode>FM</mode></channel>
+	<channel name="5" freq="433175000"><mode>FM</mode></channel>
+	<channel name="6" freq="433200000"><mode>FM</mode></channel>
+	<channel name="7" freq="433225000"><mode>FM</mode></channel>
+	<channel name="8" freq="433250000"><mode>FM</mode></channel>
+	<channel name="9" freq="433275000"><mode>FM</mode></channel>
+	<channel name="10" freq="433300000"><mode>FM</mode></channel>
+
+	<source implemented="no" href="http://www.funkfrequenzen01.de/index010.htm"/>
 </band>
+</bandplan>
