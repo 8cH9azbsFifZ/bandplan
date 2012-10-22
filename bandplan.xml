@@ -44,6 +44,8 @@
 	<mode name="FM"/>
 	<mode name="CW"/>
 	<mode name="SSB"/>
+	<mode name="USB"/>
+	<mode name="LSB"/>
 	<mode name="Narrow Digital"/>
 	<mode name="Digital"/>
 </modes>
