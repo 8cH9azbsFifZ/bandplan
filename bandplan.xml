@@ -45,6 +45,47 @@
 </band>
 <band name="CB" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<freq_range min=26565000 max=27405000/>
+	<!-- NB: dual mode: am/fm TBD -->
+	<channel name="1" freq=26965000 mode="fm"/>
+	<channel name="2" freq=26975000 mode="fm"/>
+	<channel name="3" freq=26985000 mode="fm"/>
+	<channel name="4" freq=27005000 mode="fm"/>
+	<channel name="5" freq=27015000 mode="fm"/>
+	<channel name="6" freq=27025000 mode="fm"/>
+	<channel name="7" freq=27035000 mode="fm"/>
+	<channel name="8" freq=27055000 mode="fm"/>
+	<channel name="9" freq=27065000 mode="fm"/>
+	<channel name="10" freq=27075000 mode="fm"/>
+	<channel name="11" freq=27085000 mode="fm"/>
+	<channel name="12" freq=27105000 mode="fm"/>
+	<channel name="13" freq=27115000 mode="fm"/>
+	<channel name="14" freq=27125000 mode="fm"/>
+	<channel name="15" freq=27135000 mode="fm"/>
+	<channel name="16" freq=27155000 mode="fm"/>
+	<channel name="17" freq=27165000 mode="fm"/>
+	<channel name="18" freq=27175000 mode="fm"/>
+	<channel name="19" freq=27185000 mode="fm"/>
+	<channel name="20" freq=27205000 mode="fm"/>
+	<channel name="21" freq=27215000 mode="fm"/>
+	<channel name="22" freq=27225000 mode="fm"/>
+	<channel name="23" freq=27255000 mode="fm"/>
+	<channel name="24" freq=27235000 mode="fm"/>
+	<channel name="25" freq=27245000 mode="fm"/>
+	<channel name="26" freq=27265000 mode="fm"/>
+	<channel name="27" freq=27275000 mode="fm"/>
+	<channel name="28" freq=27285000 mode="fm"/>
+	<channel name="29" freq=27295000 mode="fm"/>
+	<channel name="30" freq=27305000 mode="fm"/>
+	<channel name="31" freq=27315000 mode="fm"/>
+	<channel name="32" freq=27325000 mode="fm"/>
+	<channel name="33" freq=27335000 mode="fm"/>
+	<channel name="34" freq=27345000 mode="fm"/>
+	<channel name="35" freq=27355000 mode="fm"/>
+	<channel name="36" freq=27365000 mode="fm"/>
+	<channel name="37" freq=27375000 mode="fm"/>
+	<channel name="38" freq=27385000 mode="fm"/>
+	<channel name="39" freq=27375000 mode="fm"/>
+	<channel name="40" freq=27405000 mode="fm"/>
 </band>
 <band name="2m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<freq_range min=144000000 max=146000000/>
@@ -85,45 +126,5 @@ const t_channel channels[] = {
   {"QRP 15m",         2106000,   FT817_MODE_CW, NULL},
   {"QRP 12m",         2490600,   FT817_MODE_CW, NULL},
   {"QRP 10m",         2806000,   FT817_MODE_CW, NULL}, 
-  {"CB 1",            2696500,    FT817_MODE_FM, NULL},
-  {"CB 2",            2697500,    FT817_MODE_FM, NULL},
-  {"CB 3",            2698500,    FT817_MODE_FM, NULL},
-  {"CB 4",            2700500,    FT817_MODE_FM, NULL},
-  {"CB 5",            2701500,    FT817_MODE_FM, NULL},
-  {"CB 6",            2702500,    FT817_MODE_FM, NULL},
-  {"CB 7",            2703500,    FT817_MODE_FM, NULL},
-  {"CB 8",            2705500,    FT817_MODE_FM, NULL},
-  {"CB 9",            2706500,    FT817_MODE_FM, NULL},
-  {"CB 10",           2707500,    FT817_MODE_FM, NULL},
-  {"CB 11",           2708500,    FT817_MODE_FM, NULL},
-  {"CB 12",           2710500,    FT817_MODE_FM, NULL},
-  {"CB 13",           2711500,    FT817_MODE_FM, NULL},
-  {"CB 14",           2712500,    FT817_MODE_FM, NULL},
-  {"CB 15",           2713500,    FT817_MODE_FM, NULL},
-  {"CB 16",           2715500,    FT817_MODE_FM, NULL},
-  {"CB 17",           2716500,    FT817_MODE_FM, NULL},
-  {"CB 18",           2717500,    FT817_MODE_FM, NULL},
-  {"CB 19",           2718500,    FT817_MODE_FM, NULL},
-  {"CB 20",           2720500,    FT817_MODE_FM, NULL},
-  {"CB 21",           2721500,    FT817_MODE_FM, NULL},
-  {"CB 22",           2722500,    FT817_MODE_FM, NULL},
-  {"CB 23",           2725500,    FT817_MODE_FM, NULL},
-  {"CB 24",           2723500,    FT817_MODE_FM, NULL},
-  {"CB 25",           2724500,    FT817_MODE_FM, NULL},
-  {"CB 26",           2726500,    FT817_MODE_FM, NULL},
-  {"CB 27",           2727500,    FT817_MODE_FM, NULL},
-  {"CB 28",           2728500,    FT817_MODE_FM, NULL},
-  {"CB 29",           2729500,    FT817_MODE_FM, NULL},
-  {"CB 30",           2730500,    FT817_MODE_FM, NULL},
-  {"CB 31",           2731500,    FT817_MODE_FM, NULL},
-  {"CB 32",           2732500,    FT817_MODE_FM, NULL},
-  {"CB 33",           2733500,    FT817_MODE_FM, NULL},
-  {"CB 34",           2734500,    FT817_MODE_FM, NULL},
-  {"CB 35",           2735500,    FT817_MODE_FM, NULL},
-  {"CB 36",           2736500,    FT817_MODE_FM, NULL},
-  {"CB 37",           2737500,    FT817_MODE_FM, NULL},
-  {"CB 38",           2738500,    FT817_MODE_FM, NULL},
-  {"CB 39",           2737500,    FT817_MODE_FM, NULL},
-  {"CB 40",           2740500,    FT817_MODE_FM, NULL},
  }; 
 -->
