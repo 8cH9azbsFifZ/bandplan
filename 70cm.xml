@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<bandplan version="0.1" comment="This is a general version tag of the following content"/>
 
-<band name="70cm" author="DG6FL" region="DE" created="21102010" valid="01012013">
-	<source href="http://www.darc.de/uploads/media/Bandplan_70cm_Stand_10_2009.pdf"/>
-	<channel type="Repeater" name="DB0VA" freq=439325000 mode="FM" repeater_shift="yes" lat=50.109122 lon=8.133403/>
-	<channel type="Repeater" name="DB0ESW" freq=439050000 mode="FM" repeater_shift="yes" echolink=439050 locator="JO51AE" homepage="http://www.ov-f28.de/Relais.htm"/>	
+<bandplan version="0.6">
+<band name="70cm" min="433000000" max="440000000" author="DG6FL" region="DE" created="21102010" valid="01012013">
+
+	<channel name="DB0VA" freq="439325000"><mode>FM</mode><shift>-7600000</shift>
+		<position lat="50.109122" lon="8.133403"/>
+	</channel>
+	<channel name="DB0ESW" freq="439050000"><mode>FM</mode><shift>-7600000</shift>
+		<echolink node="439050"/>
+		<position locator="JO51AE"/>
+		<homepage href="http://www.ov-f28.de/Relais.htm"/>	
+  </channel>
+
+	<source implemented="no" href="http://www.darc.de/uploads/media/Bandplan_70cm_Stand_10_2009.pdf"/>
 </band>
+</bandplan>
