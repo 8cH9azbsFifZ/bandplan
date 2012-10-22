@@ -29,11 +29,26 @@
 				<td> <xsl:value-of select="@min"/> </td>
 				<td> <xsl:value-of select="@max"/> </td>
 				<td> <xsl:value-of select="@name"/> </td>
-				<td> <xsl:value-of select="@mode"/> </td>
 				<td> <xsl:value-of select="@comment"/> </td>
+				<td> <xsl:apply-templates/> </td>
 			</tr>
 		</table>
 	</xsl:template>
+	
+	<xsl:template match="channel">
+		<table>
+			<tr>
+				<td> <xsl:value-of select="@freq"/> </td>
+				<td> <xsl:value-of select="@name"/> </td>
+				<td> <xsl:apply-templates/> </td>
+			</tr>
+		</table>
+	</xsl:template>
+
+	<xsl:template match="mode">
+		<xsl:value-of select="."/><xsl:text> </xsl:text>
+	</xsl:template>
+
 
 </xsl:stylesheet>
 
