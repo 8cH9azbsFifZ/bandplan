@@ -26,8 +26,7 @@
 		<table>
 			<tr>
 				<!--<td> <xsl:text>Frequency (Hz)</xsl:text> </td>-->
-				<td> <xsl:value-of select="@min"/> </td>
-				<td> <xsl:value-of select="@max"/> </td>
+				<td> <xsl:value-of select="@min"/> <xsl:text> - </xsl:text> <xsl:value-of select="@max"/> <xsl:text> Hz</xsl:text> </td>
 				<td> <xsl:value-of select="@name"/> </td>
 				<td> <xsl:apply-templates/> </td>
 			</tr>
@@ -37,7 +36,8 @@
 	<xsl:template match="channel">
 		<table>
 			<tr>
-				<td> <xsl:value-of select="@freq"/> </td>
+				<td> <xsl:text>Channel</xsl:text> </td>
+				<td> <xsl:value-of select="@freq"/> <xsl:text> Hz</xsl:text> </td>
 				<td> <xsl:value-of select="@name"/> </td>
 				<td> <xsl:apply-templates/> </td>
 			</tr>
