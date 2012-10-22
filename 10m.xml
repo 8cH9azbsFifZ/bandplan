@@ -2,9 +2,31 @@
 
 <bandplan version="0.6">
 <band name="10m" min="28000000" max="28070000" author="DG6FL" region="DE" created="21102010" valid="01012013">
-	<channel name="QRP CW" freq="28060000"><mode>CW</mode></channel>
-	<channel name="APRS 10m" freq="29250000"><mode>FM</mode></channel>
-	<channel name="WSPR 10m" freq="28124600"><mode>USB</mode><source href="http://wsprnet.org/drupal/"/></channel>
+
+	<region min="28000000" max="28070000" bandwidth="200"><mode>CW</mode></region>
+28070 - 28120 500 Schmalband-Sendearten Digimode
+28120 - 28150 500 Schmalband-Sendearten Digimode, automatische digitale Stationen
+28150 - 28190 500 Schmalband-Sendearten
+28190 - 28199 Internationales Baken-Projekt exklusiv regionale zeitgesteuerte Baken, kein Sendebetrieb
+28199 - 28201 Internationales Baken-Projekt exklusiv weltweite zeitgesteuerte Baken, kein Sendebetrieb
+28201 - 28225 Internationales Baken-Projekt Dauerbaken, kein Sendebetrieb
+28225 - 28300 2700 alle Sendearten Baken 
+28300 -28320  2700 alle Sendearten Digimode, automatische digitale Stationen
+28320 - 29100  2700 alle Sendearten 28330 kHz - Aktivitätszentrum Digitale Sprache
+28360 kHz - SSB QRP Aktivitätszentrum  
+29100 - 29200  6000 alle Sendearten Schmalband-FM simplex - 10 kHz Kanäle
+29200 - 29300 6000 alle Sendearten Digimode, automatische digitale Stationen
+29300 - 29510 6000 Satelliten-Downlink
+29510 - 29520 Schutzkanal
+29520 - 29590 6000 alle Sendearten Schmalband-FM-Relais Eingang (RH1 - RH8)
+29620 - 29700 6000 alle Sendearten Schmalband-FM-Relais Ausgang (RH1 - RH8)
+
+	<channel name="FM Call" freq="29600000" bandwidth="6000"><mode>Narrow FM</mode></channel>
+	<channel name="FM Call Simplex Repeater" freq="29610000" bandwidth="6000"><mode>Narrow FM</mode><comment>Input and Output</comment></channel>
+	<channel name="QRS" freq="28055000"><mode>CW</mode></channel>
+	<channel name="QRP" freq="28060000"><mode>CW</mode></channel>
+	<channel name="APRS" freq="29250000"><mode>FM</mode></channel>
+	<channel name="WSPR" freq="28124600"><mode>USB</mode><source href="http://wsprnet.org/drupal/"/></channel>
 
 	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>

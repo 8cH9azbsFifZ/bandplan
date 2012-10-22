@@ -42,6 +42,7 @@
 	<mode name="All"/>
 	<mode name="AM"/>
 	<mode name="FM"/>
+	<mode name="Narrow FM"/>
 	<mode name="CW"/>
 	<mode name="SSB"/>
 	<mode name="USB"/>
