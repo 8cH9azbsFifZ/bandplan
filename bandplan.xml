@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<band name=2200m>
+	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
+	<freq_range min=135700 max=137800/>
+	<region min=135700 max=137800 bandwidth=200 mode="cw" comment="CW, QRSS, narrow digital modes"/>
+	<channel name="WSPR 2200m" freq=136000><source href="http://wsprnet.org/drupal/"/></channel>
+</band>
 <band name=160m>
 	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
+	<channel name="WSPR 160m" freq=1836600><source href="http://wsprnet.org/drupal/"/></channel>
 </band>
 <band name="80m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<freq_range min=3500000 max=3580000/>
@@ -20,50 +27,51 @@
 	<channel name="Digital speech" freq=3630000 mode="digital"/>	
 	<channel name="QRP CW" freq=3560000 mode="cw"/>
 	<channel name="QRS" freq=3555000 mode="cw"/>
+	<channel name="WSPR 80m" freq=3592600><source href="http://wsprnet.org/drupal/"/></channel>
 	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
-</band>
-<band name="6m" author="DG6FL" region="DE" created="21102010" valid="01012013">
-	<source href="http://db0fa.de/wp-content/uploads/2010/05/Bandplan_6m_Stand_10_2009.pdf"/>
-</band>
-<band name="70cm" author="DG6FL" region="DE" created="21102010" valid="01012013">
-	<source href="http://www.darc.de/uploads/media/Bandplan_70cm_Stand_10_2009.pdf"/>
-	<channel name="DB0VA" freq=439325000 mode="FM" repeater_shift="yes" lat=50.109122 lon=8.133403/>	
 </band>
 <band name="40m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 	<freq_range min=7000000 max=7100000/>
 	<channel name="QRP CW" freq=7030000 mode="cw"/>
+	<channel name="WSPR 40m" freq=7038600><source href="http://wsprnet.org/drupal/"/></channel>
 </band>
 <band name="30m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 	<freq_range min=10100000 max=10200000/>
 	<channel name="QRP CW" freq=10116000 mode="cw"/>
+	<channel name="WSPR 30m" freq=10138700><source href="http://wsprnet.org/drupal/"/></channel>
 </band>
 <band name="20m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 	<freq_range min=14000000 max=14070000/>
 	<channel name="QRP CW" freq=14060000 mode="cw"/>
+	<channel name="WSPR 20m" freq=14095600><source href="http://wsprnet.org/drupal/"/></channel>
 </band>
 <band name="17m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 	<freq_range min=18068000 max=18095000/>
 	<channel name="QRP CW" freq=18086000 mode="cw"/>
+	<channel name="WSPR 17m" freq=18104600><source href="http://wsprnet.org/drupal/"/></channel>
 </band>
 <band name="15m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 	<freq_range min=21000000 max=21070000/>
 	<channel name="QRP CW" freq=21060000 mode="cw"/>
+	<channel name="WSPR 15m" freq=21994600><source href="http://wsprnet.org/drupal/"/></channel>
 </band>
 <band name="12m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 	<freq_range min=24890000 max=24915000/>
 	<channel name="QRP CW" freq=24906000 mode="cw"/>
+	<channel name="WSPR 12m" freq=24924600><source href="http://wsprnet.org/drupal/"/></channel>
 </band>
 <band name="10m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 	<freq_range min=28000000 max=28070000/>
 	<channel name="QRP CW" freq=28060000 mode="cw"/>
 	<channel name="APRS 10m" freq=29250000 mode="fm"/>
+	<channel name="WSPR 10m" freq=28124600><source href="http://wsprnet.org/drupal/"/></channel>
 </band>
 <band name="CB" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<freq_range min=26565000 max=27405000/>
@@ -110,10 +118,19 @@
 	<channel name="40" freq=27405000 mode="fm"/>
 	<source href="http://de.wikipedia.org/wiki/CB-Funk#CB-Kan.C3.A4le"/>
 </band>
+<band name="6m" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<source href="http://db0fa.de/wp-content/uploads/2010/05/Bandplan_6m_Stand_10_2009.pdf"/>
+	<channel name="WSPR 6m" freq=5029300><source href="http://wsprnet.org/drupal/"/></channel>
+</band>
 <band name="2m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<freq_range min=144000000 max=146000000/>
 	<channel name="S1" freq=145212500 mode="fm" comment="simplex"/>
 	<channel name="ARPS 2m" freq=14480000 mode="fm"/>
+	<channel name="WSPR 2m" freq=14448900><source href="http://wsprnet.org/drupal/"/></channel>
+</band>
+<band name="70cm" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<source href="http://www.darc.de/uploads/media/Bandplan_70cm_Stand_10_2009.pdf"/>
+	<channel name="DB0VA" freq=439325000 mode="FM" repeater_shift="yes" lat=50.109122 lon=8.133403/>	
 </band>
 <band name="LPD" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<freq_range min=446006200 max=446093750/>
