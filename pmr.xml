@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <bandplan version="0.1" comment="This is a general version tag of the following content"/>
+<status="not done yet"/>
 <band name="PMR" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<freq_range min=433075000 max=433300000/>
 	<source href="http://www.funkfrequenzen01.de/index010.htm"/>
