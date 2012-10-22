@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <bandplan version="0.1" comment="This is a general version tag of the following content"/>
 <band name="30m" author="DG6FL" region="DE" created="21102010" valid="01012013">
-	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 	<freq_range min=10100000 max=10200000/>
 	<channel name="QRP CW" freq=10116000 mode="cw"/>
 	<channel name="WSPR 30m" freq=10138700><source href="http://wsprnet.org/drupal/"/></channel>
+	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>

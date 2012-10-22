@@ -2,8 +2,8 @@
 <bandplan version="0.1" comment="This is a general version tag of the following content"/>
 
 <band name="17m" author="DG6FL" region="DE" created="21102010" valid="01012013">
-	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 	<freq_range min=18068000 max=18095000/>
 	<channel name="QRP CW" freq=18086000 mode="cw"/>
 	<channel name="WSPR 17m" freq=18104600><source href="http://wsprnet.org/drupal/"/></channel>
+	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>
