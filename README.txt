@@ -1,6 +1,10 @@
 In this repository band plans for ham radio use can be found in an
 open format.
 
+How to Create a HTML Band Plan?
+===============================
+xsltproc html.xsl 80m.xml > 80m.html
+
 How to Create a PDF Band Plan?
 ==============================
 TBD
