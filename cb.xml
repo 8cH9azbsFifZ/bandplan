@@ -54,68 +54,47 @@
 
 <band name="CB" min="26565000" max="26955000" author="DG6FL" region="DE" created="23102012" valid="01012013">
 
-	<channel name="41" freq="26965000"><mode>FM</mode></channel>
-	<channel name="42" freq="26975000"><mode>FM</mode></channel>
-	<channel name="43" freq="26985000"><mode>FM</mode></channel>
-	<channel name="44" freq="27005000"><mode>FM</mode></channel>
-	<channel name="45" freq="27015000"><mode>FM</mode></channel>
-	<channel name="46" freq="27025000"><mode>FM</mode></channel>
-	<channel name="47" freq="27035000"><mode>FM</mode></channel>
-	<channel name="47" freq="27045000"><mode>FM</mode></channel>
-	<channel name="48" freq="27055000"><mode>FM</mode></channel>
-	<channel name="49" freq="27065000"><mode>FM</mode></channel>
-	<channel name="50" freq="27075000"><mode>FM</mode></channel>
-	<channel name="51" freq="27085000"><mode>FM</mode></channel>
-	<channel name="52" freq="27105000"><mode>FM</mode></channel>
-	<channel name="53" freq="27115000"><mode>FM</mode></channel>
-	<channel name="54" freq="27125000"><mode>FM</mode></channel>
-	<channel name="55" freq="27135000"><mode>FM</mode></channel>
-	<channel name="56" freq="27155000"><mode>FM</mode></channel>
-	<channel name="57" freq="27165000"><mode>FM</mode></channel>
-	<channel name="58" freq="27175000"><mode>FM</mode></channel>
-	<channel name="59" freq="27185000"><mode>FM</mode></channel>
-	<channel name="60" freq="27205000"><mode>FM</mode></channel>
-	<channel name="61" freq="27215000"><mode>FM</mode></channel>
-	<channel name="62" freq="27225000"><mode>FM</mode></channel>
-	<channel name="63" freq="27255000"><mode>FM</mode></channel>
-	<channel name="64" freq="27235000"><mode>FM</mode></channel>
-	<channel name="65" freq="27245000"><mode>FM</mode></channel>
-	<channel name="66" freq="27265000"><mode>FM</mode></channel>
-	<channel name="67" freq="27275000"><mode>FM</mode></channel>
-	<channel name="68" freq="27285000"><mode>FM</mode></channel>
-	<channel name="69" freq="27295000"><mode>FM</mode></channel>
-	<channel name="70" freq="27305000"><mode>FM</mode></channel>
-	<channel name="71" freq="27315000"><mode>FM</mode></channel>
-	<channel name="72" freq="27325000"><mode>FM</mode></channel>
-	<channel name="73" freq="27335000"><mode>FM</mode></channel>
-	<channel name="74" freq="27345000"><mode>FM</mode></channel>
-	<channel name="75" freq="27355000"><mode>FM</mode></channel>
-	<channel name="76" freq="27365000"><mode>FM</mode></channel>
-	<channel name="77" freq="27375000"><mode>FM</mode></channel>
-	<channel name="78" freq="27385000"><mode>FM</mode></channel>
-	<channel name="79" freq="27375000"><mode>FM</mode></channel>
-	<channel name="80" freq="27405000"><mode>FM</mode></channel>
+	<channel name="41" freq="26565000"><mode>FM</mode></channel>
+	<channel name="42" freq="26575000"><mode>FM</mode></channel>
+	<channel name="43" freq="26585000"><mode>FM</mode></channel>
+	<channel name="44" freq="26595000"><mode>FM</mode></channel>
+	<channel name="45" freq="26605000"><mode>FM</mode></channel>
+	<channel name="46" freq="26615000"><mode>FM</mode></channel>
+	<channel name="47" freq="26625000"><mode>FM</mode></channel>
+	<channel name="48" freq="26635000"><mode>FM</mode></channel>
+	<channel name="49" freq="26645000"><mode>FM</mode></channel>
+	<channel name="50" freq="26655000"><mode>FM</mode></channel>
+	<channel name="51" freq="26665000"><mode>FM</mode></channel>
+	<channel name="52" freq="26675000"><mode>FM</mode></channel>
+	<channel name="53" freq="26685000"><mode>FM</mode></channel>
+	<channel name="54" freq="26695000"><mode>FM</mode></channel>
+	<channel name="55" freq="26705000"><mode>FM</mode></channel>
+	<channel name="56" freq="26715000"><mode>FM</mode></channel>
+	<channel name="57" freq="26725000"><mode>FM</mode></channel>
+	<channel name="58" freq="26735000"><mode>FM</mode></channel>
+	<channel name="59" freq="26745000"><mode>FM</mode></channel>
+	<channel name="60" freq="26755000"><mode>FM</mode></channel>
+	<channel name="61" freq="26765000"><mode>FM</mode></channel>
+	<channel name="62" freq="26775000"><mode>FM</mode></channel>
+	<channel name="63" freq="26785000"><mode>FM</mode></channel>
+	<channel name="64" freq="26795000"><mode>FM</mode></channel>
+	<channel name="65" freq="26805000"><mode>FM</mode></channel>
+	<channel name="66" freq="26815000"><mode>FM</mode></channel>
+	<channel name="67" freq="26825000"><mode>FM</mode></channel>
+	<channel name="68" freq="26835000"><mode>FM</mode></channel>
+	<channel name="69" freq="26845000"><mode>FM</mode></channel>
+	<channel name="70" freq="26855000"><mode>FM</mode></channel>
+	<channel name="71" freq="26865000"><mode>FM</mode></channel>
+	<channel name="72" freq="26875000"><mode>FM</mode></channel>
+	<channel name="73" freq="26885000"><mode>FM</mode></channel>
+	<channel name="74" freq="26895000"><mode>FM</mode></channel>
+	<channel name="75" freq="26905000"><mode>FM</mode></channel>
+	<channel name="76" freq="26915000"><mode>FM</mode></channel>
+	<channel name="77" freq="26925000"><mode>FM</mode></channel>
+	<channel name="78" freq="26935000"><mode>FM</mode></channel>
+	<channel name="79" freq="26945000"><mode>FM</mode></channel>
+	<channel name="80" freq="26955000"><mode>FM</mode></channel>
 
-41	26,565 MHz	Datenkanal (D)(FM), inoffizieller DX-Kanal (FM)	42	26,575 MHz	inoffizieller DX-Kanal (FM)
-43	26,585 MHz		44	26,595 MHz	
-45	26,605 MHz		46	26,615 MHz	
-47	26,625 MHz		48	26,635 MHz	
-49	26,645 MHz		50	26,655 MHz	
-51	26,665 MHz		52	26,675 MHz	Datenkanal (D)(FM)
-53	26,685 MHz	Datenkanal (D)(FM)	54	26,695 MHz
-55	26,705 MHz		56	26,715 MHz	
-57	26,725 MHz		58	26,735 MHz	
-59	26,745 MHz		60	26,755 MHz	
-61	26,765 MHz	Freigegeben zur „Zusammenschaltung mehrerer CB-Funkgeräte über eine Internetverbindung“ in Deutschland	62	26,775 MHz	
-63	26,785 MHz		64	26,795 MHz	
-65	26,805 MHz		66	26,815 MHz	
-67	26,825 MHz		68	26,835 MHz	
-69	26,845 MHz		70	26,855 MHz	
-71	26,865 MHz	Freigegeben zur „Zusammenschaltung mehrerer CB-Funkgeräte über eine Internetverbindung“ in Deutschland	72	26,875 MHz	
-73	26,885 MHz		74	26,895 MHz	
-75	26,905 MHz		76	26,915 MHz	Datenkanal (D)(FM)
-77	26,925 MHz	Datenkanal (D)(FM)	78	26,935 MHz	
-79	26,945 MHz		80	26,955 MHz	Freigegeben zur „Zusammenschaltung mehrerer CB-Funkgeräte über eine Internetverbindung“ in Deutschland
 	<source implemented="yes" href="http://de.wikipedia.org/wiki/CB-Funk#CB-Kan.C3.A4le"/>
 </band>
 
