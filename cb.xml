@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <bandplan version="0.1" comment="This is a general version tag of the following content"/>
-<band name="CB" author="DG6FL" region="DE" created="21102010" valid="01012013">
+
+<band name="CB" author="DG6FL" region="INTERNATIONAL" created="21102010" valid="01012013">
 	<freq_range min=26565000 max=27405000/>
-	<!-- NB: dual mode: am/fm TBD -->
+	<!-- FIXME: dual mode: am/fm -->
 	<channel name="1" freq=26965000 mode="fm"/>
 	<channel name="2" freq=26975000 mode="fm"/>
 	<channel name="3" freq=26985000 mode="fm"/>
