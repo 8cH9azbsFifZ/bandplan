@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<bandplan version="0.3" comment="This is a general version tag of the following content">
+<bandplan version="0.3">
 <band name="80m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<region min="3500000" max="3580000">
 		<region min="3500000" max="3510000" bandwidth="200" mode="CW" comment="Intercontinental QSO"/>
