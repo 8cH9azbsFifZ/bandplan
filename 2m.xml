@@ -5,12 +5,18 @@
 <source href="http://en.wikipedia.org/wiki/Amateur_radio_frequency_allocations" comment="Information to be used"/>
 <source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf" comment="Information to be used"/>
 
-<!-- External References -->
-<band name=2200m><source file="2200m.xml"/>
-<band name=160m><source file="160m.xml"/>
 
 
-
+<band name=2200m>
+	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
+	<freq_range min=135700 max=137800/>
+	<region min=135700 max=137800 bandwidth=200 mode="cw" comment="CW, QRSS, narrow digital modes"/>
+	<channel name="WSPR 2200m" freq=136000><source href="http://wsprnet.org/drupal/"/></channel>
+</band>
+<band name=160m>
+	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
+	<channel name="WSPR 160m" freq=1836600><source href="http://wsprnet.org/drupal/"/></channel>
+</band>
 <band name="80m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<freq_range min=3500000 max=3580000/>
 	<region min=3500000 max=3510000 bandwidth=200 mode="cw" comment="Intercontinental QSO"/>
