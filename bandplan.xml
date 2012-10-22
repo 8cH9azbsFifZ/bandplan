@@ -21,12 +21,13 @@
 <band name="15m"><source file="15m.xml"/></band>
 <band name="12m"><source file="12m.xml"/></band>
 <band name="10m"><source file="10m.xml"/></band>
-<band name="cb"><source file="cb.xml"/></band>
+<band name="CB"><source file="cb.xml"/></band>
 <band name="6m"><source file="6m.xml"/></band>
 <band name="2m"><source file="2m.xml"/></band>
 <band name="70cm"><source file="70cm.xml"/></band>
-<band name="lpd"><source file="lpd.xml"/></band>
-<band name="pmr"><source file="pmr.xml"/></band>
+<band name="LPD"><source file="lpd.xml"/></band>
+<band name="PMR"><source file="pmr.xml"/></band>
+<band name="Radio"><source file="radio.xml"/></band>
 
 
 <regions>

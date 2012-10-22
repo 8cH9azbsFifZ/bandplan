@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<bandplan version="0.6">
+
+<band name="MW">
+	<source href="http://www.dradio.de/dlf/frequenzen/liste/#mw"/>
+	<channel name="Dradio Aholming" freq="207000"/>
+	<channel name="Dradio Donebach" freq="153000"/>
+</band>
+
+<band name="LW">
+	<source href="http://www.dradio.de/dlf/frequenzen/liste/#lw"/>
+	<channel name="Braunschweig" freq="756000"/>
+	<channel name="Heusweiler" freq="1422000"/>
+	<channel name="Neumünster" freq="1269000"/>
+	<channel name="Nordkirchen" freq="549000"/>
+	<channel name="Ravensburg" freq="756000"/>
+	<channel name="Thurnau" freq="549000"/>
+</band>
+</bandplan>
