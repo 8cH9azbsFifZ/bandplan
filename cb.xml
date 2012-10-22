@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <bandplan version="0.1" comment="This is a general version tag of the following content"/>
 
-<band name="CB" author="DG6FL" region="INTERNATIONAL" created="21102010" valid="01012013">
+<band name="CB" author="DG6FL" region="International" created="21102010" valid="01012013">
 	<freq_range min=26565000 max=27405000/>
 	<!-- FIXME: dual mode: am/fm -->
 	<channel name="1" freq=26965000 mode="fm"/>
@@ -44,5 +44,6 @@
 	<channel name="38" freq=27385000 mode="fm"/>
 	<channel name="39" freq=27375000 mode="fm"/>
 	<channel name="40" freq=27405000 mode="fm"/>
-	<source href="http://de.wikipedia.org/wiki/CB-Funk#CB-Kan.C3.A4le"/>
+	<source comment="This content has been used to create the mapping" href="http://de.wikipedia.org/wiki/CB-Funk#CB-Kan.C3.A4le"/>
+	<source comment="The information here must be considered" href="http://en.wikipedia.org/wiki/Citizens_Band_radio#Frequencies_worldwide"/>
 </band>
