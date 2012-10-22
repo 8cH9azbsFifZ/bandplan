@@ -6,10 +6,10 @@
 <source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf" comment="Information to be used"/>
 <!--
 	  Other things to do
-	  * Region 1,2,3 / DE / US / UK / International? *** How to distinguish them?
 	  * PDF XSLT creator
 	  * Repeater DB to XML scripts: http://www.darc.de/echolink-bin/relais.pl?lat_deg=&lat_min=&lat_NS=Nord&lon_deg=&lon_min=&lon_EW=Ost&city=&sel=gridsq&gs=jo40mm&ctrcall=&dxcc=all&maxgateways=100&printas=csv&type=DARC&type=DL3EL&type=el&type=il&type=ds&type=Baken&quelle=y&kmmls=km
-	  -->
+	  * Create a DTD
+-->
 
 <!-- External References -->
 <band name=2200m><source file="2200m.xml"/>
@@ -28,3 +28,11 @@
 <band name=70cm><source file="70cm.xml"/>
 <band name=lpd><source file="lpd.xml"/>
 <band name=pmr><source file="pmr.xml"/>
+
+<regions>
+	<region name="DE"/>
+	<region name="International"/>
+	<region name="IARU1"><source href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/></region>
+	<region name="IARU2"><source href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/></region>
+	<region name="IARU3"><source href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/></region>
+</regions>
