@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<bandplan version="0.1" comment="This is a general version tag of the following content"/>
-<band name="12m" author="DG6FL" region="DE" created="21102010" valid="01012013">
-	<freq_range min=24890000 max=24915000/>
-	<channel name="QRP CW" freq=24906000 mode="cw"/>
-	<channel name="WSPR 12m" freq=24924600><source href="http://wsprnet.org/drupal/"/></channel>
+<bandplan version="0.6">
+<band name="12m" min="24890000" max="24915000" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<channel name="QRP" freq="24906000"><mode>CW</mode></channel>
+	<channel name="WSPR" freq="24924600"><source href="http://wsprnet.org/drupal/"/></channel>
 	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>
+</bandplan>
