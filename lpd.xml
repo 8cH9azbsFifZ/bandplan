@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<bandplan version="0.1" comment="This is a general version tag of the following content"/>
-<status="not done yet"/>
-<band name="LPD" author="DG6FL" region="DE" created="21102010" valid="01012013">
-	<freq_range min=446006200 max=446093750/>
-	<source href="http://www.funkfrequenzen01.de/index010.htm"/>
-	<channel name="1" freq=446006200 mode="FM"/>
-	<channel name="2" freq=446018750 mode="FM"/>
-	<channel name="3" freq=446031250 mode="FM"/>
-	<channel name="4" freq=446043750 mode="FM"/>
-	<channel name="5" freq=446056250 mode="FM"/>
-	<channel name="6" freq=446068750 mode="FM"/>
-	<channel name="7" freq=446081250 mode="FM"/>
-	<channel name="8" freq=446093750 mode="FM"/>
+<bandplan version="0.6">
+<band name="LPD" min="446006200" max="446093750" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<channel name="1" freq="446006200" mode="FM"/>
+	<channel name="2" freq="446018750" mode="FM"/>
+	<channel name="3" freq="446031250" mode="FM"/>
+	<channel name="4" freq="446043750" mode="FM"/>
+	<channel name="5" freq="446056250" mode="FM"/>
+	<channel name="6" freq="446068750" mode="FM"/>
+	<channel name="7" freq="446081250" mode="FM"/>
+	<channel name="8" freq="446093750" mode="FM"/>
+
+	<source implemented="no" href="http://www.funkfrequenzen01.de/index010.htm"/>
 </band>
+</bandplan>
