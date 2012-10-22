@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<bandplan version="0.4">
+<bandplan version="0.5">
 <band name="CB" min="26565000" max="27405000" author="DG6FL" region="International" created="21102010" valid="01012013">
 	<!-- FIXME: dual mode: am/FM -->
 	<channel name="1" freq="26965000"><mode>AM</mode><mode>FM</mode></channel>
