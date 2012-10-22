@@ -5,22 +5,27 @@
 	<channel name="1" freq="26965000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="2" freq="26975000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="3" freq="26985000"><mode>AM</mode><mode>FM</mode></channel>
+	<channel name="3A" freq="26995000"><mode>-</mode><comment>Not allowed for CB.</comment></channel>
 	<channel name="4" freq="27005000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="5" freq="27015000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="6" freq="27025000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="7" freq="27035000"><mode>AM</mode><mode>FM</mode></channel>
+	<channel name="7" freq="27045000"><mode>-</mode><comment>Not allowed for CB.</comment></channel>
 	<channel name="8" freq="27055000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="9" freq="27065000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="10" freq="27075000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="11" freq="27085000"><mode>AM</mode><mode>FM</mode></channel>
+	<channel name="11A" freq="27095000"><mode>-</mode><comment>Not allowed for CB.</comment></channel>
 	<channel name="12" freq="27105000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="13" freq="27115000"><mode>FM</mode></channel>
 	<channel name="14" freq="27125000"><mode>FM</mode></channel>
 	<channel name="15" freq="27135000"><mode>FM</mode></channel>
+	<channel name="15A" freq="27155000"><mode>-</mode><comment>Not allowed for CB.</comment></channel>
 	<channel name="16" freq="27155000"><mode>FM</mode></channel>
 	<channel name="17" freq="27165000"><mode>FM</mode></channel>
 	<channel name="18" freq="27175000"><mode>FM</mode></channel>
 	<channel name="19" freq="27185000"><mode>FM</mode></channel>
+	<channel name="19A" freq="27195000"><mode>-</mode><comment>Not allowed for CB.</comment></channel>
 	<channel name="20" freq="27205000"><mode>FM</mode></channel>
 	<channel name="21" freq="27215000"><mode>FM</mode></channel>
 	<channel name="22" freq="27225000"><mode>FM</mode></channel>
