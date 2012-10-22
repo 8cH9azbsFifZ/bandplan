@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <bandplan version="0.5">
-<band name="CB" min="26565000" max="27405000" author="DG6FL" region="International" created="21102010" valid="01012013">
+<band name="CB" min="26965000" max="27405000" author="DG6FL" region="International" created="23102012" valid="01012013">
 	<channel name="1" freq="26965000"><mode>AM</mode><mode>FM</mode><comment>Call FM.</comment></channel>
 	<channel name="2" freq="26975000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="3" freq="26985000"><mode>AM</mode><mode>FM</mode></channel>
@@ -51,4 +51,28 @@
 	<source implemented="yes" href="http://de.wikipedia.org/wiki/CB-Funk#CB-Kan.C3.A4le"/>
 	<source implemented="no" href="http://en.wikipedia.org/wiki/Citizens_Band_radio#Frequencies_worldwide"/>
 </band>
+
+<band name="CB" min="26565000" max="26955000" author="DG6FL" region="DE" created="23102012" valid="01012013">
+
+
+41	26,565 MHz	Datenkanal (D)(FM), inoffizieller DX-Kanal (FM)	42	26,575 MHz	inoffizieller DX-Kanal (FM)
+43	26,585 MHz		44	26,595 MHz	
+45	26,605 MHz		46	26,615 MHz	
+47	26,625 MHz		48	26,635 MHz	
+49	26,645 MHz		50	26,655 MHz	
+51	26,665 MHz		52	26,675 MHz	Datenkanal (D)(FM)
+53	26,685 MHz	Datenkanal (D)(FM)	54	26,695 MHz
+55	26,705 MHz		56	26,715 MHz	
+57	26,725 MHz		58	26,735 MHz	
+59	26,745 MHz		60	26,755 MHz	
+61	26,765 MHz	Freigegeben zur „Zusammenschaltung mehrerer CB-Funkgeräte über eine Internetverbindung“ in Deutschland	62	26,775 MHz	
+63	26,785 MHz		64	26,795 MHz	
+65	26,805 MHz		66	26,815 MHz	
+67	26,825 MHz		68	26,835 MHz	
+69	26,845 MHz		70	26,855 MHz	
+71	26,865 MHz	Freigegeben zur „Zusammenschaltung mehrerer CB-Funkgeräte über eine Internetverbindung“ in Deutschland	72	26,875 MHz	
+73	26,885 MHz		74	26,895 MHz	
+75	26,905 MHz		76	26,915 MHz	Datenkanal (D)(FM)
+77	26,925 MHz	Datenkanal (D)(FM)	78	26,935 MHz	
+79	26,945 MHz		80	26,955 MHz	Freigegeben zur „Zusammenschaltung mehrerer CB-Funkgeräte über eine Internetverbindung“ in Deutschland
 </bandplan>
