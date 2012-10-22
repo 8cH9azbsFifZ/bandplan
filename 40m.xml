@@ -3,7 +3,20 @@
 
 <band name="40m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
-	<freq_range min=7000000 max=7100000/>
+	<freq_range min=7000000 max=7200000/>
+	<region min=7000000 max=7040000 mode="cw" bandwidth=200/>
+	<region min=7040000 max=7047000 mode="narrow digital" bandwidth=500/>
+	<region min=7047000 max=7050000 bandwidth=500 mode="narrow digital" comment="automatic stations"/>
+	<region min=7050000 max=7053000 bandwidth=2700 mode="all" comment="automatic stations"/>
+	<region min=7053000 max=7060000 bandwidth=2700 mode="all" comment="digital modes"/>
+	<region min=7060000 max=7100000 bandwidth=2700 mode="all" comment="SSB contests"/>
+	<region min=7100000 max=7130000 bandwidth=2700 mode="all"/>
+	<region min=7130000 max=7200000 bandwidth=2700 mode="all" comment="SSB contests"/>
+	<region min=7175000 max=7200000 bandwidth=2700 mode="all" comment="Intercontinental QSO"/>
 	<channel name="QRP CW" freq=7030000 mode="cw"/>
+	<channel name="Emergency Region 1" freq=7110000/>
+	<channel name="ATV" freq=7165000/>
+	<channel name="Digital Speech" freq=7070000/>
+	<channel name="SSB QRP" freq=7090000/>
 	<channel name="WSPR 40m" freq=7038600><source href="http://wsprnet.org/drupal/"/></channel>
 </band>
