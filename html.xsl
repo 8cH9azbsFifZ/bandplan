@@ -7,6 +7,7 @@
 
 	
 	<xsl:template match="bandplan">
+		<!-- FIXME: check version number -->
 		<xsl:apply-templates/>
 	</xsl:template>
 

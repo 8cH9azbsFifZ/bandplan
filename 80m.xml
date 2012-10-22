@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<bandplan version="0.4">
+<bandplan version="0.4"> 
 <band min="3500000" max="3580000" name="80m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<region min="3500000" max="3510000" bandwidth="200" mode="CW" comment="Intercontinental QSO"/>
 	<region min="3510000" max="3560000" bandwidth="200" mode="CW" comment="CW contest"/>
@@ -12,6 +12,7 @@
 	<region min="3650000" max="3700000" bandwidth="2700" mode="All"/>
 	<region min="3700000" max="3800000" bandwidth="2700" mode="All"/>
 	<region min="3775000" max="3800000" bandwidth="2700" mode="All" comment="Intercontinental QSO"/>
+
 	<channel name="ATV" freq="3735000" mode="Digital"/>
 	<channel name="Emergency Region 1" freq="3760000"/>
 	<channel name="QRP SSB" freq="3690000"/>
@@ -19,6 +20,7 @@
 	<channel name="QRP CW" freq="3560000" mode="CW"/>
 	<channel name="QRS" freq="3555000" mode="CW"/>
 	<channel name="WSPR 80m" freq="3592600" mode="USB"><source href="http://wsprnet.org/drupal/"/></channel>
-	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
+
+	<source implemented="yes" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>
 </bandplan>
