@@ -4,10 +4,14 @@ outfile=$infile.out
 cat $infile |awk '
 {
 	gsub("&deg;","°");
+	gsub("el#","EL#");
+	gsub("il#","IL#");
 	print;
 }
 ' |awk '
-BEGIN{FS=";"}
+BEGIN{
+	FS=";"
+}
 {
 	call=$1;qrg=$2;input=$3;locator=$4;info=$5;lat=$6;lon=$7;ctcss=$8;mode=$9;
 	if(qrg==""){next;}
@@ -21,20 +25,18 @@ BEGIN{FS=";"}
 	print "\t<comment>"info"</comment>";
 	if (mode!="")
 	{
-		if (match(mode,"EL#") or match(mode,"el#"))
+		if (match(mode,"EL#"))
 		{			
 			node=mode;
 			gsub(".*EL#","",node);
-			gsub(".*el#","",node);
 			gsub(",.*","",node);
 			gsub("/.*","",node);
 			print "\t<echolink node=\""node"\"/>";
 		}
-		if (match(mode,"IL#") or match(mode,"il#"))
+		if (match(mode,"IL#"))
 		{			
 			node=mode;
 			gsub(".*IL#","",node);
-			gsub(".*il#","",node);
 			gsub("/.*","",node);
 			print "\t<ilrp node=\""node"\"/>";
 		}
