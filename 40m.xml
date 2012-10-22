@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<bandplan version="0.4">
+<bandplan version="0.6">
 <band name="40m" min="7000000" max="7200000" author="DG6FL" region="DE" created="21102010" valid="01012013">
-	<region min="7000000" max="7040000" mode="CW" bandwidth="200"/>
-	<region min="7040000" max="7047000" mode="Narrow digital" bandwidth="500"/>
-	<region min="7047000" max="7050000" bandwidth="500" mode="Narrow digital" comment="automatic stations"/>
-	<region min="7050000" max="7053000" bandwidth="2700" mode="All" comment="automatic stations"/>
-	<region min="7053000" max="7060000" bandwidth="2700" mode="All" comment="digital modes"/>
-	<region min="7060000" max="7100000" bandwidth="2700" mode="All" comment="SSB contests"/>
-	<region min="7100000" max="7130000" bandwidth="2700" mode="All"/>
-	<region min="7130000" max="7200000" bandwidth="2700" mode="All" comment="SSB contests"/>
-	<region min="7175000" max="7200000" bandwidth="2700" mode="All" comment="Intercontinental QSO"/>
+	<region min="7000000" max="7040000" bandwidth="200"><mode>CW</mode></region>
+	<region min="7040000" max="7047000" bandwidth="500"><mode>Narrow digital</mode></region>
+	<region min="7047000" max="7050000" bandwidth="500"><mode>Narrow digital</mode><comment>automatic stations</comment></region>
+	<region min="7050000" max="7053000" bandwidth="2700"><mode>All</mode><comment>automatic stations</comment></region>
+	<region min="7053000" max="7060000" bandwidth="2700"><mode>All</mode><comment>digital modes</comment></region>
+	<region min="7060000" max="7100000" bandwidth="2700"><mode>All</mode><comment>SSB contests</comment></region>
+	<region min="7100000" max="7130000" bandwidth="2700"><mode>All</mode></region>
+	<region min="7130000" max="7200000" bandwidth="2700"><mode>All</mode><comment>SSB contests</comment></region>
+	<region min="7175000" max="7200000" bandwidth="2700"><mode>All</mode><comment>Intercontinental QSO></comment></region>
 
-	<channel name="QRP CW" freq="7030000" mode="CW"/>
+	<channel name="QRP CW" freq="7030000"><mode>CW</mode></channel>
 	<channel name="Emergency Region 1" freq="7110000"/>
 	<channel name="ATV" freq="7165000"/>
 	<channel name="Digital Speech" freq="7070000"/>
