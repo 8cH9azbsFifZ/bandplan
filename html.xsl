@@ -29,7 +29,6 @@
 				<td> <xsl:value-of select="@min"/> </td>
 				<td> <xsl:value-of select="@max"/> </td>
 				<td> <xsl:value-of select="@name"/> </td>
-				<td> <xsl:value-of select="@comment"/> </td>
 				<td> <xsl:apply-templates/> </td>
 			</tr>
 		</table>
@@ -47,6 +46,10 @@
 
 	<xsl:template match="mode">
 		<xsl:value-of select="."/><xsl:text> </xsl:text>
+	</xsl:template>
+
+	<xsl:template match="comment">
+		<xsl:text>(</xsl:text><xsl:value-of select="."/><xsl:text>) </xsl:text>
 	</xsl:template>
 
 
