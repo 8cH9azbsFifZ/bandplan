@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<bandplan version="0.1" comment="This is a general version tag of the following content"/>
+<bandplan version="0.6">
 
-<band name=2200m>
+<band name="2200m" min="135700" max="137800">
+	<region min="135700" max="137800" bandwidth="200"><mode>CW</mode><comment>CW, QRSS, narrow digital modes</comment></region>
+
+	<channel name="WSPR 2200m" freq="136000"><source href="http://wsprnet.org/drupal/"/></channel>
+	
 	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
-	<freq_range min=135700 max=137800/>
-	<region min=135700 max=137800 bandwidth=200 mode="cw" comment="CW, QRSS, narrow digital modes"/>
-	<channel name="WSPR 2200m" freq=136000><source href="http://wsprnet.org/drupal/"/></channel>
 </band>
+</bandplan>
 
