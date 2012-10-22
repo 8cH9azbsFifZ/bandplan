@@ -1,5 +1,0 @@
-* PDF output
-* HTML output
-* C structure output
-* Repeater DB input
-http://www.darc.de/echolink-bin/relais.pl?lat_deg=&lat_min=&lat_NS=Nord&lon_deg=&lon_min=&lon_EW=Ost&city=&sel=gridsq&gs=jo40mm&ctrcall=&dxcc=all&maxgateways=100&printas=csv&type=DARC&type=DL3EL&type=el&type=il&type=ds&type=Baken&quelle=y&kmmls=km
