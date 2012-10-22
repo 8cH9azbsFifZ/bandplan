@@ -1,4 +1,0 @@
-bandplan
-========
-
-Ham Radio Bandplans
