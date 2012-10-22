@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<bandplan version="0.1" comment="This is a general version tag of the following content"/>
+<bandplan name="Band Plan" version="0.6">
 
 <!-- TBD -->
 <source href="http://en.wikipedia.org/wiki/Amateur_radio_frequency_allocations" comment="Information to be used"/>
@@ -13,25 +13,41 @@
 -->
 
 <!-- External References -->
-<band name=2200m><source file="2200m.xml"/>
-<band name=160m><source file="160m.xml"/>
-<band name=80m><source file="80m.xml"/>
-<band name=40m><source file="40m.xml"/>
-<band name=30m><source file="30m.xml"/>
-<band name=20m><source file="20m.xml"/>
-<band name=17m><source file="17m.xml"/>
-<band name=15m><source file="15m.xml"/>
-<band name=12m><source file="12m.xml"/>
-<band name=10m><source file="10m.xml"/>
-<band name=cb><source file="cb.xml"/>
-<band name=6m><source file="6m.xml"/>
-<band name=2m><source file="2m.xml"/>
-<band name=70cm><source file="70cm.xml"/>
-<band name=lpd><source file="lpd.xml"/>
-<band name=pmr><source file="pmr.xml"/>
+<band name="2200m"><source file="2200m.xml"/></band>
+<band name="160m"><source file="160m.xml"/></band>
+
+<band name="80m"><source file="80m.xml"/></band>
+
+<band name="40m"><source file="40m.xml"/></band>
+
+<band name="30m"><source file="30m.xml"/></band>
+
+<band name="20m"><source file="20m.xml"/></band>
+
+<band name="17m"><source file="17m.xml"/></band>
+
+<band name="15m"><source file="15m.xml"/></band>
+
+<band name="12m"><source file="12m.xml"/></band>
+
+<band name="10m"><source file="10m.xml"/></band>
+
+<band name="cb"><source file="cb.xml"/></band>
+
+<band name="6m"><source file="6m.xml"/></band>
+
+<band name="2m"><source file="2m.xml"/></band>
+
+<band name="70cm"><source file="70cm.xml"/></band>
+
+<band name="lpd"><source file="lpd.xml"/></band>
+
+<band name="pmr"><source file="pmr.xml"/></band>
+
 
 <regions>
 	<region name="DE"/>
+	<region name="USA"/>
 	<region name="International"/>
 	<region name="IARU1"><source href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/></region>
 	<region name="IARU2"><source href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/></region>
@@ -50,3 +66,6 @@
 	<mode name="Narrow Digital"/>
 	<mode name="Digital"/>
 </modes>
+
+
+</bandplan>

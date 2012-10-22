@@ -7,19 +7,19 @@
 
 	
 	<xsl:template match="bandplan">
+		<html><head>
 		<!-- FIXME: check version number -->
+				<title> <xsl:value-of select="@name"/> </title>
+			</head>
 		<xsl:apply-templates/>
+		</html>
 	</xsl:template>
 
 	<xsl:template match="band">
-		<html><head>
-				<title> <xsl:value-of select="@name"/> </title>
-			</head>
 			<body>
-			</body>
 			<h1> <xsl:value-of select="@name"/> <xsl:text> </xsl:text> <xsl:value-of select="@region"/> </h1>
 			<xsl:apply-templates/>
-		</html>
+			</body>
 	</xsl:template>
 
 	<xsl:template match="region">
