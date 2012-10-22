@@ -3,5 +3,6 @@
 
 <band name="70cm" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<source href="http://www.darc.de/uploads/media/Bandplan_70cm_Stand_10_2009.pdf"/>
-	<channel type="Repeater" name="DB0VA" freq=439325000 mode="FM" repeater_shift="yes" lat=50.109122 lon=8.133403/>	
+	<channel type="Repeater" name="DB0VA" freq=439325000 mode="FM" repeater_shift="yes" lat=50.109122 lon=8.133403/>
+	<channel type="Repeater" name="DB0ESW" freq=439050000 mode="FM" repeater_shift="yes" echolink=439050 locator="JO51AE" homepage="http://www.ov-f28.de/Relais.htm"/>	
 </band>
