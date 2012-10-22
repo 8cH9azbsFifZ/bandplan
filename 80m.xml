@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<bandplan version="0.1" comment="This is a general version tag of the following content"/>
 
+<bandplan version="0.2" comment="This is a general version tag of the following content">
 <band name="80m" author="DG6FL" region="DE" created="21102010" valid="01012013">
-	<freq_range min=3500000 max=3580000/>
-	<region min=3500000 max=3510000 bandwidth=200 mode="CW" comment="Intercontinental QSO"/>
-	<region min=3510000 max=3560000 bandwidth=200 mode="CW" comment="CW contest"/>
-	<region min=3560000 max=3580000 bandwidth=200 mode="CW"/>
-	<region min=3580000 max=3590000 bandwidth=500 mode="digital" comment="small bandwidth digital modes"/>
-	<region min=3590000 max=3600000 bandwidth=500 mode="digital" comment="small bandwidth digital modes, automatic digital stations"/>
-	<region min=3600000 max=3620000 bandwidth=2700 mode="all"/>
-	<region min=3600000 max=3650000 bandwidth=2700 mode="all" comment="SSB contest"/>
-	<region min=3650000 max=3700000 bandwidth=2700 mode="all"/>
-	<region min=3700000 max=3800000 bandwidth=2700 mode="all"/>
-	<region min=3775000 max=3800000 bandwidth=2700 mode="all" comment="Intercontinental QSO"/>
-	<channel name="ATV" freq=3735000 mode="digital"/>
-	<channel name="Emergency Region 1" freq=3760000/>
-	<channel name="QRP SSB" freq=3690000/>
-	<channel name="Digital speech" freq=3630000 mode="digital"/>	
-	<channel name="QRP CW" freq=3560000 mode="cw"/>
-	<channel name="QRS" freq=3555000 mode="cw"/>
-	<channel name="WSPR 80m" freq=3592600><source href="http://wsprnet.org/drupal/"/></channel>
+	<freq_range min="3500000" max="3580000"/>
+	<region min="3500000" max="3510000" bandwidth="200" mode="CW" comment="Intercontinental QSO"/>
+	<region min="3510000" max="3560000" bandwidth="200" mode="CW" comment="CW contest"/>
+	<region min="3560000" max="3580000" bandwidth="200" mode="CW"/>
+	<region min="3580000" max="3590000" bandwidth="500" mode="digital" comment="small bandwidth digital modes"/>
+	<region min="3590000" max="3600000" bandwidth="500" mode="digital" comment="small bandwidth digital modes, automatic digital stations"/>
+	<region min="3600000" max="3620000" bandwidth="2700" mode="all"/>
+	<region min="3600000" max="3650000" bandwidth="2700" mode="all" comment="SSB contest"/>
+	<region min="3650000" max="3700000" bandwidth="2700" mode="all"/>
+	<region min="3700000" max="3800000" bandwidth="2700" mode="all"/>
+	<region min="3775000" max="3800000" bandwidth="2700" mode="all" comment="Intercontinental QSO"/>
+	<channel name="ATV" freq="3735000" mode="digital"/>
+	<channel name="Emergency Region 1" freq="3760000"/>
+	<channel name="QRP SSB" freq="3690000"/>
+	<channel name="Digital speech" freq="3630000" mode="digital"/>	
+	<channel name="QRP CW" freq="3560000" mode="cw"/>
+	<channel name="QRS" freq="3555000" mode="cw"/>
+	<channel name="WSPR 80m" freq="3592600"><source href="http://wsprnet.org/drupal/"/></channel>
 	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>
+</bandplan>
