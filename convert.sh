@@ -1,6 +1,12 @@
 #!/bin/bash
 infile=$1
-outfile=$infile.out
+outfile=$infile.xml
+cat << eof >$outfile
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<repeaterlist version="0.6">
+eof
+
 cat $infile |awk '
 {
 	gsub("&deg;","°");
@@ -49,5 +55,8 @@ BEGIN{
 	}
 	print "\t<source href=\"http://www.darc.de/echolink-bin/relais.pl\"/>";
 	print "</channel>";
-}' >$outfile
+}' >>$outfile
 
+cat << eof >> $outfile
+</repeaterlist>
+eof
