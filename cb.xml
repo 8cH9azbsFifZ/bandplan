@@ -2,17 +2,17 @@
 
 <bandplan version="0.5">
 <band name="CB" min="26565000" max="27405000" author="DG6FL" region="International" created="21102010" valid="01012013">
-	<channel name="1" freq="26965000"><mode>AM</mode><mode>FM</mode></channel>
+	<channel name="1" freq="26965000"><mode>AM</mode><mode>FM</mode><comment>Call FM.</comment></channel>
 	<channel name="2" freq="26975000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="3" freq="26985000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="3A" freq="26995000"><mode>-</mode><comment>Not allowed for CB.</comment></channel>
-	<channel name="4" freq="27005000"><mode>AM</mode><mode>FM</mode></channel>
+	<channel name="4" freq="27005000"><mode>AM</mode><mode>FM</mode><comment>Call AM.</comment></channel>
 	<channel name="5" freq="27015000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="6" freq="27025000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="7" freq="27035000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="7" freq="27045000"><mode>-</mode><comment>Not allowed for CB.</comment></channel>
 	<channel name="8" freq="27055000"><mode>AM</mode><mode>FM</mode></channel>
-	<channel name="9" freq="27065000"><mode>AM</mode><mode>FM</mode></channel>
+	<channel name="9" freq="27065000"><mode>AM</mode><mode>FM</mode><comment>Emergency</comment></channel>
 	<channel name="10" freq="27075000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="11" freq="27085000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="11A" freq="27095000"><mode>-</mode><comment>Not allowed for CB.</comment></channel>
