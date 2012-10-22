@@ -23,24 +23,31 @@
 </band>
 <band name="40m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<freq_range min=7000000 max=7100000/>
+	<channel name="QRP CW" freq=7030000 mode="cw"/>
 </band>
 <band name="30m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<freq_range min=10100000 max=10200000/>
+	<channel name="QRP CW" freq=10116000 mode="cw"/>
 </band>
 <band name="20m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<freq_range min=14000000 max=14070000/>
+	<channel name="QRP CW" freq=14060000 mode="cw"/>
 </band>
 <band name="17m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<freq_range min=18068000 max=18095000/>
+	<channel name="QRP CW" freq=18086000 mode="cw"/>
 </band>
 <band name="15m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<freq_range min=21000000 max=21070000/>
+	<channel name="QRP CW" freq=21060000 mode="cw"/>
 </band>
 <band name="12m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<freq_range min=24890000 max=24915000/>
+	<channel name="QRP CW" freq=24906000 mode="cw"/>
 </band>
 <band name="10m" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<freq_range min=28000000 max=28070000/>
+	<channel name="QRP CW" freq=28060000 mode="cw"/>
 	<channel name="APRS 10m" freq=29250000 mode="fm"/>
 </band>
 <band name="CB" author="DG6FL" region="DE" created="21102010" valid="01012013">
@@ -117,14 +124,3 @@
 	<channel name="9" freq=433275000 mode="FM"/>
 	<channel name="10" freq=433300000 mode="FM"/>
 </band>
-<!---
-const t_channel channels[] = {
-  {"QRP 40m",          703000,   FT817_MODE_CW, NULL},
-  {"QRP 30m",         1011600,   FT817_MODE_CW, NULL},
-  {"QRP 20m",         1406000,   FT817_MODE_CW, NULL},
-  {"QRP 17m",         1808600,   FT817_MODE_CW, NULL},
-  {"QRP 15m",         2106000,   FT817_MODE_CW, NULL},
-  {"QRP 12m",         2490600,   FT817_MODE_CW, NULL},
-  {"QRP 10m",         2806000,   FT817_MODE_CW, NULL}, 
- }; 
--->
