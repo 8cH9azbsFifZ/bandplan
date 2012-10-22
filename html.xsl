@@ -17,7 +17,7 @@
 			</head>
 			<body>
 			</body>
-			<h1> <xsl:value-of select="@name"/> </h1>
+			<h1> <xsl:value-of select="@name"/> <xsl:text> </xsl:text> <xsl:value-of select="@region"/> </h1>
 			<xsl:apply-templates/>
 		</html>
 	</xsl:template>
