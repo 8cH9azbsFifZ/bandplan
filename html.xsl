@@ -52,6 +52,7 @@
 		<xsl:text>(</xsl:text><xsl:value-of select="."/><xsl:text>) </xsl:text>
 	</xsl:template>
 
+	<xsl:template match="todo"/>
 
 </xsl:stylesheet>
 

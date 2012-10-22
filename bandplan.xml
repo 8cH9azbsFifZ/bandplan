@@ -4,44 +4,28 @@
 <!-- TBD -->
 <source href="http://en.wikipedia.org/wiki/Amateur_radio_frequency_allocations" comment="Information to be used"/>
 <source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf" comment="Information to be used"/>
-<!--
-	  Other things to do
-	  * PDF XSLT creator
-	  * Repeater DB to XML scripts: http://www.darc.de/echolink-bin/relais.pl?lat_deg=&lat_min=&lat_NS=Nord&lon_deg=&lon_min=&lon_EW=Ost&city=&sel=gridsq&gs=jo40mm&ctrcall=&dxcc=all&maxgateways=100&printas=csv&type=DARC&type=DL3EL&type=el&type=il&type=ds&type=Baken&quelle=y&kmmls=km
-	  * Create a DTD
-	  * cleanup structure: properties or tags?? (i.e. source)
--->
+
+<todo>PDF XSLT creator</todo>
+<todo>Repeater DB to XML scripts: http://www.darc.de/echolink-bin/relais.pl</todo>
+<todo>Create a DTD</todo>
+<todo>cleanup structure: properties or tags?? (i.e. source)</todo>
 
 <!-- External References -->
 <band name="2200m"><source file="2200m.xml"/></band>
 <band name="160m"><source file="160m.xml"/></band>
-
 <band name="80m"><source file="80m.xml"/></band>
-
 <band name="40m"><source file="40m.xml"/></band>
-
 <band name="30m"><source file="30m.xml"/></band>
-
 <band name="20m"><source file="20m.xml"/></band>
-
 <band name="17m"><source file="17m.xml"/></band>
-
 <band name="15m"><source file="15m.xml"/></band>
-
 <band name="12m"><source file="12m.xml"/></band>
-
 <band name="10m"><source file="10m.xml"/></band>
-
 <band name="cb"><source file="cb.xml"/></band>
-
 <band name="6m"><source file="6m.xml"/></band>
-
 <band name="2m"><source file="2m.xml"/></band>
-
 <band name="70cm"><source file="70cm.xml"/></band>
-
 <band name="lpd"><source file="lpd.xml"/></band>
-
 <band name="pmr"><source file="pmr.xml"/></band>
 
 
