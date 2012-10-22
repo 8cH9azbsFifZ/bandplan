@@ -54,5 +54,10 @@
 
 	<xsl:template match="todo"/>
 
+	<xsl:template match="source">
+		<xsl:variable name="filename" select="@file"/>
+		<xsl:apply-templates select="document($filename)"/>
+	</xsl:template>
+
 </xsl:stylesheet>
 
