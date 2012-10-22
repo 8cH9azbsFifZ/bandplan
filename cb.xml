@@ -1,49 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<bandplan version="0.1" comment="This is a general version tag of the following content"/>
 
-<band name="CB" author="DG6FL" region="International" created="21102010" valid="01012013">
-	<freq_range min=26565000 max=27405000/>
-	<!-- FIXME: dual mode: am/fm -->
-	<channel name="1" freq=26965000 mode="fm"/>
-	<channel name="2" freq=26975000 mode="fm"/>
-	<channel name="3" freq=26985000 mode="fm"/>
-	<channel name="4" freq=27005000 mode="fm"/>
-	<channel name="5" freq=27015000 mode="fm"/>
-	<channel name="6" freq=27025000 mode="fm"/>
-	<channel name="7" freq=27035000 mode="fm"/>
-	<channel name="8" freq=27055000 mode="fm"/>
-	<channel name="9" freq=27065000 mode="fm"/>
-	<channel name="10" freq=27075000 mode="fm"/>
-	<channel name="11" freq=27085000 mode="fm"/>
-	<channel name="12" freq=27105000 mode="fm"/>
-	<channel name="13" freq=27115000 mode="fm"/>
-	<channel name="14" freq=27125000 mode="fm"/>
-	<channel name="15" freq=27135000 mode="fm"/>
-	<channel name="16" freq=27155000 mode="fm"/>
-	<channel name="17" freq=27165000 mode="fm"/>
-	<channel name="18" freq=27175000 mode="fm"/>
-	<channel name="19" freq=27185000 mode="fm"/>
-	<channel name="20" freq=27205000 mode="fm"/>
-	<channel name="21" freq=27215000 mode="fm"/>
-	<channel name="22" freq=27225000 mode="fm"/>
-	<channel name="23" freq=27255000 mode="fm"/>
-	<channel name="24" freq=27235000 mode="fm"/>
-	<channel name="25" freq=27245000 mode="fm"/>
-	<channel name="26" freq=27265000 mode="fm"/>
-	<channel name="27" freq=27275000 mode="fm"/>
-	<channel name="28" freq=27285000 mode="fm"/>
-	<channel name="29" freq=27295000 mode="fm"/>
-	<channel name="30" freq=27305000 mode="fm"/>
-	<channel name="31" freq=27315000 mode="fm"/>
-	<channel name="32" freq=27325000 mode="fm"/>
-	<channel name="33" freq=27335000 mode="fm"/>
-	<channel name="34" freq=27345000 mode="fm"/>
-	<channel name="35" freq=27355000 mode="fm"/>
-	<channel name="36" freq=27365000 mode="fm"/>
-	<channel name="37" freq=27375000 mode="fm"/>
-	<channel name="38" freq=27385000 mode="fm"/>
-	<channel name="39" freq=27375000 mode="fm"/>
-	<channel name="40" freq=27405000 mode="fm"/>
-	<source comment="This content has been used to create the mapping" href="http://de.wikipedia.org/wiki/CB-Funk#CB-Kan.C3.A4le"/>
-	<source comment="The information here must be considered" href="http://en.wikipedia.org/wiki/Citizens_Band_radio#Frequencies_worldwide"/>
+<bandplan version="0.4">
+<band name="CB" min="26565000" max="27405000" author="DG6FL" region="International" created="21102010" valid="01012013">
+	<!-- FIXME: dual mode: am/FM -->
+	<channel name="1" freq="26965000" mode="FM"/>
+	<channel name="2" freq="26975000" mode="FM"/>
+	<channel name="3" freq="26985000" mode="FM"/>
+	<channel name="4" freq="27005000" mode="FM"/>
+	<channel name="5" freq="27015000" mode="FM"/>
+	<channel name="6" freq="27025000" mode="FM"/>
+	<channel name="7" freq="27035000" mode="FM"/>
+	<channel name="8" freq="27055000" mode="FM"/>
+	<channel name="9" freq="27065000" mode="FM"/>
+	<channel name="10" freq="27075000" mode="FM"/>
+	<channel name="11" freq="27085000" mode="FM"/>
+	<channel name="12" freq="27105000" mode="FM"/>
+	<channel name="13" freq="27115000" mode="FM"/>
+	<channel name="14" freq="27125000" mode="FM"/>
+	<channel name="15" freq="27135000" mode="FM"/>
+	<channel name="16" freq="27155000" mode="FM"/>
+	<channel name="17" freq="27165000" mode="FM"/>
+	<channel name="18" freq="27175000" mode="FM"/>
+	<channel name="19" freq="27185000" mode="FM"/>
+	<channel name="20" freq="27205000" mode="FM"/>
+	<channel name="21" freq="27215000" mode="FM"/>
+	<channel name="22" freq="27225000" mode="FM"/>
+	<channel name="23" freq="27255000" mode="FM"/>
+	<channel name="24" freq="27235000" mode="FM"/>
+	<channel name="25" freq="27245000" mode="FM"/>
+	<channel name="26" freq="27265000" mode="FM"/>
+	<channel name="27" freq="27275000" mode="FM"/>
+	<channel name="28" freq="27285000" mode="FM"/>
+	<channel name="29" freq="27295000" mode="FM"/>
+	<channel name="30" freq="27305000" mode="FM"/>
+	<channel name="31" freq="27315000" mode="FM"/>
+	<channel name="32" freq="27325000" mode="FM"/>
+	<channel name="33" freq="27335000" mode="FM"/>
+	<channel name="34" freq="27345000" mode="FM"/>
+	<channel name="35" freq="27355000" mode="FM"/>
+	<channel name="36" freq="27365000" mode="FM"/>
+	<channel name="37" freq="27375000" mode="FM"/>
+	<channel name="38" freq="27385000" mode="FM"/>
+	<channel name="39" freq="27375000" mode="FM"/>
+	<channel name="40" freq="27405000" mode="FM"/>
+
+	<source implemented="yes" href="http://de.wikipedia.org/wiki/CB-Funk#CB-Kan.C3.A4le"/>
+	<source implemented="no" href="http://en.wikipedia.org/wiki/Citizens_Band_radio#Frequencies_worldwide"/>
 </band>
+</bandplan>
