@@ -3,7 +3,8 @@ open format.
 
 How to Create a HTML Band Plan?
 ===============================
-xsltproc html.xsl 80m.xml > 80m.html
+xsltproc html.xsl bandplan.xml > bandplan.html
+
 
 How to Create a PDF Band Plan?
 ==============================
