@@ -31,7 +31,6 @@
 				<td> <xsl:value-of select="@mode"/> </td>
 				<td> <xsl:value-of select="@comment"/> </td>
 			</tr>
-			<xsl:apply-templates/>
 		</table>
 	</xsl:template>
 
