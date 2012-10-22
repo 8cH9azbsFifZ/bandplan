@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <bandplan version="0.1" comment="This is a general version tag of the following content"/>
+
 <band name="2m" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<source href="http://db0fa.de/wp-content/uploads/2010/05/Bandplan_2m_Stand_10_2009.pdf"/>
 	<freq_range min=144000000 max=146000000/>
-	<channel name="S1" freq=145212500 mode="fm" comment="simplex"/>
+	<channel name="S1" freq=145212500 mode="fm" comment="simplex channel"/>
 	<channel name="ARPS 2m" freq=14480000 mode="fm"/>
 	<channel name="WSPR 2m" freq=14448900><source href="http://wsprnet.org/drupal/"/></channel>
 </band>
