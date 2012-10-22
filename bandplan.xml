@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<bandplan version="0.1"/ comment="This is a general version tag of the following content"/>
 <band name=2200m>
 	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 	<freq_range min=135700 max=137800/>
