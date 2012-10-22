@@ -39,9 +39,11 @@
 </regions>
 
 <modes>
+	<mode name="All"/>
 	<mode name="AM"/>
 	<mode name="FM"/>
 	<mode name="CW"/>
 	<mode name="SSB"/>
 	<mode name="Narrow Digital"/>
+	<mode name="Digital"/>
 </modes>
