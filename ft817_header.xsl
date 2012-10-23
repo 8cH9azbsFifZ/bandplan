@@ -22,8 +22,15 @@ typedef struct
 	</xsl:template>
 
 	<xsl:template match="bandplan">
+		<xsl:text>
+const t_band bands[] = {
+		</xsl:text>
 		<!-- FIXME: check version number -->
 		<xsl:apply-templates/>
+		<xsl:text>
+};
+int nbands = sizeof(bands)/sizeof(bands[0]);
+		</xsl:text>
 	</xsl:template>
 
 	<xsl:template match="band">

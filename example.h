@@ -1,12 +1,5 @@
 /*************************************************************************************************/
 // Bands configuration
-typedef struct
-{   
-  char *name; // name of the band
-  long low;
-  long high; // band boundaries
-  byte mode;  // main mode for this band
-} t_band;
 
 // NB   1800 -> 180030 Hz
 // =>   3500 -> 350000
@@ -28,18 +21,6 @@ const t_band bands[] = {
 //int nbands = 11;//sizeof(bands)/sizeof(bands[0]);
 int nbands = sizeof(bands)/sizeof(bands[0]);
         
-// Single channels
-typedef struct 
-{
-  char *name; // channel name
-  long freq; // frequency
-  byte mode; // mode
-  // the following variables will be used for the automatic repeater configuration based on the GPS signal
-  byte rpt; // repeater shift
-  //float lat, lon;
-  // coverage parameter
-} t_channel;
-
 // structure of the actual configured channels
 // FIXME: this can go to a separate file; scripts may help creating this structure
 const t_channel channels[] = {
