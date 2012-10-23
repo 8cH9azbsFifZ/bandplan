@@ -12,7 +12,8 @@ TBD
 
 How to Create C Structures?
 ===========================
-TBD
+In order to create the C header files for the FT 817:
+xsltproc ft817_header.xsl bandplan.xml > bandplan.h
 
 How to add stuff
 ================
