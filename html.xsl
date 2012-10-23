@@ -53,6 +53,8 @@
 	</xsl:template>
 
 	<xsl:template match="todo"/>
+	<xsl:template match="regions"/>
+	<xsl:template match="modes"/>
 
 	<xsl:template match="source">
 		<xsl:variable name="filename" select="@file"/>
