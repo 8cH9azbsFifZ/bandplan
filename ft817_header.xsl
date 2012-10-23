@@ -34,9 +34,11 @@ int nbands = sizeof(bands)/sizeof(bands[0]);
 	</xsl:template>
 
 	<xsl:template match="band">
-
-			<xsl:value-of select="@name"/> <xsl:text> </xsl:text> <xsl:value-of select="@region"/>
-			<xsl:apply-templates/>
+		<xsl:text>{"</xsl:text><xsl:value-of select="@name"/><xsl:text>",</xsl:text>
+	   <xsl:value-of select="@min"/><xsl:text>,</xsl:text> 
+	   <xsl:value-of select="@max"/><xsl:text>,</xsl:text> 
+		<!--FIXME: mapping to FT817 mode, include general mode in band -->
+		<xsl:value-of select="@mode"/><xsl:text>},</xsl:text> 
 	</xsl:template>
 
 	<xsl:template match="todo"/>
