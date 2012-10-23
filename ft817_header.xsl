@@ -9,6 +9,14 @@ typedef struct
   long high;  // upper frequency
   byte mode;  // main mode for this band
 } t_band;
+
+// Single channels
+typedef struct 
+{
+  char *name; // channel name
+  long freq;  // frequency
+  byte mode;  // mode
+} t_channel;
 </xsl:text>
 		<xsl:apply-templates/>
 	</xsl:template>
