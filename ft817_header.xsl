@@ -37,11 +37,14 @@ int nbands = sizeof(bands)/sizeof(bands[0]);
 		<!--FIXME: check country code-->
 		<!--<xsl:if test="not(./source)">-->
 		<xsl:call-template name="region"/>
-		<xsl:apply-templates/>
+		<xsl:apply-templates select="./region"/>
 	</xsl:template>
 	
 	<xsl:template match="region">
 			<xsl:call-template name="region"/>
+	</xsl:template>
+
+	<xsl:template match="channel">
 	</xsl:template>
 
 	<xsl:template name="region">
@@ -55,7 +58,7 @@ int nbands = sizeof(bands)/sizeof(bands[0]);
 			<xsl:when test="contains(@mode,'FM')"> <xsl:text>FT817_MODE_FM</xsl:text> </xsl:when>
 			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
 		</xsl:choose>
-		<xsl:text>},</xsl:text> 
+		<xsl:text>},&#xa;</xsl:text> 
 		<!--</xsl:if>-->
 		<!--	<xsl:apply-templates/>-->
 	</xsl:template>
