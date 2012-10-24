@@ -26,7 +26,7 @@ typedef struct
 const t_band bands[] = {
 		</xsl:text>
 		<!-- FIXME: check version number -->
-		<xsl:apply-templates/>
+		<xsl:apply-templates select="./band"/>
 		<xsl:text>
 };
 int nbands = sizeof(bands)/sizeof(bands[0]);
@@ -38,6 +38,7 @@ int nbands = sizeof(bands)/sizeof(bands[0]);
 		<!--<xsl:if test="not(./source)">-->
 		<xsl:call-template name="region"/>
 		<xsl:apply-templates select="./region"/>
+		<!--FIXME: make channels ...<xsl:apply-templates select="./channel"/>-->
 	</xsl:template>
 	
 	<xsl:template match="region">
@@ -45,6 +46,7 @@ int nbands = sizeof(bands)/sizeof(bands[0]);
 	</xsl:template>
 
 	<xsl:template match="channel">
+			<xsl:call-template name="region"/>
 	</xsl:template>
 
 	<xsl:template name="region">
