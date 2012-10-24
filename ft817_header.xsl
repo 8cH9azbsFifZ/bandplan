@@ -34,12 +34,24 @@ int nbands = sizeof(bands)/sizeof(bands[0]);
 	</xsl:template>
 
 	<xsl:template match="band">
+		<!--FIXME: check country code-->
 		<!--<xsl:if test="not(./source)">-->
-		<xsl:text>{"</xsl:text><xsl:value-of select="@name"/><xsl:text>",</xsl:text>
+		<xsl:call-template name="region"/>
+		<xsl:apply-templates/>
+	</xsl:template>
+	
+	<xsl:template match="region">
+			<xsl:call-template name="region"/>
+	</xsl:template>
+
+	<xsl:template name="region">
+		<xsl:variable name="bandname" select="./name"/>
+		<xsl:text>{"</xsl:text> <xsl:value-of select="$bandname"/> <xsl:text>",</xsl:text>
 		<xsl:value-of select="@min*0.1"/><xsl:text>,</xsl:text> 
 	   <xsl:value-of select="@max*0.1"/><xsl:text>,</xsl:text> 
 		<xsl:choose>
 			<xsl:when test="contains(@mode,'CW')"> <xsl:text>FT817_MODE_CW_NARROW</xsl:text> </xsl:when>
+			<xsl:when test="contains(@mode,'All')"> <xsl:text>FT817_MODE_USB</xsl:text> </xsl:when>
 			<xsl:when test="contains(@mode,'FM')"> <xsl:text>FT817_MODE_FM</xsl:text> </xsl:when>
 			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
 		</xsl:choose>

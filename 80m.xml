@@ -1,17 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<bandplan version="0.6"> 
-<band min="3500000" max="3580000" name="80m" author="DG6FL" region="DE" created="21102010" valid="01012013" mode="CW">
-	<region min="3500000" max="3510000" bandwidth="200"><comment>Intercontinental QSO</comment><mode>CW</mode></region>
-	<region min="3510000" max="3560000" bandwidth="200"><comment>Contest</comment><mode>CW</mode></region>
-	<region min="3560000" max="3580000" bandwidth="200"><mode>CW</mode></region>
-	<region min="3580000" max="3590000" bandwidth="500"><comment>small bandwidth digital modes</comment><mode>Digital</mode></region>
-	<region min="3590000" max="3600000" bandwidth="500"><comment>small bandwidth digital modes, automatic digital stations</comment><mode>Digital</mode></region>
-	<region min="3600000" max="3620000" bandwidth="2700"><mode>All</mode></region>
-	<region min="3600000" max="3650000" bandwidth="2700"><comment>SSB contest</comment><mode>All</mode></region>
-	<region min="3650000" max="3700000" bandwidth="2700"><mode>All</mode></region>
-	<region min="3700000" max="3800000" bandwidth="2700"><mode>All</mode></region>
-	<region min="3775000" max="3800000" bandwidth="2700"><comment>Intercontinental QSO</comment><mode>All</mode></region>
+<bandplan version="0.7"> 
+<band min="3500000" max="3580000" author="DG6FL" region="DE" created="21102010" valid="01012013" mode="CW">
+	<name>80m</name>
+	<region min="3500000" max="3510000" bandwidth="200">
+		<comment>Intercontinental QSO</comment>
+		<name>Int. CW</name>
+		<mode>CW</mode>
+	</region>
+	<region min="3510000" max="3560000" bandwidth="200">
+		<comment>Contest</comment>
+		<name>Contest</name>
+		<mode>CW</mode>
+	</region>
+	<region min="3560000" max="3580000" bandwidth="200">
+		<mode>CW</mode>
+		<name>CW</name>
+	</region>
+	<region min="3580000" max="3590000" bandwidth="500">
+		<comment>small bandwidth digital modes</comment>
+		<mode>Digital</mode>
+		<name>NDigit</name>
+	</region>
+	<region min="3590000" max="3600000" bandwidth="500">
+		<comment>small bandwidth digital modes, automatic digital stations</comment>
+		<name>Digital</name>
+		<mode>Digital</mode>
+	</region>
+	<region min="3600000" max="3620000" bandwidth="2700">
+		<mode>All</mode>
+	</region>
+	<region min="3600000" max="3650000" bandwidth="2700">
+		<comment>SSB contest</comment>
+		<mode>All</mode>
+		<name>Contest</name>
+	</region>
+	<region min="3650000" max="3700000" bandwidth="2700">
+		<mode>All</mode>
+	</region>
+	<region min="3700000" max="3800000" bandwidth="2700">
+		<mode>All</mode>
+	</region>
+	<region min="3775000" max="3800000" bandwidth="2700">
+		<comment>Intercontinental QSO</comment>
+		<mode>All</mode>
+		<name>Int. QSO</name>
+	</region>
 
 	<channel name="ATV" freq="3735000"><mode>Digital</mode></channel>
 	<channel name="Emergency Region 1" freq="3760000"/>
