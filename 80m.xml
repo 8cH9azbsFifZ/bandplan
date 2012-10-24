@@ -48,13 +48,13 @@
 		<name>Int. QSO</name>
 	</region>
 
-	<channel name="ATV" freq="3735000"><mode>Digital</mode></channel>
-	<channel name="Emergency Region 1" freq="3760000"/>
-	<channel name="QRP" freq="3690000"><mode>SSB</mode></channel>
-	<channel name="Digital speech" freq="3630000"><mode>Digital</mode></channel>
-	<channel name="QRP" freq="3560000"><mode>CW</mode></channel>
-	<channel name="QRS" freq="3555000"><mode>CW</mode></channel>
-	<channel name="WSPR 80m" freq="3592600"><mode>USB</mode><source href="http://wsprnet.org/drupal/"/></channel>
+	<channel freq="3735000"><name>ATV</name><mode>Digital</mode></channel>
+	<channel freq="3760000"><name>Emergency Region 1</name></channel>
+	<channel freq="3690000"><mode>SSB</mode><name>QRP</name></channel>
+	<channel freq="3630000"><name>Digital Speech</name><mode>Digital</mode></channel>
+	<channel freq="3560000"><name>QRP</name><mode>CW</mode></channel>
+	<channel freq="3555000"><name>QRS</name><mode>CW</mode></channel>
+	<channel freq="3592600"><name>WSPR</name><mode>USB</mode><source href="http://wsprnet.org/drupal/"/></channel>
 
 	<source implemented="yes" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>
