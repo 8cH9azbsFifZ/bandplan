@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <bandplan version="0.5">
-<band name="CB" min="26965000" max="27405000" author="DG6FL" region="International" created="23102012" valid="01012013">
+<band name="CB" min="26965000" max="27405000" author="DG6FL" region="International" created="23102012" valid="01012013" mode="FM">
 	<channel name="1" freq="26965000"><mode>AM</mode><mode>FM</mode><comment>Call FM.</comment></channel>
 	<channel name="2" freq="26975000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="3" freq="26985000"><mode>AM</mode><mode>FM</mode></channel>
@@ -52,7 +52,7 @@
 	<source implemented="no" href="http://en.wikipedia.org/wiki/Citizens_Band_radio#Frequencies_worldwide"/>
 </band>
 
-<band name="CB" min="26565000" max="26955000" author="DG6FL" region="DE" created="23102012" valid="01012013">
+<band name="CB" min="26565000" max="26955000" author="DG6FL" region="DE" created="23102012" valid="01012013" mode="FM">
 
 	<channel name="41" freq="26565000"><mode>FM</mode></channel>
 	<channel name="42" freq="26575000"><mode>FM</mode></channel>
