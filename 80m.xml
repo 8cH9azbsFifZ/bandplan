@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <bandplan version="0.7"> 
-<band min="3500000" max="3580000" author="DG6FL" region="DE" created="21102010" valid="01012013" mode="CW">
+<band min="3500000" max="3580000" author="DG6FL" region="DE" created="21102010" valid="01012013">
 	<name>80m</name>
+	<mode>CW</mode>
 	<region min="3500000" max="3510000" bandwidth="200">
 		<comment>Intercontinental QSO</comment>
 		<name>Int. CW</name>
