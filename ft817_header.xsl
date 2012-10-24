@@ -41,6 +41,7 @@ int nbands = sizeof(bands)/sizeof(bands[0]);
 		<xsl:choose>
 			<xsl:when test="contains(@mode,'CW')"> <xsl:text>FT817_MODE_CW_NARROW</xsl:text> </xsl:when>
 			<xsl:when test="contains(@mode,'FM')"> <xsl:text>FT817_MODE_FM</xsl:text> </xsl:when>
+			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
 		</xsl:choose>
 		<xsl:text>},</xsl:text> 
 		<!--</xsl:if>-->
