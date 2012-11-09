@@ -30,7 +30,7 @@
 	<region min="7060000" max="7100000" bandwidth="2700"><mode>All</mode><comment>SSB contests</comment></region>
 	<region min="7100000" max="7130000" bandwidth="2700"><mode>All</mode></region>
 	<region min="7130000" max="7200000" bandwidth="2700"><mode>All</mode><comment>SSB contests</comment></region>
-	<region min="7175000" max="7200000" bandwidth="2700"><mode>All</mode><comment>Intercontinental QSO></comment></region>
+	<region min="7175000" max="7200000" bandwidth="2700"><mode>All</mode><comment>Intercontinental QSO</comment></region>
 
 	<channel name="QRP" freq="7030000"><mode>CW</mode></channel>
 	<channel name="Emergency Region 1" freq="7110000"/>

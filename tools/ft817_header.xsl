@@ -101,6 +101,12 @@ int nbands = sizeof(bands)/sizeof(bands[0]);
 		<!-- Define name of region -->
 		<xsl:text>{"</xsl:text> 
 		<xsl:value-of select="$bandname"/> 
+		<xsl:choose>
+			<xsl:when test="comment">
+				<xsl:text>: </xsl:text>
+				<xsl:value-of select="comment"/> 
+			</xsl:when>
+		</xsl:choose>
 		<xsl:text>",</xsl:text>
 		<!-- Frequency range -->
 		<xsl:value-of select="@min*0.1"/><xsl:text>,</xsl:text> 

@@ -40,13 +40,13 @@ typedef struct
 const t_band bands[] = {
 				{"40m",700000,704000, NULL },
 {"40m",704000,704700, NULL },
-{"40m",704700,705000, NULL },
-{"40m",705000,705300, NULL },
-{"40m",705300,706000, NULL },
-{"40m",706000,710000, NULL },
+{"40m: automatic stations",704700,705000, NULL },
+{"40m: automatic stations",705000,705300, NULL },
+{"40m: digital modes",705300,706000, NULL },
+{"40m: SSB contests",706000,710000, NULL },
 {"40m",710000,713000, NULL },
-{"40m",713000,720000, NULL },
-{"40m",717500,720000, NULL },
+{"40m: SSB contests",713000,720000, NULL },
+{"40m: Intercontinental QSO&gt;",717500,720000, NULL },
 
 };
 int nbands = sizeof(bands)/sizeof(bands[0]);
