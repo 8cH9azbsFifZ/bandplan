@@ -81,10 +81,11 @@ int nbands = sizeof(bands)/sizeof(bands[0]);
 
 
 	<xsl:template match="band">
-		<!--<xsl:if test="not(./source)">-->
-		<xsl:call-template name="region"/>
-		<xsl:apply-templates select="./region"/>
-		<!--FIXME: make channels ...<xsl:apply-templates select="./channel"/>-->
+		<xsl:choose> <!-- Only germany is selected -->
+			<xsl:when test="@country = 'DE'">
+				<xsl:apply-templates select="./region"/>
+			</xsl:when>
+		</xsl:choose>
 	</xsl:template>
 	
 	<xsl:template match="region">
