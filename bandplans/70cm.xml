@@ -17,7 +17,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <bandplan version="0.6.2">
-<band name="70cm" min="433000000" max="440000000" author="DG6FL" region="DE" created="20131109" valid="20130101">
+<band name="70cm" min="433000000" max="440000000" author="DG6FL" country="DE" created="20131109" valid="20130101">
 	<region min="430000000" max="431981000">
 		<region min="430025000" max="430050000" bandwidth="25000"><comment>Echolink</comment></region>
 		<region min="430075000" max="430350000" bandwidth="25000"><comment>NBFM / DV Simplex U 003-028</comment></region>

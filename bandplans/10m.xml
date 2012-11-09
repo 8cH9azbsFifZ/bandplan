@@ -17,7 +17,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <bandplan version="0.6.2">
-<band name="10m" min="28000000" max="28070000" author="DG6FL" region="DE" created="20131109" valid="20130101">
+<band name="10m" min="28000000" max="28070000" author="DG6FL" country="DE" created="20131109" valid="20130101">
 
 	<region min="28000000" max="28070000" bandwidth="200"><mode>CW</mode></region>
 	<region min="28070000" max="28120000" bandwidth="500"><mode>Narrow Digital</mode></region>

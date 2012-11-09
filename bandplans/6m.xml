@@ -16,7 +16,7 @@
 -->
 <?xml version="1.0" encoding="UTF-8" ?>
 <bandplan version="0.6.2">
-<band name="6m" author="DG6FL" region="DE" created="20131109" valid="20130101">
+<band name="6m" author="DG6FL" country="DE" created="20131109" valid="20130101">
 	<channel name="WSPR 6m" freq="5029300"><source href="http://wsprnet.org/drupal/"/></channel>
 	<source href="http://db0fa.de/wp-content/uploads/2010/05/Bandplan_6m_Stand_10_2009.pdf"/>
 </band>

@@ -46,14 +46,15 @@
 <band name="Radio"><source file="radio.xml"/></band>
 
 
-<regions>
-	<region name="DE"/>
-	<region name="USA"/>
-	<region name="International"/>
-	<region name="IARU1"><source href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/></region>
-	<region name="IARU2"><source href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/></region>
-	<region name="IARU3"><source href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/></region>
-</regions>
+<countries>
+	<country name="DE"/>
+	<country name="US"/>
+	<!-- Follow the two letter ISO 3166 code (http://en.wikipedia.org/wiki/ISO_3166-1) -->
+	<country name="International"/>
+	<country name="IARU1"><source href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/></country>
+	<country name="IARU2"><source href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/></country>
+	<country name="IARU3"><source href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/></country>
+</country>
 
 <modes>
 	<mode name="All"/>

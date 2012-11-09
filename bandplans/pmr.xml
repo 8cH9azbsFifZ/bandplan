@@ -16,7 +16,7 @@
 -->
 <?xml version="1.0" encoding="UTF-8" ?>
 <bandplan version="0.6.2">
-<band name="PMR" min="446006200" max="446093750" author="DG6FL" region="DE" created="20131109" valid="20130101">
+<band name="PMR" min="446006200" max="446093750" author="DG6FL" country="DE" created="20131109" valid="20130101">
 	<region min="446006200" max="446093750"><mode>FM</mode><comment>500mW</comment>
 		<channel name="1" freq="446006200" mode="FM"/>
 		<channel name="2" freq="446018750" mode="FM"/>
