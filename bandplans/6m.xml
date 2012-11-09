@@ -16,12 +16,20 @@
 -->
 <?xml version="1.0" encoding="UTF-8" ?>
 <bandplan version="0.6.4">
-<band name="6m" author="DG6FL" country="DE" created="20131109" valid="20130101">
+
+<band name="6m" min="5000000" min="5100000" author="DG6FL" country="DE" created="20131109" valid="20130101">
    <regulation>
       <license name="Klasse A" power="750"/>
       <source href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
    </regulation>
+
+	<region min="5000000" max="5008000"><comment>Beacon, no sending</comment></region>
+	<region min="5008000" max="5010000" bandwidth="500"><mode>CW</mode></region>
+	<region min="5010000" max="5050000" bandwidth="2700"><mode>CW</mode><mode>SSB</mode></region>
+	<region min="5050000" max="5100000" bandwidth="2700"><comment>Digimode, no allowed in DE</comment></region>
+
 	<channel name="WSPR 6m" freq="5029300"><source href="http://wsprnet.org/drupal/"/></channel>
-	<source href="http://db0fa.de/wp-content/uploads/2010/05/Bandplan_6m_Stand_10_2009.pdf"/>
+
+	<source implemented="yes" href="http://db0fa.de/wp-content/uploads/2010/05/Bandplan_6m_Stand_10_2009.pdf"/>
 </band>
 </bandplan>
