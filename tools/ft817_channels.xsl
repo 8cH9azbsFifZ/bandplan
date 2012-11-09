@@ -84,7 +84,7 @@ int nchannels = sizeof(channels)/sizeof(channels[0]);
 			<xsl:when test="@country">
 				<xsl:choose> <!-- Only germany is selected -->
 					<xsl:when test="@country = 'DE'">
-						<xsl:apply-templates select="./region"/>
+						<xsl:apply-templates select="./channel"/>
 					</xsl:when>
 				</xsl:choose>
 			</xsl:when>
@@ -95,18 +95,15 @@ int nchannels = sizeof(channels)/sizeof(channels[0]);
 	</xsl:template>
 	
 	<xsl:template match="region">
-			<xsl:call-template name="region"/>
 	</xsl:template>
 
 	<xsl:template match="channel">
-			<!-- FIXME -->
+			<xsl:call-template name="channel"/>
 	</xsl:template>
 
-	<xsl:template name="region">
-		<xsl:variable name="bandname" select="../@name"/>
-		<!-- Define name of region -->
+	<xsl:template name="channel">
 		<xsl:text>{"</xsl:text> 
-		<xsl:value-of select="$bandname"/> 
+		<xsl:value-of select="@name"/> 
 		<xsl:choose>
 			<xsl:when test="comment">
 				<xsl:text>: </xsl:text>
@@ -114,9 +111,8 @@ int nchannels = sizeof(channels)/sizeof(channels[0]);
 			</xsl:when>
 		</xsl:choose>
 		<xsl:text>",</xsl:text>
-		<!-- Frequency range -->
-		<xsl:value-of select="@min*0.1"/><xsl:text>,</xsl:text> 
-		<xsl:value-of select="@max*0.1"/><xsl:text>,</xsl:text>
+		<!-- Frequency -->
+		<xsl:value-of select="@freq*0.1"/><xsl:text>,</xsl:text>
 		<!-- Mode -->	
 		<xsl:choose>
 			<xsl:when test="contains(mode,'CW')"> <xsl:text>FT817_MODE_CW_NARROW</xsl:text> </xsl:when>
@@ -125,6 +121,8 @@ int nchannels = sizeof(channels)/sizeof(channels[0]);
 			<xsl:when test="contains(mode,'FM')"> <xsl:text>FT817_MODE_FM</xsl:text> </xsl:when>
 			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
 		</xsl:choose>
+		<!-- Repeater shift -->
+		<xsl:text>, NULL </xsl:text> <!-- TBD -->
 		<xsl:text>},&#xa;</xsl:text> 
 	</xsl:template>
 
