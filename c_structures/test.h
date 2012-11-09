@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 
 /*
 	 This file is part of xmlbandplan.
@@ -14,7 +13,7 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Xmlbandplan.  If not, see &lt;http://www.gnu.org/licenses/&gt;.	  
+    along with Xmlbandplan.  If not, see http://www.gnu.org/licenses/;.	  
 */
 
 /*

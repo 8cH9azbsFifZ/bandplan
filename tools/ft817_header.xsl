@@ -16,6 +16,8 @@
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:output method="html" omit-xml-declaration="yes" />
+
 	<xsl:template match="/">
 			<xsl:text>
 /*
@@ -32,7 +34,7 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Xmlbandplan.  If not, see &lt;http://www.gnu.org/licenses/&gt;.	  
+    along with Xmlbandplan.  If not, see http://www.gnu.org/licenses/;.	  
 */
 
 /*
