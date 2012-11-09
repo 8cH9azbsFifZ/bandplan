@@ -113,9 +113,10 @@ int nbands = sizeof(bands)/sizeof(bands[0]);
 		<xsl:value-of select="@max*0.1"/><xsl:text>,</xsl:text>
 		<!-- Mode -->	
 		<xsl:choose>
-			<xsl:when test="contains(@mode,'CW')"> <xsl:text>FT817_MODE_CW_NARROW</xsl:text> </xsl:when>
-			<xsl:when test="contains(@mode,'All')"> <xsl:text>FT817_MODE_USB</xsl:text> </xsl:when>
-			<xsl:when test="contains(@mode,'FM')"> <xsl:text>FT817_MODE_FM</xsl:text> </xsl:when>
+			<xsl:when test="contains(mode,'CW')"> <xsl:text>FT817_MODE_CW_NARROW</xsl:text> </xsl:when>
+			<xsl:when test="contains(mode,'Narrow digital')"> <xsl:text>FT817_MODE_CW_NARROW</xsl:text> </xsl:when>
+			<xsl:when test="contains(mode,'All')"> <xsl:text>FT817_MODE_USB</xsl:text> </xsl:when>
+			<xsl:when test="contains(mode,'FM')"> <xsl:text>FT817_MODE_FM</xsl:text> </xsl:when>
 			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
 		</xsl:choose>
 		<xsl:text>},&#xa;</xsl:text> 
