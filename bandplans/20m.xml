@@ -23,8 +23,20 @@
       <source href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
 	</regulation>
 
+	<region min="14000000" max="14060000" bandwidth="200"><mode>CW</mode><comment>Contest</comment></region>
+	<region min="14060000" max="14070000" bandwidth="200"><mode>CW</mode></region>
+	<region min="14070000" max="14089000" bandwidth="500"><mode>Narrow</mode><comment>Digimode</comment></region>
+	<region min="14089000" max="14099000" bandwidth="500"><mode>Narrow</mode><comment>Digimode, automatic digital stations</comment></region>
+	<region min="14099000" max="14101000"><comment>International Beacon-Project, no sending</comment></region>
+	<region min="14101000" max="14112000" bandwidth="2700"><mode>All</mode><comment>Digimode, automatic digital stations</comment></region>
+	<region min="14112000" max="14125000" bandwidth="2700"><mode>All</mode></region>
+	<region min="14125000" max="14300000" bandwidth="2700"><mode>All</mode><comment>Contest</comment></region>
+	<region min="14300000" max="14350000" bandwidth="2700"><mode>All</mode></region>
+
 	<channel name="QRP CW" freq="14060000"><mode>CW</mode></channel>
+	<channel name="Emergency" freq="14300000"></channel>
 	<channel name="WSPR 20m" freq="14095600"><source href="http://wsprnet.org/drupal/"/></channel>
+
 	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>
 </bandplan>
