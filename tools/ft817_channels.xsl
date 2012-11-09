@@ -122,7 +122,14 @@ int nchannels = sizeof(channels)/sizeof(channels[0]);
 			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
 		</xsl:choose>
 		<!-- Repeater shift -->
-		<xsl:text>, NULL </xsl:text> <!-- TBD -->
+		<xsl:choose>
+			<xsl:when test="shift">
+				<xsl:text>, FT817_RPT_MINUS</xsl:text>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:text>, NULL </xsl:text> 
+			</xsl:otherwise>
+		</xsl:choose>
 		<xsl:text>},&#xa;</xsl:text> 
 	</xsl:template>
 
