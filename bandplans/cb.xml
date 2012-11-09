@@ -18,6 +18,10 @@
 
 <bandplan version="0.6.4">
 <band name="CB" min="26965000" max="27405000" author="DG6FL" country="International"  created="20131109" valid="20130101" mode="FM">
+	<regulation>
+		<license name="CB" power="4"/>
+	</regulation>
+
 	<channel name="1" freq="26965000"><mode>AM</mode><mode>FM</mode><comment>Call FM.</comment></channel>
 	<channel name="2" freq="26975000"><mode>AM</mode><mode>FM</mode></channel>
 	<channel name="3" freq="26985000"><mode>AM</mode><mode>FM</mode></channel>
