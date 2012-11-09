@@ -79,21 +79,21 @@
 
 	<channel name="S1" freq="145212500"><mode>FM</mode><comment>simplex channel</comment></channel>
 
-	<channel name="ARPS" freq="14480000"><mode>FM</mode></channel>
-	<channel name="Echolink" freq="14496250"><mode>FM</mode></channel>
-	<channel name="Echolink" freq="14497500"><mode>FM</mode></channel>
-	<channel name="RTTY local" freq="14530000"><mode>RTTY</mode></channel>
-	<channel name="DV CQ" freq="14537500"><comment>Digital Speech with data and FM</comment></channel>
+	<channel name="ARPS" freq="144800000"><mode>FM</mode></channel>
+	<channel name="Echolink" freq="144962500"><mode>FM</mode></channel>
+	<channel name="Echolink" freq="144975000"><mode>FM</mode></channel>
+	<channel name="RTTY local" freq="145300000"><mode>RTTY</mode></channel>
+	<channel name="DV CQ" freq="145375000"><comment>Digital Speech with data and FM</comment></channel>
 
 	<channel name="PSK31" freq="144170000"><mode>Digital</mode><comment>MGM PSK31</comment></channel>
-	<channel name="SSB CQ" freq="14430000"><mode>SSB</mode></channel>
+	<channel name="SSB CQ" freq="144300000"><mode>SSB</mode></channel>
 	<channel name="MGM CQ" freq="144370000"><mode>MGM</mode></channel>
-	<channel name="WSPR" freq="14448900"><mode>WSPR</mode><source name="wsprnet" href="http://wsprnet.org/drupal/"/></channel>
-	<channel name="SSTV CQ" freq="14450000"><mode>SSTV</mode></channel>
-	<channel name="ATV" freq="14452500"><mode>SSB</mode><comment>ATV SSB Callback</comment></channel>
-	<channel name="RTTY CQ" freq="14460000"></channel>
-	<channel name="Fax CQ" freq="14470000"></channel>
-	<channel name="ATV CQ / Callback" freq="14475000"></channel>
+	<channel name="WSPR" freq="144489000"><mode>WSPR</mode><source name="wsprnet" href="http://wsprnet.org/drupal/"/></channel>
+	<channel name="SSTV CQ" freq="144500000"><mode>SSTV</mode></channel>
+	<channel name="ATV" freq="144525000"><mode>SSB</mode><comment>ATV SSB Callback</comment></channel>
+	<channel name="RTTY CQ" freq="144600000"></channel>
+	<channel name="Fax CQ" freq="144700000"></channel>
+	<channel name="ATV CQ / Callback" freq="144750000"></channel>
 
 	<source implemented="yes" name="DARC" href="http://db0fa.de/wp-content/uploads/2010/05/Bandplan_2m_Stand_10_2009.pdf"/>
 </band>

@@ -50,6 +50,7 @@
 							<td> <xsl:text>Frequency (MHz)</xsl:text></td>
 							<td> <xsl:text>Name</xsl:text></td>
 							<td> <xsl:text>Mode</xsl:text></td>
+							<td> <xsl:text>Regulation</xsl:text></td>
 							<td> <xsl:text>Comment</xsl:text></td>
 						</tr>
 						<xsl:apply-templates select="region"/>
@@ -72,6 +73,16 @@
 				</td>
 				<td> <b> <xsl:value-of select="@name"/> </b> </td>
 				<td> <xsl:apply-templates select="mode"/> </td>
+				<td> <!-- Default regulation is parent node -->
+					<xsl:choose>
+						<xsl:when test="regulation">
+							<xsl:apply-templates select="regulation"/> 
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:apply-templates select="../regulation"/> 
+						</xsl:otherwise>
+					</xsl:choose>
+				</td>
 				<td> 
 					<xsl:apply-templates select="comment"/> 
 					<xsl:apply-templates select="source"/> 
@@ -86,11 +97,24 @@
 				<td> <xsl:value-of select='format-number(@freq*0.000001, "####.000")'/> </td>
 				<td> <b> <xsl:value-of select="@name"/> </b> </td>
 				<td> <xsl:apply-templates select="mode"/> </td>
+				<td> <xsl:text> cf. regions </xsl:text> </td>
 				<td> 
 					<xsl:apply-templates select="comment"/> 
 					<xsl:apply-templates select="source"/> 
 				</td>
 			</tr>
+	</xsl:template>
+
+	<xsl:template match="regulation">
+		<xsl:apply-templates select="license"/> 
+		<xsl:apply-templates select="source"/> 
+	</xsl:template>
+
+	<xsl:template match="license">
+		<xsl:value-of select="@name"/>
+		<xsl:text>: </xsl:text>
+		<xsl:value-of select="@power"/>
+		<xsl:text>W </xsl:text>
 	</xsl:template>
 
 	<xsl:template match="mode">
