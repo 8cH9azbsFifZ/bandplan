@@ -24,11 +24,28 @@
       <source href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
 	</regulation>
 
-	<region min="144000000" max="144180000" bandwidth="500"><mode>CW</mode></region>
-	<region min="144180000" max="144360000" bandwidth="2700"><mode>CW</mode><mode>SSB</mode></region>
-	<region min="144360000" max="144399000" bandwidth="2700"/>
-	<region min="144400000" max="144500000"><comment>Beacons, no sending</comment></region>
-	<region min="144500000" max="144794000" bandwidth="20000"><mode>All</mode></region>
+	<region min="144000000" max="144180000" bandwidth="500">
+		<mode>CW</mode>
+		<region min="144000000" max="144110000"><comment>EME CW and Random MS Freq.</comment></region>
+		<region min="144110000" max="144140000"><comment>EME MGM</comment></region>
+		<region min="144140000" max="144160000"><comment>EME CW</comment></region>
+	</region>
+	<region min="144180000" max="144360000" bandwidth="2700">
+		<mode>CW</mode>
+		<mode>SSB</mode>
+		<region min="144180000" max="144360000"><comment>SSB</comment></region>
+	</region>
+	<region min="144360000" max="144399000" bandwidth="2700">
+		<mode>CW</mode>
+		<mode>SSB</mode>
+		<mode>MGM</mode>
+	</region>
+	<region min="144400000" max="144500000"><comment>Beacons, no sending (excl. WSPR)</comment></region>
+	<region min="144500000" max="144794000" bandwidth="20000">
+		<mode>All</mode>
+		<region min="14463000" max="14466000" bandwidth="20000"><comment>Lineartransponder Output</comment></region>
+		<region min="14466000" max="14469000" bandwidth="20000"><comment>Lineartransponder Output</comment></region>
+	</region>
 	<region min="144800000" max="144990000" bandwidth="20000"><mode>Digital</mode></region>
 	<region min="144990000" max="145194000" bandwidth="12000"><mode>NBFM</mode><comment>Relais</comment></region>
 	<region min="145194000" max="145206000" bandwidth="12000"><mode>NBFM</mode></region>
@@ -39,8 +56,18 @@
 
 
 	<channel name="S1" freq="145212500"><mode>FM</mode><comment>simplex channel</comment></channel>
+
 	<channel name="ARPS" freq="14480000"><mode>FM</mode></channel>
+
+	<channel name="PSK31" freq="144170000"><mode>Digital</mode><comment>MGM PSK31</comment></channel>
+	<channel name="SSB CQ" freq="14430000"><mode>SSB</mode></channel>
+	<channel name="MGM CQ" freq="144370000"><mode>MGM</mode></channel>
 	<channel name="WSPR" freq="14448900"><source href="http://wsprnet.org/drupal/"/></channel>
+	<channel name="SSTV CQ" freq="14450000"><mode>SSTV</mode></channel>
+	<channel name="ATV" freq="14452500"><mode>SSB</mode><comment>ATV SSB Callback</comment></channel>
+	<channel name="RTTY CQ" freq="14460000"></channel>
+	<channel name="Fax CQ" freq="14470000"></channel>
+	<channel name="ATV CQ / Callback" freq="14475000"></channel>
 
 	<source implemented="yes" href="http://db0fa.de/wp-content/uploads/2010/05/Bandplan_2m_Stand_10_2009.pdf"/>
 </band>

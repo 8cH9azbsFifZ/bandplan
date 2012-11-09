@@ -73,6 +73,9 @@
 	<mode name="LSB"/>
 	<mode name="Narrow Digital"/>
 	<mode name="Digital"/>
+	<mode name="MGM"/>
+	<mode name="WSPR"/>
+	<mode name="SSTV"/>
 </modes>
 
 
