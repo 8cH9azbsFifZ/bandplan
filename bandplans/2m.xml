@@ -43,13 +43,13 @@
 	<region min="144400000" max="144500000"><comment>Beacons, no sending (excl. WSPR)</comment></region>
 	<region min="144500000" max="144794000" bandwidth="20000">
 		<mode>All</mode>
-		<region min="14463000" max="14466000" bandwidth="20000"><comment>Lineartransponder Output</comment></region>
-		<region min="14466000" max="14469000" bandwidth="20000"><comment>Lineartransponder Output</comment></region>
+		<region min="144630000" max="144660000" bandwidth="20000"><comment>Lineartransponder Output</comment></region>
+		<region min="144660000" max="144690000" bandwidth="20000"><comment>Lineartransponder Output</comment></region>
 	</region>
 	<region min="144800000" max="144990000" bandwidth="20000">
 		<mode>Digital</mode>
 		<comment>MGM, Packet Radio</comment>
-		<region min="14480000" max="14498750" bandwidth="20000"><comment>Digimode, automatic stations</comment></region>
+		<region min="144800000" max="144987500" bandwidth="20000"><comment>Digimode, automatic stations</comment></region>
 	</region>
 	<region min="144990000" max="145194000" bandwidth="12000">
 		<mode>NBFM</mode>
