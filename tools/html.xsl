@@ -19,7 +19,9 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 	<xsl:template match="/">
+
 		<xsl:apply-templates/>
+
 		<small><br/><br/><br/>
 		<xsl:text>
 				(C)opyright Gerolf Ziegenhain (DG6FL). &lt;XML&gt;Bandplan is released under GPLv3.
@@ -38,12 +40,18 @@
 
 	<xsl:template match="band">
 			<body>
-				<xsl:choose>
+				<xsl:choose> <!-- Distinguish between bandplan.xml and single NNm.xml files -->
 					<xsl:when test="@country">
-						<h1> <xsl:value-of select="@name"/> <xsl:text> Band for country </xsl:text> <xsl:value-of select="@country"/> </h1>
+						<h1> <xsl:value-of select="@name"/> <xsl:text> Band for Country </xsl:text> <xsl:value-of select="@country"/> </h1>
 					</xsl:when>
+					<xsl:otherwise>
+						<xsl:apply-templates/>
+					</xsl:otherwise>
 				</xsl:choose>
-			<xsl:apply-templates/>
+
+			<xsl:apply-templates select="region"/>
+			<xsl:apply-templates select="channel"/>
+
 			</body>
 	</xsl:template>
 
@@ -62,7 +70,6 @@
 	</xsl:template>
 	
 	<xsl:template match="channel">
-		<xsl:text>Special channel</xsl:text>
 		<table>
 			<tr>
 				<td> <xsl:value-of select='format-number(@freq*0.000001, "####.000")'/> </td>
