@@ -49,7 +49,7 @@
 	<region min="1840000" max="1843000" bandwidth="2700"><mode>All</mode><comment>Digimode</comment></region>
 	<region min="1843000" max="2000000" bandwidth="2700"><mode>All</mode></region>
 
-	<channel name="WSPR 160m" freq="1836600"><source href="http://wsprnet.org/drupal/"/></channel>
+	<channel name="WSPR 160m" freq="1836600"><source href="http://wsprnet.org/drupal/"/><mode>WSPR</mode></channel>
 	<channel name="QRP" freq="1836000"><mode>CW</mode></channel>
 	
 	<source implemented="yes" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>

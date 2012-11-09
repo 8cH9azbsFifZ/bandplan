@@ -48,7 +48,7 @@
 	<channel name="QRS" freq="28055000"><mode>CW</mode></channel>
 	<channel name="QRP" freq="28060000"><mode>CW</mode></channel>
 	<channel name="APRS" freq="29250000"><mode>FM</mode></channel>
-	<channel name="WSPR" freq="28124600"><mode>USB</mode><source href="http://wsprnet.org/drupal/"/></channel>
+	<channel name="WSPR" freq="28124600"><mode>WSPR</mode><source href="http://wsprnet.org/drupal/"/></channel>
 
 	<source implemented="yes" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>

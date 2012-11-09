@@ -88,7 +88,7 @@
 	<channel name="PSK31" freq="144170000"><mode>Digital</mode><comment>MGM PSK31</comment></channel>
 	<channel name="SSB CQ" freq="14430000"><mode>SSB</mode></channel>
 	<channel name="MGM CQ" freq="144370000"><mode>MGM</mode></channel>
-	<channel name="WSPR" freq="14448900"><source href="http://wsprnet.org/drupal/"/></channel>
+	<channel name="WSPR" freq="14448900"><mode>WSPR</mode><source href="http://wsprnet.org/drupal/"/></channel>
 	<channel name="SSTV CQ" freq="14450000"><mode>SSTV</mode></channel>
 	<channel name="ATV" freq="14452500"><mode>SSB</mode><comment>ATV SSB Callback</comment></channel>
 	<channel name="RTTY CQ" freq="14460000"></channel>

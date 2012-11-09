@@ -32,7 +32,7 @@
 
 	<channel name="QRP" freq="24906000"><mode>CW</mode></channel>
 	<channel name="QRP" freq="24950000"><mode>SSB</mode></channel>
-	<channel name="WSPR" freq="24924600"><source href="http://wsprnet.org/drupal/"/></channel>
+	<channel name="WSPR" freq="24924600"><mode>WSPR</mode><source href="http://wsprnet.org/drupal/"/></channel>
 
 	<source implemented="yes" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>

@@ -74,7 +74,7 @@
 	<channel freq="3630000"><name>Digital Speech</name><mode>Digital</mode></channel>
 	<channel freq="3560000"><name>QRP</name><mode>CW</mode></channel>
 	<channel freq="3555000"><name>QRS</name><mode>CW</mode></channel>
-	<channel freq="3592600"><name>WSPR</name><mode>USB</mode><source href="http://wsprnet.org/drupal/"/></channel>
+	<channel freq="3592600"><name>WSPR</name><mode>WSPR</mode><source href="http://wsprnet.org/drupal/"/></channel>
 
 	<source implemented="yes" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>
