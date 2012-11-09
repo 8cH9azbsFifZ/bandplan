@@ -23,6 +23,7 @@
 		<license name="Klasse E" power="100"/>
 		<source href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
 	</regulation>
+
 	<region min="28000000" max="28070000" bandwidth="200"><mode>CW</mode></region>
 	<region min="28070000" max="28120000" bandwidth="500"><mode>Narrow Digital</mode></region>
 	<region min="28120000" max="28150000" bandwidth="500"><mode>Narrow Digital</mode><comment>Automatic stations</comment></region>
@@ -39,6 +40,7 @@
 	<region min="29510000" max="29520000"><mode>Safty Channel</mode><comment>What does this mean?</comment></region>
 	<region min="29520000" max="29590000" bandwidth="6000"><mode>All</mode><comment>Narrow FM Relais Input (RH1 - RH8)</comment></region>
 	<region min="29620000" max="29700000" bandwidth="6000"><mode>All</mode><comment>Narrow FM Relais Output (RH1 - RH8)</comment></region>
+
 	<channel name="QRP" freq="28360000" bandwidth="2700"><mode>SSB</mode></channel>
 	<channel name="Digital Speech" freq="28330000"><mode>Digital</mode></channel>
 	<channel name="FM Call" freq="29600000" bandwidth="6000"><mode>Narrow FM</mode></channel>
