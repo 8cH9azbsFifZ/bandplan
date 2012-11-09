@@ -126,7 +126,7 @@
 	</xsl:template>
 
 	<xsl:template match="todo"/>
-	<xsl:template match="regions"/>
+	<xsl:template match="countries"/>
 	<xsl:template match="modes"/>
 
 	<xsl:template match="source">
