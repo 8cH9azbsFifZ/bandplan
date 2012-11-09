@@ -20,11 +20,11 @@
 
 	<xsl:template match="/">
 		<xsl:apply-templates/>
-			<small>
+		<small><br/><br/><br/>
 		<xsl:text>
 				(C)opyright Gerolf Ziegenhain (DG6FL). &lt;XML&gt;Bandplan is released under GPLv3.
 		</xsl:text>
-			</small>
+		</small>
 	</xsl:template>
 
 	<xsl:template match="bandplan">
