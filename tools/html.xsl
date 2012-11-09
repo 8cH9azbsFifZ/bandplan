@@ -38,7 +38,7 @@
 
 	<xsl:template match="band">
 			<body>
-			<h1> <xsl:value-of select="@name"/> <xsl:text> </xsl:text> <xsl:value-of select="@region"/> </h1>
+			<h1> <xsl:value-of select="@name"/> <xsl:text> Band for country </xsl:text> <xsl:value-of select="@country"/> </h1>
 			<xsl:apply-templates/>
 			</body>
 	</xsl:template>
@@ -58,6 +58,7 @@
 	</xsl:template>
 	
 	<xsl:template match="channel">
+		<xsl:text>Special channel</xsl:text>
 		<table>
 			<tr>
 				<td> <xsl:value-of select='format-number(@freq*0.000001, "####.000")'/> </td>
