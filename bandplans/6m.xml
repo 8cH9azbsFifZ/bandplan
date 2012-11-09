@@ -17,7 +17,7 @@
 -->
 <bandplan version="0.6.4">
 
-<band name="6m" min="5000000" min="5100000" author="DG6FL" country="DE" created="20131109" valid="20130101">
+<band name="6m" min="5000000" max="5100000" author="DG6FL" country="DE" created="20131109" valid="20130101">
    <regulation>
       <license name="Klasse A" power="750"/>
       <source href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>

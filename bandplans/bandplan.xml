@@ -60,7 +60,7 @@
 	<country name="IARU1"><source href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/></country>
 	<country name="IARU2"><source href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/></country>
 	<country name="IARU3"><source href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/></country>
-</country>
+</countries>
 
 <modes>
 	<mode name="All"/>
