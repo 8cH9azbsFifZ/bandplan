@@ -37,6 +37,6 @@
 	<channel name="Emergency" freq="14300000"></channel>
 	<channel name="WSPR 20m" freq="14095600"><source href="http://wsprnet.org/drupal/"/></channel>
 
-	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
+	<source implemented="yes" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>
 </bandplan>
