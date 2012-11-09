@@ -38,7 +38,11 @@
 
 	<xsl:template match="band">
 			<body>
-			<h1> <xsl:value-of select="@name"/> <xsl:text> Band for country </xsl:text> <xsl:value-of select="@country"/> </h1>
+				<xsl:choose>
+					<xsl:when test="@country">
+						<h1> <xsl:value-of select="@name"/> <xsl:text> Band for country </xsl:text> <xsl:value-of select="@country"/> </h1>
+					</xsl:when>
+				</xsl:choose>
 			<xsl:apply-templates/>
 			</body>
 	</xsl:template>
