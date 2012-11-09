@@ -39,29 +39,27 @@
 	</xsl:template>
 
 	<xsl:template match="band">
-			<body>
-				<xsl:choose> <!-- Distinguish between bandplan.xml and single NNm.xml files -->
-					<xsl:when test="@country">
-						<h1> <xsl:value-of select="@name"/> <xsl:text> Band for Country </xsl:text> <xsl:value-of select="@country"/> </h1>
-					</xsl:when>
-					<xsl:otherwise>
-						<xsl:apply-templates/>
-					</xsl:otherwise>
-				</xsl:choose>
-
-			<!-- Regions & Channels -->
-			<table>
-				<tr>
-					<td> <xsl:text>Frequency (MHz)</xsl:text></td>
-					<td> <xsl:text>Name</xsl:text></td>
-					<td> <xsl:text>Mode</xsl:text></td>
-					<td> <xsl:text>Comment</xsl:text></td>
-				</tr>
-				<xsl:apply-templates select="region"/>
-				<xsl:apply-templates select="channel"/>
-			</table>
-
-			</body>
+		<body>
+			<xsl:choose> <!-- Distinguish between bandplan.xml and single NNm.xml files -->
+				<xsl:when test="@country">
+					<h1> <xsl:value-of select="@name"/> <xsl:text> Band for Country </xsl:text> <xsl:value-of select="@country"/> </h1>
+				<!-- Regions & Channels -->
+					<table>
+						<tr>
+							<td> <xsl:text>Frequency (MHz)</xsl:text></td>
+							<td> <xsl:text>Name</xsl:text></td>
+							<td> <xsl:text>Mode</xsl:text></td>
+							<td> <xsl:text>Comment</xsl:text></td>
+						</tr>
+						<xsl:apply-templates select="region"/>
+						<xsl:apply-templates select="channel"/>
+					</table>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:apply-templates/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</body>
 	</xsl:template>
 
 	<xsl:template match="region">
@@ -73,7 +71,11 @@
 				</td>
 				<td> <b> <xsl:value-of select="@name"/> </b> </td>
 				<td> <xsl:apply-templates select="mode"/> </td>
-				<td> <xsl:apply-templates/> </td>
+				<td> 
+					<xsl:apply-templates select="comment"/> 
+					<xsl:apply-templates select="region"/> 
+					<!-- Recursive handling of subregions -->
+				</td>
 			</tr>
 	</xsl:template>
 	
@@ -82,7 +84,7 @@
 				<td> <xsl:value-of select='format-number(@freq*0.000001, "####.000")'/> </td>
 				<td> <b> <xsl:value-of select="@name"/> </b> </td>
 				<td> <xsl:apply-templates select="mode"/> </td>
-				<td> <xsl:apply-templates/> </td>
+				<td> <xsl:apply-templates select="comment"/> </td>
 			</tr>
 	</xsl:template>
 
@@ -91,11 +93,7 @@
 	</xsl:template>
 
 	<xsl:template match="comment">
-		<i>
-		<xsl:text>(</xsl:text>
-		<xsl:value-of select="."/>
-		<xsl:text>) </xsl:text>
-		</i>
+		<i> <xsl:value-of select="."/> </i>
 	</xsl:template>
 
 	<xsl:template match="todo"/>
