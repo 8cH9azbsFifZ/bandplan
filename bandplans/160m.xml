@@ -18,6 +18,7 @@
 <bandplan version="0.6.4">
 
 <band name="160m" created="20131109" valid="20130101" country="DE">
+	<!-- The regions below contain the license regulations -->
 	<region min="1810000" max="1850000">
 		<regulation>
 			<license name="Klasse A" power="750"/>
@@ -42,8 +43,16 @@
 		</regulation>
 	</region>
 
-	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
+	<!-- The regions below cover the usage regulations. NB: There are overlaps to the regions above!! -->
+	<region min="1810000" max="1838000" bandwidth="200"><mode>CW</mode></region>
+	<region min="1838000" max="1840000" bandwidth="500"><mode>Narrow</mode></region>
+	<region min="1840000" max="1843000" bandwidth="2700"><mode>All</mode><comment>Digimode</comment></region>
+	<region min="1843000" max="2000000" bandwidth="2700"><mode>All</mode></region>
+
 	<channel name="WSPR 160m" freq="1836600"><source href="http://wsprnet.org/drupal/"/></channel>
+	<channel name="QRP" freq="1836000"><mode>CW</mode></channel>
+	
+	<source implemented="yes" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>
 
 </bandplan>
