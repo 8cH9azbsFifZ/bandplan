@@ -59,6 +59,10 @@ typedef struct
   byte mode;  // main mode for this band
 } t_band;
 
+
+// NB: loop the bands backwards. This will make sure, that sets of subregions not covering the whole region
+// will work as expected.
+
 const t_band bands[] = {
 						</xsl:text>
 					</xsl:when>
