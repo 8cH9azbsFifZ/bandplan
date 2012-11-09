@@ -21,7 +21,7 @@
    <regulation>
       <license name="Klasse A" power="750"/>
       <license name="Klasse E" power="75"/>
-      <source href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
+      <source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
 	</regulation>
 
 	<region min="144000000" max="144180000" bandwidth="500">
@@ -88,13 +88,13 @@
 	<channel name="PSK31" freq="144170000"><mode>Digital</mode><comment>MGM PSK31</comment></channel>
 	<channel name="SSB CQ" freq="14430000"><mode>SSB</mode></channel>
 	<channel name="MGM CQ" freq="144370000"><mode>MGM</mode></channel>
-	<channel name="WSPR" freq="14448900"><mode>WSPR</mode><source href="http://wsprnet.org/drupal/"/></channel>
+	<channel name="WSPR" freq="14448900"><mode>WSPR</mode><source name="wsprnet" href="http://wsprnet.org/drupal/"/></channel>
 	<channel name="SSTV CQ" freq="14450000"><mode>SSTV</mode></channel>
 	<channel name="ATV" freq="14452500"><mode>SSB</mode><comment>ATV SSB Callback</comment></channel>
 	<channel name="RTTY CQ" freq="14460000"></channel>
 	<channel name="Fax CQ" freq="14470000"></channel>
 	<channel name="ATV CQ / Callback" freq="14475000"></channel>
 
-	<source implemented="yes" href="http://db0fa.de/wp-content/uploads/2010/05/Bandplan_2m_Stand_10_2009.pdf"/>
+	<source implemented="yes" name="DARC" href="http://db0fa.de/wp-content/uploads/2010/05/Bandplan_2m_Stand_10_2009.pdf"/>
 </band>
 </bandplan>

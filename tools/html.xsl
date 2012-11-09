@@ -43,7 +43,8 @@
 			<xsl:choose> <!-- Distinguish between bandplan.xml and single NNm.xml files -->
 				<xsl:when test="@country">
 					<h1> <xsl:value-of select="@name"/> <xsl:text> Band for Country </xsl:text> <xsl:value-of select="@country"/> </h1>
-				<!-- Regions & Channels -->
+					<xsl:apply-templates select="source"/> 
+					<!-- Regions & Channels -->
 					<table>
 						<tr>
 							<td> <xsl:text>Frequency (MHz)</xsl:text></td>
@@ -73,8 +74,9 @@
 				<td> <xsl:apply-templates select="mode"/> </td>
 				<td> 
 					<xsl:apply-templates select="comment"/> 
-					<xsl:apply-templates select="region"/> 
+					<xsl:apply-templates select="source"/> 
 					<!-- Recursive handling of subregions -->
+					<xsl:apply-templates select="region"/> 
 				</td>
 			</tr>
 	</xsl:template>
@@ -84,7 +86,10 @@
 				<td> <xsl:value-of select='format-number(@freq*0.000001, "####.000")'/> </td>
 				<td> <b> <xsl:value-of select="@name"/> </b> </td>
 				<td> <xsl:apply-templates select="mode"/> </td>
-				<td> <xsl:apply-templates select="comment"/> </td>
+				<td> 
+					<xsl:apply-templates select="comment"/> 
+					<xsl:apply-templates select="source"/> 
+				</td>
 			</tr>
 	</xsl:template>
 
@@ -101,8 +106,16 @@
 	<xsl:template match="modes"/>
 
 	<xsl:template match="source">
-		<xsl:variable name="filename" select="@file"/>
-		<xsl:apply-templates select="document($filename)/bandplan"/>
+		<xsl:choose>
+			<xsl:when test="@file"> <!-- Recursive processing of XML bandplans -->
+				<xsl:variable name="filename" select="@file"/>
+				<xsl:apply-templates select="document($filename)/bandplan"/>
+			</xsl:when>
+			<xsl:when test="@name">
+				<xsl:variable name="link" select="@href"/>
+				<small><a href="{$link}"><xsl:value-of select="@name"/></a></small>
+			</xsl:when>
+		</xsl:choose>
 	</xsl:template>
 
 </xsl:stylesheet>

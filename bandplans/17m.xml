@@ -20,7 +20,7 @@
 <band name="17m" min="18068000" max="18168000" author="DG6FL" country="DE" created="20131109" valid="20130101">
    <regulation>
       <license name="Klasse A" power="750"/>
-      <source href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
+      <source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
    </regulation>
 
 	<region min="18068000" max="18095000" bandwidth="200"><mode>CW</mode></region>
@@ -34,8 +34,8 @@
 	<channel name="QRP" freq="18130000"><mode>SSB</mode></channel>
 	<channel name="Digital Speech" freq="18150000"></channel>
 	<channel name="Emergency" freq="18160000"></channel>
-	<channel name="WSPR" freq="18104600"><mode>WSPR</mode><source href="http://wsprnet.org/drupal/"/></channel>
+	<channel name="WSPR" freq="18104600"><mode>WSPR</mode><source name="wsprnet" href="http://wsprnet.org/drupal/"/></channel>
 
-	<source implemented="yes" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
+	<source implemented="yes" name="DARC" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>
 </bandplan>

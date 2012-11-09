@@ -18,13 +18,13 @@
 <bandplan version="0.6.4">
 
 <band name="MW" created="20131109" valid="20130101">
-	<source href="http://www.dradio.de/dlf/frequenzen/liste/#mw"/>
+	<source name="dradio" href="http://www.dradio.de/dlf/frequenzen/liste/#mw"/>
 	<channel name="Dradio Aholming" freq="207000"/>
 	<channel name="Dradio Donebach" freq="153000"/>
 </band>
 
 <band name="LW" created="20131109" valid="20130101">
-	<source href="http://www.dradio.de/dlf/frequenzen/liste/#lw"/>
+	<source name="dradio" href="http://www.dradio.de/dlf/frequenzen/liste/#lw"/>
 	<channel name="Braunschweig" freq="756000"/>
 	<channel name="Heusweiler" freq="1422000"/>
 	<channel name="Neumünster" freq="1269000"/>

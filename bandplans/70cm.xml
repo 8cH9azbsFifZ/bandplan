@@ -21,7 +21,7 @@
    <regulation>
       <license name="Klasse A" power="750"/>
       <license name="Klasse E" power="75"/>
-      <source href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
+      <source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
    </regulation>
 
 	<region min="430000000" max="431981000">
@@ -54,6 +54,6 @@
 		<homepage href="http://www.ov-f28.de/Relais.htm"/>	
   </channel>
 
-	<source implemented="no" href="http://www.darc.de/uploads/media/Bandplan_70cm_Stand_10_2009.pdf"/>
+	<source implemented="no" name="DARC" href="http://www.darc.de/uploads/media/Bandplan_70cm_Stand_10_2009.pdf"/>
 </band>
 </bandplan>

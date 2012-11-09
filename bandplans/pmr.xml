@@ -31,8 +31,8 @@
 	<region min="446103125" max="446196875"><mode>Digital</mode><comment>16 Channels, FSK</comment></region>
 	<region min="446106250" max="446193750"><mode>Digital</mode><comment>8 Channels, FSK</comment></region>
 
-	<source implemented="yes" href='http://en.wikipedia.org/w/index.php?title=PMR446'/>
-	<source implemented="yes" href="http://www.bundesnetzagentur.de/cae/servlet/contentblob/38172/publicationFile/2558/FundstelleId315pdf.pdf"/>
+	<source implemented="yes" name="Wikipedia" href='http://en.wikipedia.org/w/index.php?title=PMR446'/>
+	<source implemented="yes" name="BNETZA" href="http://www.bundesnetzagentur.de/cae/servlet/contentblob/38172/publicationFile/2558/FundstelleId315pdf.pdf"/>
 
 </band>
 </bandplan>

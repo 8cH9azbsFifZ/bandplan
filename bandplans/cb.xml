@@ -68,8 +68,8 @@
 	<channel name="39" freq="27375000"><mode>FM</mode></channel>
 	<channel name="40" freq="27405000"><mode>FM</mode></channel>
 
-	<source implemented="yes" href="http://de.wikipedia.org/wiki/CB-Funk#CB-Kan.C3.A4le"/>
-	<source implemented="no" href="http://en.wikipedia.org/wiki/Citizens_Band_radio#Frequencies_worldwide"/>
+	<source implemented="yes" name="Wikipedia" href="http://de.wikipedia.org/wiki/CB-Funk#CB-Kan.C3.A4le"/>
+	<source implemented="no" name="Wikipedia" href="http://en.wikipedia.org/wiki/Citizens_Band_radio#Frequencies_worldwide"/>
 </band>
 
 <band name="CB" min="26565000" max="26955000" author="DG6FL" country="DE" created="23102012" valid="01012013" mode="FM">
@@ -115,7 +115,7 @@
 	<channel name="79" freq="26945000"><mode>FM</mode></channel>
 	<channel name="80" freq="26955000"><mode>FM</mode></channel>
 
-	<source implemented="yes" href="http://de.wikipedia.org/wiki/CB-Funk#CB-Kan.C3.A4le"/>
+	<source implemented="yes" name="Wikipedia" href="http://de.wikipedia.org/wiki/CB-Funk#CB-Kan.C3.A4le"/>
 </band>
 
 </bandplan>
