@@ -49,14 +49,20 @@
 					</xsl:otherwise>
 				</xsl:choose>
 
-			<xsl:apply-templates select="region"/>
-			<xsl:apply-templates select="channel"/>
+			<!-- Regions -->
+			<table>
+				<xsl:apply-templates select="region"/>
+			</table>
+
+			<!-- Channels -->
+			<table>
+				<xsl:apply-templates select="channel"/>
+			</table>
 
 			</body>
 	</xsl:template>
 
 	<xsl:template match="region">
-		<table>
 			<tr>
 				<td> 
 					<xsl:value-of select='format-number(@min*0.000001, "####.000")'/> 
@@ -66,17 +72,14 @@
 				<td> <b> <xsl:value-of select="@name"/> </b> </td>
 				<td> <xsl:apply-templates/> </td>
 			</tr>
-		</table>
 	</xsl:template>
 	
 	<xsl:template match="channel">
-		<table>
 			<tr>
 				<td> <xsl:value-of select='format-number(@freq*0.000001, "####.000")'/> </td>
 				<td> <b> <xsl:value-of select="@name"/> </b> </td>
-			<td> <xsl:apply-templates/> </td>
+				<td> <xsl:apply-templates/> </td>
 			</tr>
-		</table>
 	</xsl:template>
 
 	<xsl:template match="mode">
