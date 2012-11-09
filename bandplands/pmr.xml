@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<bandplan version="0.6">
+<band name="PMR" min="446006200" max="446093750" author="DG6FL" region="DE" created="23102012" valid="01012013">
+	<region min="446006200" max="446093750"><mode>FM</mode><comment>500mW</comment>
+		<channel name="1" freq="446006200" mode="FM"/>
+		<channel name="2" freq="446018750" mode="FM"/>
+		<channel name="3" freq="446031250" mode="FM"/>
+		<channel name="4" freq="446043750" mode="FM"/>
+		<channel name="5" freq="446056250" mode="FM"/>
+		<channel name="6" freq="446068750" mode="FM"/>
+		<channel name="7" freq="446081250" mode="FM"/>
+		<channel name="8" freq="" mode="FM"/>
+	</region>
+
+	<region min="446103125" max="446196875"><mode>Digital</mode><comment>16 Channels, FSK</comment></region>
+	<region min="446106250" max="446193750"><mode>Digital</mode><comment>8 Channels, FSK</comment></region>
+
+	<source implemented="yes" href='http://en.wikipedia.org/w/index.php?title=PMR446'/>
+	<source implemented="yes" href="http://www.bundesnetzagentur.de/cae/servlet/contentblob/38172/publicationFile/2558/FundstelleId315pdf.pdf"/>
+
+</band>
+</bandplan>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<bandplan version="0.6">
+<band name="10m" min="28000000" max="28070000" author="DG6FL" region="DE" created="21102010" valid="01012013">
+
+	<region min="28000000" max="28070000" bandwidth="200"><mode>CW</mode></region>
+	<region min="28070000" max="28120000" bandwidth="500"><mode>Narrow Digital</mode></region>
+	<region min="28120000" max="28150000" bandwidth="500"><mode>Narrow Digital</mode><comment>Automatic stations</comment></region>
+	<region min="28150000" max="28190000" bandwidth="500"><mode>Narrow</mode><comment>No SSB</comment></region>
+	<region min="28190000" max="28199000"><comment>Regional Beacon-Project, no sending</comment></region>
+	<region min="28199000" max="28201000"><comment>International Beacon-Project, no sending</comment></region>
+	<region min="28201000" max="28225000"><comment>Beacons, no sending</comment></region>
+	<region min="28225000" max="28300000" bandwidth="2700"><mode>All</mode><comment>Beacons</comment></region>
+	<region min="28300000" max="28320000" bandwidth="2700"><mode>All</mode><comment>Automatic digital stations</comment></region>
+	<region min="28320000" max="29100000" bandwidth="2700"><mode>All</mode></region>
+	<region min="29100000" max="29200000" bandwidth="6000"><mode>All</mode><comment>Narrow FM Simples 10 kHz Channels</comment></region>
+	<region min="29200000" max="29300000" bandwidth="6000"><mode>All</mode><comment>Automatic digital modes</comment></region>
+	<region min="29300000" max="29510000" bandwidth="6000"><mode>Satellite Downlink</mode></region>
+	<region min="29510000" max="29520000"><mode>Safty Channel</mode><comment>What does this mean?</comment></region>
+	<region min="29520000" max="29590000" bandwidth="6000"><mode>All</mode><comment>Narrow FM Relais Input (RH1 - RH8)</comment></region>
+	<region min="29620000" max="29700000" bandwidth="6000"><mode>All</mode><comment>Narrow FM Relais Output (RH1 - RH8)</comment></region>
+	<channel name="QRP" freq="28360000" bandwidth="2700"><mode>SSB</mode></channel>
+	<channel name="Digital Speech" freq="28330000"><mode>Digital</mode></channel>
+	<channel name="FM Call" freq="29600000" bandwidth="6000"><mode>Narrow FM</mode></channel>
+	<channel name="FM Call Simplex Repeater" freq="29610000" bandwidth="6000"><mode>Narrow FM</mode><comment>Input and Output</comment></channel>
+	<channel name="QRS" freq="28055000"><mode>CW</mode></channel>
+	<channel name="QRP" freq="28060000"><mode>CW</mode></channel>
+	<channel name="APRS" freq="29250000"><mode>FM</mode></channel>
+	<channel name="WSPR" freq="28124600"><mode>USB</mode><source href="http://wsprnet.org/drupal/"/></channel>
+
+	<source implemented="yes" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
+</band>
+</bandplan>

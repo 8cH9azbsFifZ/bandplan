@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<bandplan version="0.6">
+
+<band name="160m">
+	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
+	<channel name="WSPR 160m" freq="1836600"><source href="http://wsprnet.org/drupal/"/></channel>
+</band>
+</bandplan>

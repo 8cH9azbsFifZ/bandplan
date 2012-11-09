@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<bandplan version="0.6">
+<band name="70cm" min="433000000" max="440000000" author="DG6FL" region="DE" created="21102010" valid="01012013">
+	<region min="430000000" max="431981000">
+		<region min="430025000" max="430050000" bandwidth="25000"><comment>Echolink</comment></region>
+		<region min="430075000" max="430350000" bandwidth="25000"><comment>NBFM / DV Simplex U 003-028</comment></region>
+		<region min="430375000" max="430387500" bandwidth="25000"><comment>DVR RU30 - RU31</comment></region>
+		<region min="430400000" max="430575000" bandwidth="25000"><comment>PR Duplex Input, +9.4MHz shift, 25 kHz width, RU 784 - RU 798</comment></region>
+		<region min="430600000" max="430675000" bandwidth="25000"><comment>PR Simplex, Digipeater, 25 kHz width, U048 - U050</comment></region>
+		<region min="430700000" max="430925000" bandwidth="25000"><comment>PR Duplex, +7.6MHz shift, 25 kHz width, RU 664- (RU)682</comment></region>
+		<region min="430950000" max="431825000" bandwidth="25000"><comment>NBFM Relais Input, +7.6 MHz shift, 12.5 kHz width, RU 684 - RU 690</comment></region>
+		<region min="431850000" max="431987500" bandwidth="12500"><comment>DV (RX) 12.6 kHz width, TX +7.6 MHz shift</comment></region>
+	</region>
+
+	<!-- Regions below TBD -->
+
+	<region min="432000000" max="432100000"><mode>CW</mode></region>
+	<region min="432100000" max="432399000"><mode>CW</mode><mode>SSB</mode></region>
+	<region min="432400000" max="432490000"><mode>-</mode><comment>Beacons, no sending</comment></region>
+	<region min="432500000" max="432994000"><mode>All</mode></region>
+	<region min="433000000" max="435000000"><mode>All</mode><comment>ATV</comment></region>
+	<region min="435000000" max="438000000"><mode>Satellite</mode></region>
+	<region min="438025000" max="440000000"/>
+
+	<channel name="DB0VA" freq="439325000"><mode>FM</mode><shift>-7600000</shift>
+		<position locator="JO40BC" lat="50.109122" lon="8.133403"/>
+		<homepage href="http://www.qslnet.de/member/df6rk/db0va.html"/>
+		<operator call="DC9ZB"/>
+	</channel>
+	<channel name="DB0ESW" freq="439050000"><mode>FM</mode><shift>-7600000</shift>
+		<echolink node="439050"/>
+		<position locator="JO51AE"/>
+		<homepage href="http://www.ov-f28.de/Relais.htm"/>	
+  </channel>
+
+	<source implemented="no" href="http://www.darc.de/uploads/media/Bandplan_70cm_Stand_10_2009.pdf"/>
+</band>
+</bandplan>
