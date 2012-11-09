@@ -50,15 +50,6 @@
  * This file has been created by xmlbandplan.
  */
 
-// Bands configuration
-typedef struct
-{   
-  char *name; // name of the band
-  long low;   // lower frequency
-  long high;  // upper frequency
-  byte mode;  // main mode for this band
-} t_band;
-
 // Single channels
 typedef struct 
 {
@@ -67,7 +58,7 @@ typedef struct
   byte mode;  // mode
 } t_channel;
 
-const t_band bands[] = {
+const t_channel channels[] = {
 						</xsl:text>
 					</xsl:when>
 				</xsl:choose>
@@ -76,7 +67,7 @@ const t_band bands[] = {
 					<xsl:when test="not(band/@country)"> <!-- make sure we are not in a recursive file -->
 						<xsl:text>
 };
-int nbands = sizeof(bands)/sizeof(bands[0]);
+int nchannels = sizeof(channels)/sizeof(channels[0]);
 						</xsl:text>
 					</xsl:when>
 				</xsl:choose>

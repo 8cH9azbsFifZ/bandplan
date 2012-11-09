@@ -29,14 +29,6 @@ typedef struct
   byte mode;  // main mode for this band
 } t_band;
 
-// Single channels
-typedef struct 
-{
-  char *name; // channel name
-  long freq;  // frequency
-  byte mode;  // mode
-} t_channel;
-
 const t_band bands[] = {
 						{"2200m: CW, QRSS, narrow digital modes",13570,13780,FT817_MODE_CW_NARROW},
 {"160m",181000,185000, NULL },
