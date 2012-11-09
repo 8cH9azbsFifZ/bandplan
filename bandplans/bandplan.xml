@@ -34,7 +34,7 @@
 <band name="70cm"><source file="70cm.xml"/></band>
 <band name="LPD"><source file="lpd.xml"/></band>
 <band name="PMR"><source file="pmr.xml"/></band>
-<band name="Radio"><source file="radio.xml"/></band>
+<!--<band name="Radio"><source file="radio.xml"/></band>-->
 
 
 <countries>
