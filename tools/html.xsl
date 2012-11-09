@@ -15,13 +15,18 @@
     You should have received a copy of the GNU General Public License
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
+
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 	<xsl:template match="/">
 		<xsl:apply-templates/>
+			<small>
+		<xsl:text>
+				(C)opyright Gerolf Ziegenhain (DG6FL). &lt;XML&gt;Bandplan is released under GPLv3.
+		</xsl:text>
+			</small>
 	</xsl:template>
 
-	
 	<xsl:template match="bandplan">
 		<html><head>
 		<!-- FIXME: check version number -->
@@ -42,6 +47,7 @@
 		<table>
 			<tr>
 				<!--<td> <xsl:text>Frequency (Hz)</xsl:text> </td>-->
+				<td> <xsl:value-of select='format-number(@min*0.000001, "####.000")'/> </td>
 				<td> <xsl:value-of select="@min"/> <xsl:text> - </xsl:text> <xsl:value-of select="@max"/> <xsl:text> Hz</xsl:text> </td>
 				<td> <xsl:value-of select="@name"/> </td>
 				<td> <xsl:apply-templates/> </td>
