@@ -26,7 +26,9 @@
 	<xsl:template match="bandplan">
 		<xsl:choose>
 			<xsl:when test="@version = '0.6.4' ">
-				<xsl:text>
+				<xsl:choose>
+					<xsl:when test="not(band/@country)"> <!-- make sure we are not in a recursive file -->
+						<xsl:text>
 /*
 	 This file is part of xmlbandplan.
 
@@ -66,12 +68,18 @@ typedef struct
 } t_channel;
 
 const t_band bands[] = {
-				</xsl:text>
+						</xsl:text>
+					</xsl:when>
+				</xsl:choose>
 				<xsl:apply-templates select="./band"/>
-				<xsl:text>
+				<xsl:choose>
+					<xsl:when test="not(band/@country)"> <!-- make sure we are not in a recursive file -->
+						<xsl:text>
 };
 int nbands = sizeof(bands)/sizeof(bands[0]);
-				</xsl:text>
+						</xsl:text>
+					</xsl:when>
+				</xsl:choose>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:text>Error: Wrong version.</xsl:text>
@@ -81,10 +89,17 @@ int nbands = sizeof(bands)/sizeof(bands[0]);
 
 
 	<xsl:template match="band">
-		<xsl:choose> <!-- Only germany is selected -->
-			<xsl:when test="@country = 'DE'">
-				<xsl:apply-templates select="./region"/>
+		<xsl:choose> <!-- Distinguish between bandplan.xml and single NNm.xml files -->
+			<xsl:when test="@country">
+				<xsl:choose> <!-- Only germany is selected -->
+					<xsl:when test="@country = 'DE'">
+						<xsl:apply-templates select="./region"/>
+					</xsl:when>
+				</xsl:choose>
 			</xsl:when>
+			<xsl:otherwise>
+				<xsl:apply-templates select="source"/>
+			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
 	
