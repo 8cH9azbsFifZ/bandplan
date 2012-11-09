@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<bandplan version="0.6">
-<band name="15m" min="21000000" max="21070000" author="DG6FL" region="DE" created="21102010" valid="01012013">
-	<channel name="QRP" freq="21060000"><mode>CW</mode></channel>
-	<channel name="WSPR" freq="21994600"><source href="http://wsprnet.org/drupal/"/></channel>
-	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
-</band>
-</bandplan>

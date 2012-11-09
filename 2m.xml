@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<bandplan version="0.6">
-<band name="2m" min="144000000" max="146000000" author="DG6FL" region="DE" created="21102010" valid="01012013">
-	<channel name="S1" freq="145212500"><mode>FM</mode><comment>simplex channel</comment></channel>
-	<channel name="ARPS" freq="14480000"><mode>FM</mode></channel>
-	<channel name="WSPR" freq="14448900"><source href="http://wsprnet.org/drupal/"/></channel>
-	<source href="http://db0fa.de/wp-content/uploads/2010/05/Bandplan_2m_Stand_10_2009.pdf"/>
-</band>
-</bandplan>
