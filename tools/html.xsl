@@ -49,13 +49,15 @@
 					</xsl:otherwise>
 				</xsl:choose>
 
-			<!-- Regions -->
+			<!-- Regions & Channels -->
 			<table>
+				<tr>
+					<td> <xsl:text>Frequency (MHz)</xsl:text></td>
+					<td> <xsl:text>Name</xsl:text></td>
+					<td> <xsl:text>Mode</xsl:text></td>
+					<td> <xsl:text>Comment</xsl:text></td>
+				</tr>
 				<xsl:apply-templates select="region"/>
-			</table>
-
-			<!-- Channels -->
-			<table>
 				<xsl:apply-templates select="channel"/>
 			</table>
 
@@ -70,6 +72,7 @@
 					<xsl:value-of select='format-number(@max*0.000001, "####.000")'/> 
 				</td>
 				<td> <b> <xsl:value-of select="@name"/> </b> </td>
+				<td> <xsl:apply-templates select="mode"/> </td>
 				<td> <xsl:apply-templates/> </td>
 			</tr>
 	</xsl:template>
@@ -78,6 +81,7 @@
 			<tr>
 				<td> <xsl:value-of select='format-number(@freq*0.000001, "####.000")'/> </td>
 				<td> <b> <xsl:value-of select="@name"/> </b> </td>
+				<td> <xsl:apply-templates select="mode"/> </td>
 				<td> <xsl:apply-templates/> </td>
 			</tr>
 	</xsl:template>
