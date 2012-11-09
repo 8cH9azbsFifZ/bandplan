@@ -135,8 +135,6 @@ int nbands = sizeof(bands)/sizeof(bands[0]);
 			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
 		</xsl:choose>
 		<xsl:text>},&#xa;</xsl:text> 
-		<!--</xsl:if>-->
-		<!--	<xsl:apply-templates/>-->
 	</xsl:template>
 
 	<xsl:template match="todo"/>
