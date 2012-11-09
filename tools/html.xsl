@@ -51,7 +51,7 @@
 					<xsl:text> - </xsl:text>
 					<xsl:value-of select='format-number(@max*0.000001, "####.000")'/> 
 				</td>
-				<td> <xsl:value-of select="@name"/> </td>
+				<td> <b> <xsl:value-of select="@name"/> </b> </td>
 				<td> <xsl:apply-templates/> </td>
 			</tr>
 		</table>
@@ -60,10 +60,9 @@
 	<xsl:template match="channel">
 		<table>
 			<tr>
-				<td> <xsl:text>Ch</xsl:text> </td>
-				<td> <xsl:value-of select='format-number(@freq*0.000001, "####.000")'/> <xsl:text> Hz</xsl:text> </td>
-				<td> <xsl:value-of select="@name"/> </td>
-				<td> <xsl:apply-templates/> </td>
+				<td> <xsl:value-of select='format-number(@freq*0.000001, "####.000")'/> </td>
+				<td> <b> <xsl:value-of select="@name"/> </b> </td>
+			<td> <xsl:apply-templates/> </td>
 			</tr>
 		</table>
 	</xsl:template>
