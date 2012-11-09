@@ -38,6 +38,7 @@
 	<source implemented="yes" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>
 
+
 <band name="40m" min="7000000" max="7300000" author="DG6FL" country="US" created="20131109" valid="20130101">
 	<region min="7000000" max="7025000" badnwidth="1000"><mode>CW</mode><mode>RTTY</mode><mode>Digital</mode></region>
 	<region min="7025000" max="7125000" badnwidth="1000"><mode>CW</mode><mode>RTTY</mode><mode>Digital</mode></region>
@@ -45,4 +46,5 @@
 
 	<source implemented="yes" href="http://www.arrl.org/frequency-allocations"/>
 </band>
+
 </bandplan>

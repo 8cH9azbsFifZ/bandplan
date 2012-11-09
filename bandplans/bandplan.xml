@@ -47,7 +47,11 @@
 
 
 <countries>
-	<country name="DE"/>
+	<country name="DE">
+		<license name="Klasse A" cept="CEPT"/>
+		<license name="Klasse E" cept="CEPT-Novice"/>
+		<source href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
+	</country>
 	<country name="US"/>
 	<!-- Follow the two letter ISO 3166 code (http://en.wikipedia.org/wiki/ISO_3166-1) -->
 	<country name="International"/>
