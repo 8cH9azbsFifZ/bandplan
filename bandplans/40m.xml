@@ -32,12 +32,12 @@
 	<region min="7130000" max="7200000" bandwidth="2700"><mode>All</mode><comment>SSB contests</comment></region>
 	<region min="7175000" max="7200000" bandwidth="2700"><mode>All</mode><comment>Intercontinental QSO></comment></region>
 
-	<channel name="QRP CW" freq="7030000"><mode>CW</mode></channel>
+	<channel name="QRP" freq="7030000"><mode>CW</mode></channel>
 	<channel name="Emergency Region 1" freq="7110000"/>
 	<channel name="ATV" freq="7165000"/>
 	<channel name="Digital Speech" freq="7070000"/>
-	<channel name="SSB QRP" freq="7090000"/>
-	<channel name="WSPR 40m" freq="7038600"><mode>WSPR</mode><source href="http://wsprnet.org/drupal/"/></channel>
+	<channel name="QRP" freq="7090000"><mode>SSB</mode></channel>
+	<channel name="WSPR" freq="7038600"><mode>WSPR</mode><source href="http://wsprnet.org/drupal/"/></channel>
 
 	<source implemented="yes" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>

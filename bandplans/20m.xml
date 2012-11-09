@@ -33,9 +33,9 @@
 	<region min="14125000" max="14300000" bandwidth="2700"><mode>All</mode><comment>Contest</comment></region>
 	<region min="14300000" max="14350000" bandwidth="2700"><mode>All</mode></region>
 
-	<channel name="QRP CW" freq="14060000"><mode>CW</mode></channel>
+	<channel name="QRP" freq="14060000"><mode>CW</mode></channel>
 	<channel name="Emergency" freq="14300000"></channel>
-	<channel name="WSPR 20m" freq="14095600"><mode>WSPR</mode><source href="http://wsprnet.org/drupal/"/></channel>
+	<channel name="WSPR" freq="14095600"><mode>WSPR</mode><source href="http://wsprnet.org/drupal/"/></channel>
 
 	<source implemented="yes" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>

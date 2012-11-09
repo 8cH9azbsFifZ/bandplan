@@ -30,11 +30,11 @@
 	<region min="18111000" max="18120000" bandwidth="2700"><mode>All</mode><comment>Automatic digital stations</comment></region>
 	<region min="18120000" max="18168000" bandwidth="2700"><mode>All</mode></region>
 
-	<channel name="QRP CW" freq="18086000"><mode>CW</mode></channel>
-	<channel name="SSB QRP" freq="18130000"></channel>
+	<channel name="QRP" freq="18086000"><mode>CW</mode></channel>
+	<channel name="QRP" freq="18130000"><mode>SSB</mode></channel>
 	<channel name="Digital Speech" freq="18150000"></channel>
 	<channel name="Emergency" freq="18160000"></channel>
-	<channel name="WSPR 17m" freq="18104600"><mode>WSPR</mode><source href="http://wsprnet.org/drupal/"/></channel>
+	<channel name="WSPR" freq="18104600"><mode>WSPR</mode><source href="http://wsprnet.org/drupal/"/></channel>
 
 	<source implemented="yes" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>
