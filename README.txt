@@ -1,7 +1,4 @@
-(C) Copyright Gerolf Ziegenhain <g@ziegenhain.com> 2012
-    Released under GPLv3.
+<XML>bandplan.org - Standardized Ham Radio Bandplans
 
-
-In this repository band plans for ham radio use can be found in an
-open format.
-
+For more information see the wiki:
+https://github.com/8cH9azbsFifZ/bandplan/wiki/XML-Bandplan.org
