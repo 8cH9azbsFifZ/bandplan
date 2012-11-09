@@ -93,14 +93,19 @@ int nbands = sizeof(bands)/sizeof(bands[0]);
 	</xsl:template>
 
 	<xsl:template match="channel">
-			<xsl:call-template name="region"/>
+			<!-- FIXME -->
 	</xsl:template>
 
 	<xsl:template name="region">
-		<xsl:variable name="bandname" select="./name"/>
-		<xsl:text>{"</xsl:text> <xsl:value-of select="$bandname"/> <xsl:text>",</xsl:text>
+		<xsl:variable name="bandname" select="../@name"/>
+		<!-- Define name of region -->
+		<xsl:text>{"</xsl:text> 
+		<xsl:value-of select="$bandname"/> 
+		<xsl:text>",</xsl:text>
+		<!-- Frequency range -->
 		<xsl:value-of select="@min*0.1"/><xsl:text>,</xsl:text> 
-	   <xsl:value-of select="@max*0.1"/><xsl:text>,</xsl:text> 
+		<xsl:value-of select="@max*0.1"/><xsl:text>,</xsl:text>
+		<!-- Mode -->	
 		<xsl:choose>
 			<xsl:when test="contains(@mode,'CW')"> <xsl:text>FT817_MODE_CW_NARROW</xsl:text> </xsl:when>
 			<xsl:when test="contains(@mode,'All')"> <xsl:text>FT817_MODE_USB</xsl:text> </xsl:when>
