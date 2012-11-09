@@ -129,8 +129,12 @@ int nbands = sizeof(bands)/sizeof(bands[0]);
 	<xsl:template match="modes"/>
 
 	<xsl:template match="source">
-		<xsl:variable name="filename" select="@file"/>
-		<xsl:apply-templates select="document($filename)/bandplan"/>
+		<xsl:choose>
+			<xsl:when test="@file"> <!-- Recursive processing of XML bandplans -->
+				<xsl:variable name="filename" select="@file"/>
+				<xsl:apply-templates select="document($filename)/bandplan"/>
+			</xsl:when>
+		</xsl:choose>
 	</xsl:template>
 
 </xsl:stylesheet>
