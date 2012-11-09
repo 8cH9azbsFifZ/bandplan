@@ -73,7 +73,11 @@
 	</xsl:template>
 
 	<xsl:template match="comment">
-		<xsl:text>(</xsl:text><xsl:value-of select="."/><xsl:text>) </xsl:text>
+		<i>
+		<xsl:text>(</xsl:text>
+		<xsl:value-of select="."/>
+		<xsl:text>) </xsl:text>
+		</i>
 	</xsl:template>
 
 	<xsl:template match="todo"/>
