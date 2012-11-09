@@ -15,8 +15,13 @@
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
 <?xml version="1.0" encoding="UTF-8" ?>
-<bandplan version="0.6.2">
+<bandplan version="0.6.4">
 <band name="12m" min="24890000" max="24915000" author="DG6FL" country="DE" created="20131109" valid="20130101">
+	<regulation>
+		<license name="Klasse A" power="750"/>
+		<source href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
+	</regulation>
+
 	<channel name="QRP" freq="24906000"><mode>CW</mode></channel>
 	<channel name="WSPR" freq="24924600"><source href="http://wsprnet.org/drupal/"/></channel>
 	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>

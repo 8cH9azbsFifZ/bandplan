@@ -15,7 +15,7 @@
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
 <?xml version="1.0" encoding="UTF-8" ?>
-<bandplan name="Band Plan" version="0.6.2">
+<bandplan name="Band Plan" version="0.6.4">
 
 <!-- TBD -->
 <source href="http://en.wikipedia.org/wiki/Amateur_radio_frequency_allocations" comment="Information to be used"/>

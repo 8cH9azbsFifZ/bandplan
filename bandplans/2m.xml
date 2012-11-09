@@ -15,8 +15,15 @@
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
 <?xml version="1.0" encoding="UTF-8" ?>
-<bandplan version="0.6.2">
+<bandplan version="0.6.4">
+
 <band name="2m" min="144000000" max="146000000" author="DG6FL" country="DE" created="20131109" valid="20130101">
+   <regulation>
+      <license name="Klasse A" power="750"/>
+      <license name="Klasse E" power="75"/>
+      <source href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
+	</regulation>
+
 	<channel name="S1" freq="145212500"><mode>FM</mode><comment>simplex channel</comment></channel>
 	<channel name="ARPS" freq="14480000"><mode>FM</mode></channel>
 	<channel name="WSPR" freq="14448900"><source href="http://wsprnet.org/drupal/"/></channel>

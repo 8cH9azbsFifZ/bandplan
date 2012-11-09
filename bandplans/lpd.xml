@@ -15,7 +15,7 @@
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
 <?xml version="1.0" encoding="UTF-8" ?>
-<bandplan version="0.6.2">
+<bandplan version="0.6.4">
 
 <band name="LPD" min="433075000" max="433300000" author="DG6FL" country="DE" created="20131109" valid="20130101">
 	<channel name="1" freq="433075000"><mode>FM</mode></channel>

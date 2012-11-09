@@ -15,7 +15,7 @@
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
 <?xml version="1.0" encoding="UTF-8" ?>
-<bandplan version="0.6.2">
+<bandplan version="0.6.4">
 
 <band name="MW" created="20131109" valid="20130101">
 	<source href="http://www.dradio.de/dlf/frequenzen/liste/#mw"/>

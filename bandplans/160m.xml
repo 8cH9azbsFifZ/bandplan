@@ -15,10 +15,35 @@
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
 <?xml version="1.0" encoding="UTF-8" ?>
-<bandplan version="0.6.2">
+<bandplan version="0.6.4">
 
 <band name="160m" created="20131109" valid="20130101" country="DE">
+	<region min="1810000" max="1850000">
+		<regulation>
+			<license name="Klasse A" power="750"/>
+			<license name="Klasse E" power="100"/>
+			<source href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
+		</regulation>
+	</region>
+
+	<region min="1850000" max="1890000">
+		<regulation>
+			<license name="Klasse A" power="750"/>
+			<license name="Klasse E" power="75"/>
+			<source href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
+		</regulation>
+	</region>
+
+	<region min="1890000" max="2000000">
+		<regulation>
+			<license name="Klasse A" power="750"/>
+			<license name="Klasse E" power="10"/>
+			<source href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
+		</regulation>
+	</region>
+
 	<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 	<channel name="WSPR 160m" freq="1836600"><source href="http://wsprnet.org/drupal/"/></channel>
 </band>
+
 </bandplan>
