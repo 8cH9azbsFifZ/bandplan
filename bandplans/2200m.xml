@@ -15,9 +15,9 @@
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
 <?xml version="1.0" encoding="UTF-8" ?>
-<bandplan version="0.6">
+<bandplan version="0.6.2">
 
-<band name="2200m" min="135700" max="137800">
+<band name="2200m" min="135700" max="137800" created="20131109" valid="20130101">
 	<region min="135700" max="137800" bandwidth="200"><mode>CW</mode><comment>CW, QRSS, narrow digital modes</comment></region>
 
 	<channel name="WSPR 2200m" freq="136000"><source href="http://wsprnet.org/drupal/"/></channel>
