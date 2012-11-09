@@ -76,6 +76,7 @@
 	<mode name="MGM"/>
 	<mode name="WSPR"/>
 	<mode name="SSTV"/>
+	<mode name="RTTY"/>
 </modes>
 
 

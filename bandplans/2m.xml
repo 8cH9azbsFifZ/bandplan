@@ -46,18 +46,44 @@
 		<region min="14463000" max="14466000" bandwidth="20000"><comment>Lineartransponder Output</comment></region>
 		<region min="14466000" max="14469000" bandwidth="20000"><comment>Lineartransponder Output</comment></region>
 	</region>
-	<region min="144800000" max="144990000" bandwidth="20000"><mode>Digital</mode></region>
-	<region min="144990000" max="145194000" bandwidth="12000"><mode>NBFM</mode><comment>Relais</comment></region>
+	<region min="144800000" max="144990000" bandwidth="20000">
+		<mode>Digital</mode>
+		<comment>MGM, Packet Radio</comment>
+		<region min="14480000" max="14498750" bandwidth="20000"><comment>Digimode, automatic stations</comment></region>
+	</region>
+	<region min="144990000" max="145194000" bandwidth="12000">
+		<mode>NBFM</mode>
+		<region min="145000000" max="145187500" bandwidth="12000">
+			<comment>Relais Input</comment>
+			<comment>RV 48(X) / RV 63</comment>
+			<comment>Shift 6.25 kHz</comment>
+		</region>
+	</region>
 	<region min="145194000" max="145206000" bandwidth="12000"><mode>NBFM</mode></region>
 	<region min="145206000" max="145593500" bandwidth="12000"><mode>NBFM</mode></region>
-	<region min="145593500" max="145794000" bandwidth="12000"><mode>NBFM</mode></region>
-	<region min="145593500" max="145806000" bandwidth="12000"><mode>NBFM</mode></region>
-	<region min="145806000" max="146000000" bandwidth="12000"><mode>NBFM</mode></region>
+	<region min="145593500" max="145794000" bandwidth="12000">
+		<mode>NBFM</mode>
+		<comment>Relais Output</comment>
+		<comment>RV 48(X) / RV 63</comment>
+		<comment>Shift 6.25 kHz</comment>
+	</region>
+	<region min="145794000" max="145806000" bandwidth="12000">
+		<comment>Space-Earth</comment>
+		<mode>NBFM</mode>
+	</region>
+	<region min="145806000" max="146000000" bandwidth="12000">
+		<mode>NBFM</mode>
+		<comment>Satellites</comment>
+	</region>
 
 
 	<channel name="S1" freq="145212500"><mode>FM</mode><comment>simplex channel</comment></channel>
 
 	<channel name="ARPS" freq="14480000"><mode>FM</mode></channel>
+	<channel name="Echolink" freq="14496250"><mode>FM</mode></channel>
+	<channel name="Echolink" freq="14497500"><mode>FM</mode></channel>
+	<channel name="RTTY local" freq="14530000"><mode>RTTY</mode></channel>
+	<channel name="DV CQ" freq="14537500"><comment>Digital Speech with data and FM</comment></channel>
 
 	<channel name="PSK31" freq="144170000"><mode>Digital</mode><comment>MGM PSK31</comment></channel>
 	<channel name="SSB CQ" freq="14430000"><mode>SSB</mode></channel>
