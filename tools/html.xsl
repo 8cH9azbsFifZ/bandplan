@@ -30,12 +30,19 @@
 	</xsl:template>
 
 	<xsl:template match="bandplan">
-		<html><head>
-		<!-- FIXME: check version number -->
-				<title> <xsl:value-of select="@name"/> </title>
-			</head>
-		<xsl:apply-templates/>
-		</html>
+		<xsl:choose>
+			<xsl:when test="@version = '0.6.4' ">
+				<html>
+					<head>
+						<title> <xsl:value-of select="@name"/> </title>
+					</head>
+					<xsl:apply-templates/>
+				</html>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:text>Error: Wrong version.</xsl:text>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
 	<xsl:template match="band">
