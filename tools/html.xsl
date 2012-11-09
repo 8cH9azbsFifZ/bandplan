@@ -46,9 +46,11 @@
 	<xsl:template match="region">
 		<table>
 			<tr>
-				<!--<td> <xsl:text>Frequency (Hz)</xsl:text> </td>-->
-				<td> <xsl:value-of select='format-number(@min*0.000001, "####.000")'/> </td>
-				<td> <xsl:value-of select="@min"/> <xsl:text> - </xsl:text> <xsl:value-of select="@max"/> <xsl:text> Hz</xsl:text> </td>
+				<td> 
+					<xsl:value-of select='format-number(@min*0.000001, "####.000")'/> 
+					<xsl:text> - </xsl:text>
+					<xsl:value-of select='format-number(@max*0.000001, "####.000")'/> 
+				</td>
 				<td> <xsl:value-of select="@name"/> </td>
 				<td> <xsl:apply-templates/> </td>
 			</tr>
@@ -58,8 +60,8 @@
 	<xsl:template match="channel">
 		<table>
 			<tr>
-				<td> <xsl:text>Channel</xsl:text> </td>
-				<td> <xsl:value-of select="@freq"/> <xsl:text> Hz</xsl:text> </td>
+				<td> <xsl:text>Ch</xsl:text> </td>
+				<td> <xsl:value-of select='format-number(@freq*0.000001, "####.000")'/> <xsl:text> Hz</xsl:text> </td>
 				<td> <xsl:value-of select="@name"/> </td>
 				<td> <xsl:apply-templates/> </td>
 			</tr>
