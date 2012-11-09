@@ -19,7 +19,14 @@
 	<xsl:output method="html" omit-xml-declaration="yes" />
 
 	<xsl:template match="/">
-			<xsl:text>
+		<xsl:apply-templates/>
+	</xsl:template>
+
+
+	<xsl:template match="bandplan">
+		<xsl:choose>
+			<xsl:when test="@version = '0.6.4' ">
+				<xsl:text>
 /*
 	 This file is part of xmlbandplan.
 
@@ -57,24 +64,23 @@ typedef struct
   long freq;  // frequency
   byte mode;  // mode
 } t_channel;
-</xsl:text>
-		<xsl:apply-templates/>
-	</xsl:template>
 
-	<xsl:template match="bandplan">
-		<xsl:text>
 const t_band bands[] = {
-		</xsl:text>
-		<!-- FIXME: check version number -->
-		<xsl:apply-templates select="./band"/>
-		<xsl:text>
+				</xsl:text>
+				<xsl:apply-templates select="./band"/>
+				<xsl:text>
 };
 int nbands = sizeof(bands)/sizeof(bands[0]);
-		</xsl:text>
+				</xsl:text>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:text>Error: Wrong version.</xsl:text>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
+
 	<xsl:template match="band">
-		<!--FIXME: check country code-->
 		<!--<xsl:if test="not(./source)">-->
 		<xsl:call-template name="region"/>
 		<xsl:apply-templates select="./region"/>

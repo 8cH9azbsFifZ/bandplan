@@ -38,7 +38,7 @@ typedef struct
 } t_channel;
 
 const t_band bands[] = {
-		{"",14400000,14600000, NULL },
+				{"",14400000,14600000, NULL },
 {"",14400000,14418000, NULL },
 {"",14418000,14436000, NULL },
 {"",14436000,14439900, NULL },
@@ -54,4 +54,4 @@ const t_band bands[] = {
 
 };
 int nbands = sizeof(bands)/sizeof(bands[0]);
-		
+				
