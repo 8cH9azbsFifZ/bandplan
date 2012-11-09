@@ -59,14 +59,6 @@ typedef struct
   byte mode;  // main mode for this band
 } t_band;
 
-// Single channels
-typedef struct 
-{
-  char *name; // channel name
-  long freq;  // frequency
-  byte mode;  // mode
-} t_channel;
-
 const t_band bands[] = {
 						</xsl:text>
 					</xsl:when>
@@ -108,7 +100,6 @@ int nbands = sizeof(bands)/sizeof(bands[0]);
 	</xsl:template>
 
 	<xsl:template match="channel">
-			<!-- FIXME -->
 	</xsl:template>
 
 	<xsl:template name="region">
