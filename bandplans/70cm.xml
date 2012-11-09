@@ -35,8 +35,6 @@
 		<region min="431850000" max="431987500" bandwidth="12500"><comment>DV (RX) 12.6 kHz width, TX +7.6 MHz shift</comment></region>
 	</region>
 
-	<!-- Regions below TBD -->
-
 	<region min="432000000" max="432100000"><mode>CW</mode></region>
 	<region min="432100000" max="432399000"><mode>CW</mode><mode>SSB</mode></region>
 	<region min="432400000" max="432490000"><mode>-</mode><comment>Beacons, no sending</comment></region>
