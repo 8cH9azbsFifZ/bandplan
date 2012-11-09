@@ -17,15 +17,6 @@
 -->
 <bandplan name="Band Plan" version="0.6.4">
 
-<!-- TBD -->
-<source href="http://en.wikipedia.org/wiki/Amateur_radio_frequency_allocations" comment="Information to be used"/>
-<source href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf" comment="Information to be used"/>
-
-<todo>PDF XSLT creator</todo>
-<todo>Repeater DB to XML scripts: http://www.darc.de/echolink-bin/relais.pl</todo>
-<todo>Create a DTD</todo>
-<todo>cleanup structure: properties or tags?? (i.e. source)</todo>
-
 <!-- External References -->
 <band name="2200m"><source file="2200m.xml"/></band>
 <band name="160m"><source file="160m.xml"/></band>
