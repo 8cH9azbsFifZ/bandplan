@@ -127,7 +127,7 @@ int nchannels = sizeof(channels)/sizeof(channels[0]);
 		<xsl:choose>
 			<xsl:when test="shift">
 				<xsl:text>, </xsl:text>
-				<xsl:value-of select="shift"/>
+				<xsl:value-of select="shift*0.1"/><xsl:text>,</xsl:text>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:text>, 0 </xsl:text> 
