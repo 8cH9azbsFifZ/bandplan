@@ -17,7 +17,7 @@
 -->
 <bandplan version="0.6.4">
 
-<band name="160m" created="20131109" valid="20130101" country="DE">
+<band name="160m" min="1810000" max="2000000" created="20131109" valid="20130101" country="DE">
 	<!-- The regions below contain the license regulations -->
 	<region min="1810000" max="1850000">
 		<regulation>
@@ -35,7 +35,7 @@
 		</regulation>
 	</region>
 
-	<region min="1890000" max="2000000">
+	<region min="1890000" max="1810000">
 		<regulation>
 			<license name="Klasse A" power="750"/>
 			<license name="Klasse E" power="10"/>
