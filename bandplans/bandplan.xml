@@ -76,6 +76,7 @@
 	<mode name="WSPR"/>
 	<mode name="SSTV"/>
 	<mode name="RTTY"/>
+	<mode name="Image"/>
 </modes>
 
 

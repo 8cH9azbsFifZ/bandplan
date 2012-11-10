@@ -57,9 +57,20 @@
 
 <band name="160m" min="1800000" max="2000000" created="20131110" valid="20130101" country="US">
 	<regulation>
+		<license name="Amateur Extra"/>
+		<license name="Advanced"/>
+		<license name="General"/>
 	</regulation>
 
-	<source name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
+	<region min="1800000" max="2000000">
+		<mode>CW</mode>
+		<mode>RTTY</mode>
+		<mode>Digital</mode>
+		<mode>SSB</mode>
+		<mode>Image</mode>
+	</region>
+
+	<source implemented="yes" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
 </band>
 
 </bandplan>
