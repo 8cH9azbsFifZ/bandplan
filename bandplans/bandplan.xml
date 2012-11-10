@@ -41,6 +41,7 @@
 	<country name="DE">
 		<license name="Klasse A" cept="CEPT"/>
 		<license name="Klasse E" cept="CEPT-Novice"/>
+		<license name="PMR"/>
 		<source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
 	</country>
 	<country name="US"/>
