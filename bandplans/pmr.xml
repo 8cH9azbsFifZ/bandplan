@@ -18,7 +18,7 @@
 <bandplan version="0.6.4">
 <band name="PMR" min="446006200" max="446093750" author="DG6FL" country="DE" created="20131109" valid="20130101">
 	<regulation>
-		<license name="PMR" power="0.5"><source href="http://de.wikipedia.org/wiki/PMR-Funk"/></license>
+		<license name="PMR" power="0.5"><source name="Wikipedia" href="http://de.wikipedia.org/wiki/PMR-Funk"/></license>
 	</regulation>
 	<region min="446006200" max="446093750"><mode>FM</mode>
 		<channel name="1" freq="446006200" mode="FM"/>
