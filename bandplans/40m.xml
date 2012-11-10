@@ -46,19 +46,22 @@
 <band name="40m" min="7000000" max="7300000" author="DG6FL" country="US" created="20131109" valid="20130101">
 	<regulation>
 		<license name="Amateur Extra"/>
-		<license name="Advanced"/>
-		<license name="General"/>
 	</regulation>
 
 	<region min="7000000" max="7025000" bandwidth="1000">
-		<mode>CW</mode>
-		<mode>RTTY</mode>
-		<mode>Digital</mode>
 		<regulation>
 			<license name="Amateur Extra"/>
 		</regulation>
+		<mode>CW</mode>
+		<mode>RTTY</mode>
+		<mode>Digital</mode>
 	</region>
+
 	<region min="7025000" max="7125000" bandwidth="1000">
+		<regulation>
+			<license name="Advanced"/>
+			<license name="General"/>
+		</regulation>
 		<mode>
 			CW
 			<regulation>
@@ -69,9 +72,16 @@
 		<mode> RTTY </mode>
 		<mode> Digital </mode>
 	</region>
-	<region min="7175000" max="7300000" bandwidth="2700"><mode>All</mode></region>
+
+	<region min="7175000" max="7300000" bandwidth="2700">
+		<mode>All</mode>
+		<regulation>
+			<license name="General"/>
+		</regulation>
+	</region>
 
 	<source implemented="yes" name="ARRL" href="http://www.arrl.org/frequency-allocations"/>
+	<source implemented="yes" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
 </band>
 
 </bandplan>
