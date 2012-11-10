@@ -18,6 +18,9 @@
 <bandplan version="0.6.4">
 
 <band name="LPD" min="433075000" max="433300000" author="DG6FL" country="DE" created="20131109" valid="20130101">
+	<regulation>
+		<license name="LPD" power=""><source name="Wikipedia" href="http://de.wikipedia.org/wiki/Short_Range_Devices"/></license>
+	</regulation>
 	<channel name="1" freq="433075000"><mode>FM</mode></channel>
 	<channel name="2" freq="433100000"><mode>FM</mode></channel>
 	<channel name="3" freq="433125000"><mode>FM</mode></channel>
