@@ -73,11 +73,19 @@
 		<mode> Digital </mode>
 	</region>
 
-	<region min="7175000" max="7300000" bandwidth="2700">
-		<mode>All</mode>
+	<region min="7125000" max="7175000" bandwidth="2700">
 		<regulation>
+			<license name="Advanced"/>
+		</regulation>
+		<mode>All</mode>
+	</region>
+
+	<region min="7175000" max="7300000" bandwidth="2700">
+		<regulation>
+			<license name="Advanced"/>
 			<license name="General"/>
 		</regulation>
+		<mode>All</mode>
 	</region>
 
 	<source implemented="yes" name="ARRL" href="http://www.arrl.org/frequency-allocations"/>
