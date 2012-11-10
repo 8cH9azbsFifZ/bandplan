@@ -29,11 +29,15 @@ typedef struct
   byte mode;  // main mode for this band
 } t_band;
 
+
+// NB: loop the bands backwards. This will make sure, that sets of subregions not covering the whole region
+// will work as expected.
+
 const t_band bands[] = {
 						{"2200m: CW, QRSS, narrow digital modes",13570,13780,FT817_MODE_CW_NARROW},
 {"160m",181000,185000, NULL },
 {"160m",185000,189000, NULL },
-{"160m",189000,200000, NULL },
+{"160m",189000,181000, NULL },
 {"160m",181000,183800,FT817_MODE_CW_NARROW},
 {"160m",183800,184000, NULL },
 {"160m: Digimode",184000,184300,FT817_MODE_USB},
