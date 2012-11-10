@@ -56,7 +56,7 @@ typedef struct
   char *name; // channel name
   long freq;  // frequency
   byte mode;  // mode
-  byte rpt;   // repeater shift
+  int rpt;   // repeater shift
 } t_channel;
 
 const t_channel channels[] = {
@@ -126,10 +126,11 @@ int nchannels = sizeof(channels)/sizeof(channels[0]);
 		<!-- Repeater shift -->
 		<xsl:choose>
 			<xsl:when test="shift">
-				<xsl:text>, FT817_RPT_MINUS</xsl:text>
+				<xsl:text>, </xsl:text>
+				<xsl:value-of select="shift"/>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:text>, NULL </xsl:text> 
+				<xsl:text>, 0 </xsl:text> 
 			</xsl:otherwise>
 		</xsl:choose>
 		<xsl:text>},&#xa;</xsl:text> 
