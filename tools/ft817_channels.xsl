@@ -105,11 +105,11 @@ int nchannels = sizeof(channels)/sizeof(channels[0]);
 	<xsl:template name="channel">
 		<xsl:text>{"</xsl:text> 
 		<!-- Name -->
-		<xsl:value-of select="@name"/> 
+		<xsl:value-of select="substring(@name,1,5)"/> <!-- maximal channel name length: 5 -->
 		<xsl:choose>
 			<xsl:when test="comment">
 				<xsl:text>: </xsl:text>
-				<xsl:value-of select="substring(comment,1,5)"/> 
+				<xsl:value-of select="substring(comment,1,5)"/> <!-- maximal comment length: 5 -->
 			</xsl:when>
 		</xsl:choose>
 		<xsl:text>",</xsl:text>
