@@ -61,23 +61,4 @@
 	<country name="IARU3"><source name="Wikipedia" href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/></country>
 </countries>
 
-<modes>
-	<mode name="All"/>
-	<mode name="AM"/>
-	<mode name="FM"/>
-	<mode name="Narrow FM"/>
-	<mode name="CW"/>
-	<mode name="SSB"/>
-	<mode name="USB"/>
-	<mode name="LSB"/>
-	<mode name="Narrow Digital"/>
-	<mode name="Digital"/>
-	<mode name="MGM"/>
-	<mode name="WSPR"/>
-	<mode name="SSTV"/>
-	<mode name="RTTY"/>
-	<mode name="Image"/>
-</modes>
-
-
 </bandplan>

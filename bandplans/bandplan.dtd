@@ -33,5 +33,6 @@
 	
 
 <!ELEMENT mode (#PCDATA|regulation)*>
+	<!ATTLIST mode name (All|AM|FM|NarrowFM|CW|SSB|USB|LSB|NarrowDigital|Digital|MGM|WSPR|SSTV|RTTY|Image) #REQUIRED>
 <!ELEMENT comment (#PCDATA)>
 	
