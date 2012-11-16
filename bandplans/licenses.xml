@@ -15,8 +15,9 @@
     You should have received a copy of the GNU General Public License
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
-<bandplan name="Band Plan" version="0.7.4">
+<bandplan version="0.7.4">
 
+<countries>
 <country name="DE">
 	<license name="Klasse A" cept="CEPT"/>
 	<license name="Klasse E" cept="CEPT-Novice"/>
@@ -49,5 +50,7 @@
 <country name="IARU3">
 	<source name="Wikipedia" href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/>
 </country>
+
+</countries>
 
 </bandplan>
