@@ -22,7 +22,7 @@
 	<!ATTLIST source href CDATA #REQUIRED>
 	<!ATTLIST source implemented CDATA #IMPLIED>
 
-<!ELEMENT region (regulation*,mode+,comment*)>
+<!ELEMENT region (regulation*,mode+,comment*,region*)>
 	<!ATTLIST region min CDATA #REQUIRED>
 	<!ATTLIST region max CDATA #REQUIRED>
 	<!ATTLIST region bandwidth CDATA #IMPLIED>
