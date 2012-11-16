@@ -15,50 +15,39 @@
     You should have received a copy of the GNU General Public License
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
-<bandplan name="Band Plan" version="0.6.4">
+<bandplan name="Band Plan" version="0.7.4">
 
-<!-- External References -->
-<band name="2200m"><source file="2200m.xml"/></band>
-<band name="160m"><source file="160m.xml"/></band>
-<band name="80m"><source file="80m.xml"/></band>
-<band name="40m"><source file="40m.xml"/></band>
-<band name="30m"><source file="30m.xml"/></band>
-<band name="20m"><source file="20m.xml"/></band>
-<band name="17m"><source file="17m.xml"/></band>
-<band name="15m"><source file="15m.xml"/></band>
-<band name="12m"><source file="12m.xml"/></band>
-<band name="10m"><source file="10m.xml"/></band>
-<band name="CB"><source file="cb.xml"/></band>
-<band name="6m"><source file="6m.xml"/></band>
-<band name="2m"><source file="2m.xml"/></band>
-<band name="70cm"><source file="70cm.xml"/></band>
-<band name="LPD"><source file="lpd.xml"/></band>
-<band name="PMR"><source file="pmr.xml"/></band>
-<!--<band name="Radio"><source file="radio.xml"/></band>-->
+<country name="DE">
+	<license name="Klasse A" cept="CEPT"/>
+	<license name="Klasse E" cept="CEPT-Novice"/>
+	<license name="PMR"/>
+	<license name="LPD"><comment>New name is SRD short rande devices</comment></license>
+	<source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
+</country>
 
+<country name="US">
+	<license name="Amateur Extra"/>
+	<license name="Advanced"/>
+	<license name="General"/>
+	<license name="Technician"/>
+	<license name="Novice"/>
+</country>
 
-<countries>
-	<country name="DE">
-		<license name="Klasse A" cept="CEPT"/>
-		<license name="Klasse E" cept="CEPT-Novice"/>
-		<license name="PMR"/>
-		<license name="LPD" comment="New name is SRD short rande devices"/>
-		<source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
-	</country>
-	<country name="US">
-		<license name="Amateur Extra"/>
-		<license name="Advanced"/>
-		<license name="General"/>
-		<license name="Technician"/>
-		<license name="Novice"/>
-	</country>
-	<!-- Follow the two letter ISO 3166 code (http://en.wikipedia.org/wiki/ISO_3166-1) -->
-	<country name="International">
-		<license name="CB"/>
-	</country>
-	<country name="IARU1"><source name="Wikipedia" href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/></country>
-	<country name="IARU2"><source name="Wikipedia" href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/></country>
-	<country name="IARU3"><source name="Wikipedia" href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/></country>
-</countries>
+<!-- Follow the two letter ISO 3166 code (http://en.wikipedia.org/wiki/ISO_3166-1) -->
+<country name="International">
+	<license name="CB"/>
+</country>
+
+<country name="IARU1">
+	<source name="Wikipedia" href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/>
+</country>
+
+<country name="IARU2">
+	<source name="Wikipedia" href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/>
+</country>
+
+<country name="IARU3">
+	<source name="Wikipedia" href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/>
+</country>
 
 </bandplan>
