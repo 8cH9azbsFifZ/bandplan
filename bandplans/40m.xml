@@ -18,7 +18,6 @@
 
 <!DOCTYPE note SYSTEM "bandplan.dtd">
 
-
 <bandplan version="0.6.4">
 <band name="40m" min="7000000" max="7200000" author="DG6FL" country="DE" created="20131109" valid="20130101">
    <regulation>
