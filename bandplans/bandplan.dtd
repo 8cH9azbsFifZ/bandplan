@@ -12,7 +12,7 @@
 	<!ATTLIST band valid CDATA #REQUIRED>
 	<!ATTLIST band reviewer CDATA #IMPLIED>
 
-<!ELEMENT country (license+)>
+<!ELEMENT country (license*)>
 	<!ATTLIST country name (DE|US) #REQUIRED>
 	<!-- Follow the two letter ISO 3166 code (http://en.wikipedia.org/wiki/ISO_3166-1) -->
 
@@ -21,7 +21,7 @@
 <!ELEMENT license (#PCDATA|comment)*>
 	<!ATTLIST license name CDATA #REQUIRED>
 	<!ATTLIST license power CDATA #IMPLIED>
-	<!ATTLIST license cept (CEPT,CEPT-Novice) #IMPLIED>
+	<!ATTLIST license cept (CEPT|CEPT-Novice) #IMPLIED>
 
 <!ELEMENT source (#PCDATA)>
 	<!ATTLIST source name CDATA #REQUIRED>
