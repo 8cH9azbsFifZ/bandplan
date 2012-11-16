@@ -20,8 +20,9 @@
 <!ELEMENT source (#PCDATA)>
 	<!ATTLIST source name CDATA #REQUIRED>
 	<!ATTLIST source href CDATA #REQUIRED>
+	<!ATTLIST source implemented CDATA #IMPLIED>
 
-<!ELEMENT region (mode+,comment*)>
+<!ELEMENT region (regulation*,mode+,comment*)>
 	<!ATTLIST region min CDATA #REQUIRED>
 	<!ATTLIST region max CDATA #REQUIRED>
 	<!ATTLIST region bandwidth CDATA #REQUIRED>
@@ -31,6 +32,6 @@
 	<!ATTLIST channel freq CDATA #REQUIRED>
 	
 
-<!ELEMENT mode (#PCDATA)>
+<!ELEMENT mode (#PCDATA|regulation)*>
 <!ELEMENT comment (#PCDATA)>
 	

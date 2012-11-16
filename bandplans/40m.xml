@@ -49,11 +49,13 @@
 <band name="40m" min="7000000" max="7300000" author="DG6FL" country="US" created="20131109" valid="20130101">
 	<regulation>
 		<license name="Amateur Extra"/>
+		<source implemented="yes" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
 	</regulation>
 
 	<region min="7000000" max="7025000" bandwidth="1000">
 		<regulation>
 			<license name="Amateur Extra"/>
+			<source implemented="yes" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
 		</regulation>
 		<mode>CW</mode>
 		<mode>RTTY</mode>
@@ -64,12 +66,13 @@
 		<regulation>
 			<license name="Advanced"/>
 			<license name="General"/>
+			<source implemented="yes" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
 		</regulation>
-		<mode>
-			CW
+		<mode>CW
 			<regulation>
 				<license name="Technician" power="200"/>
 				<license name="Novice" power="200"/>
+				<source implemented="yes" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
 			</regulation>
 		</mode>
 		<mode> RTTY </mode>
@@ -79,6 +82,7 @@
 	<region min="7125000" max="7175000" bandwidth="2700">
 		<regulation>
 			<license name="Advanced"/>
+			<source implemented="yes" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
 		</regulation>
 		<mode>All</mode>
 	</region>
@@ -87,6 +91,7 @@
 		<regulation>
 			<license name="Advanced"/>
 			<license name="General"/>
+			<source implemented="yes" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
 		</regulation>
 		<mode>All</mode>
 	</region>
