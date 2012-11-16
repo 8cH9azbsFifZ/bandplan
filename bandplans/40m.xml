@@ -23,7 +23,11 @@
 	<country name="DE"/> 
    <regulation>
       <license name="Klasse A" power="750"/>
-      <source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
+      <source issuer="Wikipedia" name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
+		<source issuer="Bundesministerium der Justiz" name="Amateur Radio Law" href="http://www.gesetze-im-internet.de/afug_1997/index.html"/>
+		<source issuer="Bundesministerium der Justiz" name="Amateur Radio provisions" href="http://www.gesetze-im-internet.de/afuv_2005/index.html"/>
+		<source issuer="Bundesgesetzblatt" name="Minor modifications of provisions" href="http://www.bmwi.de/BMWi/Redaktion/PDF/Gesetz/AFuV-erste-verordnung-zur- _C3_A4nderung,property=pdf,bereich=bmwi,sprache=de,rwb=true.pdf"/>
+		<source issuer="Bundesnetzagentur" name="Overview" href="http://www.bundesnetzagentur.de/cln_1912/DE/Sachgebiete/Telekommunikation/RegulierungTelekommunikati on/Frequenzordnung/Amateurfunk/amateurfunk_node.html;jsessionid=F813714D89BEEA287380149E167B2212"/>
    </regulation>
 	<region min="7000000" max="7040000" bandwidth="200"><mode name="CW"/></region>
 	<region min="7040000" max="7047000" bandwidth="500"><mode name="NarrowDigital"/></region>

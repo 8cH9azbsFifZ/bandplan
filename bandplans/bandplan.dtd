@@ -28,6 +28,7 @@
 <!ELEMENT source (#PCDATA)>
 	<!ATTLIST source name CDATA #REQUIRED>
 	<!ATTLIST source href CDATA #REQUIRED>
+	<!ATTLIST source issuer CDATA #REQUIRED>
 	<!ATTLIST source implemented CDATA #IMPLIED>
 
 <!ELEMENT region (regulation*,mode+,comment*,region*)>
