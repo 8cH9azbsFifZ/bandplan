@@ -21,3 +21,16 @@
 	<!ATTLIST source name CDATA #REQUIRED>
 	<!ATTLIST source href CDATA #REQUIRED>
 
+<!ELEMENT region (mode+,comment*)>
+	<!ATTLIST region min CDATA #REQUIRED>
+	<!ATTLIST region max CDATA #REQUIRED>
+	<!ATTLIST region bandwidth CDATA #REQUIRED>
+
+<!ELEMENT channel (mode*,comment*,source*)>
+	<!ATTLIST channel name CDATA #REQUIRED>
+	<!ATTLIST channel freq CDATA #REQUIRED>
+	
+
+<!ELEMENT mode (#PCDATA)>
+<!ELEMENT comment (#PCDATA)>
+	
