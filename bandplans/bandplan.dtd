@@ -25,14 +25,15 @@
 <!ELEMENT region (regulation*,mode+,comment*)>
 	<!ATTLIST region min CDATA #REQUIRED>
 	<!ATTLIST region max CDATA #REQUIRED>
-	<!ATTLIST region bandwidth CDATA #REQUIRED>
+	<!ATTLIST region bandwidth CDATA #IMPLIED>
 
 <!ELEMENT channel (mode*,comment*,source*)>
 	<!ATTLIST channel name CDATA #REQUIRED>
 	<!ATTLIST channel freq CDATA #REQUIRED>
+	<!ATTLIST channel bandwidth CDATA #IMPLIED>
 	
 
 <!ELEMENT mode (#PCDATA|regulation)*>
-	<!ATTLIST mode name (All|AM|FM|NarrowFM|CW|SSB|USB|LSB|NarrowDigital|Digital|MGM|WSPR|SSTV|RTTY|Image|SatelliteDownlink) #REQUIRED>
+	<!ATTLIST mode name (All|AM|FM|NarrowFM|CW|SSB|USB|LSB|NarrowDigital|Digital|MGM|WSPR|SSTV|RTTY|Image|SatelliteDownlink|Narrow|NoSending) #REQUIRED>
 <!ELEMENT comment (#PCDATA)>
 	
