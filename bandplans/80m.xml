@@ -16,6 +16,8 @@
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
 
+<!DOCTYPE note SYSTEM "bandplan.dtd">
+
 <bandplan version="0.6.4"> 
 <band name="80m" min="3500000" max="3580000" author="DG6FL" country="DE" created="20131109" valid="20130101">
    <regulation>
