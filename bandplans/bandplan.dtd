@@ -1,3 +1,12 @@
 <!ELEMENT bandplan (band+)>
 		<!ATTLIST bandplan version CDATA #REQUIRED>
 
+	<!ELEMENT band (regulation+,region*,channel*,source+)>
+		<!ATTLIST band name CDATA #REQUIRED>
+		<!ATTLIST band min CDATA #REQUIRED>
+		<!ATTLIST band max CDATA #REQUIRED>
+		<!ATTLIST band author CDATA #REQUIRED>
+		<!ATTLIST band country CDATA #REQUIRED>
+		<!ATTLIST band created CDATA #REQUIRED>
+		<!ATTLIST band valid CDATA #REQUIRED>
+		<!ATTLIST band reviewer CDATA #IMPLIED>
