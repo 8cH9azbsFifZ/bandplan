@@ -1,15 +1,17 @@
 <!ELEMENT bandplan (band+)>
 	<!ATTLIST bandplan version CDATA #REQUIRED>
 
-<!ELEMENT band (regulation+,region*,channel*,source+)>
+<!ELEMENT band (country,regulation+,region*,channel*,source+)>
 	<!ATTLIST band name CDATA #REQUIRED>
 	<!ATTLIST band min CDATA #REQUIRED>
 	<!ATTLIST band max CDATA #REQUIRED>
 	<!ATTLIST band author CDATA #REQUIRED>
-	<!ATTLIST band country CDATA #REQUIRED>
 	<!ATTLIST band created CDATA #REQUIRED>
 	<!ATTLIST band valid CDATA #REQUIRED>
 	<!ATTLIST band reviewer CDATA #IMPLIED>
+
+<!ELEMENT country (#PCDATA)>
+	<!ATTLIST country name (DE|US) #REQUIRED>
 
 <!ELEMENT regulation (license+,source+)>
 
@@ -35,5 +37,6 @@
 
 <!ELEMENT mode (#PCDATA|regulation)*>
 	<!ATTLIST mode name (All|AM|FM|NarrowFM|CW|SSB|USB|LSB|NarrowDigital|Digital|MGM|WSPR|SSTV|RTTY|Image|SatelliteDownlink|Narrow|NoSending) #REQUIRED>
+
 <!ELEMENT comment (#PCDATA)>
 	
