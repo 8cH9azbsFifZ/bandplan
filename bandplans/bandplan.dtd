@@ -1,3 +1,5 @@
+<!-- Standard 0.7.4 -->
+
 <!ELEMENT bandplan (band+)>
 	<!ATTLIST bandplan version CDATA #REQUIRED>
 
@@ -12,6 +14,7 @@
 
 <!ELEMENT country (#PCDATA)>
 	<!ATTLIST country name (DE|US) #REQUIRED>
+	<!-- Follow the two letter ISO 3166 code (http://en.wikipedia.org/wiki/ISO_3166-1) -->
 
 <!ELEMENT regulation (license+,source+)>
 
