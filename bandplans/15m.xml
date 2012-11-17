@@ -36,9 +36,9 @@
 
 
 	<channels>
-		<channel name="QRP" freq="21060000" ref="DE01"><mode>CW</mode></channel>
-		<channel name="QRS" freq="21055000" ref="DE01"><mode>CW</mode></channel>
-		<channel name="Digital Speech" freq="21180000" ref="DE01"><mode>Digital</mode></channel>
+		<channel name="QRP" freq="21060000" ref="DE01"><mode name="CW"/></channel>
+		<channel name="QRS" freq="21055000" ref="DE01"><mode name="CW"/></channel>
+		<channel name="Digital Speech" freq="21180000" ref="DE01"><mode name="Digital"/></channel>
 		<channel name="WSPR" freq="21994600" ref="WSPR01"><mode name="WSPR"/></channel>
 	</channels>
 </band>
