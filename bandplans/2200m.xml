@@ -15,19 +15,25 @@
     You should have received a copy of the GNU General Public License
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
-<bandplan version="0.6.4">
 
-<band name="2200m" min="135700" max="137800" created="20131109" valid="20130101" country="DE">
-   <regulation>
-      <license name="Klasse A" power="750"/>
-      <source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
-   </regulation>
-	
-	<region min="135700" max="137800" bandwidth="200"><mode>CW</mode><comment>CW, QRSS, narrow digital modes</comment></region>
+<!DOCTYPE note SYSTEM "bandplan.dtd">
 
-	<channel name="WSPR" freq="136000"><mode>WSPR</mode><source name="wsprnet" href="http://wsprnet.org/drupal/"/></channel>
+<bandplan version="0.7.5">
+
+<band name="2200m" min="135700" max="137800" created="20131109" valid="20130101" ref="DE02" author="DG6FL">
+	<country name="DE"/> 
+
+	<region min="135700" max="137800" bandwidth="800" ref="DE02">
+		<license name="Klasse_A" power="1" powermeasure="ERP" ref="DE02"/>
 	
-	<source implemented="yes" name="DARC" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
+		<region min="135700" max="137800" bandwidth="200" ref="DE01">
+			<mode name="CW"/><comment>CW, QRSS, narrow digital modes</comment>
+		</region>
+	</region>
+
+	<channels>
+		<channel name="WSPR" freq="136000" ref="WSPR01"><mode name="WSPR"/></channel>
+	</channels>
 </band>
 </bandplan>
 
