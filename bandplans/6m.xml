@@ -15,21 +15,27 @@
     You should have received a copy of the GNU General Public License
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
-<bandplan version="0.6.4">
 
-<band name="6m" min="5000000" max="5100000" author="DG6FL" country="DE" created="20131109" valid="20130101">
-   <regulation>
-      <license name="Klasse A" power="750"/>
-      <source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
-   </regulation>
+<!DOCTYPE note SYSTEM "bandplan.dtd">
 
-	<region min="5000000" max="5008000"><comment>Beacon, no sending</comment></region>
-	<region min="5008000" max="5010000" bandwidth="500"><mode>CW</mode></region>
-	<region min="5010000" max="5050000" bandwidth="2700"><mode>CW</mode><mode>SSB</mode></region>
-	<region min="5050000" max="5100000" bandwidth="2700"><comment>Digimode, no allowed in DE</comment></region>
+<bandplan version="0.7.5">
 
-	<channel name="WSPR" freq="5029300"><mode>WSPR</mode><source name="wsprnet" href="http://wsprnet.org/drupal/"/></channel>
+<band name="6m" min="5000000" max="5100000" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
+	<country name="DE"/> 
 
-	<source implemented="yes" name="DARC" href="http://db0fa.de/wp-content/uploads/2010/05/Bandplan_6m_Stand_10_2009.pdf"/>
+	<region min="5000000" max="5008000" ref="DE01"><comment>Beacon, no sending</comment></region>
+
+	<region min="5008000" max="5100000" ref="DE02">
+      <license name="Klasse_A" power="25" powermeasure="ERP" ref="DE02"/>
+
+		<region min="5008000" max="5010000" bandwidth="500" ref="DE01"><mode name="CW"/></region>
+		<region min="5010000" max="5050000" bandwidth="2700" ref="DE01"><mode name="CW"/><mode name="SSB"/></region>
+		<region min="5050000" max="5100000" bandwidth="2700" ref="DE01"><comment>Digimode, no allowed in DE</comment></region>
+	</region>
+
+	<channels>
+		<channel name="WSPR" freq="5029300" ref="WSPR01"><mode name="WSPR"/></channel>
+	</channels>
+
 </band>
 </bandplan>
