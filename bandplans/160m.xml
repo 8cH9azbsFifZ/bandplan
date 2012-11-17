@@ -15,62 +15,57 @@
     You should have received a copy of the GNU General Public License
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
-<bandplan version="0.6.4">
 
-<band name="160m" min="1810000" max="2000000" created="20131109" valid="20130101" country="DE">
-	<!-- The regions below contain the license regulations -->
-	<region min="1810000" max="1850000">
-		<regulation>
-			<license name="Klasse A" power="750"/>
-			<license name="Klasse E" power="100"/>
-			<source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
-		</regulation>
+<!DOCTYPE note SYSTEM "bandplan.dtd">
+
+<bandplan version="0.7.5">
+
+<band name="160m" min="1810000" max="2000000" created="20131109" author="DG6FL" valid="20130101" ref="DE02">
+	<country name="DE"/> 
+
+	<region min="1810000" max="1850000" bandwidth="2700" ref="DE02">
+		<license name="Klasse_A" power="750" powermeasure="PEP" ref="DE02"/>
+		<license name="Klasse_E" power="100" powermeasure="PEP" ref="DE02"/>
+		<region min="1810000" max="1838000" bandwidth="200" ref="DE01"><mode name="CW"/></region>
+		<region min="1838000" max="1840000" bandwidth="500" ref="DE01"><mode name="Narrow"/></region>
+		<region min="1840000" max="1843000" bandwidth="2700" ref="DE01"><mode name="All"/><comment>Digimode</comment></region>
+		<region min="1843000" max="1850000" bandwidth="2700" ref="DE01"><mode name="All"/></region>
 	</region>
 
-	<region min="1850000" max="1890000">
-		<regulation>
-			<license name="Klasse A" power="750"/>
-			<license name="Klasse E" power="75"/>
-			<source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
-		</regulation>
+	<region min="1850000" max="1890000" bandwidth="2700" ref="DE02">
+		<license name="Klasse_A" power="75" powermeasure="PEP" ref="DE02"/>
+		<license name="Klasse_E" power="75" powermeasure="PEP" ref="DE02"/>
+		<region min="1850000" max="1890000" bandwidth="2700" ref="DE01"><mode name="All"/></region>
 	</region>
 
-	<region min="1890000" max="1810000">
-		<regulation>
-			<license name="Klasse A" power="750"/>
-			<license name="Klasse E" power="10"/>
-			<source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
-		</regulation>
+	<region min="1890000" max="1810000" bandwidth="2700" ref="DE02">
+		<license name="Klasse_A" power="10" powermeasure="PEP" ref="DE02"/>
+		<license name="Klasse_E" power="10" powermeasure="PEP" ref="DE02"/>
+		<region min="1890000" max="2000000" bandwidth="2700" ref="DE01"><mode name="All"/></region>
 	</region>
 
-	<!-- The regions below cover the usage regulations. NB: There are overlaps to the regions above!! -->
-	<region min="1810000" max="1838000" bandwidth="200"><mode>CW</mode></region>
-	<region min="1838000" max="1840000" bandwidth="500"><mode>Narrow</mode></region>
-	<region min="1840000" max="1843000" bandwidth="2700"><mode>All</mode><comment>Digimode</comment></region>
-	<region min="1843000" max="2000000" bandwidth="2700"><mode>All</mode></region>
 
-	<channel name="WSPR" freq="1836600"><source name="wsprnet" href="http://wsprnet.org/drupal/"/><mode>WSPR</mode></channel>
-	<channel name="QRP" freq="1836000"><mode>CW</mode></channel>
+	<channels>
+		<channel name="WSPR" freq="1836600" ref="WSPR01"><mode name="WSPR"/></channel>
+		<channel name="QRP" freq="1836000" ref="DE01"><mode name="CW"/></channel>
+	</channels>
 	
-	<source implemented="yes" name="DARC" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
 </band>
 
-<band name="160m" min="1800000" max="2000000" created="20131110" valid="20130101" country="US">
-	<regulation>
-		<license name="Amateur Extra"/>
-		<license name="Advanced"/>
-		<license name="General"/>
-	</regulation>
+<band name="160m" min="1800000" max="2000000" created="20131110" valid="20130101" author="DG6FL" ref="US01">
+	<country name="US"/> 
 
-	<region min="1800000" max="2000000">
-		<mode>CW</mode>
-		<mode>RTTY</mode>
-		<mode>Digital</mode>
-		<mode>SSB</mode>
-		<mode>Image</mode>
+	<region min="1800000" max="2000000" ref="US01">
+		<license name="Amateur_Extra" ref="US01"/>
+		<license name="Advanced" ref="US01"/>
+		<license name="General" ref="US01"/>
+		<mode name="CW"/>
+		<mode name="RTTY"/>
+		<mode name="Digital"/>
+		<mode name="SSB"/>
+		<mode name="Image"/>
 	</region>
 
-	<source implemented="yes" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
 </band>
 
 </bandplan>
