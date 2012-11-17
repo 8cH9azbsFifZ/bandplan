@@ -31,7 +31,7 @@
 	<!ATTLIST license name (Klasse_A|Klasse_E|Amateur_Extra|Advanced|General|Technician|Novice) #REQUIRED>
 	<!ATTLIST license ref CDATA #REQUIRED>
 	<!ATTLIST license power CDATA #IMPLIED>
-	<!ATTLIST license powermeasure CDATA #IMPLIED>
+	<!ATTLIST license powermeasure (PEP|ERP) #IMPLIED>
 	<!ATTLIST license cept (CEPT|CEPT-Novice) #IMPLIED>
 
 <!ELEMENT region (license*,mode*,comment*,region*)>
