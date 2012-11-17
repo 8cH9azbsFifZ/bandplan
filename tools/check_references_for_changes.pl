@@ -1,5 +1,5 @@
-#!/usr/bin/perl
-$filename = "references.xml";
+#!/usr/bin/perl -s
+#$filename = "references.xml";
 
 use XML::Simple;
 use Data::Dumper;
@@ -19,5 +19,7 @@ foreach my $ref (keys %list){
 	$changed = 1;
 	print "Reference $id \"$ref\" has changed ($md5 != $md5_check ).\n";
 }
+$changed == 0 and print "No changes detected in references.\n";
+$changed == 1 and print "Changes detected in references.\n";
 exit $changed;
 
