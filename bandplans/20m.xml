@@ -15,9 +15,14 @@
     You should have received a copy of the GNU General Public License
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
-<bandplan version="0.6.4">
 
-<band name="20m" min="14000000" max="14070000" author="DG6FL" country="DE" created="20131109" valid="20130101">
+<!DOCTYPE note SYSTEM "bandplan.dtd">
+
+<bandplan version="0.7.5">
+
+<band name="20m" min="14000000" max="14350000" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
+	<country name="DE"/> 
+
    <regulation>
       <license name="Klasse A" power="750"/>
       <source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
