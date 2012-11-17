@@ -1,6 +1,7 @@
 #!/usr/bin/perl -s
 #$filename = "references.xml";
 $filename or die "check_references_for_changes.pl -filename=bandplans/references.xml";
+$base_references_dir = "./references";
 
 
 use XML::Simple;
@@ -17,6 +18,7 @@ foreach my $ref (keys %list){
 	my $href = $list{$ref}{href};
 	my $localfile = $list{$ref}{localfile};
 	$localfile or next;
+	$localfile = $base_references_dir."/".$localfile; 
 	`wget -O $localfile $href`;
 	my $md5_check = `cat $localfile | md5`;
 	chomp ($md5_check);
