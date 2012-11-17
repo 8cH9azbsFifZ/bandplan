@@ -26,7 +26,6 @@
 	<license name="Klasse E" cept="CEPT-Novice" prefix="DO" ref="REC0506"/>
 	<license name="PMR"/>
 	<license name="LPD"><comment>New name is SRD short rande devices</comment></license>
-	<source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
 </country>
 
 <country name="US">
@@ -35,6 +34,10 @@
 	<license name="General"/>
 	<license name="Technician"/>
 	<license name="Novice"/>
+</country>
+
+<country name="SE">
+	<license name="" cept="CEPT" prefix="SM, SA" ref="TR6101"/>
 </country>
 
 <!-- Follow the two letter ISO 3166 code (http://en.wikipedia.org/wiki/ISO_3166-1) -->
