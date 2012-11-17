@@ -1,5 +1,7 @@
 #!/usr/bin/perl -s
 #$filename = "references.xml";
+$filename or die "check_references_for_changes.pl -filename=bandplans/references.xml";
+
 
 use XML::Simple;
 use Data::Dumper;

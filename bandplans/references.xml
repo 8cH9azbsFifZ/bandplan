@@ -41,8 +41,13 @@
 			md5="a254f68eeae6ebb3f24c3e5b61f26dff"/>
 		<!--<ref id="US02" name="ARRL" href="http://www.arrl.org/frequency-allocations" md5=""/>-->
 
+		<!-- CEPT -->
+		<ref id="TR6101" name="CEPT TR 61-01"
+			href="http://www.erodocdb.dk/docs/doc98/official/pdf/TR6101.pdf"
+			md5=""/>
+
 		<!-- Others -->
 		<ref id="WSPR01" name="WSPR" href="http://wsprnet.org/drupal/" md5=""/>
-		<ref id="REPEATER01" name="DARC Repeater List" href="http://www.darc.de/echolink-bin/relais.pl" md5=""/>
+		<ref id="REPEATER01" name="DARC Repeater List" href="http://www.darc.de/echolink-bin/relais.pl" md5="91965e186b51fd320452f341abf6cd90"/>
 	</references>
 </bandplan>
