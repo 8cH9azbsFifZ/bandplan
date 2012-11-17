@@ -23,14 +23,14 @@
 <band name="6m" min="5000000" max="5100000" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
 	<country name="DE"/> 
 
-	<region min="5000000" max="5008000" ref="DE01"><comment>Beacon, no sending</comment></region>
+	<region min="5000000" max="5008000" ref="DE07"><comment>Beacon, no sending</comment></region>
 
 	<region min="5008000" max="5100000" ref="DE02">
       <license name="Klasse_A" power="25" powermeasure="ERP" ref="DE02"/>
 
-		<region min="5008000" max="5010000" bandwidth="500" ref="DE01"><mode name="CW"/></region>
-		<region min="5010000" max="5050000" bandwidth="2700" ref="DE01"><mode name="CW"/><mode name="SSB"/></region>
-		<region min="5050000" max="5100000" bandwidth="2700" ref="DE01"><comment>Digimode, no allowed in DE</comment></region>
+		<region min="5008000" max="5010000" bandwidth="500" ref="DE07"><mode name="CW"/></region>
+		<region min="5010000" max="5050000" bandwidth="2700" ref="DE07"><mode name="CW"/><mode name="SSB"/></region>
+		<region min="5050000" max="5100000" bandwidth="2700" ref="DE07"><comment>Digimode, no allowed in DE</comment></region>
 	</region>
 
 	<channels>

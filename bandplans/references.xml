@@ -21,7 +21,7 @@
 <bandplan version="0.7.5">
 	<references>
 		<!-- Country: DE -->
-		<ref id="DE01" name="DARC" 
+		<ref id="DE01" name="DARC Bandpland Kurzwelle" 
 			href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf" 
 			localfile="DE01.pdf"
 			md5="cbbcf1311a4a32fe6208143f39bf3ad3"/>
@@ -39,6 +39,18 @@
 			href="http://www.gesetze-im-internet.de/bundesrecht/afug_1997/gesamt.pdf" 
 			localfile="DE05.pdf"
 			md5="143ee3bf648fd23fa1a5a1e484373bc4"/> 
+		<ref id="DE06" name="DARC"
+			href="http://www.darc.de/uploads/media/Bandplan_2m_Stand_10_2009.pdf"
+			localfile="DE06.pdf Bandplan 2m"
+			md5="09fcc327b9868c0d79679820bc8ada2d"/>
+		<ref id="DE07" name="DARC Bandplan 6m"
+			href="http://www.darc.de/uploads/media/Bandplan_6m_Stand_10_2009.pdf"
+			localfile="DE07.pdf"
+			md5="2436a53d872ebdcb7335da6e747c717f"/>
+		<ref id="DE08" name="DARC Bandplan 70cm"
+			href="http://www.darc.de/uploads/media/Bandplan_70cm_Stand_10_2009.pdf"
+			localfile="DE08.pdf"
+			md5="54f4fe54da42f687725e79ff0c58e465"/>
 
 		<!-- Country: US -->
 		<ref id="US01" name="ARRL" 
