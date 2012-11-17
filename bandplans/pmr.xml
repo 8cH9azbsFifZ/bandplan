@@ -16,7 +16,7 @@
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
 <bandplan version="0.6.4">
-<band name="PMR" min="446006200" max="446093750" author="DG6FL" country="DE" created="20131109" valid="20130101">
+<band name="PMR" min="446006200" max="446093750" author="DG6FL" created="20131109" valid="20130101">
 	<regulation>
 		<license name="PMR" power="0.5"><source name="Wikipedia" href="http://de.wikipedia.org/wiki/PMR-Funk"/></license>
 	</regulation>

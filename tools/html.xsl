@@ -31,7 +31,8 @@
 
 	<xsl:template match="bandplan">
 		<xsl:choose>
-			<xsl:when test="@version = '0.6.4' ">
+			<!-- Check version number  - abort? -->
+			<xsl:when test="@version = '0.7.5' ">
 				<html>
 					<head>
 						<title> <xsl:value-of select="@name"/> </title>
@@ -48,7 +49,7 @@
 	<xsl:template match="band">
 		<body>
 			<xsl:choose> <!-- Distinguish between bandplan.xml and single NNm.xml files -->
-				<xsl:when test="@country">
+				<xsl:when test="@ref">
 					<h1> <xsl:value-of select="@name"/> <xsl:text> Band for Country </xsl:text> <xsl:value-of select="@country"/> </h1>
 					<xsl:apply-templates select="source"/> 
 					<!-- Regions & Channels -->
