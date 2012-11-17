@@ -15,19 +15,23 @@
     You should have received a copy of the GNU General Public License
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
-<bandplan version="0.6.4">
-<band name="30m" min="10100000" max="10200000" author="DG6FL" country="DE" created="20131109" valid="20130101">
-   <regulation>
-      <license name="Klasse A" power="750"/>
-      <source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
-   </regulation>
 
-	<region min="10100000" max="10140000" bandwidth="200"><mode>CW</mode></region>
-	<region min="10140000" max="10150000" bandwidth="500"><mode>Narrow</mode><comment>Digimode</comment></region>
+<!DOCTYPE note SYSTEM "bandplan.dtd">
 
-	<channel name="QRP" freq="10116000"><mode>CW</mode></channel>
-	<channel name="WSPR" freq="10138700"><mode>WSPR</mode><source name="wsprnet" href="http://wsprnet.org/drupal/"/></channel>
+<bandplan version="0.7.5">
+<band name="30m" min="10100000" max="10200000" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
+	<country name="DE"/> 
 
-	<source implemented="yes" name="DARC" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
+	<region min="10100000" max="10140000" bandwidth="800" ref="DE02">
+		<license name="Klasse_A" power="150" ref="DE02"/>
+
+		<region min="10100000" max="10140000" bandwidth="200" ref="DE01"><mode name="CW"/></region>
+		<region min="10140000" max="10150000" bandwidth="500" ref="DE01"><mode name="Narrow"/><comment>Digimode</comment></region>
+	</region>
+
+	<channels>
+		<channel name="QRP" freq="10116000" ref="DE01"><mode name="CW"/></channel>
+		<channel name="WSPR" freq="10138700" ref="WSPR01"><mode name="WSPR"/></channel>
+	</channels>
 </band>
 </bandplan>
