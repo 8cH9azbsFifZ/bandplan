@@ -9,10 +9,11 @@
 	<!ATTLIST references href CDATA #REQUIRED>
 	<!ATTLIST references md5 CDATA #REQUIRED>
 
-<!ELEMENT band (country,region*,channels*,source+)>
+<!ELEMENT band (country,region*,channels*)>
 	<!ATTLIST band name CDATA #REQUIRED>
 	<!ATTLIST band min CDATA #REQUIRED>
 	<!ATTLIST band max CDATA #REQUIRED>
+	<!ATTLIST band ref CDATA #REQUIRED>
 	<!ATTLIST band author CDATA #REQUIRED>
 	<!ATTLIST band created CDATA #REQUIRED>
 	<!ATTLIST band valid CDATA #REQUIRED>
@@ -20,39 +21,33 @@
 
 <!ELEMENT channels (channel*)>
 
-<!ELEMENT country (license*,source*)>
+<!ELEMENT country (license*)>
 	<!ATTLIST country name (DE|US|IARU1|IARU2|IARU3|International) #REQUIRED>
 	<!-- Follow the two letter ISO 3166 code (http://en.wikipedia.org/wiki/ISO_3166-1) -->
 
-<!ELEMENT regulation (license*,source*)>
-
 <!ELEMENT countries (country+)>
 
-<!ELEMENT license (#PCDATA|comment|bandwidth)*>
+<!ELEMENT license (#PCDATA|comment)*>
 	<!ATTLIST license name (Klasse_A|Klasse_E|Amateur_Extra|Advanced|General|Technician|Novice) #REQUIRED>
+	<!ATTLIST license ref CDATA #REQUIRED>
 	<!ATTLIST license power CDATA #IMPLIED>
 	<!ATTLIST license powermeasure CDATA #IMPLIED>
-	<!ATTLIST license bandwidth CDATA #IMPLIED>
 	<!ATTLIST license cept (CEPT|CEPT-Novice) #IMPLIED>
 
-<!ELEMENT source (#PCDATA)>
-	<!ATTLIST source name CDATA #REQUIRED>
-	<!ATTLIST source href CDATA #REQUIRED>
-	<!ATTLIST source legal CDATA #REQUIRED>
-	<!ATTLIST source implemented CDATA #IMPLIED>
-
-<!ELEMENT region (regulation*,mode*,comment*,region*)>
+<!ELEMENT region (license*,mode*,comment*,region*)>
 	<!ATTLIST region min CDATA #REQUIRED>
 	<!ATTLIST region max CDATA #REQUIRED>
+	<!ATTLIST region ref CDATA #REQUIRED>
 	<!ATTLIST region bandwidth CDATA #IMPLIED>
 
-<!ELEMENT channel (mode*,comment*,source*)>
+<!ELEMENT channel (mode*,comment*)>
 	<!ATTLIST channel name CDATA #REQUIRED>
 	<!ATTLIST channel freq CDATA #REQUIRED>
+	<!ATTLIST channel ref CDATA #REQUIRED>
 	<!ATTLIST channel bandwidth CDATA #IMPLIED>
 	
 
-<!ELEMENT mode (#PCDATA|regulation)*>
+<!ELEMENT mode (#PCDATA|license)*>
 	<!ATTLIST mode name (All|AM|FM|NarrowFM|CW|SSB|USB|LSB|NarrowDigital|Digital|MGM|WSPR|SSTV|RTTY|Image|SatelliteDownlink|Narrow|NoSending) #REQUIRED>
 
 <!ELEMENT comment (#PCDATA)>

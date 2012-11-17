@@ -19,13 +19,11 @@
 <!DOCTYPE note SYSTEM "bandplan.dtd">
 
 <bandplan version="0.7.5">
-<band name="40m" min="7000000" max="7200000" author="DG6FL" created="20131109" valid="20130101">
+<band name="40m" min="7000000" max="7200000" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
 	<country name="DE"/> 
 
-	<region min="7000000" max="7040000" ref="DE02">
-	   <regulation ref="DE02">
-			<license name="Klasse_A" power="750" powermeasure="PEP" bandwidth="2700"/>
-	   </regulation>
+	<region min="7000000" max="7040000" bandwidth="2700" ref="DE02">
+		<license name="Klasse_A" power="750" powermeasure="PEP" ref="DE02"/>
 		<region min="7000000" max="7040000" bandwidth="200" ref="DE01">
 			<mode name="CW"/>
 		</region>
@@ -45,10 +43,8 @@
 			<mode name="All"/><comment>SSB contests</comment>
 		</region>
 	</region>
-	<region min="7100000" max="7200000" ref="DE02">
-	   <regulation ref="DE02">
-			<license name="Klasse_A" power="250" powermeasure="PEP" bandwidth="2700"/>
-	   </regulation>
+	<region min="7100000" max="7200000" bandwidth="2700" ref="DE02">
+		<license name="Klasse_A" power="250" powermeasure="PEP" ref="DE02"/>
 		<region min="7100000" max="7130000" bandwidth="2700" ref="DE01">
 			<mode name="All"/>
 		</region>
@@ -62,68 +58,50 @@
 
 	<channels>
 		<channel name="QRP" freq="7030000" ref="DE01"><mode name="CW"/></channel>
-		<channel name="Emergency Region 1" freq="7110000"/>
-		<channel name="ATV" freq="7165000"/>
-		<channel name="Digital Speech" freq="7070000"/>
-		<channel name="QRP" freq="7090000"><mode name="SSB"/></channel>
-		<channel name="WSPR" freq="7038600"><mode name="WSPR"/><source legal="no" name="wsprnet" href="http://wsprnet.org/drupal/"/></channel>
+		<channel name="Emergency Region 1" freq="7110000" ref="DE01"/>
+		<channel name="ATV" freq="7165000" ref="DE01"/>
+		<channel name="Digital Speech" freq="7070000" ref="DE01"/>
+		<channel name="QRP" freq="7090000" ref="DE01"><mode name="SSB"/></channel>
+		<channel name="WSPR" freq="7038600" ref="WSPR01"><mode name="WSPR"/></channel>
 	</channels>
 </band>
 
 
-<band name="40m" min="7000000" max="7300000" author="DG6FL" created="20131109" valid="20130101">
+<band name="40m" min="7000000" max="7300000" author="DG6FL" created="20131109" valid="20130101" ref="US01">
 	<country name="US"/>
-	<regulation>
-		<license name="Amateur_Extra"/>
-		<source implemented="yes" legal="no" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
-	</regulation>
 
-	<region min="7000000" max="7025000" bandwidth="1000">
-		<regulation>
-			<license name="Amateur_Extra"/>
-			<source implemented="yes" legal="no" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
-		</regulation>
+	<region min="7000000" max="7025000" bandwidth="1000" ref="US01">
+		<license name="Amateur_Extra" ref="US01"/>
+		<license name="Amateur_Extra" ref="US01"/>
 		<mode name="CW"/>
 		<mode name="RTTY"/>
 		<mode name="Digital"/>
 	</region>
 
-	<region min="7025000" max="7125000" bandwidth="1000">
-		<regulation>
-			<license name="Advanced"/>
-			<license name="General"/>
-			<source implemented="yes" legal="no" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
-		</regulation>
+	<region min="7025000" max="7125000" bandwidth="1000" ref="US01">
+		<license name="Amateur_Extra" ref="US01"/>
+		<license name="Advanced" ref="US01"/>
+		<license name="General" ref="US01"/>
 		<mode name="CW">
-			<regulation>
-				<license name="Technician" power="200"/>
-				<license name="Novice" power="200"/>
-				<source implemented="yes" legal="no" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
-			</regulation>
+			<license name="Technician" power="200" ref="US01"/>
+			<license name="Novice" power="200" ref="US01"/>
 		</mode>
 		<mode name="RTTY"/>
 		<mode name="Digital"/>
 	</region>
 
-	<region min="7125000" max="7175000" bandwidth="2700">
-		<regulation>
-			<license name="Advanced"/>
-			<source implemented="yes" legal="no" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
-		</regulation>
+	<region min="7125000" max="7175000" bandwidth="2700" ref="US01">
+		<license name="Amateur_Extra" ref="US01"/>
+		<license name="Advanced" ref="US01"/>
 		<mode name="All"/>
 	</region>
 
-	<region min="7175000" max="7300000" bandwidth="2700">
-		<regulation>
-			<license name="Advanced"/>
-			<license name="General"/>
-			<source implemented="yes" legal="no" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
-		</regulation>
+	<region min="7175000" max="7300000" bandwidth="2700" ref="US01">
+		<license name="Amateur_Extra" ref="US01"/>
+		<license name="Advanced" ref="US01"/>
+		<license name="General" ref="US01"/>
 		<mode name="All"/>
 	</region>
-
-	<source implemented="yes" legal="no" name="ARRL" href="http://www.arrl.org/frequency-allocations"/>
-	<source implemented="yes" legal="no" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
 </band>
 
 </bandplan>

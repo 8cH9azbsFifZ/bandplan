@@ -25,5 +25,10 @@
 		<ref id="DE03" name="Bundesgesetzblatt: Minor modifications of provisions" href="http://www.bmwi.de/BMWi/Redaktion/PDF/Gesetz/AFuV-erste-verordnung-zur-_C3_A4nderung,property=pdf,bereich=bmwi,sprache=de,rwb=true.pdf" md5="6a743e9443b78d39cae837e215b0440d"/>
 		<!--<ref id="DE04" name="Bundesnetzagentur: Overview" href="http://www.bundesnetzagentur.de/cln_1912/DE/Sachgebiete/Telekommunikation/RegulierungTelekommunikation/Frequenzordnung/Amateurfunk/amateurfunk_node.html" md5=""/> -->
 		<ref id="DE05" name="Bundesministerium der Justiz: Amateur Radio Law" href="http://www.gesetze-im-internet.de/bundesrecht/afug_1997/gesamt.pdf" md5="143ee3bf648fd23fa1a5a1e484373bc4"/> 
+
+		<ref id="US01" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf" md5="a254f68eeae6ebb3f24c3e5b61f26dff"/>
+		<!--<ref id="US02" name="ARRL" href="http://www.arrl.org/frequency-allocations" md5=""/>-->
+
+		<ref id="WSPR01" name="WSPR" href="http://wsprnet.org/drupal/" md5=""/>
 	</references>
 </bandplan>
