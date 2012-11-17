@@ -22,8 +22,8 @@
 
 <countries>
 <country name="DE">
-	<license name="Klasse A" cept="CEPT"/>
-	<license name="Klasse E" cept="CEPT-Novice"/>
+	<license name="Klasse A" cept="CEPT" prefix="DL" ref="TR6101"/>
+	<license name="Klasse E" cept="CEPT-Novice" prefix="DO" ref="REC0506"/>
 	<license name="PMR"/>
 	<license name="LPD"><comment>New name is SRD short rande devices</comment></license>
 	<source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>

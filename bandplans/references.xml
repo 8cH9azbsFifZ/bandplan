@@ -42,9 +42,12 @@
 		<!--<ref id="US02" name="ARRL" href="http://www.arrl.org/frequency-allocations" md5=""/>-->
 
 		<!-- CEPT -->
-		<ref id="TR6101" name="CEPT TR 61-01"
+		<ref id="TR6101" name="CEPT Recommendation T/R"
 			href="http://www.erodocdb.dk/docs/doc98/official/pdf/TR6101.pdf"
-			md5=""/>
+			md5="91965e186b51fd320452f341abf6cd90"/>
+		<ref id="REC0506" name="ECC Recommendation 05(06)"
+			href="http://www.erodocdb.dk/docs/doc98/official/pdf/rec0506.pdf"
+			md5="11ced17c88999a0f42a5dfaf2cfb3a05"/>
 
 		<!-- Others -->
 		<ref id="WSPR01" name="WSPR" href="http://wsprnet.org/drupal/" md5=""/>
