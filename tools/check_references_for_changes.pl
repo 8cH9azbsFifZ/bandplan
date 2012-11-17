@@ -15,7 +15,10 @@ foreach my $ref (keys %list){
 	my $id = $list{$ref}{id};
 	my $md5 = $list{$ref}{md5};
 	my $href = $list{$ref}{href};
-	my $md5_check = `wget -O - $href 2>/dev/null| md5`;
+	my $localfile = $list{$ref}{localfile};
+	$localfile or next;
+	`wget -O $localfile $href`;
+	my $md5_check = `cat $localfile | md5`;
 	chomp ($md5_check);
 	$md5 == $md5_check and next;
 	$changed = 1;
