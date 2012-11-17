@@ -18,48 +18,57 @@
 
 <!DOCTYPE note SYSTEM "bandplan.dtd">
 
-<bandplan version="0.7.4">
+<bandplan version="0.7.5">
 <band name="40m" min="7000000" max="7200000" author="DG6FL" created="20131109" valid="20130101">
 	<country name="DE"/> 
-   <regulation>
-      <license name="Klasse A" power="750"/>
-      <source legal="no" name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
-		<source legal="yes" name="Bundesministerium der Justiz: Amateur Radio Law" href="http://www.gesetze-im-internet.de/afug_1997/index.html"/>
-		<source legal="yes" name="Bundesministerium der Justiz: Amateur Radio provisions" href="http://www.gesetze-im-internet.de/afuv_2005/index.html"/>
-		<source legal="yes" name="Bundesgesetzblatt: Minor modifications of provisions" href="http://www.bmwi.de/BMWi/Redaktion/PDF/Gesetz/AFuV-erste-verordnung-zur- _C3_A4nderung,property=pdf,bereich=bmwi,sprache=de,rwb=true.pdf"/>
-		<source legal="yes" name="Bundesnetzagentur: Overview" href="http://www.bundesnetzagentur.de/cln_1912/DE/Sachgebiete/Telekommunikation/RegulierungTelekommunikati on/Frequenzordnung/Amateurfunk/amateurfunk_node.html;jsessionid=F813714D89BEEA287380149E167B2212"/>
-   </regulation>
-	<region min="7000000" max="7040000" bandwidth="200"><mode name="CW"/></region>
-	<region min="7040000" max="7047000" bandwidth="500"><mode name="NarrowDigital"/></region>
-	<region min="7047000" max="7050000" bandwidth="500"><mode name="NarrowDigital"/><comment>automatic stations</comment></region>
-	<region min="7050000" max="7053000" bandwidth="2700"><mode name="All"/><comment>automatic stations</comment></region>
-	<region min="7053000" max="7060000" bandwidth="2700"><mode name="All"/><comment>digital modes</comment></region>
-	<region min="7060000" max="7100000" bandwidth="2700"><mode name="All"/><comment>SSB contests</comment></region>
-	<region min="7100000" max="7130000" bandwidth="2700"><mode name="All"/></region>
-	<region min="7130000" max="7200000" bandwidth="2700"><mode name="All"/><comment>SSB contests</comment></region>
-	<region min="7175000" max="7200000" bandwidth="2700"><mode name="All"/><comment>Intercontinental QSO</comment></region>
 
-	<channel name="QRP" freq="7030000"><mode name="CW"/></channel>
-	<channel name="Emergency Region 1" freq="7110000"/>
-	<channel name="ATV" freq="7165000"/>
-	<channel name="Digital Speech" freq="7070000"/>
-	<channel name="QRP" freq="7090000"><mode name="SSB"/></channel>
-	<channel name="WSPR" freq="7038600"><mode name="WSPR"/><source legal="no" name="wsprnet" href="http://wsprnet.org/drupal/"/></channel>
+	<region min="7000000" max="7040000">
+	   <regulation>
+			<license name="Klasse_A" power="750" powermeasure="PEP" bandwidth="2700"/>
+	   </regulation>
+		<region min="7000000" max="7040000" bandwidth="200"><mode name="CW"/></region>
+		<region min="7040000" max="7047000" bandwidth="500"><mode name="NarrowDigital"/></region>
+		<region min="7047000" max="7050000" bandwidth="500"><mode name="NarrowDigital"/><comment>automatic stations</comment></region>
+		<region min="7050000" max="7053000" bandwidth="2700"><mode name="All"/><comment>automatic stations</comment></region>
+		<region min="7053000" max="7060000" bandwidth="2700"><mode name="All"/><comment>digital modes</comment></region>
+		<region min="7060000" max="7100000" bandwidth="2700"><mode name="All"/><comment>SSB contests</comment></region>
+	</region>
+	<region min="7100000" max="7200000">
+	   <regulation>
+			<license name="Klasse_A" power="250" powermeasure="PEP" bandwidth="2700"/>
+	   </regulation>
+		<region min="7100000" max="7130000" bandwidth="2700"><mode name="All"/></region>
+		<region min="7130000" max="7200000" bandwidth="2700"><mode name="All"/><comment>SSB contests</comment></region>
+		<region min="7175000" max="7200000" bandwidth="2700"><mode name="All"/><comment>Intercontinental QSO</comment></region>
+	</region>
+
+	<channels>
+		<channel name="QRP" freq="7030000"><mode name="CW"/></channel>
+		<channel name="Emergency Region 1" freq="7110000"/>
+		<channel name="ATV" freq="7165000"/>
+		<channel name="Digital Speech" freq="7070000"/>
+		<channel name="QRP" freq="7090000"><mode name="SSB"/></channel>
+		<channel name="WSPR" freq="7038600"><mode name="WSPR"/><source legal="no" name="wsprnet" href="http://wsprnet.org/drupal/"/></channel>
+	</channels>
 
 	<source implemented="yes" legal="no" name="DARC" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
+	<!-- <source legal="yes" name="Bundesministerium der Justiz: Amateur Radio Law" href="http://www.gesetze-im-internet.de/bundesrecht/afug_1997/gesamt.pdf"/> -->
+	<source legal="yes" name="Bundesministerium der Justiz: Amateur Radio provisions" href="http://www.gesetze-im-internet.de/bundesrecht/afuv_2005/gesamt.pdf"/>
+	<source legal="yes" name="Bundesgesetzblatt: Minor modifications of provisions" href="http://www.bmwi.de/BMWi/Redaktion/PDF/Gesetz/AFuV-erste-verordnung-zur-_C3_A4nderung,property=pdf,bereich=bmwi,sprache=de,rwb=true.pdf"/>
+	<!-- <source legal="yes" name="Bundesnetzagentur: Overview" href="http://www.bundesnetzagentur.de/cln_1912/DE/Sachgebiete/Telekommunikation/RegulierungTelekommunikati on/Frequenzordnung/Amateurfunk/amateurfunk_node.html;jsessionid=F813714D89BEEA287380149E167B2212"/> -->
 </band>
 
 
 <band name="40m" min="7000000" max="7300000" author="DG6FL" created="20131109" valid="20130101">
 	<country name="US"/>
 	<regulation>
-		<license name="Amateur Extra"/>
+		<license name="Amateur_Extra"/>
 		<source implemented="yes" legal="no" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
 	</regulation>
 
 	<region min="7000000" max="7025000" bandwidth="1000">
 		<regulation>
-			<license name="Amateur Extra"/>
+			<license name="Amateur_Extra"/>
 			<source implemented="yes" legal="no" name="ARRL" href="http://www.arrl.org/files/file/Hambands_color.pdf"/>
 		</regulation>
 		<mode name="CW"/>
