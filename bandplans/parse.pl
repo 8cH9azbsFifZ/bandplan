@@ -1,18 +1,13 @@
 #!/usr/bin/perl
-use XML::Parser;
-
 $filename = "references.xml";
 
 use XML::Simple;
+use Data::Dumper;
 
 $xml = new XML::Simple;
 $data = $xml->XMLin($filename);
 
-use Data::Dumper;
-#print Dumper $data;
 my %list = %{$data->{references}->{ref}};
-#print Dumper %list;
-
 $changed = 0;
 foreach my $ref (keys %list){
 	my $id = $list{$ref}{id};
@@ -24,5 +19,5 @@ foreach my $ref (keys %list){
 	$changed = 1;
 	print "Reference $id \"$ref\" has changed ($md5 != $md5_check ).\n";
 }
-
+exit $changed;
 
