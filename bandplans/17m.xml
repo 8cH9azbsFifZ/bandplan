@@ -15,27 +15,33 @@
     You should have received a copy of the GNU General Public License
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
-<bandplan version="0.6.4" >
 
-<band name="17m" min="18068000" max="18168000" author="DG6FL" country="DE" created="20131109" valid="20130101">
-   <regulation>
-      <license name="Klasse A" power="750"/>
-      <source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
-   </regulation>
+<!DOCTYPE note SYSTEM "bandplan.dtd">
 
-	<region min="18068000" max="18095000" bandwidth="200"><mode>CW</mode></region>
-	<region min="18095000" max="18105000" bandwidth="500"><mode>Narrow</mode></region>
-	<region min="18105000" max="18109000" bandwidth="500"><mode>Narrow</mode><comment>Automatic stations</comment></region>
-	<region min="18109000" max="18111000"><comment>International Beacon-Project, no sending</comment></region>
-	<region min="18111000" max="18120000" bandwidth="2700"><mode>All</mode><comment>Automatic digital stations</comment></region>
-	<region min="18120000" max="18168000" bandwidth="2700"><mode>All</mode></region>
+<bandplan version="0.7.5" >
 
-	<channel name="QRP" freq="18086000"><mode>CW</mode></channel>
-	<channel name="QRP" freq="18130000"><mode>SSB</mode></channel>
-	<channel name="Digital Speech" freq="18150000"></channel>
-	<channel name="Emergency" freq="18160000"></channel>
-	<channel name="WSPR" freq="18104600"><mode>WSPR</mode><source name="wsprnet" href="http://wsprnet.org/drupal/"/></channel>
+<band name="17m" min="18068000" max="18168000" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
+	<country name="DE"/> 
+	
+	<region min="18068000" max="18168000" bandwidth="2700" ref="DE02">	
 
-	<source implemented="yes" name="DARC" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
+		<license name="Klasse_A" power="750" powermeasure="PEP" ref="DE02"/>
+
+		<region min="18068000" max="18095000" bandwidth="200" ref="DE01"><mode name="CW"/></region>
+		<region min="18095000" max="18105000" bandwidth="500" ref="DE01"><mode name="Narrow"/></region>
+		<region min="18105000" max="18109000" bandwidth="500" ref="DE01"><mode name="Narrow"/><comment>Automatic stations</comment></region>
+		<region min="18109000" max="18111000" ref="DE01"><comment>International Beacon-Project, no sending</comment></region>
+		<region min="18111000" max="18120000" bandwidth="2700" ref="DE01"><mode name="All"/><comment>Automatic digital stations</comment></region>
+		<region min="18120000" max="18168000" bandwidth="2700" ref="DE01"><mode name="All"/></region>
+	</region>
+
+	<channels>
+		<channel name="QRP" freq="18086000" ref="DE01"><mode name="CW"/></channel>
+		<channel name="QRP" freq="18130000" ref="DE01"><mode name="SSB"/></channel>
+		<channel name="Digital Speech" freq="18150000" ref="DE01"></channel>
+		<channel name="Emergency" freq="18160000" ref="DE01"></channel>
+		<channel name="WSPR" freq="18104600" ref="WSPR01"><mode name="WSPR"/></channel>
+	</channels>
+
 </band>
 </bandplan>
