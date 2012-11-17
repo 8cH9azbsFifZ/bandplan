@@ -97,8 +97,9 @@
 			<comment>Shift 6.25 kHz</comment>
 		</region>
 		<region min="145794000" max="145806000" bandwidth="12000" ref="DE01">
-			<mode name="NarrowFM"/>	</region>
+			<mode name="NarrowFM"/>
 			<comment>Space-Earth</comment>
+		</region>
 		<region min="145806000" max="146000000" bandwidth="12000" ref="DE01">
 			<mode name="NarrowFM"/>
 			<comment>Satellites</comment>
