@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+	 This file is part of xmlbandplan.
+
+    Xmlbandplan is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Xmlbandplan is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
+-->
+
+<!DOCTYPE note SYSTEM "bandplan.dtd">
+
+<bandplan version="0.7.5">
+	<references>
+		<ref id="DE01" name="DARC" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf" md5="cbbcf1311a4a32fe6208143f39bf3ad3"/>
+		<ref id="DE02" name="Bundesministerium der Justiz: Amateur Radio provisions" href="http://www.gesetze-im-internet.de/bundesrecht/afuv_2005/gesamt.pdf"/>
+		<ref id="DE03" name="Bundesgesetzblatt: Minor modifications of provisions" href="http://www.bmwi.de/BMWi/Redaktion/PDF/Gesetz/AFuV-erste-verordnung-zur-_C3_A4nderung,property=pdf,bereich=bmwi,sprache=de,rwb=true.pdf"/>
+		<ref id="DE04" name="Bundesnetzagentur: Overview" href="http://www.bundesnetzagentur.de/cln_1912/DE/Sachgebiete/Telekommunikation/RegulierungTelekommunikati on/Frequenzordnung/Amateurfunk/amateurfunk_node.html;jsessionid=F813714D89BEEA287380149E167B2212"/> -->
+		<ref id="DE05" name="Bundesministerium der Justiz: Amateur Radio Law" href="http://www.gesetze-im-internet.de/bundesrecht/afug_1997/gesamt.pdf"/> 
+	</references>
+</bandplan>
