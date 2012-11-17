@@ -23,7 +23,7 @@
 		<ref id="DE01" name="DARC" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf" md5="cbbcf1311a4a32fe6208143f39bf3ad3"/>
 		<ref id="DE02" name="Bundesministerium der Justiz: Amateur Radio provisions" href="http://www.gesetze-im-internet.de/bundesrecht/afuv_2005/gesamt.pdf" md5="ea8d730dd25f55829381b0af4cd40b4c"/>
 		<ref id="DE03" name="Bundesgesetzblatt: Minor modifications of provisions" href="http://www.bmwi.de/BMWi/Redaktion/PDF/Gesetz/AFuV-erste-verordnung-zur-_C3_A4nderung,property=pdf,bereich=bmwi,sprache=de,rwb=true.pdf" md5="6a743e9443b78d39cae837e215b0440d"/>
-		<ref id="DE04" name="Bundesnetzagentur: Overview" href="http://www.bundesnetzagentur.de/cln_1912/DE/Sachgebiete/Telekommunikation/RegulierungTelekommunikation/Frequenzordnung/Amateurfunk/amateurfunk_node.html" md5=""/> 
+		<!--<ref id="DE04" name="Bundesnetzagentur: Overview" href="http://www.bundesnetzagentur.de/cln_1912/DE/Sachgebiete/Telekommunikation/RegulierungTelekommunikation/Frequenzordnung/Amateurfunk/amateurfunk_node.html" md5=""/> -->
 		<ref id="DE05" name="Bundesministerium der Justiz: Amateur Radio Law" href="http://www.gesetze-im-internet.de/bundesrecht/afug_1997/gesamt.pdf" md5="143ee3bf648fd23fa1a5a1e484373bc4"/> 
 	</references>
 </bandplan>
