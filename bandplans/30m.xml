@@ -19,10 +19,10 @@
 <!DOCTYPE note SYSTEM "bandplan.dtd">
 
 <bandplan version="0.7.5">
-<band name="30m" min="10100000" max="10200000" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
+<band name="30m" min="10100000" max="10150000" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
 	<country name="DE"/> 
 
-	<region min="10100000" max="10140000" bandwidth="800" ref="DE02">
+	<region min="10100000" max="10150000" bandwidth="800" ref="DE02">
 		<license name="Klasse_A" power="150" ref="DE02"/>
 
 		<region min="10100000" max="10140000" bandwidth="200" ref="DE01"><mode name="CW"/></region>
