@@ -19,7 +19,7 @@
 	<!ATTLIST band valid CDATA #REQUIRED>
 	<!ATTLIST band reviewer CDATA #IMPLIED>
 
-<!ELEMENT channels (channel*)>
+<!ELEMENT channels (channel*,repeater*)>
 
 <!ELEMENT country (license*)>
 	<!ATTLIST country name (DE|US|IARU1|IARU2|IARU3|International) #REQUIRED>
@@ -46,9 +46,30 @@
 	<!ATTLIST channel ref CDATA #REQUIRED>
 	<!ATTLIST channel bandwidth CDATA #IMPLIED>
 	
+<!ELEMENT repeater (mode,shift,echolink*,position,homepage*,operator*,comment*)>
+	<!ATTLIST repeater name CDATA #REQUIRED>
+	<!ATTLIST repeater freq CDATA #REQUIRED>
+	<!ATTLIST repeater ref CDATA #REQUIRED>
+	<!ATTLIST repeater bandwidth CDATA #IMPLIED>
+
+<!ELEMENT echolink (#PCDATA)>
+	<!ATTLIST echolink node CDATA #REQUIRED>
+
+<!ELEMENT position (#PCDATA)>
+	<!ATTLIST position locator CDATA #REQUIRED>
+	<!ATTLIST position lat CDATA #IMPLIED>
+	<!ATTLIST position lon CDATA #IMPLIED>
+
+<!ELEMENT shift (#PCDATA)>
+
+<!ELEMENT homepage (#PCDATA)>
+	<!ATTLIST homepage href CDATA #REQUIRED>
+
+<!ELEMENT operator (#PCDATA)>
+	<!ATTLIST operator call CDATA #REQUIRED>
 
 <!ELEMENT mode (#PCDATA|license)*>
-	<!ATTLIST mode name (All|AM|FM|NarrowFM|CW|SSB|USB|LSB|NarrowDigital|Digital|MGM|WSPR|SSTV|RTTY|Image|SatelliteDownlink|Narrow|NoSending) #REQUIRED>
+	<!ATTLIST mode name (All|AM|FM|NarrowFM|CW|SSB|USB|LSB|NarrowDigital|Digital|MGM|WSPR|SSTV|RTTY|Image|Satellite|SatelliteDownlink|Narrow|NoSending) #REQUIRED>
 
 <!ELEMENT comment (#PCDATA)>
 	

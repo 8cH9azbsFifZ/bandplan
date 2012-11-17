@@ -43,5 +43,6 @@
 
 		<!-- Others -->
 		<ref id="WSPR01" name="WSPR" href="http://wsprnet.org/drupal/" md5=""/>
+		<ref id="REPEATER01" name="DARC Repeater List" href="http://www.darc.de/echolink-bin/relais.pl" md5=""/>
 	</references>
 </bandplan>
