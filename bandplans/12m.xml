@@ -15,25 +15,28 @@
     You should have received a copy of the GNU General Public License
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
-<bandplan version="0.6.4">
-<band name="12m" min="24890000" max="24915000" author="DG6FL" country="DE" created="20131109" valid="20130101">
-	<regulation>
-		<license name="Klasse A" power="750"/>
-		<source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
-	</regulation>
 
-	<region min="24890000" max="24915000" bandwidth="200"><mode>CW</mode></region>
-	<region min="24915000" max="24925000" bandwidth="500"><mode>Narrow</mode></region>
-	<region min="24925000" max="24929000" bandwidth="500"><mode>Narrow</mode><comment>Automatic stations</comment></region>
-	<region min="24929000" max="24931000"><comment>Beacons, no sending</comment></region>
-	<region min="24931000" max="24940000" bandwidth="2700"><mode>All</mode><comment>Digimode, Automatic stations</comment></region>
-	<region min="24940000" max="24990000" bandwidth="2700"><mode>All</mode></region>
+<!DOCTYPE note SYSTEM "bandplan.dtd">
+
+<bandplan version="0.7.5">
+<band name="12m" min="24890000" max="24990000" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
+	<country name="DE"/> 
+	<region min="24890000" max="24990000" bandwidth="2700" ref="DE02">
 	
+		<license name="Klasse_A" power="750" powermeasure="PEP" ref="DE02"/>
 
-	<channel name="QRP" freq="24906000"><mode>CW</mode></channel>
-	<channel name="QRP" freq="24950000"><mode>SSB</mode></channel>
-	<channel name="WSPR" freq="24924600"><mode>WSPR</mode><source name="wsprnet" href="http://wsprnet.org/drupal/"/></channel>
-
-	<source implemented="yes" name="DARC" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
+		<region min="24890000" max="24915000" bandwidth="200" ref="DE01"><mode name="CW"/></region>
+		<region min="24915000" max="24925000" bandwidth="500" ref="DE01"><mode name="Narrow"/></region>
+		<region min="24925000" max="24929000" bandwidth="500" ref="DE01"><mode name="Narrow"/><comment>Automatic stations</comment></region>
+		<region min="24929000" max="24931000" ref="DE01"><comment>Beacons, no sending</comment></region>
+		<region min="24931000" max="24940000" bandwidth="2700" ref="DE01"><mode name="All"/><comment>Digimode, Automatic stations</comment></region>
+		<region min="24940000" max="24990000" bandwidth="2700" ref="DE01"><mode name="All"/></region>
+	</region>
+	
+	<channels>
+		<channel name="QRP" freq="24906000" ref="DE01"><mode name="CW"/></channel>
+		<channel name="QRP" freq="24950000" ref="DE01"><mode name="SSB"/></channel>
+		<channel name="WSPR" freq="24924600" ref="WS01"><mode name="WSPR"/></channel>
+	</channels>
 </band>
 </bandplan>
