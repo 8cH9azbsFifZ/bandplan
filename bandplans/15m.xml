@@ -15,28 +15,31 @@
     You should have received a copy of the GNU General Public License
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
-<bandplan version="0.6.4">
-<band name="15m" min="21000000" max="21070000" author="DG6FL" country="DE" created="20131109" valid="20130101">
-	<regulation>
-		<license name="Klasse A" power="750"/>
-		<license name="Klasse E" power="100"/>
-		<source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
-	</regulation>
 
-	<region min="21000000" max="21070000" bandwidth="200"><mode>CW</mode></region>
-	<region min="21070000" max="21090000" bandwidth="500"><mode>Narrow</mode><comment>Digimode</comment></region>
-	<region min="21090000" max="21110000" bandwidth="500"><mode>Narrow</mode><comment>Digimode, Automatic digital stations</comment></region>
-	<region min="21110000" max="21120000" bandwidth="2700"><mode>All</mode><comment>No SSB, Digimode, Automatic digital stations</comment></region>
-	<region min="21120000" max="21149000" bandwidth="500"><mode>Narrow</mode></region>
-	<region min="21149000" max="21151000"><comment>Beacons, no sending</comment></region>
-	<region min="21151000" max="21450000" bandwidth="2700"><mode>All</mode></region>
+<!DOCTYPE note SYSTEM "bandplan.dtd">
+
+<bandplan version="0.7.5">
+<band name="15m" min="21000000" max="21450000" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
+	<country name="DE"/> 
+	<region min="21000000" max="21070000" bandwidth="2700" ref="DE02">	
+		<license name="Klasse_A" power="750" powermeasure="PEP" ref="DE02"/>
+		<license name="Klasse_E" power="100" powermeasure="PEP" ref="DE02"/>
+
+		<region min="21000000" max="21070000" bandwidth="200" ref="DE01"><mode name="CW"/></region>
+		<region min="21070000" max="21090000" bandwidth="500" ref="DE01"><mode name="Narrow"/><comment>Digimode</comment></region>
+		<region min="21090000" max="21110000" bandwidth="500" ref="DE01"><mode name="Narrow"/><comment>Digimode, Automatic digital stations</comment></region>
+		<region min="21110000" max="21120000" bandwidth="2700" ref="DE01"><mode name="All"/><comment>No SSB, Digimode, Automatic digital stations</comment></region>
+		<region min="21120000" max="21149000" bandwidth="500" ref="DE01"><mode name="Narrow"/></region>
+		<region min="21149000" max="21151000" ref="DE01"><comment>Beacons, no sending</comment></region>
+		<region min="21151000" max="21450000" bandwidth="2700" ref="DE01"><mode name="All"/></region>
+	</region>
 
 
-	<channel name="QRP" freq="21060000"><mode>CW</mode></channel>
-	<channel name="QRS" freq="21055000"><mode>CW</mode></channel>
-	<channel name="Digital Speech" freq="21180000"><mode>Digital</mode></channel>
-	<channel name="WSPR" freq="21994600"><source name="wsprnet" href="http://wsprnet.org/drupal/"/><mode>WSPR</mode></channel>
-
-	<source implemented="yes" name="DARC" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
+	<channels>
+		<channel name="QRP" freq="21060000" ref="DE01"><mode>CW</mode></channel>
+		<channel name="QRS" freq="21055000" ref="DE01"><mode>CW</mode></channel>
+		<channel name="Digital Speech" freq="21180000" ref="DE01"><mode>Digital</mode></channel>
+		<channel name="WSPR" freq="21994600" ref="WSPR01"><mode name="WSPR"/></channel>
+	</channels>
 </band>
 </bandplan>
