@@ -23,25 +23,24 @@
 <band name="20m" min="14000000" max="14350000" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
 	<country name="DE"/> 
 
-   <regulation>
-      <license name="Klasse A" power="750"/>
-      <source name="Wikipedia" href="http://de.wikipedia.org/wiki/Amateurfunkzeugnis#Aktuelle_Amateurfunkzeugnis-Klassen"/>
-	</regulation>
+	<region min="14000000" max="14350000" bandwidth="2700" ref="DE02">
+		<license name="Klasse_A" power="750" powermeasure="PEP" ref="DE02"/>
 
-	<region min="14000000" max="14060000" bandwidth="200"><mode>CW</mode><comment>Contest</comment></region>
-	<region min="14060000" max="14070000" bandwidth="200"><mode>CW</mode></region>
-	<region min="14070000" max="14089000" bandwidth="500"><mode>Narrow</mode><comment>Digimode</comment></region>
-	<region min="14089000" max="14099000" bandwidth="500"><mode>Narrow</mode><comment>Digimode, automatic digital stations</comment></region>
-	<region min="14099000" max="14101000"><comment>International Beacon-Project, no sending</comment></region>
-	<region min="14101000" max="14112000" bandwidth="2700"><mode>All</mode><comment>Digimode, automatic digital stations</comment></region>
-	<region min="14112000" max="14125000" bandwidth="2700"><mode>All</mode></region>
-	<region min="14125000" max="14300000" bandwidth="2700"><mode>All</mode><comment>Contest</comment></region>
-	<region min="14300000" max="14350000" bandwidth="2700"><mode>All</mode></region>
+		<region min="14000000" max="14060000" bandwidth="200" ref="DE01"><mode name="CW"/><comment>Contest</comment></region>
+		<region min="14060000" max="14070000" bandwidth="200" ref="DE01"><mode name="CW"/></region>
+		<region min="14070000" max="14089000" bandwidth="500" ref="DE01"><mode name="Narrow"/><comment>Digimode</comment></region>
+		<region min="14089000" max="14099000" bandwidth="500" ref="DE01"><mode name="Narrow"/><comment>Digimode, automatic digital stations</comment></region>
+		<region min="14099000" max="14101000" ref="DE01"><comment>International Beacon-Project, no sending</comment></region>
+		<region min="14101000" max="14112000" bandwidth="2700" ref="DE01"><mode name="All"/><comment>Digimode, automatic digital stations</comment></region>
+		<region min="14112000" max="14125000" bandwidth="2700" ref="DE01"><mode name="All"/></region>
+		<region min="14125000" max="14300000" bandwidth="2700" ref="DE01"><mode name="All"/><comment>Contest</comment></region>
+		<region min="14300000" max="14350000" bandwidth="2700" ref="DE01"><mode name="All"/></region>
+	</region>
 
-	<channel name="QRP" freq="14060000"><mode>CW</mode></channel>
-	<channel name="Emergency" freq="14300000"></channel>
-	<channel name="WSPR" freq="14095600"><mode>WSPR</mode><source name="wsprnet" href="http://wsprnet.org/drupal/"/></channel>
-
-	<source implemented="yes" name="DARC" href="http://www.darc.de/uploads/media/Bandplan_2seitig_farbig_deutsch_17aug11_mit_Notizen.pdf"/>
+	<channels>
+		<channel name="QRP" freq="14060000" ref="DE01"><mode name="CW"/></channel>
+		<channel name="Emergency" freq="14300000" ref="DE01"></channel>
+		<channel name="WSPR" freq="14095600" ref="WSPR01"><mode name="WSPR"/></channel>
+	</channels>
 </band>
 </bandplan>
