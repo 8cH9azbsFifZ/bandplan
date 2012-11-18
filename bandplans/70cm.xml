@@ -22,7 +22,7 @@
 <band name="70cm" min="433000000" max="440000000" author="DG6FL" created="2013 1109" valid="20130101" ref="DE02">
 	<country name="DE"/> 
 
-	<region min="430000000" max="440000000" bandwidth="7000000" ref="DE08">
+	<region min="430000000" max="440000000" bandwidth="7000000" ref="DE02">
       <license name="Klasse_A" power="750" powermeasure="PEP" ref="DE02"/>
       <license name="Klasse_E" power="75" powermeasure="PEP" ref="DE02"/>
 
