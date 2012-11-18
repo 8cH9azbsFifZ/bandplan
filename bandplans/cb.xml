@@ -19,11 +19,14 @@
 <!DOCTYPE note SYSTEM "bandplan.dtd">
 
 <bandplan version="0.7.5">
-<band name="CB" min="26965000" max="27405000" author="DG6FL" created="20131109" valid="20130101">
-	<country name="International"/>
+<band name="CB" min="26965000" max="27405000" author="DG6FL" created="20131109" valid="20130101" ref="DECB01">
+	<country name="DE"/>
 
-	<region min="26565000" max="27405000">
-		<license name="CB" power="4"/>
+	<region min="26565000" max="27405000" ref="DECB01">
+		<license name="CB" power="4" powermeasure="ERP" bandwidth="10000" ref="DECB01"/>
+		<mode name="FM"/>
+		<mode name="AM"/>
+		<mode name="SSB" comment="12Watt"/>
 	</region>
 
 	<channels>
@@ -72,14 +75,6 @@
 		<channel name="38" freq="27385000"><mode>FM</mode></channel>
 		<channel name="39" freq="27375000"><mode>FM</mode></channel>
 		<channel name="40" freq="27405000"><mode>FM</mode></channel>
-	</channels>
-
-	<source implemented="yes" name="Wikipedia" href="http://de.wikipedia.org/wiki/CB-Funk#CB-Kan.C3.A4le"/>
-	<source implemented="no" name="Wikipedia" href="http://en.wikipedia.org/wiki/Citizens_Band_radio#Frequencies_worldwide"/>
-</band>
-
-<band name="CB" min="26565000" max="26955000" author="DG6FL" country="DE" created="23102012" valid="01012013" mode="FM">
-	<channels>
 		<channel name="41" freq="26565000"><mode>FM</mode></channel>
 		<channel name="42" freq="26575000"><mode>FM</mode></channel>
 		<channel name="43" freq="26585000"><mode>FM</mode></channel>
