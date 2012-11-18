@@ -147,12 +147,28 @@
 	</xsl:template>
 
 	<xsl:template match="license">
-		<xsl:value-of select="@name"/>
-		<xsl:text>: </xsl:text>
-		<xsl:value-of select="@power"/>
-		<xsl:text>W (</xsl:text>
-		<xsl:value-of select="@powermeasure"/>
-		<xsl:text>) </xsl:text>
+		<xsl:choose>
+			<xsl:when test="@prefix">
+				<tr style="background-color:#bbb">
+					<td><xsl:value-of select="../@name"/></td>
+					<td><xsl:value-of select="@prefix"/></td>
+					<td><xsl:value-of select="@name"/></td>
+					<td><xsl:value-of select="@cept"/></td>
+					<td>	
+						<xsl:variable name="link" select="@ref"/>
+						<a href="#{$link}"><xsl:value-of select="@ref"/></a>
+					</td>		
+				</tr>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="@name"/>
+				<xsl:text>: </xsl:text>
+				<xsl:value-of select="@power"/>
+				<xsl:text>W (</xsl:text>
+				<xsl:value-of select="@powermeasure"/>
+				<xsl:text>) </xsl:text>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
 	<xsl:template match="mode">
@@ -163,7 +179,13 @@
 		<i> <xsl:value-of select="."/> </i>
 	</xsl:template>
 
-	<xsl:template match="countries"/>
+	<xsl:template match="countries">
+		<xsl:apply-templates select="country"/>
+	</xsl:template>
+
+	<xsl:template match="country">
+		<xsl:apply-templates select="license"/>
+	</xsl:template>
 
 	<xsl:template match="source">
 		<xsl:choose>
@@ -175,6 +197,28 @@
 				<xsl:variable name="link" select="@href"/>
 				<small><a href="{$link}"><xsl:value-of select="@name"/></a></small>
 			</xsl:when>
+		</xsl:choose>
+	</xsl:template>
+
+	<!-- Handle License Files -->
+	<xsl:template match="licenses">
+		<xsl:choose>
+			<xsl:when test="@file"> <!-- Recursive processing of XML bandplans -->
+				<xsl:variable name="filename" select="@file"/>
+				<h1>Licenses</h1>
+				<table>
+					<tr>
+						<td>Country</td>
+						<td>Prefix</td>
+						<td>License</td>
+						<td>CEPT</td>
+						<td>Reference</td>
+					</tr>
+					<xsl:apply-templates select="document($filename)/bandplan"/>
+				</table>
+			</xsl:when>
+			<xsl:otherwise>
+			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
 
@@ -200,7 +244,7 @@
 	</xsl:template>
 
 	<xsl:template match="ref">
-		<tr>
+		<tr style="background-color:#bbb">
 			<td> 
 				<xsl:variable name="link" select="@id"/>
 				<a name="{$link}"><xsl:value-of select="@id"/></a>
