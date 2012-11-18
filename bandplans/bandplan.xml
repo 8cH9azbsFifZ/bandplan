@@ -36,4 +36,6 @@
 <band name="PMR"><source file="pmr.xml"/></band>
 <!--<band name="Radio"><source file="radio.xml"/></band>-->
 
+<references file="references.xml"/>
+
 </bandplan>

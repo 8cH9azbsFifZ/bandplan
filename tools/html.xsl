@@ -178,9 +178,34 @@
 		</xsl:choose>
 	</xsl:template>
 
+	<!-- Handle Refernces Files -->
+	<xsl:template match="references">
+		<xsl:choose>
+			<xsl:when test="@file"> <!-- Recursive processing of XML bandplans -->
+				<xsl:variable name="filename" select="@file"/>
+				<h1>References</h1>
+				<table>
+					<xsl:apply-templates select="document($filename)/bandplan"/>
+				</table>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:apply-templates select="ref"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+
 	<xsl:template match="ref">
-		<xsl:variable name="link" select="@href"/>
-		<small><a href="{$link}"><xsl:value-of select="@name"/></a></small>
+		<tr>
+			<td> 
+				<xsl:variable name="link" select="@id"/>
+				<a name="{$link}"><xsl:value-of select="@id"/></a>
+			</td>
+			<td> <xsl:value-of select="@name"/></td>
+			<td> 
+				<xsl:variable name="link" select="@href"/>
+				<a href="{$link}">Link</a>
+			</td>
+		</tr>
 	</xsl:template>
 
 </xsl:stylesheet>
