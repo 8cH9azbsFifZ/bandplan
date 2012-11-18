@@ -63,6 +63,66 @@
 		</country>
 	</country>
 
+	<country fullname="Estonia">
+		<license name="A" cept="CEPT" prefix="ES" ref="TR6101"/>
+		<license name="B" cept="CEPT" prefix="ES" ref="TR6101"/>
+	</country>
+
+	<country fullname="Finnland">
+		<license name="L" cept="CEPT" prefix="OH" ref="TR6101"/>
+		<license name="P" cept="CEPT" prefix="OH" ref="TR6101"/>
+		<license name="T" cept="CEPT" prefix="OH" ref="TR6101"/>
+		<license name="Y" cept="CEPT" prefix="OH" ref="TR6101"/>
+		<country fullname="Aland Islands">
+			<license name="L" cept="CEPT" prefix="OH0" ref="TR6101"/>
+			<license name="P" cept="CEPT" prefix="OH0" ref="TR6101"/>
+			<license name="T" cept="CEPT" prefix="OH0" ref="TR6101"/>
+			<license name="Y" cept="CEPT" prefix="OH0" ref="TR6101"/>
+		</country>
+	</country>
+
+	<country fullname="France">
+		<license name="1" cept="CEPT" prefix="F" ref="TR6101"/>
+		<license name="2" cept="CEPT" prefix="F" ref="TR6101"/>
+		<country fullname="Corsica">
+			<license name="1" cept="CEPT" prefix="TK" ref="TR6101"/>
+			<license name="2" cept="CEPT" prefix="TK" ref="TR6101"/>
+		</country>
+		<country fullname="Guadeloupe">
+			<license name="1" cept="CEPT" prefix="FG" ref="TR6101"/>
+			<license name="2" cept="CEPT" prefix="FG" ref="TR6101"/>
+		</country>
+		<country fullname="Guyana">
+			<license name="1" cept="CEPT" prefix="FY" ref="TR6101"/>
+			<license name="2" cept="CEPT" prefix="FY" ref="TR6101"/>
+		</country>
+		<country fullname="Martinique">
+			<license name="1" cept="CEPT" prefix="FM" ref="TR6101"/>
+			<license name="2" cept="CEPT" prefix="FM" ref="TR6101"/>
+		</country>
+		<country fullname="St-Bartholomew">
+			<license name="1" cept="CEPT" prefix="FJ" ref="TR6101"/>
+			<license name="2" cept="CEPT" prefix="FJ" ref="TR6101"/>
+		</country>
+		<country fullname="St-Pierre/Miquelon">
+			<license name="1" cept="CEPT" prefix="FP" ref="TR6101"/>
+			<license name="2" cept="CEPT" prefix="FP" ref="TR6101"/>
+		</country>
+		<country fullname="St-Martin">
+			<license name="1" cept="CEPT" prefix="FS" ref="TR6101"/>
+			<license name="2" cept="CEPT" prefix="FS" ref="TR6101"/>
+		</country>
+		<country fullname="Reunion (Glorieure, Jean de Nova, Tromelin)">
+			<license name="1" cept="CEPT" prefix="FR" ref="TR6101"/>
+			<license name="2" cept="CEPT" prefix="FR" ref="TR6101"/>
+		</country>
+		<country fullname="Mayotte">
+			<license name="1" cept="CEPT" prefix="FH" ref="TR6101"/>
+			<license name="2" cept="CEPT" prefix="FH" ref="TR6101"/>
+		</country>
+	</country>
+
+
 <country name="DE" fullname="Germany">
 	<license name="Klasse_A" cept="CEPT" prefix="DL" ref="TR6101"/>
 	<license name="Klasse_E" cept="CEPT-Novice" prefix="DO" ref="REC0506"/>
