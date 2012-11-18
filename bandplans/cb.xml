@@ -16,57 +16,63 @@
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
 
-<bandplan version="0.6.4">
-<band name="CB" min="26965000" max="27405000" author="DG6FL" country="International"  created="20131109" valid="20130101" mode="FM">
-	<regulation>
-		<license name="CB" power="4"/>
-	</regulation>
+<!DOCTYPE note SYSTEM "bandplan.dtd">
 
-	<channel name="1" freq="26965000"><mode>AM</mode><mode>FM</mode><comment>Call FM.</comment></channel>
-	<channel name="2" freq="26975000"><mode>AM</mode><mode>FM</mode></channel>
-	<channel name="3" freq="26985000"><mode>AM</mode><mode>FM</mode></channel>
-	<channel name="3A" freq="26995000"><mode>-</mode><comment>Not allowed for CB.</comment></channel>
-	<channel name="4" freq="27005000"><mode>AM</mode><mode>FM</mode><comment>Call AM.</comment></channel>
-	<channel name="5" freq="27015000"><mode>AM</mode><mode>FM</mode></channel>
-	<channel name="6" freq="27025000"><mode>AM</mode><mode>FM</mode></channel>
-	<channel name="7" freq="27035000"><mode>AM</mode><mode>FM</mode></channel>
-	<channel name="7A" freq="27045000"><mode>-</mode><comment>Not allowed for CB.</comment></channel>
-	<channel name="8" freq="27055000"><mode>AM</mode><mode>FM</mode></channel>
-	<channel name="9" freq="27065000"><mode>AM</mode><mode>FM</mode><comment>Emergency</comment></channel>
-	<channel name="10" freq="27075000"><mode>AM</mode><mode>FM</mode></channel>
-	<channel name="11" freq="27085000"><mode>AM</mode><mode>FM</mode></channel>
-	<channel name="11A" freq="27095000"><mode>-</mode><comment>Not allowed for CB.</comment></channel>
-	<channel name="12" freq="27105000"><mode>AM</mode><mode>FM</mode></channel>
-	<channel name="13" freq="27115000"><mode>FM</mode></channel>
-	<channel name="14" freq="27125000"><mode>FM</mode></channel>
-	<channel name="15" freq="27135000"><mode>FM</mode></channel>
-	<channel name="15A" freq="27155000"><mode>-</mode><comment>Not allowed for CB.</comment></channel>
-	<channel name="16" freq="27155000"><mode>FM</mode></channel>
-	<channel name="17" freq="27165000"><mode>FM</mode></channel>
-	<channel name="18" freq="27175000"><mode>FM</mode></channel>
-	<channel name="19" freq="27185000"><mode>FM</mode></channel>
-	<channel name="19A" freq="27195000"><mode>-</mode><comment>Not allowed for CB.</comment></channel>
-	<channel name="20" freq="27205000"><mode>FM</mode></channel>
-	<channel name="21" freq="27215000"><mode>FM</mode></channel>
-	<channel name="22" freq="27225000"><mode>FM</mode></channel>
-	<channel name="23" freq="27255000"><mode>FM</mode></channel>
-	<channel name="24" freq="27235000"><mode>FM</mode></channel>
-	<channel name="25" freq="27245000"><mode>FM</mode></channel>
-	<channel name="26" freq="27265000"><mode>FM</mode></channel>
-	<channel name="27" freq="27275000"><mode>FM</mode></channel>
-	<channel name="28" freq="27285000"><mode>FM</mode></channel>
-	<channel name="29" freq="27295000"><mode>FM</mode></channel>
-	<channel name="30" freq="27305000"><mode>FM</mode></channel>
-	<channel name="31" freq="27315000"><mode>FM</mode></channel>
-	<channel name="32" freq="27325000"><mode>FM</mode></channel>
-	<channel name="33" freq="27335000"><mode>FM</mode></channel>
-	<channel name="34" freq="27345000"><mode>FM</mode></channel>
-	<channel name="35" freq="27355000"><mode>FM</mode></channel>
-	<channel name="36" freq="27365000"><mode>FM</mode></channel>
-	<channel name="37" freq="27375000"><mode>FM</mode></channel>
-	<channel name="38" freq="27385000"><mode>FM</mode></channel>
-	<channel name="39" freq="27375000"><mode>FM</mode></channel>
-	<channel name="40" freq="27405000"><mode>FM</mode></channel>
+<bandplan version="0.7.5">
+<band name="CB" min="26965000" max="27405000" author="DG6FL" created="20131109" valid="20130101">
+	<country name="International"/>
+
+	<region min="26565000" max="27405000">
+		<license name="CB" power="4"/>
+	</region>
+
+	<channels>
+		<channel name="1" freq="26965000"><mode>AM</mode><mode>FM</mode><comment>Call FM.</comment></channel>
+		<channel name="2" freq="26975000"><mode>AM</mode><mode>FM</mode></channel>
+		<channel name="3" freq="26985000"><mode>AM</mode><mode>FM</mode></channel>
+		<channel name="3A" freq="26995000"><mode>-</mode><comment>Not allowed for CB.</comment></channel>
+		<channel name="4" freq="27005000"><mode>AM</mode><mode>FM</mode><comment>Call AM.</comment></channel>
+		<channel name="5" freq="27015000"><mode>AM</mode><mode>FM</mode></channel>
+		<channel name="6" freq="27025000"><mode>AM</mode><mode>FM</mode></channel>
+		<channel name="7" freq="27035000"><mode>AM</mode><mode>FM</mode></channel>
+		<channel name="7A" freq="27045000"><mode>-</mode><comment>Not allowed for CB.</comment></channel>
+		<channel name="8" freq="27055000"><mode>AM</mode><mode>FM</mode></channel>
+		<channel name="9" freq="27065000"><mode>AM</mode><mode>FM</mode><comment>Emergency</comment></channel>
+		<channel name="10" freq="27075000"><mode>AM</mode><mode>FM</mode></channel>
+		<channel name="11" freq="27085000"><mode>AM</mode><mode>FM</mode></channel>
+		<channel name="11A" freq="27095000"><mode>-</mode><comment>Not allowed for CB.</comment></channel>
+		<channel name="12" freq="27105000"><mode>AM</mode><mode>FM</mode></channel>
+		<channel name="13" freq="27115000"><mode>FM</mode></channel>
+		<channel name="14" freq="27125000"><mode>FM</mode></channel>
+		<channel name="15" freq="27135000"><mode>FM</mode></channel>
+		<channel name="15A" freq="27155000"><mode>-</mode><comment>Not allowed for CB.</comment></channel>
+		<channel name="16" freq="27155000"><mode>FM</mode></channel>
+		<channel name="17" freq="27165000"><mode>FM</mode></channel>
+		<channel name="18" freq="27175000"><mode>FM</mode></channel>
+		<channel name="19" freq="27185000"><mode>FM</mode></channel>
+		<channel name="19A" freq="27195000"><mode>-</mode><comment>Not allowed for CB.</comment></channel>
+		<channel name="20" freq="27205000"><mode>FM</mode></channel>
+		<channel name="21" freq="27215000"><mode>FM</mode></channel>
+		<channel name="22" freq="27225000"><mode>FM</mode></channel>
+		<channel name="23" freq="27255000"><mode>FM</mode></channel>
+		<channel name="24" freq="27235000"><mode>FM</mode></channel>
+		<channel name="25" freq="27245000"><mode>FM</mode></channel>
+		<channel name="26" freq="27265000"><mode>FM</mode></channel>
+		<channel name="27" freq="27275000"><mode>FM</mode></channel>
+		<channel name="28" freq="27285000"><mode>FM</mode></channel>
+		<channel name="29" freq="27295000"><mode>FM</mode></channel>
+		<channel name="30" freq="27305000"><mode>FM</mode></channel>
+		<channel name="31" freq="27315000"><mode>FM</mode></channel>
+		<channel name="32" freq="27325000"><mode>FM</mode></channel>
+		<channel name="33" freq="27335000"><mode>FM</mode></channel>
+		<channel name="34" freq="27345000"><mode>FM</mode></channel>
+		<channel name="35" freq="27355000"><mode>FM</mode></channel>
+		<channel name="36" freq="27365000"><mode>FM</mode></channel>
+		<channel name="37" freq="27375000"><mode>FM</mode></channel>
+		<channel name="38" freq="27385000"><mode>FM</mode></channel>
+		<channel name="39" freq="27375000"><mode>FM</mode></channel>
+		<channel name="40" freq="27405000"><mode>FM</mode></channel>
+	</channels>
 
 	<source implemented="yes" name="Wikipedia" href="http://de.wikipedia.org/wiki/CB-Funk#CB-Kan.C3.A4le"/>
 	<source implemented="no" name="Wikipedia" href="http://en.wikipedia.org/wiki/Citizens_Band_radio#Frequencies_worldwide"/>
