@@ -51,6 +51,10 @@
 			href="http://www.darc.de/uploads/media/Bandplan_70cm_Stand_10_2009.pdf"
 			localfile="DE08.pdf"
 			md5="54f4fe54da42f687725e79ff0c58e465"/>
+		<ref id="DEPMR01" name=""
+			href="http://www.bundesnetzagentur.de/cae/servlet/contentblob/38172/publicationFile/2558/FundstelleId315pdf.pdf"
+			localfile="DEPMR01.pdf"
+			md5=""/>
 
 		<!-- Country: US -->
 		<ref id="US01" name="ARRL" 

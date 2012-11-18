@@ -15,27 +15,38 @@
     You should have received a copy of the GNU General Public License
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
-<bandplan version="0.6.4">
+
+<!DOCTYPE note SYSTEM "bandplan.dtd">
+
+<bandplan version="0.7.5">
 <band name="PMR" min="446006200" max="446093750" author="DG6FL" created="20131109" valid="20130101">
-	<regulation>
+	<country name="DE"/>
+
+	<region min="446006200" max="446093750" ref="DEPMR01">
 		<license name="PMR" power="0.5"><source name="Wikipedia" href="http://de.wikipedia.org/wiki/PMR-Funk"/></license>
-	</regulation>
-	<region min="446006200" max="446093750"><mode>FM</mode>
-		<channel name="1" freq="446006200" mode="FM"/>
-		<channel name="2" freq="446018750" mode="FM"/>
-		<channel name="3" freq="446031250" mode="FM"/>
-		<channel name="4" freq="446043750" mode="FM"/>
-		<channel name="5" freq="446056250" mode="FM"/>
-		<channel name="6" freq="446068750" mode="FM"/>
-		<channel name="7" freq="446081250" mode="FM"/>
-		<channel name="8" freq="" mode="FM"/>
+		<mode name="FM"/>
 	</region>
 
-	<region min="446103125" max="446196875"><mode>Digital</mode><comment>16 Channels, FSK</comment></region>
-	<region min="446106250" max="446193750"><mode>Digital</mode><comment>8 Channels, FSK</comment></region>
+	<region min="446103125" max="446196875">
+		<license name="PMR" power="0.5"><source name="Wikipedia" href="http://de.wikipedia.org/wiki/PMR-Funk"/></license>
+		<mode name="Digital"/>
+		<comment>16 Channels, FSK</comment>
+	</region>
+	<region min="446106250" max="446193750">
+		<license name="PMR" power="0.5"><source name="Wikipedia" href="http://de.wikipedia.org/wiki/PMR-Funk"/></license>
+		<mode name="Digital"/>
+		<comment>8 Channels, FSK</comment>
+	</region>
 
-	<source implemented="yes" name="Wikipedia" href='http://en.wikipedia.org/w/index.php?title=PMR446'/>
-	<source implemented="yes" name="BNETZA" href="http://www.bundesnetzagentur.de/cae/servlet/contentblob/38172/publicationFile/2558/FundstelleId315pdf.pdf"/>
-
+	<channels>
+		<channel name="1" freq="446006200"><mode name="FM"/></channel>
+		<channel name="2" freq="446018750"><mode name="FM"/></channel>
+		<channel name="3" freq="446031250"><mode name="FM"/></channel>
+		<channel name="4" freq="446043750"><mode name="FM"/></channel>
+		<channel name="5" freq="446056250"><mode name="FM"/></channel>
+		<channel name="6" freq="446068750"><mode name="FM"/></channel>
+		<channel name="7" freq="446081250"><mode name="FM"/></channel>
+		<channel name="8" freq=""><mode name="FM"/></channel>
+	</channels>
 </band>
 </bandplan>
