@@ -51,10 +51,14 @@
 			href="http://www.darc.de/uploads/media/Bandplan_70cm_Stand_10_2009.pdf"
 			localfile="DE08.pdf"
 			md5="54f4fe54da42f687725e79ff0c58e465"/>
-		<ref id="DEPMR01" name=""
+		<ref id="DEPMR01" name="Bundesnetzagentur: Vfg 78 / 2003"
 			href="http://www.bundesnetzagentur.de/cae/servlet/contentblob/38172/publicationFile/2558/FundstelleId315pdf.pdf"
 			localfile="DEPMR01.pdf"
 			md5="f43e88542b5eb2735320b99f00b66654"/>
+		<ref id="DELPD01" name="Bundesnetzagentur: Vfg 40/2010 "
+			href="http://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/BNetzA/Sachgebiete/Telekommunikation/Regulierung/Frequenzordnung/Allgemeinzuteilung/ShortRangeDevicesSRD_Vfg40.pdf?__blob=publicationFile"
+			localfile="DELPD01.pdf"
+			md5="e2be159607ef653bb2769c18c94a6f44"/>
 
 		<!-- Country: SE -->
 		<ref id="SE01" name="Post- och telestyrelsens författningssamling"

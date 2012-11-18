@@ -142,7 +142,7 @@
 		<license name="Klasse_A" cept="CEPT" prefix="DL" ref="TR6101"/>
 		<license name="Klasse_E" cept="CEPT-Novice" prefix="DO" ref="REC0506"/>
 		<license name="PMR" prefix="" ref="DEPMR01"/>
-		<license name="LPD" prefix=""><comment>New name is SRD short rande devices</comment></license>
+		<license name="LPD" prefix="" ref="DELPD01"><comment>New name is SRD short rande devices</comment></license>
 	</country>
 
 	<country fullname="Greece">
