@@ -45,6 +45,24 @@
 		<license name="CEPT" cept="CEPT" prefix="9A" ref="TR6101"/>
 	</country>
 
+	<country fullname="Cyprus">
+		<license name="Radioamateur Authorisation" cept="CEPT" prefix="5B" ref="TR6101"/>
+	</country>
+
+	<country fullname="Czech Republic">
+		<license name="A" cept="CEPT" prefix="OK" ref="TR6101"/>
+	</country>
+
+	<country fullname="Denmark">
+		<license name="A" cept="CEPT" prefix="OZ" ref="TR6101"/>
+		<country fullname="Faroe Islands">
+			<license name="A" cept="CEPT" prefix="OY" ref="TR6101"/>
+		</country>
+		<country fullname="Greenland">
+			<license name="A" cept="CEPT" prefix="OX" ref="TR6101"/>
+		</country>
+	</country>
+
 <country name="DE" fullname="Germany">
 	<license name="Klasse_A" cept="CEPT" prefix="DL" ref="TR6101"/>
 	<license name="Klasse_E" cept="CEPT-Novice" prefix="DO" ref="REC0506"/>
