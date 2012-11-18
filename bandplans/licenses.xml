@@ -120,11 +120,11 @@
 			<license name="1" cept="CEPT" prefix="FH" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="FH" ref="TR6101"/>
 		</country>
-		<country fullname="Franch Antarctica (Crozet, Kerguelen, St. Paul & Amsterdam, Terre Adelie">
+		<country fullname="French Antarctica (Crozet, Kerguelen, St. Paul and Amsterdam, Terre Adelie">
 			<license name="1" cept="CEPT" prefix="FT" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="FT" ref="TR6101"/>
 		</country>
-		<country fullname="French Polynesia & Clipperton">
+		<country fullname="French Polynesia and Clipperton">
 			<license name="1" cept="CEPT" prefix="FO" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="FO" ref="TR6101"/>
 		</country>
@@ -132,7 +132,7 @@
 			<license name="1" cept="CEPT" prefix="FK" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="FK" ref="TR6101"/>
 		</country>
-		<country fullname="Wallis & Futuna">
+		<country fullname="Wallis and Futuna">
 			<license name="1" cept="CEPT" prefix="FW" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="FW" ref="TR6101"/>
 		</country>
