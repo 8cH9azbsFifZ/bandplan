@@ -138,42 +138,41 @@
 		</country>
 	</country>
 
+	<country name="DE" fullname="Germany">
+		<license name="Klasse_A" cept="CEPT" prefix="DL" ref="TR6101"/>
+		<license name="Klasse_E" cept="CEPT-Novice" prefix="DO" ref="REC0506"/>
+		<license name="PMR" prefix=""/>
+		<license name="LPD" prefix=""><comment>New name is SRD short rande devices</comment></license>
+	</country>
 
-<country name="DE" fullname="Germany">
-	<license name="Klasse_A" cept="CEPT" prefix="DL" ref="TR6101"/>
-	<license name="Klasse_E" cept="CEPT-Novice" prefix="DO" ref="REC0506"/>
-	<license name="PMR" prefix=""/>
-	<license name="LPD" prefix=""><comment>New name is SRD short rande devices</comment></license>
-</country>
+	<country name="US" fullname="USA">
+		<license name="Amateur_Extra" prefix=""/>
+		<license name="Advanced" prefix=""/>
+		<license name="General" prefix=""/>
+		<license name="Technician" prefix=""/>
+		<license name="Novice" prefix=""/>
+	</country>
 
-<country name="US" fullname="USA">
-	<license name="Amateur_Extra" prefix=""/>
-	<license name="Advanced" prefix=""/>
-	<license name="General" prefix=""/>
-	<license name="Technician" prefix=""/>
-	<license name="Novice" prefix=""/>
-</country>
+	<country name="SE" fullname="Sweden">
+		<license name="" cept="CEPT" prefix="SM, SA" ref="TR6101"/>
+	</country>
 
-<country name="SE" fullname="Sweden">
-	<license name="" cept="CEPT" prefix="SM, SA" ref="TR6101"/>
-</country>
+	<!-- Follow the two letter ISO 3166 code (http://en.wikipedia.org/wiki/ISO_3166-1) -->
+	<country name="International">
+		<license name="CB" prefix=""/>
+	</country>
 
-<!-- Follow the two letter ISO 3166 code (http://en.wikipedia.org/wiki/ISO_3166-1) -->
-<country name="International">
-	<license name="CB" prefix=""/>
-</country>
+	<country name="IARU1">
+		<source name="Wikipedia" href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/>
+	</country>
 
-<country name="IARU1">
-	<source name="Wikipedia" href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/>
-</country>
+	<country name="IARU2">
+		<source name="Wikipedia" href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/>
+	</country>
 
-<country name="IARU2">
-	<source name="Wikipedia" href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/>
-</country>
-
-<country name="IARU3">
-	<source name="Wikipedia" href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/>
-</country>
+	<country name="IARU3">
+		<source name="Wikipedia" href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/>
+	</country>
 
 </countries>
 
