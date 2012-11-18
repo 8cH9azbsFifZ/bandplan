@@ -236,8 +236,21 @@
 		<license name="II" cept="CEPT" prefix="YO" ref="TR6101"/>
 	</country>
 	
-	<country fullname="Poland">
-		<license name="1" cept="CEPT" prefix="SP" ref="TR6101"/>
+	<country fullname="Russian Federation">
+		<license name="1" cept="CEPT" prefix="RA" ref="TR6101"/>
+		<license name="2" cept="CEPT" prefix="RA" ref="TR6101"/>
+	</country>
+
+	<country fullname="Serbia">
+		<license name="1" cept="CEPT" prefix="YU" ref="TR6101"/>
+	</country>
+
+	<country fullname="Slovak Republic">
+		<license name="E" cept="CEPT" prefix="OM" ref="TR6101"/>
+	</country>
+
+	<country fullname="Slovenia">
+		<license name="A" cept="CEPT" prefix="S5" ref="TR6101"/>
 	</country>
 
 
