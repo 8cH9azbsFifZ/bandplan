@@ -23,7 +23,9 @@
 <band name="LPD" min="433075000" max="433300000" author="DG6FL" created="20131109" valid="20130101">
 	<country name="DE"/>
 
-	<license name="LPD" power="0.01"><source name="Wikipedia" href="http://de.wikipedia.org/wiki/Short_Range_Devices"/></license>
+	<region min="433075000" max="434775000">
+		<license name="LPD" power="0.01"/>
+	</region>
 
 	<channels>
 			<channel name="1" freq="433075000"><mode name="FM"/></channel>
@@ -96,8 +98,6 @@
 			<channel name="68" freq="434750000"><mode name="FM"/></channel>
 			<channel name="69" freq="434775000"><mode name="FM"/></channel>
 		</channels>
-
-	<source implemented="yes" name="Wikipedia" href='http://en.wikipedia.org/w/index.php?title=LPD433'/>
 </band>
 </bandplan>
 
