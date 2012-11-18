@@ -120,6 +120,22 @@
 			<license name="1" cept="CEPT" prefix="FH" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="FH" ref="TR6101"/>
 		</country>
+		<country fullname="Franch Antarctica (Crozet, Kerguelen, St. Paul & Amsterdam, Terre Adelie">
+			<license name="1" cept="CEPT" prefix="FT" ref="TR6101"/>
+			<license name="2" cept="CEPT" prefix="FT" ref="TR6101"/>
+		</country>
+		<country fullname="French Polynesia & Clipperton">
+			<license name="1" cept="CEPT" prefix="FO" ref="TR6101"/>
+			<license name="2" cept="CEPT" prefix="FO" ref="TR6101"/>
+		</country>
+		<country fullname="New Caledonia">
+			<license name="1" cept="CEPT" prefix="FK" ref="TR6101"/>
+			<license name="2" cept="CEPT" prefix="FK" ref="TR6101"/>
+		</country>
+		<country fullname="Wallis & Futuna">
+			<license name="1" cept="CEPT" prefix="FW" ref="TR6101"/>
+			<license name="2" cept="CEPT" prefix="FW" ref="TR6101"/>
+		</country>
 	</country>
 
 
