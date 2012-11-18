@@ -11,7 +11,6 @@
 
 <!ELEMENT band (country,region*,channels*)>
 	<!ATTLIST band name CDATA #REQUIRED>
-	<!ATTLIST band fullname CDATA #REQUIRED>
 	<!ATTLIST band min CDATA #REQUIRED>
 	<!ATTLIST band max CDATA #REQUIRED>
 	<!ATTLIST band ref CDATA #REQUIRED>
@@ -22,8 +21,12 @@
 
 <!ELEMENT channels (channel*,repeater*)>
 
-<!ELEMENT country (license*)>
+<!ELEMENT country (license*,country*)>
 	<!ATTLIST country name (DE|US|IARU1|IARU2|IARU3|International) #REQUIRED>
+	<!ATTLIST country fullname CDATA #REQUIRED>
+	<!ATTLIST license ref CDATA #REQUIRED>
+	<!ATTLIST country prefix CDATA #IMPLIED>
+	<!ATTLIST country cept CDATA #IMPLIED>
 	<!-- Follow the two letter ISO 3166 code (http://en.wikipedia.org/wiki/ISO_3166-1) -->
 
 <!ELEMENT countries (country+)>
