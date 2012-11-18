@@ -21,14 +21,38 @@
 <bandplan version="0.7.5">
 
 <countries>
-<country name="DE">
+	<country fullname="Albania">
+		<license name="CEPT" cept="CEPT" prefix="ZA" ref="TR6101"/>
+	</country>
+
+	<country fullname="Austria">
+		<license name="1" cept="CEPT" prefix="OE" ref="TR6101"/>
+	</country>
+
+	<country fullname="Belgium">
+		<license name="A" cept="CEPT" prefix="ON" ref="TR6101"/>
+	</country>
+
+	<country fullname="Bosnia and Herzegovina">
+		<license name="CEPT 1" cept="CEPT" prefix="E7" ref="TR6101"/>
+	</country>
+
+	<country fullname="Bulgaria">
+		<license name="Class 1" cept="CEPT" prefix="LZ" ref="TR6101"/>
+	</country>
+
+	<country fullname="Croatia">
+		<license name="CEPT" cept="CEPT" prefix="9A" ref="TR6101"/>
+	</country>
+
+<country name="DE" fullname="Germany">
 	<license name="Klasse_A" cept="CEPT" prefix="DL" ref="TR6101"/>
 	<license name="Klasse_E" cept="CEPT-Novice" prefix="DO" ref="REC0506"/>
 	<license name="PMR" prefix=""/>
 	<license name="LPD" prefix=""><comment>New name is SRD short rande devices</comment></license>
 </country>
 
-<country name="US">
+<country name="US" fullname="USA">
 	<license name="Amateur_Extra" prefix=""/>
 	<license name="Advanced" prefix=""/>
 	<license name="General" prefix=""/>
@@ -36,7 +60,7 @@
 	<license name="Novice" prefix=""/>
 </country>
 
-<country name="SE">
+<country name="SE" fullname="Sweden">
 	<license name="" cept="CEPT" prefix="SM, SA" ref="TR6101"/>
 </country>
 
