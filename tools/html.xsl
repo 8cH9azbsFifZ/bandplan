@@ -185,6 +185,11 @@
 				<xsl:variable name="filename" select="@file"/>
 				<h1>References</h1>
 				<table>
+					<tr>
+						<td>ID</td>
+						<td>Name</td>
+						<td>Link</td>
+					</tr>
 					<xsl:apply-templates select="document($filename)/bandplan"/>
 				</table>
 			</xsl:when>
