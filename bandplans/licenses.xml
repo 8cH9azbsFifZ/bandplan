@@ -267,6 +267,16 @@
 		<license name="2" cept="CEPT" prefix="HB9" ref="TR6101"/>
 		<license name="CEPT" cept="CEPT" prefix="HB9" ref="TR6101"/>
 	</country>
+	
+	<country fullname="Turkey">
+		<license name="A" cept="CEPT" prefix="TA" ref="TR6101"/>
+	</country>
+
+	<country fullname="Ulraine">
+		<license name="1" cept="CEPT" prefix="UT" ref="TR6101"/>
+		<license name="2" cept="CEPT" prefix="UT" ref="TR6101"/>
+	</country>
+
 
 
 	<country name="US" fullname="USA">
