@@ -277,6 +277,28 @@
 		<license name="2" cept="CEPT" prefix="UT" ref="TR6101"/>
 	</country>
 
+	<country fullname="United Kingdom">
+		<license name="FULL" cept="CEPT" prefix="M" ref="TR6101"/>
+		<country fullname="Isle of Man">
+			<license name="FULL" cept="CEPT" prefix="MD" ref="TR6101"/>
+		</country>
+		<country fullname="N. Ireland">
+			<license name="FULL" cept="CEPT" prefix="MI" ref="TR6101"/>
+		</country>
+		<country fullname="Jersey">
+			<license name="FULL" cept="CEPT" prefix="MJ" ref="TR6101"/>
+		</country>
+		<country fullname="Scotland">
+			<license name="FULL" cept="CEPT" prefix="MM" ref="TR6101"/>
+		</country>
+		<country fullname="Guernsey">
+			<license name="FULL" cept="CEPT" prefix="MU" ref="TR6101"/>
+		</country>
+		<country fullname="Wales">
+			<license name="FULL" cept="CEPT" prefix="MW" ref="TR6101"/>
+		</country>
+	</country>
+
 
 
 	<country name="US" fullname="USA">
