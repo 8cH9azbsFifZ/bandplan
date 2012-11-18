@@ -211,6 +211,36 @@
 		</country>
 	</country>
 
+	<country fullname="Poland">
+		<license name="1" cept="CEPT" prefix="SP" ref="TR6101"/>
+	</country>
+
+	<country fullname="Portugal">
+		<license name="1" cept="CEPT" prefix="CT7" ref="TR6101"/>
+		<license name="A" cept="CEPT" prefix="CT7" ref="TR6101"/>
+		<license name="B" cept="CEPT" prefix="CT7" ref="TR6101"/>
+		<country fullname="Azores">
+			<license name="1" cept="CEPT" prefix="CT8" ref="TR6101"/>
+			<license name="A" cept="CEPT" prefix="CT8" ref="TR6101"/>
+			<license name="B" cept="CEPT" prefix="CT8" ref="TR6101"/>
+		</country>
+		<country fullname="Madeira">
+			<license name="1" cept="CEPT" prefix="CT9" ref="TR6101"/>
+			<license name="A" cept="CEPT" prefix="CT9" ref="TR6101"/>
+			<license name="B" cept="CEPT" prefix="CT9" ref="TR6101"/>
+		</country>
+	</country>
+
+	<country fullname="Romania">
+		<license name="I" cept="CEPT" prefix="YO" ref="TR6101"/>
+		<license name="II" cept="CEPT" prefix="YO" ref="TR6101"/>
+	</country>
+	
+	<country fullname="Poland">
+		<license name="1" cept="CEPT" prefix="SP" ref="TR6101"/>
+	</country>
+
+
 
 
 	<country name="US" fullname="USA">
