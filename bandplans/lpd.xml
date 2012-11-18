@@ -15,49 +15,89 @@
     You should have received a copy of the GNU General Public License
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
-<bandplan version="0.6.4">
 
-<band name="LPD" min="433075000" max="433300000" author="DG6FL" country="DE" created="20131109" valid="20130101">
-	<regulation>
-		<license name="LPD" power="0.01"><source name="Wikipedia" href="http://de.wikipedia.org/wiki/Short_Range_Devices"/></license>
-	</regulation>
-	<channel name="1" freq="433075000"><mode>FM</mode></channel>
-	<channel name="2" freq="433100000"><mode>FM</mode></channel>
-	<channel name="3" freq="433125000"><mode>FM</mode></channel>
-	<channel name="4" freq="433150000"><mode>FM</mode></channel>
-	<channel name="5" freq="433175000"><mode>FM</mode></channel>
-	<channel name="6" freq="433200000"><mode>FM</mode></channel>
-	<channel name="7" freq="433225000"><mode>FM</mode></channel>
-	<channel name="8" freq="433250000"><mode>FM</mode></channel>
-	<channel name="9" freq="433275000"><mode>FM</mode></channel>
-	<channel name="10" freq="433300000"><mode>FM</mode></channel>
+<!DOCTYPE note SYSTEM "bandplan.dtd">
 
-	<!-- TBD
-1	433.075	24	433.650	47	434.225
-2	433.100	25	433.675	48	434.250
-3	433.125	26	433.700	49	434.275
-4	433.150	27	433.725	50	434.300
-5	433.175	28	433.750	51	434.325
-6	433.200	29	433.775	52	434.350
-7	433.225	30	433.800	53	434.375
-8	433.250	31	433.825	54	434.400
-9	433.275	32	433.850	55	434.425
-10	433.300	33	433.875	56	434.450
-11	433.325	34	433.900	57	434.475
-12	433.350	35	433.925	58	434.500
-13	433.375	36	433.950	59	434.525
-14	433.400	37	433.975	60	434.550
-15	433.425	38	434.000	61	434.575
-16	433.450	39	434.025	62	434.600
-17	433.475	40	434.050	63	434.625
-18	433.500	41	434.075	64	434.650
-19	433.525	42	434.100	65	434.675
-20	433.550	43	434.125	66	434.700
-21	433.575	44	434.150	67	434.725
-22	433.600	45	434.175	68	434.750
-23	433.625	46	434.200	69	434.775
-	-->
+<bandplan version="0.7.5">
+
+<band name="LPD" min="433075000" max="433300000" author="DG6FL" created="20131109" valid="20130101">
+	<country name="DE"/>
+
+	<license name="LPD" power="0.01"><source name="Wikipedia" href="http://de.wikipedia.org/wiki/Short_Range_Devices"/></license>
+
+	<channels>
+			<channel name="1" freq="433075000"><mode name="FM"/></channel>
+			<channel name="2" freq="433100000"><mode name="FM"/></channel>
+			<channel name="3" freq="433125000"><mode name="FM"/></channel>
+			<channel name="4" freq="433150000"><mode name="FM"/></channel>
+			<channel name="5" freq="433175000"><mode name="FM"/></channel>
+			<channel name="6" freq="433200000"><mode name="FM"/></channel>
+			<channel name="7" freq="433225000"><mode name="FM"/></channel>
+			<channel name="8" freq="433250000"><mode name="FM"/></channel>
+			<channel name="9" freq="433275000"><mode name="FM"/></channel>
+			<channel name="10" freq="433300000"><mode name="FM"/></channel>
+			<channel name="11" freq="433325000"><mode name="FM"/></channel>
+			<channel name="12" freq="433350000"><mode name="FM"/></channel>
+			<channel name="13" freq="433375000"><mode name="FM"/></channel>
+			<channel name="14" freq="433400000"><mode name="FM"/></channel>
+			<channel name="15" freq="433425000"><mode name="FM"/></channel>
+			<channel name="16" freq="433450000"><mode name="FM"/></channel>
+			<channel name="17" freq="433475000"><mode name="FM"/></channel>
+			<channel name="18" freq="433500000"><mode name="FM"/></channel>
+			<channel name="19" freq="433525000"><mode name="FM"/></channel>
+			<channel name="20" freq="433550000"><mode name="FM"/></channel>
+			<channel name="21" freq="433575000"><mode name="FM"/></channel>
+			<channel name="22" freq="433600000"><mode name="FM"/></channel>
+			<channel name="23" freq="433625000"><mode name="FM"/></channel>
+			<channel name="24" freq="433650000"><mode name="FM"/></channel>
+			<channel name="25" freq="433675000"><mode name="FM"/></channel>
+			<channel name="26" freq="433700000"><mode name="FM"/></channel>
+			<channel name="27" freq="433725000"><mode name="FM"/></channel>
+			<channel name="28" freq="433750000"><mode name="FM"/></channel>
+			<channel name="29" freq="433775000"><mode name="FM"/></channel>
+			<channel name="30" freq="433800000"><mode name="FM"/></channel>
+			<channel name="31" freq="433825000"><mode name="FM"/></channel>
+			<channel name="32" freq="433850000"><mode name="FM"/></channel>
+			<channel name="33" freq="433875000"><mode name="FM"/></channel>
+			<channel name="34" freq="433900000"><mode name="FM"/></channel>
+			<channel name="35" freq="433925000"><mode name="FM"/></channel>
+			<channel name="36" freq="433950000"><mode name="FM"/></channel>
+			<channel name="37" freq="433975000"><mode name="FM"/></channel>
+			<channel name="38" freq="434000000"><mode name="FM"/></channel>
+			<channel name="39" freq="434025000"><mode name="FM"/></channel>
+			<channel name="40" freq="434050000"><mode name="FM"/></channel>
+			<channel name="41" freq="434075000"><mode name="FM"/></channel>
+			<channel name="42" freq="434100000"><mode name="FM"/></channel>
+			<channel name="43" freq="434125000"><mode name="FM"/></channel>
+			<channel name="44" freq="434150000"><mode name="FM"/></channel>
+			<channel name="45" freq="434175000"><mode name="FM"/></channel>
+			<channel name="46" freq="434200000"><mode name="FM"/></channel>
+			<channel name="47" freq="434225000"><mode name="FM"/></channel>
+			<channel name="48" freq="434250000"><mode name="FM"/></channel>
+			<channel name="49" freq="434275000"><mode name="FM"/></channel>
+			<channel name="50" freq="434300000"><mode name="FM"/></channel>
+			<channel name="51" freq="434325000"><mode name="FM"/></channel>
+			<channel name="52" freq="434350000"><mode name="FM"/></channel>
+			<channel name="53" freq="434375000"><mode name="FM"/></channel>
+			<channel name="54" freq="434400000"><mode name="FM"/></channel>
+			<channel name="55" freq="434425000"><mode name="FM"/></channel>
+			<channel name="56" freq="434450000"><mode name="FM"/></channel>
+			<channel name="57" freq="434475000"><mode name="FM"/></channel>
+			<channel name="58" freq="434500000"><mode name="FM"/></channel>
+			<channel name="59" freq="434525000"><mode name="FM"/></channel>
+			<channel name="60" freq="434550000"><mode name="FM"/></channel>
+			<channel name="61" freq="434575000"><mode name="FM"/></channel>
+			<channel name="62" freq="434600000"><mode name="FM"/></channel>
+			<channel name="63" freq="434625000"><mode name="FM"/></channel>
+			<channel name="64" freq="434650000"><mode name="FM"/></channel>
+			<channel name="65" freq="434675000"><mode name="FM"/></channel>
+			<channel name="66" freq="434700000"><mode name="FM"/></channel>
+			<channel name="67" freq="434725000"><mode name="FM"/></channel>
+			<channel name="68" freq="434750000"><mode name="FM"/></channel>
+			<channel name="69" freq="434775000"><mode name="FM"/></channel>
+		</channels>
 
 	<source implemented="yes" name="Wikipedia" href='http://en.wikipedia.org/w/index.php?title=LPD433'/>
 </band>
 </bandplan>
+
