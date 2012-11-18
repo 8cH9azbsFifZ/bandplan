@@ -60,6 +60,7 @@
 							<td> <xsl:text>Bandwidth (kHz)</xsl:text></td>
 							<td> <xsl:text>Mode</xsl:text></td>
 							<td> <xsl:text>License</xsl:text></td>
+							<td> <xsl:text>Reference</xsl:text></td>
 							<td> <xsl:text>Comment</xsl:text></td>
 						</tr>
 						<xsl:apply-templates select="region"/>
@@ -120,6 +121,9 @@
 						<xsl:apply-templates select="../license"/> 
 					</xsl:otherwise>
 				</xsl:choose>
+			</td>
+			<td> 
+				<xsl:apply-templates select="comment"/> 
 			</td>
 			<td> 
 				<xsl:apply-templates select="comment"/> 
