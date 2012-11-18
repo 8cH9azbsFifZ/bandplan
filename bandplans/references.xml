@@ -54,7 +54,13 @@
 		<ref id="DEPMR01" name=""
 			href="http://www.bundesnetzagentur.de/cae/servlet/contentblob/38172/publicationFile/2558/FundstelleId315pdf.pdf"
 			localfile="DEPMR01.pdf"
-			md5=""/>
+			md5="f43e88542b5eb2735320b99f00b66654"/>
+
+		<!-- Country: SE -->
+		<ref id="SE01" name="Post- och telestyrelsens författningssamling"
+			href="http://www.pts.se/upload/Foreskrifter/Radio/foreskrifter-undantag_101209.pdf"
+			localfile="SE01.pdf"
+			md5="bad2dadc5480b5a612f00920f9f5cbfe"/>
 
 		<!-- Country: US -->
 		<ref id="US01" name="ARRL" 

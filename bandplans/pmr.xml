@@ -19,11 +19,11 @@
 <!DOCTYPE note SYSTEM "bandplan.dtd">
 
 <bandplan version="0.7.5">
-<band name="PMR" min="446006200" max="446093750" author="DG6FL" created="20131109" valid="20130101">
+<band name="PMR" min="446006200" max="446093750" author="DG6FL" created="20131109" valid="20131231" ref="DEPMR01">
 	<country name="DE"/>
 
-	<region min="446006200" max="446093750" ref="DEPMR01">
-		<license name="PMR" power="0.5"><source name="Wikipedia" href="http://de.wikipedia.org/wiki/PMR-Funk"/></license>
+	<region min="446006200" max="446093750" bandwidth="12500" ref="DEPMR01">
+		<license name="PMR" power="0.5" powermeasure="ERP" ref="DEPMR01"/>
 		<mode name="FM"/>
 	</region>
 
