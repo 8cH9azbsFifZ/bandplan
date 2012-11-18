@@ -73,39 +73,59 @@
 		</body>
 	</xsl:template>
 
-	<!-- Each (Frequency) Region -->
+	<!-- Region & Subregion -->
 	<xsl:template match="region">
-			<tr>
-				<td> 
-					<xsl:value-of select='format-number(@min*0.000001, "###0.000")'/> 
-					<xsl:text> - </xsl:text>
-					<xsl:value-of select='format-number(@max*0.000001, "###0.000")'/> 
-				</td>
-				<td> 
-					<xsl:choose>
-						<xsl:when test="@bandwidth">
-							<xsl:value-of select='format-number(@bandwidth*0.001, "#0.000")'/> 
-						</xsl:when>
-					</xsl:choose>
-				</td>
-				<td> <xsl:apply-templates select="mode"/> </td>
-				<td> 
-					<!-- Default regulation is parent node -->
-					<xsl:choose>
-						<xsl:when test="license">
-							<xsl:apply-templates select="license"/> 
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:apply-templates select="../license"/> 
-						</xsl:otherwise>
-					</xsl:choose>
-				</td>
-				<td> 
-					<xsl:apply-templates select="comment"/> 
-					<!-- Recursive handling of subregions -->
-					<xsl:apply-templates select="region"/> 
-				</td>
-			</tr>
+			<!-- Choose colors for subregion -->
+			<xsl:choose>
+				<xsl:when test="../../../region">
+					<tr style="background-color:#bbb">
+						<xsl:call-template name="oneregion"/> 
+					</tr>
+				</xsl:when>	
+				<xsl:when test="../../region">
+					<tr style="background-color:#999">
+						<xsl:call-template name="oneregion"/> 
+					</tr>
+				</xsl:when>	
+				<xsl:otherwise>
+					<tr style="background-color:#777">
+						<xsl:call-template name="oneregion"/> 
+					</tr>
+				</xsl:otherwise>
+			</xsl:choose>
+	</xsl:template>
+
+	<!-- Each (Frequency) Region -->
+	<xsl:template name="oneregion">
+			<td> 
+				<xsl:value-of select='format-number(@min*0.000001, "###0.000")'/> 
+				<xsl:text> - </xsl:text>
+				<xsl:value-of select='format-number(@max*0.000001, "###0.000")'/> 
+			</td>
+			<td> 
+				<xsl:choose>
+					<xsl:when test="@bandwidth">
+						<xsl:value-of select='format-number(@bandwidth*0.001, "#0.000")'/> 
+					</xsl:when>
+				</xsl:choose>
+			</td>
+			<td> <xsl:apply-templates select="mode"/> </td>
+			<td> 
+				<!-- Default regulation is parent node -->
+				<xsl:choose>
+					<xsl:when test="license">
+						<xsl:apply-templates select="license"/> 
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:apply-templates select="../license"/> 
+					</xsl:otherwise>
+				</xsl:choose>
+			</td>
+			<td> 
+				<xsl:apply-templates select="comment"/> 
+				<!-- Recursive handling of subregions -->
+				<xsl:apply-templates select="region"/> 
+			</td>
 	</xsl:template>
 
 	<!-- Each Channel -->
