@@ -11,6 +11,7 @@
 
 <!ELEMENT band (country,region*,channels*)>
 	<!ATTLIST band name CDATA #REQUIRED>
+	<!ATTLIST band fullname CDATA #REQUIRED>
 	<!ATTLIST band min CDATA #REQUIRED>
 	<!ATTLIST band max CDATA #REQUIRED>
 	<!ATTLIST band ref CDATA #REQUIRED>
