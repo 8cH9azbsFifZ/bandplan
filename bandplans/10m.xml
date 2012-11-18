@@ -35,11 +35,11 @@
 		<region min="28150000" max="28190000" bandwidth="500" ref="DE01">
 			<mode name="Narrow"/><comment>No SSB</comment></region>
 		<region min="28190000" max="28199000" ref="DE01">
-			<mode name="NoSending"/><comment>Regional Beacon-Project, no sending</comment></region>
+			<comment>Regional Beacon-Project, no sending</comment></region>
 		<region min="28199000" max="28201000" ref="DE01">
-			<mode name="NoSending"/><comment>International Beacon-Project, no sending</comment></region>
+			<comment>International Beacon-Project, no sending</comment></region>
 		<region min="28201000" max="28225000" ref="DE01">
-			<mode name="NoSending"/><comment>Beacons, no sending</comment></region>
+			<comment>Beacons, no sending</comment></region>
 		<region min="28225000" max="28300000" bandwidth="2700" ref="DE01">
 			<mode name="All"/><comment>Beacons</comment></region>
 		<region min="28300000" max="28320000" bandwidth="2700" ref="DE01">
@@ -53,7 +53,6 @@
 		<region min="29300000" max="29510000" bandwidth="6000" ref="DE01">
 			<mode name="SatelliteDownlink"/></region>
 		<region min="29510000" max="29520000" ref="DE01">
-			<mode name="NoSending"/>
 			<comment>Safty Channel</comment><comment>What does this mean?</comment></region>
 		<region min="29520000" max="29590000" bandwidth="6000" ref="DE01">
 			<mode name="All"/><comment>Narrow FM Relais Input (RH1 - RH8)</comment></region>

@@ -57,7 +57,6 @@
 			<mode name="MGM"/>
 		</region>
 		<region min="144400000" max="144500000" ref="DE06">
-			<mode name="NoSending"/>
 			<comment>Beacons, no sending (excl. WSPR)</comment>
 		</region>
 		<region min="144500000" max="144794000" bandwidth="20000" ref="DE06">

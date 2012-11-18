@@ -69,7 +69,7 @@
 	<!ATTLIST operator call CDATA #REQUIRED>
 
 <!ELEMENT mode (#PCDATA|license)*>
-	<!ATTLIST mode name (All|AM|FM|NarrowFM|CW|SSB|USB|LSB|NarrowDigital|Digital|MGM|WSPR|SSTV|RTTY|Image|Satellite|SatelliteDownlink|Narrow|NoSending) #REQUIRED>
+	<!ATTLIST mode name (All|AM|FM|NarrowFM|CW|SSB|USB|LSB|NarrowDigital|Digital|MGM|WSPR|SSTV|RTTY|Image|Satellite|SatelliteDownlink|Narrow) #REQUIRED>
 
 <!ELEMENT comment (#PCDATA)>
 	

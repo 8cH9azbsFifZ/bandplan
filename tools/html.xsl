@@ -123,7 +123,7 @@
 				</xsl:choose>
 			</td>
 			<td> 
-				<xsl:apply-templates select="comment"/> 
+				<xsl:apply-templates select="@ref"/> 
 			</td>
 			<td> 
 				<xsl:apply-templates select="comment"/> 
