@@ -145,6 +145,41 @@
 		<license name="LPD" prefix=""><comment>New name is SRD short rande devices</comment></license>
 	</country>
 
+	<country fullname="Greece">
+		<licsense name="1" cept="CEPT" prefix="SV" ref="TR6101"/>
+	</country>
+
+	<country fullname="Hungary">
+		<license name="CEPT" cept="CEPT" prefix="HA" ref="TR6101"/>
+		<license name="CEPT" cept="CEPT" prefix="HG" ref="TR6101"/>
+	</country>
+
+	<country fullname="Iceland">
+		<license name="G" cept="CEPT" prefix="TF" ref="TR6101"/>
+	</country>
+
+	<country fullname="Ireland">
+		<license name="CEPT 1" cept="CEPT" prefix="EI" ref="TR6101"/>
+		<license name="CEPT 2" cept="CEPT" prefix="EJ" ref="TR6101"/>
+	</country>
+
+	<country fullname="Italy">
+		<license name="General" cept="CEPT" prefix="I" ref="TR6101"/>
+	</country>
+
+	<country fullname="Latvia">
+		<license name="1" cept="CEPT" prefix="YL" ref="TR6101"/>
+		<license name="2" cept="CEPT" prefix="YL" ref="TR6101"/>
+	</country>
+
+	<country fullname="Liechtenstein">
+		<license name="CEPT" cept="CEPT" prefix="HB0" ref="TR6101"/>
+	</country>
+
+	<country fullname="Lithuania">
+		<license name="A" cept="CEPT" prefix="L>" ref="TR6101"/>
+	</country>
+
 	<country name="US" fullname="USA">
 		<license name="Amateur_Extra" prefix=""/>
 		<license name="Advanced" prefix=""/>
