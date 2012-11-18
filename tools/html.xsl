@@ -123,7 +123,8 @@
 				</xsl:choose>
 			</td>
 			<td> 
-				<xsl:apply-templates select="@ref"/> 
+				<xsl:variable name="link" select="@ref"/>
+				<a href="#{$link}"><xsl:value-of select="@ref"/></a>
 			</td>
 			<td> 
 				<xsl:apply-templates select="comment"/> 
@@ -175,6 +176,11 @@
 				<small><a href="{$link}"><xsl:value-of select="@name"/></a></small>
 			</xsl:when>
 		</xsl:choose>
+	</xsl:template>
+
+	<xsl:template match="ref">
+		<xsl:variable name="link" select="@href"/>
+		<small><a href="{$link}"><xsl:value-of select="@name"/></a></small>
 	</xsl:template>
 
 </xsl:stylesheet>
