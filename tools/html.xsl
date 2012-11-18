@@ -18,10 +18,9 @@
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+	<!-- Header & Footer -->
 	<xsl:template match="/">
-
 		<xsl:apply-templates/>
-
 		<small><br/><br/><br/>
 		<xsl:text>
 				(C)opyright Gerolf Ziegenhain (DG6FL). &lt;XML&gt;Bandplan is released under GPLv3.
@@ -29,6 +28,7 @@
 		</small>
 	</xsl:template>
 
+	<!-- Main Bandplan -->
 	<xsl:template match="bandplan">
 		<xsl:choose>
 			<!-- Check version number  - abort? -->
@@ -46,19 +46,20 @@
 		</xsl:choose>
 	</xsl:template>
 
+	<!-- Each Band -->
 	<xsl:template match="band">
 		<body>
 			<xsl:choose> <!-- Distinguish between bandplan.xml and single NNm.xml files -->
 				<xsl:when test="@ref">
-					<h1> <xsl:value-of select="@name"/> <xsl:text> Band for Country </xsl:text> <xsl:value-of select="@country"/> </h1>
+					<h1> <xsl:value-of select="@name"/> <xsl:text> Band for Country </xsl:text> <xsl:value-of select="country/@name"/> </h1>
 					<xsl:apply-templates select="source"/> 
 					<!-- Regions & Channels -->
 					<table>
 						<tr>
 							<td> <xsl:text>Frequency (MHz)</xsl:text></td>
-							<td> <xsl:text>Name</xsl:text></td>
+							<td> <xsl:text>Bandwidth (kHz)</xsl:text></td>
 							<td> <xsl:text>Mode</xsl:text></td>
-							<td> <xsl:text>Regulation</xsl:text></td>
+							<td> <xsl:text>License</xsl:text></td>
 							<td> <xsl:text>Comment</xsl:text></td>
 						</tr>
 						<xsl:apply-templates select="region"/>
@@ -72,34 +73,42 @@
 		</body>
 	</xsl:template>
 
+	<!-- Each (Frequency) Region -->
 	<xsl:template match="region">
 			<tr>
 				<td> 
-					<xsl:value-of select='format-number(@min*0.000001, "####.000")'/> 
+					<xsl:value-of select='format-number(@min*0.000001, "###0.000")'/> 
 					<xsl:text> - </xsl:text>
-					<xsl:value-of select='format-number(@max*0.000001, "####.000")'/> 
+					<xsl:value-of select='format-number(@max*0.000001, "###0.000")'/> 
 				</td>
-				<td> <b> <xsl:value-of select="@name"/> </b> </td>
-				<td> <xsl:apply-templates select="mode"/> </td>
-				<td> <!-- Default regulation is parent node -->
+				<td> 
 					<xsl:choose>
-						<xsl:when test="regulation">
-							<xsl:apply-templates select="regulation"/> 
+						<xsl:when test="@bandwidth">
+							<xsl:value-of select='format-number(@bandwidth*0.001, "#0.000")'/> 
+						</xsl:when>
+					</xsl:choose>
+				</td>
+				<td> <xsl:apply-templates select="mode"/> </td>
+				<td> 
+					<!-- Default regulation is parent node -->
+					<xsl:choose>
+						<xsl:when test="license">
+							<xsl:apply-templates select="license"/> 
 						</xsl:when>
 						<xsl:otherwise>
-							<xsl:apply-templates select="../regulation"/> 
+							<xsl:apply-templates select="../license"/> 
 						</xsl:otherwise>
 					</xsl:choose>
 				</td>
 				<td> 
 					<xsl:apply-templates select="comment"/> 
-					<xsl:apply-templates select="source"/> 
 					<!-- Recursive handling of subregions -->
 					<xsl:apply-templates select="region"/> 
 				</td>
 			</tr>
 	</xsl:template>
-	
+
+	<!-- Each Channel -->
 	<xsl:template match="channel">
 			<tr>
 				<td> <xsl:value-of select='format-number(@freq*0.000001, "####.000")'/> </td>
@@ -108,34 +117,28 @@
 				<td> <xsl:text> cf. regions </xsl:text> </td>
 				<td> 
 					<xsl:apply-templates select="comment"/> 
-					<xsl:apply-templates select="source"/> 
 				</td>
 			</tr>
-	</xsl:template>
-
-	<xsl:template match="regulation">
-		<xsl:apply-templates select="license"/> 
-		<xsl:apply-templates select="source"/> 
 	</xsl:template>
 
 	<xsl:template match="license">
 		<xsl:value-of select="@name"/>
 		<xsl:text>: </xsl:text>
 		<xsl:value-of select="@power"/>
-		<xsl:text>W </xsl:text>
+		<xsl:text>W (</xsl:text>
+		<xsl:value-of select="@powermeasure"/>
+		<xsl:text>) </xsl:text>
 	</xsl:template>
 
 	<xsl:template match="mode">
-		<xsl:value-of select="."/><xsl:text> </xsl:text>
+		<xsl:value-of select="@name"/><xsl:text> </xsl:text>
 	</xsl:template>
 
 	<xsl:template match="comment">
 		<i> <xsl:value-of select="."/> </i>
 	</xsl:template>
 
-	<xsl:template match="todo"/>
 	<xsl:template match="countries"/>
-	<xsl:template match="modes"/>
 
 	<xsl:template match="source">
 		<xsl:choose>

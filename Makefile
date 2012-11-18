@@ -4,7 +4,7 @@ xmltest:
 check_references:
 	./tools/check_references_for_changes.pl -filename=bandplans/references.xml 
 
-html:
+html: 
 	xsltproc tools/html.xsl bandplans/bandplan.xml > html/bandplan.html 
 
 arduino:
