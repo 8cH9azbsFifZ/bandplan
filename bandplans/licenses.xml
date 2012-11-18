@@ -253,7 +253,20 @@
 		<license name="A" cept="CEPT" prefix="S5" ref="TR6101"/>
 	</country>
 
+	<country fullname="Spain">
+		<license name="A" cept="CEPT" prefix="EA" ref="TR6101"/>
+	</country>
 
+	<country name="SE" fullname="Sweden">
+		<license name="All" cept="CEPT" prefix="SM" ref="TR6101"/>
+		<license name="All" cept="CEPT" prefix="SA" ref="TR6101"/>
+	</country>
+
+	<country fullname="Switzerland">
+		<license name="1" cept="CEPT" prefix="HB9" ref="TR6101"/>
+		<license name="2" cept="CEPT" prefix="HB9" ref="TR6101"/>
+		<license name="CEPT" cept="CEPT" prefix="HB9" ref="TR6101"/>
+	</country>
 
 
 	<country name="US" fullname="USA">
@@ -264,9 +277,6 @@
 		<license name="Novice" prefix=""/>
 	</country>
 
-	<country name="SE" fullname="Sweden">
-		<license name="" cept="CEPT" prefix="SM, SA" ref="TR6101"/>
-	</country>
 
 	<!-- Follow the two letter ISO 3166 code (http://en.wikipedia.org/wiki/ISO_3166-1) -->
 	<country name="International">
