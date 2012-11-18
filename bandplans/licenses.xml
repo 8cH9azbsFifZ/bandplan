@@ -177,8 +177,41 @@
 	</country>
 
 	<country fullname="Lithuania">
-		<license name="A" cept="CEPT" prefix="L>" ref="TR6101"/>
+		<license name="A" cept="CEPT" prefix="LY" ref="TR6101"/>
 	</country>
+
+	<country fullname="Louxembourgh">
+		<license name="CEPT" cept="CEPT" prefix="LX" ref="TR6101"/>
+	</country>
+
+	<country fullname="Macedonia (FYROM)">
+		<license name="A" cept="CEPT" prefix="Z3" ref="TR6101"/>
+		<license name="P" cept="CEPT" prefix="Z3" ref="TR6101"/>
+	</country>
+
+	<country fullname="Monaco">
+		<license name="General" cept="CEPT" prefix="3A" ref="TR6101"/>
+	</country>
+
+	<country fullname="Montenegro">
+		<license name="A" cept="CEPT" prefix="4O" ref="TR6101"/>
+		<license name="N" cept="CEPT" prefix="4O" ref="TR6101"/>
+	</country>
+
+	<country fullname="Netherlands">
+		<license name="A" cept="CEPT" prefix="PA" ref="TR6101"/>
+		<license name="C" cept="CEPT" prefix="PA" ref="TR6101"/>
+		<license name="F" cept="CEPT" prefix="PA" ref="TR6101"/>
+	</country>
+
+	<country fullname="Norway">
+		<license name="A" cept="CEPT" prefix="LA" ref="TR6101"/>
+		<country fullname="Svalbard">
+			<license name="A" cept="CEPT" prefix="JW" ref="TR6101"/>
+		</country>
+	</country>
+
+
 
 	<country name="US" fullname="USA">
 		<license name="Amateur_Extra" prefix=""/>
