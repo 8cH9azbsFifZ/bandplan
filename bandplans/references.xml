@@ -59,6 +59,10 @@
 			href="http://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/BNetzA/Sachgebiete/Telekommunikation/Regulierung/Frequenzordnung/Allgemeinzuteilung/ShortRangeDevicesSRD_Vfg40.pdf?__blob=publicationFile"
 			localfile="DELPD01.pdf"
 			md5="e2be159607ef653bb2769c18c94a6f44"/>
+		<ref id="DECB01" name="Bundesnetzagentur: Vfg. 37/2005"
+			href="http://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/BNetzA/Sachgebiete/Telekommunikation/Regulierung/Frequenzordnung/Allgemeinzuteilung/CBFunkVfg772011.pdf?__blob=publicationFile"
+			localfile="DECB01.pdf"
+			md5="038e626658c6cf4ca7f3c4d0f4bc56e7"/>
 
 		<!-- Country: SE -->
 		<ref id="SE01" name="Post- och telestyrelsens författningssamling"
