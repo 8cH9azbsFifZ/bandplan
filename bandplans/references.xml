@@ -63,6 +63,10 @@
 			href="http://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/BNetzA/Sachgebiete/Telekommunikation/Regulierung/Frequenzordnung/Allgemeinzuteilung/CBFunkVfg772011.pdf?__blob=publicationFile"
 			localfile="DECB01.pdf"
 			md5="038e626658c6cf4ca7f3c4d0f4bc56e7"/>
+		<ref id="DECB02" name="Wikipedia"
+			href="http://de.wikipedia.org/wiki/CB-Funk#Zwischenkan.C3.A4le"
+			localfile="CB02.html"
+			md5=""/>
 
 		<!-- Country: SE -->
 		<ref id="SE01" name="Post- och telestyrelsens författningssamling"

@@ -39,14 +39,14 @@
 	</region>
 
 	<channels>
-		<channel name="1" freq="446006200"><mode name="FM"/></channel>
-		<channel name="2" freq="446018750"><mode name="FM"/></channel>
-		<channel name="3" freq="446031250"><mode name="FM"/></channel>
-		<channel name="4" freq="446043750"><mode name="FM"/></channel>
-		<channel name="5" freq="446056250"><mode name="FM"/></channel>
-		<channel name="6" freq="446068750"><mode name="FM"/></channel>
-		<channel name="7" freq="446081250"><mode name="FM"/></channel>
-		<channel name="8" freq=""><mode name="FM"/></channel>
+		<channel name="1" freq="446006200" ref="DEPMR01"><mode name="FM"/></channel>
+		<channel name="2" freq="446018750" ref="DEPMR01"><mode name="FM"/></channel>
+		<channel name="3" freq="446031250" ref="DEPMR01"><mode name="FM"/></channel>
+		<channel name="4" freq="446043750" ref="DEPMR01"><mode name="FM"/></channel>
+		<channel name="5" freq="446056250" ref="DEPMR01"><mode name="FM"/></channel>
+		<channel name="6" freq="446068750" ref="DEPMR01"><mode name="FM"/></channel>
+		<channel name="7" freq="446081250" ref="DEPMR01"><mode name="FM"/></channel>
+		<channel name="8" freq="446093750" ref="DEPMR01"><mode name="FM"/></channel>
 	</channels>
 </band>
 </bandplan>

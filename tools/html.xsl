@@ -64,7 +64,7 @@
 							<td> <xsl:text>Comment</xsl:text></td>
 						</tr>
 						<xsl:apply-templates select="region"/>
-						<xsl:apply-templates select="channel"/>
+						<xsl:apply-templates select="channels"/>
 					</table>
 				</xsl:when>
 				<xsl:otherwise>
@@ -133,19 +133,74 @@
 			</td>
 	</xsl:template>
 
+	<!-- Channel list -->
+	<xsl:template match="channels">
+		<xsl:apply-templates select="channel"/>
+		<xsl:apply-templates select="repeater"/>
+	</xsl:template>
+
 	<!-- Each Channel -->
 	<xsl:template match="channel">
-			<tr>
-				<td> <xsl:value-of select='format-number(@freq*0.000001, "####.000")'/> </td>
-				<td> <b> <xsl:value-of select="@name"/> </b> </td>
+			<tr style="background-color:#8888bb">
+				<td> <xsl:value-of select='format-number(@freq*0.000001, "###0.000")'/> </td>
 				<td> <xsl:apply-templates select="mode"/> </td>
-				<td> <xsl:text> cf. regions </xsl:text> </td>
+				<td></td>
+				<td></td>
 				<td> 
+					<xsl:variable name="link" select="@ref"/>
+					<a href="#{$link}"><xsl:value-of select="@ref"/></a>
+				</td>
+				<td> 
+					<b> <xsl:value-of select="@name"/> </b> 
+					<xsl:text> </xsl:text>
 					<xsl:apply-templates select="comment"/> 
 				</td>
 			</tr>
 	</xsl:template>
 
+	<!-- Each Repeater -->
+	<xsl:template match="repeater">
+			<tr style="background-color:#8888dd">
+				<td> 
+					<xsl:value-of select='format-number(@freq*0.000001, "###0.000")'/> 
+					<xsl:text> (</xsl:text>
+					<xsl:value-of select='format-number(shift*0.000001, "###0.0")'/> 
+					<xsl:text>)</xsl:text>
+				</td>
+				<td> <xsl:apply-templates select="mode"/> </td>
+				<td></td>
+				<td></td>
+				<td> 
+					<xsl:variable name="link" select="@ref"/>
+					<a href="#{$link}"><xsl:value-of select="@ref"/></a>
+					<xsl:choose>
+						<xsl:when test="homepage">
+							<xsl:variable name="link1" select="homepage/@href"/>
+							<a href="{$link1}"><xsl:text>Homepage</xsl:text></a>
+						</xsl:when>
+					</xsl:choose>
+				</td>
+				<td> 
+					<b> <xsl:value-of select="@name"/> </b> 
+					<xsl:choose>
+						<xsl:when test="echolink">
+							<xsl:text>Echolink Node: </xsl:text>
+							<xsl:apply-templates select="echolink/@node"/> 
+						</xsl:when>
+					</xsl:choose>
+					<xsl:choose>
+						<xsl:when test="position">
+							<xsl:text>Position: </xsl:text>
+							<xsl:apply-templates select="position/@locator"/> 
+						</xsl:when>
+					</xsl:choose>
+					<xsl:text> </xsl:text>
+					<xsl:apply-templates select="comment"/> 
+				</td>
+			</tr>
+	</xsl:template>
+
+	<!-- License Information -->
 	<xsl:template match="license">
 		<xsl:choose>
 			<xsl:when test="@prefix">
