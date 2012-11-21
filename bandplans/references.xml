@@ -65,8 +65,7 @@
 			md5="038e626658c6cf4ca7f3c4d0f4bc56e7"/>
 		<ref id="DECB02" name="Wikipedia"
 			href="http://de.wikipedia.org/wiki/CB-Funk#Zwischenkan.C3.A4le"
-			localfile="CB02.html"
-			md5=""/>
+			/>
 
 		<!-- Country: SE -->
 		<ref id="SE01" name="Post- och telestyrelsens författningssamling"
@@ -94,9 +93,9 @@
 		<!-- Others -->
 		<ref id="WSPR01" name="WSPR" 
 			href="http://wsprnet.org/drupal/" 
-			md5=""/>
+			/>
 		<ref id="REPEATER01" name="DARC Repeater List" 
 			href="http://www.darc.de/echolink-bin/relais.pl" 
-			md5=""/>
+			/>
 	</references>
 </bandplan>

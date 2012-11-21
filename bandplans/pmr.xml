@@ -27,13 +27,13 @@
 		<mode name="FM"/>
 	</region>
 
-	<region min="446103125" max="446196875">
-		<license name="PMR" power="0.5"><source name="Wikipedia" href="http://de.wikipedia.org/wiki/PMR-Funk"/></license>
+	<region min="446103125" max="446196875" ref="DEPMR01">
+		<license name="PMR" power="0.5" ref="DEPMR01"/>
 		<mode name="Digital"/>
 		<comment>16 Channels, FSK</comment>
 	</region>
-	<region min="446106250" max="446193750">
-		<license name="PMR" power="0.5"><source name="Wikipedia" href="http://de.wikipedia.org/wiki/PMR-Funk"/></license>
+	<region min="446106250" max="446193750" ref="DEPMR01">
+		<license name="PMR" power="0.5" ref="DEPMR01"/>
 		<mode name="Digital"/>
 		<comment>8 Channels, FSK</comment>
 	</region>
