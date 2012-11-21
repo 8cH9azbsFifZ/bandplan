@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+	 This file is part of xmlbandplan.
+
+    Xmlbandplan is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Xmlbandplan is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
+-->
+
+<!DOCTYPE note SYSTEM "bandplan.dtd">
+
+<bandplan version="0.7.5">
+<band name="CB" min="26965000" max="27405000" author="DG6FL" created="20131109" valid="20130101" ref="DECB01">
+	<country name="DE"/>
+
+	<region min="26565000" max="27405000" ref="DECB01">
+		<license name="CB" power="4" powermeasure="ERP" bandwidth="10000" ref="DECB01"/>
+		<mode name="FM"/>
+		<mode name="AM"/>
+		<mode name="SSB" comment="12Watt"/>
+	</region>
+
+	<channels>
+		<channel name="1" freq="26965000" ref="DECB01"><mode name="AM"/><mode name="FM"/><comment>Call FM.</comment></channel>
+		<channel name="2" freq="26975000" ref="DECB01"><mode name="AM"/><mode name="FM"/></channel>
+		<channel name="3" freq="26985000" ref="DECB01"><mode name="AM"/><mode name="FM"/></channel>
+		<channel name="3A" freq="26995000" ref="DECB02"><comment>Not allowed for CB.</comment></channel>
+		<channel name="4" freq="27005000" ref="DECB01"><mode name="AM"/><mode name="FM"/><comment>Call AM.</comment></channel>
+		<channel name="5" freq="27015000" ref="DECB01"><mode name="AM"/><mode name="FM"/></channel>
+		<channel name="6" freq="27025000" ref="DECB01"><mode name="AM"/><mode name="FM"/></channel>
+		<channel name="7" freq="27035000" ref="DECB01"><mode name="AM"/><mode name="FM"/></channel>
+		<channel name="7A" freq="27045000" ref="DECB02"><comment>Not allowed for CB.</comment></channel>
+		<channel name="8" freq="27055000" ref="DECB01"><mode name="AM"/><mode name="FM"/></channel>
+		<channel name="9" freq="27065000" ref="DECB01"><mode name="AM"/><mode name="FM"/><comment>Emergency</comment></channel>
+		<channel name="10" freq="27075000" ref="DECB01"><mode name="AM"/><mode name="FM"/></channel>
+		<channel name="11" freq="27085000" ref="DECB01"><mode name="AM"/><mode name="FM"/></channel>
+		<channel name="11A" freq="27095000" ref="DECB02"><comment>Not allowed for CB.</comment></channel>
+		<channel name="12" freq="27105000" ref="DECB01"><mode name="AM"/><mode name="FM"/></channel>
+		<channel name="13" freq="27115000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="14" freq="27125000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="15" freq="27135000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="15A" freq="27155000" ref="DECB02"><comment>Not allowed for CB.</comment></channel>
+		<channel name="16" freq="27155000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="17" freq="27165000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="18" freq="27175000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="19" freq="27185000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="19A" freq="27195000" ref="DECB02"><comment>Not allowed for CB.</comment></channel>
+		<channel name="20" freq="27205000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="21" freq="27215000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="22" freq="27225000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="23" freq="27255000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="24" freq="27235000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="25" freq="27245000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="26" freq="27265000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="27" freq="27275000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="28" freq="27285000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="29" freq="27295000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="30" freq="27305000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="31" freq="27315000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="32" freq="27325000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="33" freq="27335000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="34" freq="27345000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="35" freq="27355000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="36" freq="27365000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="37" freq="27375000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="38" freq="27385000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="39" freq="27375000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="40" freq="27405000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="41" freq="26565000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="42" freq="26575000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="43" freq="26585000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="44" freq="26595000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="45" freq="26605000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="46" freq="26615000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="47" freq="26625000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="48" freq="26635000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="49" freq="26645000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="50" freq="26655000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="51" freq="26665000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="52" freq="26675000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="53" freq="26685000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="54" freq="26695000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="55" freq="26705000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="56" freq="26715000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="57" freq="26725000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="58" freq="26735000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="59" freq="26745000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="60" freq="26755000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="61" freq="26765000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="62" freq="26775000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="63" freq="26785000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="64" freq="26795000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="65" freq="26805000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="66" freq="26815000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="67" freq="26825000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="68" freq="26835000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="69" freq="26845000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="70" freq="26855000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="71" freq="26865000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="72" freq="26875000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="73" freq="26885000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="74" freq="26895000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="75" freq="26905000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="76" freq="26915000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="77" freq="26925000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="78" freq="26935000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="79" freq="26945000" ref="DECB01"><mode name="FM"/></channel>
+		<channel name="80" freq="26955000" ref="DECB01"><mode name="FM"/></channel>
+	</channels>
+</band>
+
+</bandplan>

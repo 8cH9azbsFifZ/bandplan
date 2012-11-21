@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+	 This file is part of xmlbandplan.
+
+    Xmlbandplan is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Xmlbandplan is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
+-->
+
+<!DOCTYPE note SYSTEM "bandplan.dtd">
+
+
+<bandplan version="0.7.5">
+
+<band name="2m" min="144000000" max="146000000" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
+	<country name="DE"/> 
+
+	<region min="144000000" max="146000000" bandwidth="40000" ref="DE02">
+      <license name="Klasse_A" power="750" powermeasure="PEP" ref="DE02"/>
+      <license name="Klasse_E" power="75" powermeasure="PEP" ref="DE02"/>
+
+		<region min="144000000" max="144180000" bandwidth="500" ref="DE06">
+			<mode name="CW"/>
+			<region min="144000000" max="144110000" ref="DE06">
+				<mode name="All"/>
+				<comment>EME CW and Random MS Freq.</comment>
+			</region>
+			<region min="144110000" max="144140000" ref="DE06">
+				<mode name="All"/>
+				<comment>EME MGM</comment>
+			</region>
+			<region min="144140000" max="144160000" ref="DE06">
+				<mode name="All"/>
+				<comment>EME CW</comment>
+			</region>
+		</region>
+		<region min="144180000" max="144360000" bandwidth="2700" ref="DE06">
+			<mode name="CW"/>
+			<mode name="SSB"/>
+			<region min="144180000" max="144360000" ref="DE06">
+				<mode name="SSB"/>
+				<comment>SSB</comment>
+			</region>
+		</region>
+		<region min="144360000" max="144399000" bandwidth="2700" ref="DE06">
+			<mode name="CW"/>
+			<mode name="SSB"/>
+			<mode name="MGM"/>
+		</region>
+		<region min="144400000" max="144500000" ref="DE06">
+			<comment>Beacons, no sending (excl. WSPR)</comment>
+		</region>
+		<region min="144500000" max="144794000" bandwidth="20000" ref="DE06">
+			<mode name="All"/>
+			<region min="144630000" max="144660000" bandwidth="20000" ref="DE06">
+				<mode name="All"/>
+				<comment>Lineartransponder Output</comment>
+			</region>
+			<region min="144660000" max="144690000" bandwidth="20000" ref="DE06">
+				<mode name="All"/>
+				<comment>Lineartransponder Output</comment>
+			</region>
+		</region>
+		<region min="144800000" max="144990000" bandwidth="20000" ref="DE06">
+			<mode name="Digital"/>
+			<comment>MGM, Packet Radio</comment>
+			<region min="144800000" max="144987500" bandwidth="20000" ref="DE06">
+				<mode name="Digital"/>
+				<comment>Digimode, automatic stations</comment>
+			</region>
+		</region>
+		<region min="144990000" max="145194000" bandwidth="12000" ref="DE06">
+			<mode name="NarrowFM"/>
+			<region min="145000000" max="145187500" bandwidth="12000" ref="DE06">
+				<mode name="NarrowFM"/>
+				<comment>Relais Input</comment>
+				<comment>RV 48(X) / RV 63</comment>
+				<comment>Shift 6.25 kHz</comment>
+			</region>
+		</region>
+		<region min="145194000" max="145206000" bandwidth="12000" ref="DE06"><mode name="NarrowFM"/></region>
+		<region min="145206000" max="145593500" bandwidth="12000" ref="DE06"><mode name="NarrowFM"/></region>
+		<region min="145593500" max="145794000" bandwidth="12000" ref="DE06">
+			<mode name="NarrowFM"/>		
+			<comment>Relais Output</comment>
+			<comment>RV 48(X) / RV 63</comment>
+			<comment>Shift 6.25 kHz</comment>
+		</region>
+		<region min="145794000" max="145806000" bandwidth="12000" ref="DE06">
+			<mode name="NarrowFM"/>
+			<comment>Space-Earth</comment>
+		</region>
+		<region min="145806000" max="146000000" bandwidth="12000" ref="DE06">
+			<mode name="NarrowFM"/>
+			<comment>Satellites</comment>
+		</region>
+	</region>
+
+
+	<channels>
+		<channel name="S1" freq="145212500" ref="DE06"><mode name="FM"/><comment>simplex channel</comment></channel>
+
+		<channel name="ARPS" freq="144800000" ref="DE06"><mode name="FM"/></channel>
+		<channel name="Echolink" freq="144962500" ref="DE06"><mode name="FM"/></channel>
+		<channel name="Echolink" freq="144975000" ref="DE06"><mode name="FM"/></channel>
+		<channel name="RTTY local" freq="145300000" ref="DE06"><mode name="RTTY"/></channel>
+		<channel name="DV CQ" freq="145375000" ref="DE06"><comment>Digital Speech with data and FM</comment></channel>
+
+		<channel name="PSK31" freq="144170000" ref="DE06"><mode name="Digital"/><comment>MGM PSK31</comment></channel>
+		<channel name="SSB CQ" freq="144300000" ref="DE06"><mode name="SSB"/></channel>
+		<channel name="MGM CQ" freq="144370000" ref="DE06"><mode name="MGM"/></channel>
+		<channel name="WSPR" freq="144489000" ref="WSPR01"><mode name="WSPR"/></channel>
+		<channel name="SSTV CQ" freq="144500000" ref="DE06"><mode name="SSTV"/></channel>
+		<channel name="ATV" freq="144525000" ref="DE06"><mode name="SSB"/><comment>ATV SSB Callback</comment></channel>
+		<channel name="RTTY CQ" freq="144600000" ref="DE06"></channel>
+		<channel name="Fax CQ" freq="144700000" ref="DE06"></channel>
+		<channel name="ATV CQ / Callback" freq="144750000" ref="DE06"></channel>
+	</channels>
+</band>
+</bandplan>
