@@ -4,10 +4,14 @@
 	<!ATTLIST bandplan version CDATA #REQUIRED>
 
 <!ELEMENT references (ref*)>
-	<!ATTLIST references id CDATA #REQUIRED>
-	<!ATTLIST references name CDATA #REQUIRED>
-	<!ATTLIST references href CDATA #REQUIRED>
-	<!ATTLIST references md5 CDATA #REQUIRED>
+
+<!ELEMENT ref (#PCDATA)>
+	<!ATTLIST ref id CDATA #REQUIRED>
+	<!ATTLIST ref name CDATA #REQUIRED>
+	<!ATTLIST ref href CDATA #REQUIRED>
+	<!ATTLIST ref href1 CDATA #IMPLIED>
+	<!ATTLIST ref localfile CDATA #IMPLIED>
+	<!ATTLIST ref md5 CDATA #IMPLIED>
 
 <!ELEMENT band (country,region*,channels*)>
 	<!ATTLIST band name CDATA #REQUIRED>
@@ -23,8 +27,8 @@
 
 <!ELEMENT country (license*,country*)>
 	<!ATTLIST country name (DE|US|IARU1|IARU2|IARU3|International) #REQUIRED>
-	<!ATTLIST country fullname CDATA #REQUIRED>
-	<!ATTLIST country ref CDATA #REQUIRED>
+	<!ATTLIST country fullname CDATA #IMPLIED>
+	<!ATTLIST country ref CDATA #IMPLIED>
 	<!ATTLIST country prefix CDATA #IMPLIED>
 	<!ATTLIST country cept CDATA #IMPLIED>
 	<!-- Follow the two letter ISO 3166 code (http://en.wikipedia.org/wiki/ISO_3166-1) -->
@@ -32,7 +36,7 @@
 <!ELEMENT countries (country+)>
 
 <!ELEMENT license (#PCDATA|comment)*>
-	<!ATTLIST license name (Klasse_A|Klasse_E|Amateur_Extra|Advanced|General|Technician|Novice) #REQUIRED>
+	<!ATTLIST license name (Klasse_A|Klasse_E|Amateur_Extra|Advanced|General|Technician|Novice|PMR|LPD|CB) #REQUIRED>
 	<!ATTLIST license ref CDATA #REQUIRED>
 	<!ATTLIST license power CDATA #IMPLIED>
 	<!ATTLIST license powermeasure (PEP|ERP) #IMPLIED>
