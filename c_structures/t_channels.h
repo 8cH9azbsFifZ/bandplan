@@ -29,8 +29,8 @@ typedef struct
   // int rpt;   // repeater shift (kHz) --- currently not used due to memory constraint
 } t_channel;
 
-long rpt70cm = 760000;
-long rpt2m = 0;
+long rpt70cm = 760000; // 7,6 MHz
+long rpt2m   = 60000; // 600 kHz
 
 const t_channel channels[] = {
 						{"WSPR",13600, NULL },
