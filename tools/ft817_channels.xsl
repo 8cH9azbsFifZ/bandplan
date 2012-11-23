@@ -54,10 +54,13 @@
 typedef struct 
 {
   char *name; // channel name
-  long freq;  // frequency (Hz/10)
+  long freq;  // frequency (Hz/10)  --- negative frequency indicates repeater
   byte mode;  // mode
-  int rpt;   // repeater shift (kHz)
+  // int rpt;   // repeater shift (kHz) --- currently not used due to memory constraint
 } t_channel;
+
+long rpt70cm = 760000;
+long rpt2m = 0;
 
 const t_channel channels[] = {
 						</xsl:text>
@@ -132,7 +135,10 @@ int nchannels = sizeof(channels)/sizeof(channels[0]);
 			<xsl:when test="contains(mode/@name,'FM')"> <xsl:text>FT817_MODE_FM</xsl:text> </xsl:when>
 			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
 		</xsl:choose>
+		<!-- Repeater shift -->
+		<!--
 		<xsl:text>, 0 </xsl:text> 
+		-->
 		<xsl:text>},&#xa;</xsl:text> 
 	</xsl:template>
 
@@ -148,7 +154,7 @@ int nchannels = sizeof(channels)/sizeof(channels[0]);
 		</xsl:choose>
 		<xsl:text>",</xsl:text>
 		<!-- Frequency -->
-		<xsl:value-of select="@freq*0.1"/><xsl:text>,</xsl:text>
+		<xsl:value-of select="@freq*-0.1"/><xsl:text>,</xsl:text>
 		<!-- Mode -->	
 		<xsl:choose>
 			<xsl:when test="contains(mode/@name,'CW')"> <xsl:text>FT817_MODE_CW_NARROW</xsl:text> </xsl:when>
@@ -158,8 +164,9 @@ int nchannels = sizeof(channels)/sizeof(channels[0]);
 			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
 		</xsl:choose>
 		<!-- Repeater shift -->
-		<xsl:text>, </xsl:text>
+		<!--<xsl:text>, </xsl:text>
 		<xsl:value-of select="shift*0.0001"/><xsl:text>,</xsl:text>
+		-->
 		<xsl:text>},&#xa;</xsl:text> 
 	</xsl:template>
 
