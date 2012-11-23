@@ -54,9 +54,9 @@
 typedef struct 
 {
   char *name; // channel name
-  long freq;  // frequency
+  long freq;  // frequency (Hz/10)
   byte mode;  // mode
-  long rpt;   // repeater shift
+  int rpt;   // repeater shift (kHz)
 } t_channel;
 
 const t_channel channels[] = {
@@ -100,10 +100,15 @@ int nchannels = sizeof(channels)/sizeof(channels[0]);
 
 	<xsl:template match="channels">
 		<xsl:apply-templates select="channel"/>>
+		<xsl:apply-templates select="repeater"/>>
 	</xsl:template>
 
 	<xsl:template match="channel">
 			<xsl:call-template name="channel"/>
+	</xsl:template>
+
+	<xsl:template match="repeater">
+			<xsl:call-template name="repeater"/>
 	</xsl:template>
 
 	<xsl:template name="channel">
@@ -127,22 +132,45 @@ int nchannels = sizeof(channels)/sizeof(channels[0]);
 			<xsl:when test="contains(mode/@name,'FM')"> <xsl:text>FT817_MODE_FM</xsl:text> </xsl:when>
 			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
 		</xsl:choose>
-		<!-- Repeater shift -->
-		<xsl:choose>
-			<xsl:when test="shift">
-				<xsl:text>, </xsl:text>
-				<xsl:value-of select="shift*0.1"/><xsl:text>,</xsl:text>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:text>, 0 </xsl:text> 
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:text>, 0 </xsl:text> 
 		<xsl:text>},&#xa;</xsl:text> 
 	</xsl:template>
 
+	<xsl:template name="repeater">
+		<xsl:text>{"</xsl:text> 
+		<!-- Name -->
+		<xsl:value-of select="substring(@name,1,20)"/> <!-- maximal channel name length: 20 -->
+		<xsl:choose>
+			<xsl:when test="comment">
+				<xsl:text>: </xsl:text>
+				<xsl:value-of select="substring(comment,1,20)"/> <!-- maximal comment length: 20 -->
+			</xsl:when>
+		</xsl:choose>
+		<xsl:text>",</xsl:text>
+		<!-- Frequency -->
+		<xsl:value-of select="@freq*0.1"/><xsl:text>,</xsl:text>
+		<!-- Mode -->	
+		<xsl:choose>
+			<xsl:when test="contains(mode/@name,'CW')"> <xsl:text>FT817_MODE_CW_NARROW</xsl:text> </xsl:when>
+			<xsl:when test="contains(mode/@name,'Narrow digital')"> <xsl:text>FT817_MODE_CW_NARROW</xsl:text> </xsl:when>
+			<xsl:when test="contains(mode/@name,'All')"> <xsl:text>FT817_MODE_USB</xsl:text> </xsl:when>
+			<xsl:when test="contains(mode/@name,'FM')"> <xsl:text>FT817_MODE_FM</xsl:text> </xsl:when>
+			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
+		</xsl:choose>
+		<!-- Repeater shift -->
+		<xsl:text>, </xsl:text>
+		<xsl:value-of select="shift*0.0001"/><xsl:text>,</xsl:text>
+		<xsl:text>},&#xa;</xsl:text> 
+	</xsl:template>
+
+
 	<xsl:template match="todo"/>
 	<xsl:template match="regions"/>
-	<xsl:template match="modes"/>
+	<xsl:template match="homepage"/>
+	<xsl:template match="position"/>
+
+	<xsl:template match="operator"/>
+	
 
 	<xsl:template match="source">
 		<xsl:choose>

@@ -24,15 +24,19 @@
 typedef struct 
 {
   char *name; // channel name
-  long freq;  // frequency
+  long freq;  // frequency (Hz/10)
   byte mode;  // mode
-  long rpt;   // repeater shift
+  int rpt;   // repeater shift (kHz)
 } t_channel;
 
 const t_channel channels[] = {
 						{"WSPR",13600, NULL , 0 },
+&gt;
+		&gt;
 	{"WSPR",183660, NULL , 0 },
 {"QRP",183600,FT817_MODE_CW_NARROW, 0 },
+&gt;
+		&gt;
 	{"ATV",373500, NULL , 0 },
 {"Emergency Region 1",376000, NULL , 0 },
 {"QRP",369000, NULL , 0 },
@@ -40,29 +44,43 @@ const t_channel channels[] = {
 {"QRP",356000,FT817_MODE_CW_NARROW, 0 },
 {"QRS",355500,FT817_MODE_CW_NARROW, 0 },
 {"WSPR",359260, NULL , 0 },
+&gt;
+		&gt;
 	{"QRP",703000,FT817_MODE_CW_NARROW, 0 },
 {"Emergency Region 1",711000, NULL , 0 },
 {"ATV",716500, NULL , 0 },
 {"Digital Speech",707000, NULL , 0 },
 {"QRP",709000, NULL , 0 },
 {"WSPR",703860, NULL , 0 },
+&gt;
+		&gt;
 	{"QRP",1011600,FT817_MODE_CW_NARROW, 0 },
 {"WSPR",1013870, NULL , 0 },
+&gt;
+		&gt;
 	{"QRP",1406000,FT817_MODE_CW_NARROW, 0 },
 {"Emergency",1430000, NULL , 0 },
 {"WSPR",1409560, NULL , 0 },
+&gt;
+		&gt;
 	{"QRP",1808600,FT817_MODE_CW_NARROW, 0 },
 {"QRP",1813000, NULL , 0 },
 {"Digital Speech",1815000, NULL , 0 },
 {"Emergency",1816000, NULL , 0 },
 {"WSPR",1810460, NULL , 0 },
+&gt;
+		&gt;
 	{"QRP",2106000,FT817_MODE_CW_NARROW, 0 },
 {"QRS",2105500,FT817_MODE_CW_NARROW, 0 },
 {"Digital Speech",2118000, NULL , 0 },
 {"WSPR",2199460, NULL , 0 },
+&gt;
+		&gt;
 	{"QRP",2490600,FT817_MODE_CW_NARROW, 0 },
 {"QRP",2495000, NULL , 0 },
 {"WSPR",2492460, NULL , 0 },
+&gt;
+		&gt;
 	{"QRP",2836000, NULL , 0 },
 {"Digital Speech",2833000, NULL , 0 },
 {"FM Call",2960000,FT817_MODE_FM, 0 },
@@ -71,6 +89,8 @@ const t_channel channels[] = {
 {"QRP",2806000,FT817_MODE_CW_NARROW, 0 },
 {"APRS",2925000,FT817_MODE_FM, 0 },
 {"WSPR",2812460, NULL , 0 },
+&gt;
+		&gt;
 	{"1: Call FM.",2696500, NULL , 0 },
 {"2",2697500, NULL , 0 },
 {"3",2698500, NULL , 0 },
@@ -156,7 +176,11 @@ const t_channel channels[] = {
 {"78",2693500,FT817_MODE_FM, 0 },
 {"79",2694500,FT817_MODE_FM, 0 },
 {"80",2695500,FT817_MODE_FM, 0 },
+&gt;
+		&gt;
 	{"WSPR",502930, NULL , 0 },
+&gt;
+		&gt;
 	{"S1: simplex channel",14521250,FT817_MODE_FM, 0 },
 {"ARPS",14480000,FT817_MODE_FM, 0 },
 {"Echolink",14496250,FT817_MODE_FM, 0 },
@@ -172,6 +196,12 @@ const t_channel channels[] = {
 {"RTTY CQ",14460000, NULL , 0 },
 {"Fax CQ",14470000, NULL , 0 },
 {"ATV CQ / Callback",14475000, NULL , 0 },
+&gt;
+		&gt;
+	&gt;
+		{"DB0VA",43932500,FT817_MODE_FM, -760,},
+{"DB0ESW",43905000,FT817_MODE_FM, -760,},
+&gt;
 	{"1",43307500,FT817_MODE_FM, 0 },
 {"2",43310000,FT817_MODE_FM, 0 },
 {"3",43312500,FT817_MODE_FM, 0 },
@@ -241,6 +271,8 @@ const t_channel channels[] = {
 {"67",43472500,FT817_MODE_FM, 0 },
 {"68",43475000,FT817_MODE_FM, 0 },
 {"69",43477500,FT817_MODE_FM, 0 },
+&gt;
+		&gt;
 	{"1",44600620,FT817_MODE_FM, 0 },
 {"2",44601875,FT817_MODE_FM, 0 },
 {"3",44603125,FT817_MODE_FM, 0 },
@@ -249,6 +281,8 @@ const t_channel channels[] = {
 {"6",44606875,FT817_MODE_FM, 0 },
 {"7",44608125,FT817_MODE_FM, 0 },
 {"8",44609375,FT817_MODE_FM, 0 },
+&gt;
+		&gt;
 	
 };
 int nchannels = sizeof(channels)/sizeof(channels[0]);
