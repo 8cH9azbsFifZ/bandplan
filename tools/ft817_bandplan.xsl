@@ -25,9 +25,9 @@
 
 	<xsl:template match="bandplan">
 		<xsl:choose>
-			<xsl:when test="@version = '0.6.4' ">
+			<xsl:when test="@version = '0.7.5' ">
 				<xsl:choose>
-					<xsl:when test="not(band/@country)"> <!-- make sure we are not in a recursive file -->
+					<xsl:when test="not(band/@ref)"> <!-- make sure we are not in a recursive file -->
 						<xsl:text>
 /*
 	 This file is part of xmlbandplan.
@@ -69,7 +69,7 @@ const t_band bands[] = {
 				</xsl:choose>
 				<xsl:apply-templates select="./band"/>
 				<xsl:choose>
-					<xsl:when test="not(band/@country)"> <!-- make sure we are not in a recursive file -->
+					<xsl:when test="not(band/@ref)"> <!-- make sure we are not in a recursive file -->
 						<xsl:text>
 };
 int nbands = sizeof(bands)/sizeof(bands[0]);
@@ -86,9 +86,9 @@ int nbands = sizeof(bands)/sizeof(bands[0]);
 
 	<xsl:template match="band">
 		<xsl:choose> <!-- Distinguish between bandplan.xml and single NNm.xml files -->
-			<xsl:when test="@country">
+			<xsl:when test="./country">
 				<xsl:choose> <!-- Only germany is selected -->
-					<xsl:when test="@country = 'DE'">
+					<xsl:when test="./country/@name = 'DE'">
 						<xsl:apply-templates select="./region"/>
 					</xsl:when>
 				</xsl:choose>
@@ -101,13 +101,14 @@ int nbands = sizeof(bands)/sizeof(bands[0]);
 	
 	<xsl:template match="region">
 			<xsl:call-template name="region"/>
+			<xsl:apply-templates select="./region"/>
 	</xsl:template>
 
 	<xsl:template match="channel">
 	</xsl:template>
 
 	<xsl:template name="region">
-		<xsl:variable name="bandname" select="../@name"/>
+		<xsl:variable name="bandname" select="//@name"/>
 		<!-- Define name of region -->
 		<xsl:text>{"</xsl:text> 
 		<xsl:value-of select="$bandname"/> 
