@@ -133,6 +133,7 @@ int nchannels = sizeof(channels)/sizeof(channels[0]);
 			<xsl:when test="contains(mode/@name,'Narrow digital')"> <xsl:text>FT817_MODE_CW_NARROW</xsl:text> </xsl:when>
 			<xsl:when test="contains(mode/@name,'All')"> <xsl:text>FT817_MODE_USB</xsl:text> </xsl:when>
 			<xsl:when test="contains(mode/@name,'FM')"> <xsl:text>FT817_MODE_FM</xsl:text> </xsl:when>
+			<xsl:when test="contains(mode/@name,'AM')"> <xsl:text>FT817_MODE_AM</xsl:text> </xsl:when>
 			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
 		</xsl:choose>
 		<!-- Repeater shift -->
