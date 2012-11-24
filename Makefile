@@ -11,6 +11,7 @@ arduino:
 	xsltproc tools/ft817_bandplan.xsl bandplans/bandplan.xml > c_structures/t_bandplan.h
 	xsltproc tools/ft817_channels.xsl bandplans/bandplan.xml > c_structures/t_channels.h
 	xsltproc tools/ft817_repeaters.xsl bandplans/bandplan.xml > c_structures/t_repeaters.h
+	xsltproc tools/channels_txt.xsl bandplans/bandplan.xml > c_structures/ch.txt
 
 test:
 	xmltest
