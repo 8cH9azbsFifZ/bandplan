@@ -24,10 +24,19 @@
 typedef struct 
 {
   char *name; // channel name
-  long freq;  // frequency (Hz/10)  --- negative frequency indicates repeater
-  byte mode;  // mode
-  // int rpt;   // repeater shift (kHz) --- currently not used due to memory constraint
+  long freq;  // frequency (Hz/10)  
+byte mode;  // mode
 } t_channel;
+
+// Repeater channels
+typedef struct 
+{
+  char *name; // channel name
+  long freq;  // frequency (Hz/10) 
+  byte mode;  // mode
+  long shift;   // repeater shift 
+char qth[7];
+} t_repeater;
 
 long rpt70cm = 760000; // 7,6 MHz
 long rpt2m   = 60000; // 600 kHz
@@ -202,8 +211,8 @@ const t_channel channels[] = {
 &gt;
 		&gt;
 	&gt;
-		{"DB0VA",-43932500,FT817_MODE_FM},
-{"DB0ESW",-43905000,FT817_MODE_FM},
+		{"DB0VA",43932500,FT817_MODE_FM, -760000,JO40BC},
+{"DB0ESW",43905000,FT817_MODE_FM, -760000,JO51AE},
 &gt;
 	{"1",43307500,FT817_MODE_FM},
 {"2",43310000,FT817_MODE_FM},
