@@ -56,6 +56,8 @@ typedef struct
   char *name; // channel name
   long freq;  // frequency (Hz/10)  
   byte mode;  // mode
+  long shift;
+  char *qth;
 } t_channel;
 
 
@@ -100,13 +102,16 @@ int nchannels = sizeof(channels)/sizeof(channels[0]);
 
 	<xsl:template match="channels">
 		<xsl:apply-templates select="channel"/>>
+		<xsl:apply-templates select="repeater"/>>
 	</xsl:template>
 
 	<xsl:template match="channel">
 			<xsl:call-template name="channel"/>
 	</xsl:template>
 
-	<xsl:template match="repeater"/>
+	<xsl:template match="repeater">
+		<xsl:call-template name="repeater"/>
+	</xsl:template>
 
 	<xsl:template name="channel">
 		<xsl:text>{"</xsl:text> 
@@ -130,8 +135,37 @@ int nchannels = sizeof(channels)/sizeof(channels[0]);
 			<xsl:when test="contains(mode/@name,'AM')"> <xsl:text>FT817_MODE_AM</xsl:text> </xsl:when>
 			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
 		</xsl:choose>
-		<xsl:text>},&#xa;</xsl:text> 
+		<xsl:text>,NULL </xsl:text>
+		<xsl:text>,NULL},&#xa;</xsl:text> 
 	</xsl:template>
+
+	<xsl:template name="repeater">
+		<xsl:text>{"</xsl:text> 
+		<!-- Name -->
+		<xsl:value-of select="substring(@name,1,20)"/> <!-- maximal channel name length: 20 -->
+		<xsl:choose>
+			<xsl:when test="comment">
+				<xsl:text>: </xsl:text>
+				<xsl:value-of select="substring(comment,1,20)"/> <!-- maximal comment length: 20 -->
+			</xsl:when>
+		</xsl:choose>
+		<xsl:text>",</xsl:text>
+		<!-- Frequency -->
+		<xsl:value-of select="@freq*0.1"/><xsl:text>,</xsl:text>
+		<!-- Mode -->	
+		<xsl:choose>
+			<xsl:when test="contains(mode/@name,'CW')"> <xsl:text>FT817_MODE_CW_NARROW</xsl:text> </xsl:when>
+			<xsl:when test="contains(mode/@name,'Narrow digital')"> <xsl:text>FT817_MODE_CW_NARROW</xsl:text> </xsl:when>
+			<xsl:when test="contains(mode/@name,'All')"> <xsl:text>FT817_MODE_USB</xsl:text> </xsl:when>
+			<xsl:when test="contains(mode/@name,'FM')"> <xsl:text>FT817_MODE_FM</xsl:text> </xsl:when>
+			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
+		</xsl:choose>
+		<xsl:text>, </xsl:text>
+		<xsl:value-of select="shift*0.1"/> <xsl:text>,"</xsl:text>
+		<xsl:value-of select="position/@locator"/> 
+		<xsl:text>"},&#xa;</xsl:text> 
+	</xsl:template>
+
 
 	<xsl:template match="todo"/>
 	<xsl:template match="regions"/>

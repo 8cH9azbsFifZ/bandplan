@@ -132,9 +132,9 @@ int nrepeaters = sizeof(repeaters)/sizeof(repeaters[0]);
 			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
 		</xsl:choose>
 		<xsl:text>, </xsl:text>
-		<xsl:value-of select="shift*0.1"/> <xsl:text>,</xsl:text>
+		<xsl:value-of select="shift*0.1"/> <xsl:text>,"</xsl:text>
 		<xsl:value-of select="position/@locator"/> 
-		<xsl:text>},&#xa;</xsl:text> 
+		<xsl:text>"},&#xa;</xsl:text> 
 	</xsl:template>
 
 

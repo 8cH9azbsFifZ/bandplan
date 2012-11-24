@@ -47,8 +47,8 @@ const t_repeater repeaters[] = {
 	&gt;
 	&gt;
 	&gt;
-	{"DB0VA",43932500,FT817_MODE_FM, -760000,JO40BC},
-{"DB0ESW",43905000,FT817_MODE_FM, -760000,JO51AE},
+	{"DB0VA",43932500,FT817_MODE_FM, -760000,"JO40BC"},
+{"DB0ESW",43905000,FT817_MODE_FM, -760000,"JO51AE"},
 &gt;
 	&gt;
 	&gt;
