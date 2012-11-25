@@ -107,15 +107,16 @@ typedef struct
 			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
 		</xsl:choose>
 		<xsl:text>, </xsl:text>
+		<!-- Shift -->
 		<xsl:choose> 
 			<xsl:when test="shift"> <xsl:value-of select="shift*0.1"/> </xsl:when> 
-			<xsl:otherwise> <xsl:text>NULL</xsl:text> </xsl:otherwise>
+			<xsl:otherwise> <xsl:text>0</xsl:text> </xsl:otherwise>
 		</xsl:choose>
 		<xsl:text>, </xsl:text>
 		<!-- Locator -->
 		<xsl:choose> 
 			<xsl:when test="position"><xsl:text>"</xsl:text><xsl:value-of select="position/@locator"/><xsl:text>"</xsl:text></xsl:when>
-			<xsl:otherwise> <xsl:text>NULL</xsl:text> </xsl:otherwise>
+			<xsl:otherwise> <xsl:text>""</xsl:text> </xsl:otherwise>
 		</xsl:choose>
 		<xsl:text>},&#xa;</xsl:text> 
 	</xsl:template>
