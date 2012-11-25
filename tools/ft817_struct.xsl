@@ -110,13 +110,7 @@ PROGMEM  t_channel chxx[] = {
 	<xsl:template match="channel|repeater">
 		<xsl:text>{"</xsl:text> 
 		<!-- Name -->
-		<xsl:value-of select="substring(@name,1,20)"/> <!-- maximal channel name length: 20 -->
-		<xsl:choose>
-			<xsl:when test="comment">
-				<xsl:text>: </xsl:text>
-				<xsl:value-of select="substring(comment,1,20)"/> <!-- maximal comment length: 20 -->
-			</xsl:when>
-		</xsl:choose>
+		<xsl:value-of select="substring(@name,1,20)"/> 
 		<xsl:text>",</xsl:text>
 		<!-- Frequency -->
 		<xsl:value-of select="@freq*0.1"/><xsl:text>,</xsl:text>
@@ -129,17 +123,23 @@ PROGMEM  t_channel chxx[] = {
 			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
 		</xsl:choose>
 		<xsl:text>, </xsl:text>
-		<xsl:value-of select="shift*0.1"/> <xsl:text>,"</xsl:text>
-		<xsl:value-of select="position/@locator"/> 
-		<xsl:text>"},&#xa;</xsl:text> 
+		<xsl:choose> 
+			<xsl:when test="shift"> <xsl:value-of select="shift*0.1"/> </xsl:when> 
+			<xsl:otherwise> <xsl:text>NULL</xsl:text> </xsl:otherwise>
+		</xsl:choose>
+		<xsl:text>, </xsl:text>
+		<!-- Locator -->
+		<xsl:choose> 
+			<xsl:when test="position"><xsl:text>"</xsl:text><xsl:value-of select="position/@locator"/><xsl:text>"</xsl:text></xsl:when>
+			<xsl:otherwise> <xsl:text>NULL</xsl:text> </xsl:otherwise>
+		</xsl:choose>
+		<xsl:text>},&#xa;</xsl:text> 
 	</xsl:template>
 
 
-	<xsl:template match="todo"/>
-	<xsl:template match="regions"/>
 	<xsl:template match="homepage"/>
+	<xsl:template match="comment"/>
 	<xsl:template match="position"/>
-	<xsl:template match="region"/>
 	<xsl:template match="operator"/>
 	
 
