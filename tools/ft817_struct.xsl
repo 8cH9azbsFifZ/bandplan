@@ -29,6 +29,39 @@
 				<xsl:choose>
 					<xsl:when test="not(band/@ref)"> <!-- make sure we are not in a recursive file -->
 						<xsl:text>
+/*
+	 This file is part of xmlbandplan.
+
+    Xmlbandplan is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Xmlbandplan is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Xmlbandplan.  If not, see http://www.gnu.org/licenses/;.	  
+*/
+
+/*
+ * This file has been created by xmlbandplan.
+ */
+
+// Single channels
+typedef struct 
+{
+  char *name; // channel name
+  long freq;  // frequency (Hz/10)  
+  byte mode;  // mode
+  long shift;
+  char *qth;
+} t_channel;
+
+
+const t_channel channels[] = {
 						</xsl:text>
 					</xsl:when>
 				</xsl:choose>
@@ -36,6 +69,8 @@
 				<xsl:choose>
 					<xsl:when test="not(band/@ref)"> <!-- make sure we are not in a recursive file -->
 						<xsl:text>
+};
+int nchannels = sizeof(channels)/sizeof(channels[0]);
 						</xsl:text>
 					</xsl:when>
 				</xsl:choose>
@@ -79,9 +114,7 @@
 	</xsl:template>
 
 	<xsl:template name="channel">
-		<xsl:text></xsl:text> 
-		<!-- Frequency -->
-		<xsl:value-of select="@freq*0.1"/><xsl:text>,</xsl:text>
+		<xsl:text>{"</xsl:text> 
 		<!-- Name -->
 		<xsl:value-of select="substring(@name,1,20)"/> <!-- maximal channel name length: 20 -->
 		<xsl:choose>
@@ -90,7 +123,9 @@
 				<xsl:value-of select="substring(comment,1,20)"/> <!-- maximal comment length: 20 -->
 			</xsl:when>
 		</xsl:choose>
-		<xsl:text>,</xsl:text>
+		<xsl:text>",</xsl:text>
+		<!-- Frequency -->
+		<xsl:value-of select="@freq*0.1"/><xsl:text>,</xsl:text>
 		<!-- Mode -->	
 		<xsl:choose>
 			<xsl:when test="contains(mode/@name,'CW')"> <xsl:text>FT817_MODE_CW_NARROW</xsl:text> </xsl:when>
@@ -98,16 +133,14 @@
 			<xsl:when test="contains(mode/@name,'All')"> <xsl:text>FT817_MODE_USB</xsl:text> </xsl:when>
 			<xsl:when test="contains(mode/@name,'FM')"> <xsl:text>FT817_MODE_FM</xsl:text> </xsl:when>
 			<xsl:when test="contains(mode/@name,'AM')"> <xsl:text>FT817_MODE_AM</xsl:text> </xsl:when>
-			<xsl:otherwise> <xsl:text>NULL</xsl:text> </xsl:otherwise>
+			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
 		</xsl:choose>
-		<xsl:text>,NULL</xsl:text>
-		<xsl:text>,NULL&#xa;</xsl:text> 
+		<xsl:text>,NULL </xsl:text>
+		<xsl:text>,NULL},&#xa;</xsl:text> 
 	</xsl:template>
 
 	<xsl:template name="repeater">
-		<xsl:text></xsl:text> 
-		<!-- Frequency -->
-		<xsl:value-of select="@freq*0.1"/><xsl:text>,</xsl:text>
+		<xsl:text>{"</xsl:text> 
 		<!-- Name -->
 		<xsl:value-of select="substring(@name,1,20)"/> <!-- maximal channel name length: 20 -->
 		<xsl:choose>
@@ -116,20 +149,21 @@
 				<xsl:value-of select="substring(comment,1,20)"/> <!-- maximal comment length: 20 -->
 			</xsl:when>
 		</xsl:choose>
-		<xsl:text>,</xsl:text>
+		<xsl:text>",</xsl:text>
+		<!-- Frequency -->
+		<xsl:value-of select="@freq*0.1"/><xsl:text>,</xsl:text>
 		<!-- Mode -->	
 		<xsl:choose>
 			<xsl:when test="contains(mode/@name,'CW')"> <xsl:text>FT817_MODE_CW_NARROW</xsl:text> </xsl:when>
 			<xsl:when test="contains(mode/@name,'Narrow digital')"> <xsl:text>FT817_MODE_CW_NARROW</xsl:text> </xsl:when>
 			<xsl:when test="contains(mode/@name,'All')"> <xsl:text>FT817_MODE_USB</xsl:text> </xsl:when>
 			<xsl:when test="contains(mode/@name,'FM')"> <xsl:text>FT817_MODE_FM</xsl:text> </xsl:when>
-			<xsl:otherwise> <xsl:text>NULL</xsl:text> </xsl:otherwise>
+			<xsl:otherwise> <xsl:text> NULL </xsl:text> </xsl:otherwise>
 		</xsl:choose>
-		<xsl:text>,</xsl:text>
-		<xsl:value-of select="shift*0.1"/> 
-		<xsl:text>,</xsl:text>
+		<xsl:text>, </xsl:text>
+		<xsl:value-of select="shift*0.1"/> <xsl:text>,"</xsl:text>
 		<xsl:value-of select="position/@locator"/> 
-		<xsl:text>&#xa;</xsl:text> 
+		<xsl:text>"},&#xa;</xsl:text> 
 	</xsl:template>
 
 
