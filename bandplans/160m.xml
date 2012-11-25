@@ -18,7 +18,7 @@
 
 <!DOCTYPE note SYSTEM "bandplan.dtd">
 
-<bandplan version="0.7.5">
+<bandplan version="0.7.6">
 
 <band name="160m" min="1810000" max="2000000" created="20131109" author="DG6FL" valid="20130101" ref="DE02">
 	<country name="DE"/> 
