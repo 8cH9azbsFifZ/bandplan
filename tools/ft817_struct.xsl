@@ -77,10 +77,6 @@ PROGMEM  t_channel chxx[] = {
 
 	<!-- Process one bandplan -->
 	<xsl:template match="bandplan">
-		<xsl:param name="define_names" select="1"/>
-		<xsl:if test="$define_names>1">
-			<xsl:text>JA</xsl:text>
-		</xsl:if>
 		<xsl:choose>
 			<xsl:when test="@version = '0.7.6' ">
 				<xsl:apply-templates select="./band"/>
@@ -111,7 +107,7 @@ PROGMEM  t_channel chxx[] = {
 		<xsl:text>{"</xsl:text> 
 		<!-- Name -->
 		<xsl:value-of select="substring(@name,1,20)"/> 
-		<xsl:text>",</xsl:text>
+		<xsl:text>", </xsl:text>
 		<!-- Frequency -->
 		<xsl:value-of select="@freq*0.1"/><xsl:text>,</xsl:text>
 		<!-- Mode -->	
