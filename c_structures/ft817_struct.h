@@ -44,41 +44,50 @@ PROGMEM  t_channel chxx[] = {
 };
 
 
-		/* Error: Wrong version. *//* Error: Wrong version. *//* Error: Wrong version. */
+		
 	 
 
 	
-		
-		
-			
-		
-		
-			
-		
-		
-			
-		
-		
-			
-		
-		
-			
-		
-		
-			
-		
+
+	{"WSPR",13600, NULL , NULL, NULL},
+&gt;
+		&gt;
+	
+
+	 
+
+	
+
+	
+
+	
+
+
+	{"WSPR",183660, NULL , NULL, NULL},
+{"QRP",183600,FT817_MODE_CW_NARROW, NULL, NULL},
+&gt;
+		&gt;
 	
 	
-		
-		
-			
-		
-		
-			
-		
-		
-			
-		
+
+	 
+
+	
+	
+	{"ATV",373500, NULL , NULL, NULL},
+{"Emergency Region 1",376000, NULL , NULL, NULL},
+{"QRP",369000, NULL , NULL, NULL},
+{"Digital Speech",363000, NULL , NULL, NULL},
+{"QRP",356000,FT817_MODE_CW_NARROW, NULL, NULL},
+{"QRS",355500,FT817_MODE_CW_NARROW, NULL, NULL},
+{"WSPR",359260, NULL , NULL, NULL},
+&gt;
+		&gt;
+	
+
+	 
+
+	
 	
 
 	{"QRP",703000,FT817_MODE_CW_NARROW, NULL, NULL},
@@ -90,88 +99,94 @@ PROGMEM  t_channel chxx[] = {
 &gt;
 		&gt;
 	
-/* Error: Wrong version. *//* Error: Wrong version. *//* Error: Wrong version. *//* Error: Wrong version. *//* Error: Wrong version. *//* Error: Wrong version. *//* Error: Wrong version. *//* Error: Wrong version. */
+
 	 
 
 	
-      
-      
 
-		
-			
-			
-				
-				
-			
-			
-				
-				
-			
-			
-				
-				
-			
-		
-		
-			
-			
-			
-				
-				
-			
-		
-		
-			
-			
-			
-		
-		
-			
-		
-		
-			
-			
-				
-				
-			
-			
-				
-				
-			
-		
-		
-			
-			
-			
-				
-				
-			
-		
-		
-			
-			
-				
-				
-				
-				
-			
-		
-		
-		
-		
-					
-			
-			
-			
-		
-		
-			
-			
-		
-		
-			
-			
-		
+	{"QRP",1011600,FT817_MODE_CW_NARROW, NULL, NULL},
+{"WSPR",1013870, NULL , NULL, NULL},
+&gt;
+		&gt;
+	
+
+	 
+
+	
+
+	{"QRP",1406000,FT817_MODE_CW_NARROW, NULL, NULL},
+{"Emergency",1430000, NULL , NULL, NULL},
+{"WSPR",1409560, NULL , NULL, NULL},
+&gt;
+		&gt;
+	
+
+	 
+	
+	
+
+	{"QRP",1808600,FT817_MODE_CW_NARROW, NULL, NULL},
+{"QRP",1813000, NULL , NULL, NULL},
+{"Digital Speech",1815000, NULL , NULL, NULL},
+{"Emergency",1816000, NULL , NULL, NULL},
+{"WSPR",1810460, NULL , NULL, NULL},
+&gt;
+		&gt;
+	
+
+
+	 
+	
+
+
+	{"QRP",2106000,FT817_MODE_CW_NARROW, NULL, NULL},
+{"QRS",2105500,FT817_MODE_CW_NARROW, NULL, NULL},
+{"Digital Speech",2118000, NULL , NULL, NULL},
+{"WSPR",2199460, NULL , NULL, NULL},
+&gt;
+		&gt;
+	
+
+	 
+	
+	
+	{"QRP",2490600,FT817_MODE_CW_NARROW, NULL, NULL},
+{"QRP",2495000, NULL , NULL, NULL},
+{"WSPR",2492460, NULL , NULL, NULL},
+&gt;
+		&gt;
+	
+
+	 
+
+	
+	{"QRP",2836000, NULL , NULL, NULL},
+{"Digital Speech",2833000, NULL , NULL, NULL},
+{"FM Call",2960000,FT817_MODE_FM, NULL, NULL},
+{"FM Call",2961000,FT817_MODE_FM, NULL, NULL},
+{"QRS",2805500,FT817_MODE_CW_NARROW, NULL, NULL},
+{"QRP",2806000,FT817_MODE_CW_NARROW, NULL, NULL},
+{"APRS",2925000,FT817_MODE_FM, NULL, NULL},
+{"WSPR",2812460, NULL , NULL, NULL},
+&gt;
+		&gt;
+	
+
+/* Error: Wrong version. */
+	 
+
+	
+
+	
+
+	{"WSPR",502930, NULL , NULL, NULL},
+&gt;
+		&gt;
+	
+
+
+	 
+
 	
 
 
@@ -196,28 +211,6 @@ PROGMEM  t_channel chxx[] = {
 
 	 
 
-	
-      
-      
-
-		
-			
-			
-			
-			
-			
-			
-			
-			
-		
-
-		
-		
-		
-		
-		
-		
-		
 	
 
 	&gt;

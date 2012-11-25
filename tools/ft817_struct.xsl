@@ -136,8 +136,10 @@ PROGMEM  t_channel chxx[] = {
 		<xsl:text>},&#xa;</xsl:text> 
 	</xsl:template>
 
-
+	<!-- Skip all other tags -->
 	<xsl:template match="homepage"/>
+	<xsl:template match="region"/>
+	<xsl:template match="license"/>
 	<xsl:template match="comment"/>
 	<xsl:template match="position"/>
 	<xsl:template match="operator"/>
