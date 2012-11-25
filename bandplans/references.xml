@@ -18,7 +18,7 @@
 
 <!DOCTYPE note SYSTEM "bandplan.dtd">
 
-<bandplan version="0.7.5">
+<bandplan version="0.7.6">
 	<references>
 		<!-- Country: DE -->
 		<ref id="DE01" name="DARC Bandpland Kurzwelle" 

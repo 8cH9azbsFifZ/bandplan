@@ -8,8 +8,8 @@ html:
 	xsltproc tools/html.xsl bandplans/bandplan.xml > html/bandplan.html 
 
 arduino:
-	xsltproc tools/ft817_bandplan.xsl bandplans/bandplan.xml > c_structures/t_bandplan.h
-	xsltproc tools/ft817_channels.xsl bandplans/bandplan.xml > c_structures/t_channels.h
+	xsltproc tools/ft817_struct.xsl bandplans/bandplan.xml > c_structures/ft817_struct.h
+	./tools/ft817_struct.hack.sh > c_structures/arduino_header.c
 
 test:
 	xmltest
