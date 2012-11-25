@@ -32,18 +32,6 @@ typedef struct
   prog_char *qth;
 } t_channel;
 
-// Reference structure
-prog_char ch1_name[] PROGMEM = "WSPR";
-prog_char ch2_name[] PROGMEM = "WS2PR";
-prog_char ch1_qth[] PROGMEM = "";
-prog_char ch2_qth[] PROGMEM = "JO40BC";
-
-PROGMEM  t_channel chxx[] = {
-{ch1_name,13600, FT817_MODE_FM ,760000 ,ch1_qth},
-{ch2_name,183660, FT817_MODE_AM ,NULL ,ch2_qth},
-};
-
-
 		
 	 
 
