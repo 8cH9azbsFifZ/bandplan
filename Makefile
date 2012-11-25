@@ -9,6 +9,7 @@ html:
 
 arduino:
 	xsltproc tools/ft817_struct.xsl bandplans/bandplan.xml > c_structures/ft817_struct.h
+	./tools/ft817_struct.hack.sh
 
 test:
 	xmltest
