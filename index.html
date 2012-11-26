@@ -41,6 +41,7 @@
 	<li>It is possible to create structures for further processing (i.e. in Arduino, any logging program)
 	<li>Features foreign operations (license mappings, ...)
 	<li>Comprehensive repeater database
+	<li>All entries shall have references, which can be checked automatically
 </ul>
 
 
@@ -66,6 +67,8 @@ As of today only the bandplans of Germany have been implemented.
 Other bandplans will follow soon: 
 <a href="https://github.com/8cH9azbsFifZ/bandplan/issues?labels=bandplan&page=1&state=open">bandplan issues</a>. 
 Feel free to contact the author (g@ziegenhain.com) to find out how to contribute in this stage of development. 
+All bandplan entries have author, date and reference tags. The references can be checked for updates using make:
+<pre><code>make check_references
 </p>
 
 <a name="standard"/>
@@ -79,18 +82,20 @@ Current issues concerning the standard definition:
 <p>
 The standard is defined in this 
 <a href="https://github.com/8cH9azbsFifZ/bandplan/blob/master/bandplans/bandplan.dtd">DTD file</a>.
+Checking the validity
+<pre>
+<code>make xmltest</code></pre>
 Updates to the standard will first be implemented in the
-<a href="https://github.com/8cH9azbsFifZ/bandplan/blob/master/bandplans/40m.xml">40m bandplan</a>.
+<a href="https://github.com/8cH9azbsFifZ/bandplan/blob/master/bandplans/40m.xml">40m bandplan</a>,
+so it is a good idea to have a look at this example file on the development branch.
 </p>
 
-      </section>
-		      <footer>
-				        <p>This project is maintained by <a href="https://github.com/8cH9azbsFifZ">8cH9azbsFifZ</a></p>
-						          <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-									       </footer>
-											     </div>
-
+</section>
+<footer>
+<p>This project is maintained by <a href="https://github.com/8cH9azbsFifZ">8cH9azbsFifZ</a></p>
+<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+</footer>
+</div>
 <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+</body>
 </html>
