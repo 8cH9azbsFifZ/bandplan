@@ -1,7 +1,11 @@
 <!-- Standard 0.7.5 -->
 
-<!ELEMENT bandplan (band|countries|references)*>
+<!ELEMENT bandplan (band|countries|references|source)*>
 	<!ATTLIST bandplan version CDATA #REQUIRED>
+	<!ATTLIST bandplan name CDATA #IMPLIED>
+
+<!ELEMENT source (#PCDATA)>
+	<!ATTLIST source file CDATA #REQUIRED>
 
 <!ELEMENT references (ref*)>
 
@@ -26,7 +30,7 @@
 <!ELEMENT channels (channel*,repeater*)>
 
 <!ELEMENT country (license*,country*)>
-	<!ATTLIST country name (DE|US|IARU1|IARU2|IARU3|International) #REQUIRED>
+	<!ATTLIST country name (AL|AT|BE|BA|BG|HR|CY|CZ|DK|FO|GL|EE|FI|AX|GP|GY|MQ|BL|PM|MF|YT|FR|NC|WF|DE|GR|HU|IS|IT|LV|LI|LT|LU|MK|MC|ME|NL|NO|SJ|PL|PT|RO|RU|RS|SK|SI|ES|SE|CH|TR|UA|IM|IE|JE|GG|GB|US|IARU1|IARU2|IARU3) #REQUIRED>
 	<!ATTLIST country fullname CDATA #IMPLIED>
 	<!ATTLIST country ref CDATA #IMPLIED>
 	<!ATTLIST country prefix CDATA #IMPLIED>
@@ -35,12 +39,14 @@
 
 <!ELEMENT countries (country+)>
 
-<!ELEMENT license (#PCDATA|comment)*>
-	<!ATTLIST license name (Klasse_A|Klasse_E|Amateur_Extra|Advanced|General|Technician|Novice|PMR|LPD|CB) #REQUIRED>
+<!ELEMENT license (#PCDATA|comment|mode)*>
+	<!ATTLIST license name CDATA #REQUIRED>
 	<!ATTLIST license ref CDATA #REQUIRED>
 	<!ATTLIST license power CDATA #IMPLIED>
+	<!ATTLIST license prefix CDATA #IMPLIED>
 	<!ATTLIST license powermeasure (PEP|ERP) #IMPLIED>
 	<!ATTLIST license cept (CEPT|CEPT-Novice) #IMPLIED>
+
 
 <!ELEMENT region (license*,mode*,comment*,region*)>
 	<!ATTLIST region min CDATA #REQUIRED>

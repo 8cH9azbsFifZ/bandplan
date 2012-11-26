@@ -48,13 +48,13 @@
 
 	<channels>
 		<repeater name="DB0VA" freq="439325000" ref="REPEATER01"><mode name="FM"/><shift>-7600000</shift>
-			<position locator="JO40BC" lat="50.109122" lon="8.133403"/>
+			<position locator="JO40bc" lat="50.109122" lon="8.133403"/>
 			<homepage href="http://www.qslnet.de/member/df6rk/db0va.html"/>
 			<operator call="DC9ZB"/>
 		</repeater>
 		<repeater name="DB0ESW" freq="439050000" ref="REPEATER01"><mode name="FM"/><shift>-7600000</shift>
 			<echolink node="439050"/>
-			<position locator="JO51AE"/>
+			<position locator="JO51ae"/>
 			<homepage href="http://www.ov-f28.de/Relais.htm"/>	
 	  </repeater>
   </channels>

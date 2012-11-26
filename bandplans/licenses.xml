@@ -16,64 +16,70 @@
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
 
+<!-- 
+
+	  Follow the two letter ISO 3166 code (http://en.wikipedia.org/wiki/ISO_3166-1) 
+
+-->
+
 <!DOCTYPE note SYSTEM "bandplan.dtd">
 
 <bandplan version="0.7.6">
 
 <countries>
-	<country fullname="Albania">
+	<country name="AL" fullname="Albania">
 		<license name="CEPT" cept="CEPT" prefix="ZA" ref="TR6101"/>
 	</country>
 
-	<country fullname="Austria">
+	<country name="AT" fullname="Austria">
 		<license name="1" cept="CEPT" prefix="OE" ref="TR6101"/>
 	</country>
 
-	<country fullname="Belgium">
+	<country name="BE" fullname="Belgium">
 		<license name="A" cept="CEPT" prefix="ON" ref="TR6101"/>
 	</country>
 
-	<country fullname="Bosnia and Herzegovina">
+	<country name="BA" fullname="Bosnia and Herzegovina">
 		<license name="CEPT 1" cept="CEPT" prefix="E7" ref="TR6101"/>
 	</country>
 
-	<country fullname="Bulgaria">
+	<country name="BG" fullname="Bulgaria">
 		<license name="Class 1" cept="CEPT" prefix="LZ" ref="TR6101"/>
 	</country>
 
-	<country fullname="Croatia">
+	<country name="HR" fullname="Croatia">
 		<license name="CEPT" cept="CEPT" prefix="9A" ref="TR6101"/>
 	</country>
 
-	<country fullname="Cyprus">
+	<country name="CY" fullname="Cyprus">
 		<license name="Radioamateur Authorisation" cept="CEPT" prefix="5B" ref="TR6101"/>
 	</country>
 
-	<country fullname="Czech Republic">
+	<country name="CZ" fullname="Czech Republic">
 		<license name="A" cept="CEPT" prefix="OK" ref="TR6101"/>
 	</country>
 
-	<country fullname="Denmark">
+	<country name="DK" fullname="Denmark">
 		<license name="A" cept="CEPT" prefix="OZ" ref="TR6101"/>
-		<country fullname="Faroe Islands">
+		<country name="FO" fullname="Faroe Islands">
 			<license name="A" cept="CEPT" prefix="OY" ref="TR6101"/>
 		</country>
-		<country fullname="Greenland">
+		<country name="GL" fullname="Greenland">
 			<license name="A" cept="CEPT" prefix="OX" ref="TR6101"/>
 		</country>
 	</country>
 
-	<country fullname="Estonia">
+	<country name="EE" fullname="Estonia">
 		<license name="A" cept="CEPT" prefix="ES" ref="TR6101"/>
 		<license name="B" cept="CEPT" prefix="ES" ref="TR6101"/>
 	</country>
 
-	<country fullname="Finnland">
+	<country name="FI" fullname="Finnland">
 		<license name="L" cept="CEPT" prefix="OH" ref="TR6101"/>
 		<license name="P" cept="CEPT" prefix="OH" ref="TR6101"/>
 		<license name="T" cept="CEPT" prefix="OH" ref="TR6101"/>
 		<license name="Y" cept="CEPT" prefix="OH" ref="TR6101"/>
-		<country fullname="Aland Islands">
+		<country name="AX" fullname="Aland Islands">
 			<license name="L" cept="CEPT" prefix="OH0" ref="TR6101"/>
 			<license name="P" cept="CEPT" prefix="OH0" ref="TR6101"/>
 			<license name="T" cept="CEPT" prefix="OH0" ref="TR6101"/>
@@ -81,58 +87,58 @@
 		</country>
 	</country>
 
-	<country fullname="France">
+	<country name="FR" fullname="France">
 		<license name="1" cept="CEPT" prefix="F" ref="TR6101"/>
 		<license name="2" cept="CEPT" prefix="F" ref="TR6101"/>
-		<country fullname="Corsica">
+		<country name="FR" fullname="Corsica">
 			<license name="1" cept="CEPT" prefix="TK" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="TK" ref="TR6101"/>
 		</country>
-		<country fullname="Guadeloupe">
+		<country name="GP" fullname="Guadeloupe">
 			<license name="1" cept="CEPT" prefix="FG" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="FG" ref="TR6101"/>
 		</country>
-		<country fullname="Guyana">
+		<country name="GY" fullname="Guyana">
 			<license name="1" cept="CEPT" prefix="FY" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="FY" ref="TR6101"/>
 		</country>
-		<country fullname="Martinique">
+		<country name="MQ" fullname="Martinique">
 			<license name="1" cept="CEPT" prefix="FM" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="FM" ref="TR6101"/>
 		</country>
-		<country fullname="St-Bartholomew">
+		<country name="BL" fullname="St-Bartholomew">
 			<license name="1" cept="CEPT" prefix="FJ" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="FJ" ref="TR6101"/>
 		</country>
-		<country fullname="St-Pierre/Miquelon">
+		<country name="PM" fullname="St-Pierre/Miquelon">
 			<license name="1" cept="CEPT" prefix="FP" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="FP" ref="TR6101"/>
 		</country>
-		<country fullname="St-Martin">
+		<country name="MF" fullname="St-Martin">
 			<license name="1" cept="CEPT" prefix="FS" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="FS" ref="TR6101"/>
 		</country>
-		<country fullname="Reunion (Glorieure, Jean de Nova, Tromelin)">
+		<country name="FR" fullname="Reunion (Glorieure, Jean de Nova, Tromelin)">
 			<license name="1" cept="CEPT" prefix="FR" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="FR" ref="TR6101"/>
 		</country>
-		<country fullname="Mayotte">
+		<country name="YT" fullname="Mayotte">
 			<license name="1" cept="CEPT" prefix="FH" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="FH" ref="TR6101"/>
 		</country>
-		<country fullname="French Antarctica (Crozet, Kerguelen, St. Paul and Amsterdam, Terre Adelie">
+		<country name="FR" fullname="French Antarctica (Crozet, Kerguelen, St. Paul and Amsterdam, Terre Adelie">
 			<license name="1" cept="CEPT" prefix="FT" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="FT" ref="TR6101"/>
 		</country>
-		<country fullname="French Polynesia and Clipperton">
+		<country name="FR" fullname="French Polynesia and Clipperton">
 			<license name="1" cept="CEPT" prefix="FO" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="FO" ref="TR6101"/>
 		</country>
-		<country fullname="New Caledonia">
+		<country name="NC" fullname="New Caledonia">
 			<license name="1" cept="CEPT" prefix="FK" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="FK" ref="TR6101"/>
 		</country>
-		<country fullname="Wallis and Futuna">
+		<country name="WF" fullname="Wallis and Futuna">
 			<license name="1" cept="CEPT" prefix="FW" ref="TR6101"/>
 			<license name="2" cept="CEPT" prefix="FW" ref="TR6101"/>
 		</country>
@@ -145,115 +151,115 @@
 		<license name="LPD" prefix="" ref="DELPD01"><comment>New name is SRD short rande devices</comment></license>
 	</country>
 
-	<country fullname="Greece">
-		<licsense name="1" cept="CEPT" prefix="SV" ref="TR6101"/>
+	<country name="GR" fullname="Greece">
+		<license name="1" cept="CEPT" prefix="SV" ref="TR6101"/>
 	</country>
 
-	<country fullname="Hungary">
+	<country name="HU" fullname="Hungary">
 		<license name="CEPT" cept="CEPT" prefix="HA" ref="TR6101"/>
 		<license name="CEPT" cept="CEPT" prefix="HG" ref="TR6101"/>
 	</country>
 
-	<country fullname="Iceland">
+	<country name="IS" fullname="Iceland">
 		<license name="G" cept="CEPT" prefix="TF" ref="TR6101"/>
 	</country>
 
-	<country fullname="Ireland">
+	<country name="IE" fullname="Ireland">
 		<license name="CEPT 1" cept="CEPT" prefix="EI" ref="TR6101"/>
 		<license name="CEPT 2" cept="CEPT" prefix="EJ" ref="TR6101"/>
 	</country>
 
-	<country fullname="Italy">
+	<country name="IT" fullname="Italy">
 		<license name="General" cept="CEPT" prefix="I" ref="TR6101"/>
 	</country>
 
-	<country fullname="Latvia">
+	<country name="LV" fullname="Latvia">
 		<license name="1" cept="CEPT" prefix="YL" ref="TR6101"/>
 		<license name="2" cept="CEPT" prefix="YL" ref="TR6101"/>
 	</country>
 
-	<country fullname="Liechtenstein">
+	<country name="LI" fullname="Liechtenstein">
 		<license name="CEPT" cept="CEPT" prefix="HB0" ref="TR6101"/>
 	</country>
 
-	<country fullname="Lithuania">
+	<country name="LT" fullname="Lithuania">
 		<license name="A" cept="CEPT" prefix="LY" ref="TR6101"/>
 	</country>
 
-	<country fullname="Louxembourgh">
+	<country name="LU" fullname="Louxembourgh">
 		<license name="CEPT" cept="CEPT" prefix="LX" ref="TR6101"/>
 	</country>
 
-	<country fullname="Macedonia (FYROM)">
+	<country name="MK" fullname="Macedonia (FYROM)">
 		<license name="A" cept="CEPT" prefix="Z3" ref="TR6101"/>
 		<license name="P" cept="CEPT" prefix="Z3" ref="TR6101"/>
 	</country>
 
-	<country fullname="Monaco">
+	<country name="MC" fullname="Monaco">
 		<license name="General" cept="CEPT" prefix="3A" ref="TR6101"/>
 	</country>
 
-	<country fullname="Montenegro">
+	<country name="ME" fullname="Montenegro">
 		<license name="A" cept="CEPT" prefix="4O" ref="TR6101"/>
 		<license name="N" cept="CEPT" prefix="4O" ref="TR6101"/>
 	</country>
 
-	<country fullname="Netherlands">
+	<country name="NL" fullname="Netherlands">
 		<license name="A" cept="CEPT" prefix="PA" ref="TR6101"/>
 		<license name="C" cept="CEPT" prefix="PA" ref="TR6101"/>
 		<license name="F" cept="CEPT" prefix="PA" ref="TR6101"/>
 	</country>
 
-	<country fullname="Norway">
+	<country name="NO" fullname="Norway">
 		<license name="A" cept="CEPT" prefix="LA" ref="TR6101"/>
-		<country fullname="Svalbard">
+		<country name="SJ" fullname="Svalbard">
 			<license name="A" cept="CEPT" prefix="JW" ref="TR6101"/>
 		</country>
 	</country>
 
-	<country fullname="Poland">
+	<country name="PL" fullname="Poland">
 		<license name="1" cept="CEPT" prefix="SP" ref="TR6101"/>
 	</country>
 
-	<country fullname="Portugal">
+	<country name="PT" fullname="Portugal">
 		<license name="1" cept="CEPT" prefix="CT7" ref="TR6101"/>
 		<license name="A" cept="CEPT" prefix="CT7" ref="TR6101"/>
 		<license name="B" cept="CEPT" prefix="CT7" ref="TR6101"/>
-		<country fullname="Azores">
+		<country name="PT" fullname="Azores">
 			<license name="1" cept="CEPT" prefix="CT8" ref="TR6101"/>
 			<license name="A" cept="CEPT" prefix="CT8" ref="TR6101"/>
 			<license name="B" cept="CEPT" prefix="CT8" ref="TR6101"/>
 		</country>
-		<country fullname="Madeira">
+		<country name="PT" fullname="Madeira">
 			<license name="1" cept="CEPT" prefix="CT9" ref="TR6101"/>
 			<license name="A" cept="CEPT" prefix="CT9" ref="TR6101"/>
 			<license name="B" cept="CEPT" prefix="CT9" ref="TR6101"/>
 		</country>
 	</country>
 
-	<country fullname="Romania">
+	<country name="RO" fullname="Romania">
 		<license name="I" cept="CEPT" prefix="YO" ref="TR6101"/>
 		<license name="II" cept="CEPT" prefix="YO" ref="TR6101"/>
 	</country>
 	
-	<country fullname="Russian Federation">
+	<country name="RU" fullname="Russian Federation">
 		<license name="1" cept="CEPT" prefix="RA" ref="TR6101"/>
 		<license name="2" cept="CEPT" prefix="RA" ref="TR6101"/>
 	</country>
 
-	<country fullname="Serbia">
+	<country name="RS" fullname="Serbia">
 		<license name="1" cept="CEPT" prefix="YU" ref="TR6101"/>
 	</country>
 
-	<country fullname="Slovak Republic">
+	<country name="SK" fullname="Slovak Republic">
 		<license name="E" cept="CEPT" prefix="OM" ref="TR6101"/>
 	</country>
 
-	<country fullname="Slovenia">
+	<country name="SI" fullname="Slovenia">
 		<license name="A" cept="CEPT" prefix="S5" ref="TR6101"/>
 	</country>
 
-	<country fullname="Spain">
+	<country name="ES" fullname="Spain">
 		<license name="A" cept="CEPT" prefix="EA" ref="TR6101"/>
 	</country>
 
@@ -262,39 +268,39 @@
 		<license name="All" cept="CEPT" prefix="SA" ref="TR6101"/>
 	</country>
 
-	<country fullname="Switzerland">
+	<country name="CH" fullname="Switzerland">
 		<license name="1" cept="CEPT" prefix="HB9" ref="TR6101"/>
 		<license name="2" cept="CEPT" prefix="HB9" ref="TR6101"/>
 		<license name="CEPT" cept="CEPT" prefix="HB9" ref="TR6101"/>
 	</country>
 	
-	<country fullname="Turkey">
+	<country name="TR" fullname="Turkey">
 		<license name="A" cept="CEPT" prefix="TA" ref="TR6101"/>
 	</country>
 
-	<country fullname="Ulraine">
+	<country name="UA" fullname="Ulraine">
 		<license name="1" cept="CEPT" prefix="UT" ref="TR6101"/>
 		<license name="2" cept="CEPT" prefix="UT" ref="TR6101"/>
 	</country>
 
-	<country fullname="United Kingdom">
+	<country name="GB" fullname="United Kingdom">
 		<license name="FULL" cept="CEPT" prefix="M" ref="TR6101"/>
-		<country fullname="Isle of Man">
+		<country name="IM" fullname="Isle of Man">
 			<license name="FULL" cept="CEPT" prefix="MD" ref="TR6101"/>
 		</country>
-		<country fullname="N. Ireland">
+		<country name="IE" fullname="N. Ireland">
 			<license name="FULL" cept="CEPT" prefix="MI" ref="TR6101"/>
 		</country>
-		<country fullname="Jersey">
+		<country name="JE" fullname="Jersey">
 			<license name="FULL" cept="CEPT" prefix="MJ" ref="TR6101"/>
 		</country>
-		<country fullname="Scotland">
+		<country name="GB" fullname="Scotland">
 			<license name="FULL" cept="CEPT" prefix="MM" ref="TR6101"/>
 		</country>
-		<country fullname="Guernsey">
+		<country name="GG" fullname="Guernsey">
 			<license name="FULL" cept="CEPT" prefix="MU" ref="TR6101"/>
 		</country>
-		<country fullname="Wales">
+		<country name="GB" fullname="Wales">
 			<license name="FULL" cept="CEPT" prefix="MW" ref="TR6101"/>
 		</country>
 	</country>
@@ -302,30 +308,18 @@
 
 
 	<country name="US" fullname="USA">
-		<license name="Amateur_Extra" prefix=""/>
-		<license name="Advanced" prefix=""/>
-		<license name="General" prefix=""/>
-		<license name="Technician" prefix=""/>
-		<license name="Novice" prefix=""/>
+		<license name="Amateur_Extra" prefix="" ref="US01"/>
+		<license name="Advanced" prefix="" ref="US01"/>
+		<license name="General" prefix="" ref="US01"/>
+		<license name="Technician" prefix="" ref="US01"/>
+		<license name="Novice" prefix="" ref="US01"/>
 	</country>
 
 
-	<!-- Follow the two letter ISO 3166 code (http://en.wikipedia.org/wiki/ISO_3166-1) -->
-	<country name="International">
-		<license name="CB" prefix=""/>
-	</country>
 
-	<country name="IARU1">
-		<source name="Wikipedia" href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/>
-	</country>
-
-	<country name="IARU2">
-		<source name="Wikipedia" href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/>
-	</country>
-
-	<country name="IARU3">
-		<source name="Wikipedia" href="http://en.wikipedia.org/wiki/International_Amateur_Radio_Union"/>
-	</country>
+	<country name="IARU1"/>
+	<country name="IARU2"/>
+	<country name="IARU3"/>
 
 </countries>
 
