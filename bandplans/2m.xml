@@ -125,23 +125,23 @@
 		<channel name="Fax CQ" freq="144700000" ref="DE06"></channel>
 		<channel name="ATV CQ / Callback" freq="144750000" ref="DE06"></channel>
 		
-		<channel name="V000" freq="145000000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V001" freq="145012500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V002" freq="145025000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V003" freq="145037500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V004" freq="145050000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V005" freq="145062500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V006" freq="145075000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V007" freq="145087500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V008" freq="145100000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V009" freq="145112500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V010" freq="145125000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V011" freq="145137500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V012" freq="145150000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V013" freq="145162500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V014" freq="145175000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V015" freq="145187500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V016" freq="145200000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="V000" freq="145000000" ref="DE09"><mode name="FM"/><comment>RV48</comment></channel>
+		<channel name="V001" freq="145012500" ref="DE09"><mode name="FM"/><comment>RV49</comment></channel>
+		<channel name="V002" freq="145025000" ref="DE09"><mode name="FM"/><comment>RV50</comment></channel>
+		<channel name="V003" freq="145037500" ref="DE09"><mode name="FM"/><comment>RV51</comment></channel>
+		<channel name="V004" freq="145050000" ref="DE09"><mode name="FM"/><comment>RV52</comment></channel>
+		<channel name="V005" freq="145062500" ref="DE09"><mode name="FM"/><comment>RV53</comment></channel>
+		<channel name="V006" freq="145075000" ref="DE09"><mode name="FM"/><comment>RV54</comment></channel>
+		<channel name="V007" freq="145087500" ref="DE09"><mode name="FM"/><comment>RV55</comment></channel>
+		<channel name="V008" freq="145100000" ref="DE09"><mode name="FM"/><comment>RV56</comment></channel>
+		<channel name="V009" freq="145112500" ref="DE09"><mode name="FM"/><comment>RV57</comment></channel>
+		<channel name="V010" freq="145125000" ref="DE09"><mode name="FM"/><comment>RV58</comment></channel>
+		<channel name="V011" freq="145137500" ref="DE09"><mode name="FM"/><comment>RV59</comment></channel>
+		<channel name="V012" freq="145150000" ref="DE09"><mode name="FM"/><comment>RV60</comment></channel>
+		<channel name="V013" freq="145162500" ref="DE09"><mode name="FM"/><comment>RV61</comment></channel>
+		<channel name="V014" freq="145175000" ref="DE09"><mode name="FM"/><comment>RV62</comment></channel>
+		<channel name="V015" freq="145187500" ref="DE09"><mode name="FM"/><comment>RV63</comment></channel>
+		<channel name="V016" freq="145200000" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
 		<channel name="V017" freq="145212500" ref="DE09"><mode name="FM"/></channel>
 		<channel name="V018" freq="145225000" ref="DE09"><mode name="FM"/></channel>
 		<channel name="V019" freq="145237500" ref="DE09"><mode name="FM"/></channel>
@@ -149,7 +149,7 @@
 		<channel name="V021" freq="145262500" ref="DE09"><mode name="FM"/></channel>
 		<channel name="V022" freq="145275000" ref="DE09"><mode name="FM"/></channel>
 		<channel name="V023" freq="145287500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V024" freq="145300000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="V024" freq="145300000" ref="DE09"><mode name="FM"/><comment>RTTY local</comment></channel>
 		<channel name="V025" freq="145312500" ref="DE09"><mode name="FM"/></channel>
 		<channel name="V026" freq="145325000" ref="DE09"><mode name="FM"/></channel>
 		<channel name="V027" freq="145337500" ref="DE09"><mode name="FM"/></channel>
@@ -165,7 +165,7 @@
 		<channel name="V037" freq="145462500" ref="DE09"><mode name="FM"/></channel>
 		<channel name="V038" freq="145475000" ref="DE09"><mode name="FM"/></channel>
 		<channel name="V039" freq="145487500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V040" freq="145500000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="V040" freq="145500000" ref="DE09"><mode name="FM"/><comment>Calling mobile</comment></channel>
 		<channel name="V041" freq="145512500" ref="DE09"><mode name="FM"/></channel>
 		<channel name="V042" freq="145525000" ref="DE09"><mode name="FM"/></channel>
 		<channel name="V043" freq="145537500" ref="DE09"><mode name="FM"/></channel>
@@ -173,38 +173,38 @@
 		<channel name="V045" freq="145562500" ref="DE09"><mode name="FM"/></channel>
 		<channel name="V046" freq="145575000" ref="DE09"><mode name="FM"/></channel>
 		<channel name="V047" freq="145587500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V048" freq="145600000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V049" freq="145612500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V050" freq="145625000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V051" freq="145637500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V052" freq="145650000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V053" freq="145662500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V054" freq="145675000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V055" freq="145687500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V056" freq="145700000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V057" freq="145712500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V058" freq="145725000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V059" freq="145737500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V060" freq="145750000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V061" freq="145762500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V062" freq="145775000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V063" freq="145787500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V064" freq="145800000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V065" freq="145812500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V066" freq="145825000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V067" freq="145837500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V068" freq="145850000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V069" freq="145862500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V070" freq="145875000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V071" freq="145887500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V072" freq="145900000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V073" freq="145912500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V074" freq="145925000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V075" freq="145937500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V076" freq="145950000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V077" freq="145962500" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V078" freq="145975000" ref="DE09"><mode name="FM"/></channel>
-		<channel name="V079" freq="145987500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="RV048" freq="145600000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="RV049" freq="145612500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="RV050" freq="145625000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="RV051" freq="145637500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="RV052" freq="145650000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="RV053" freq="145662500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="RV054" freq="145675000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="RV055" freq="145687500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="RV056" freq="145700000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="RV057" freq="145712500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="RV058" freq="145725000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="RV059" freq="145737500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="RV060" freq="145750000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="RV061" freq="145762500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="RV062" freq="145775000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="RV063" freq="145787500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="V064" freq="145800000" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive, output</comment></channel>
+		<channel name="V065" freq="145812500" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
+		<channel name="V066" freq="145825000" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
+		<channel name="V067" freq="145837500" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
+		<channel name="V068" freq="145850000" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
+		<channel name="V069" freq="145862500" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
+		<channel name="V070" freq="145875000" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
+		<channel name="V071" freq="145887500" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
+		<channel name="V072" freq="145900000" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
+		<channel name="V073" freq="145912500" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
+		<channel name="V074" freq="145925000" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
+		<channel name="V075" freq="145937500" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
+		<channel name="V076" freq="145950000" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
+		<channel name="V077" freq="145962500" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
+		<channel name="V078" freq="145975000" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
+		<channel name="V079" freq="145987500" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
 	</channels>
 </band>
 </bandplan>
