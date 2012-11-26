@@ -285,8 +285,8 @@
 
 	<country name="GB" fullname="United Kingdom">
 		<license name="FULL" cept="CEPT" prefix="M" ref="TR6101"/>
-		<country fullname="Isle of Man">
-			<license name="IM" name="FULL" cept="CEPT" prefix="MD" ref="TR6101"/>
+		<country name="IM" fullname="Isle of Man">
+			<license name="FULL" cept="CEPT" prefix="MD" ref="TR6101"/>
 		</country>
 		<country name="IE" fullname="N. Ireland">
 			<license name="FULL" cept="CEPT" prefix="MI" ref="TR6101"/>
@@ -308,11 +308,11 @@
 
 
 	<country name="US" fullname="USA">
-		<license name="Amateur_Extra" prefix=""/>
-		<license name="Advanced" prefix=""/>
-		<license name="General" prefix=""/>
-		<license name="Technician" prefix=""/>
-		<license name="Novice" prefix=""/>
+		<license name="Amateur_Extra" prefix="" ref="US01"/>
+		<license name="Advanced" prefix="" ref="US01"/>
+		<license name="General" prefix="" ref="US01"/>
+		<license name="Technician" prefix="" ref="US01"/>
+		<license name="Novice" prefix="" ref="US01"/>
 	</country>
 
 
