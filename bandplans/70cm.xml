@@ -47,6 +47,7 @@
 	</region>
 
 	<channels>
+
 		<channel name="U001" freq="430012500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
 		<channel name="U002" freq="430025000" ref="DE09"><mode name="FM"/><comment>Echolink</comment></channel>
 		<channel name="U003" freq="430037500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
@@ -238,7 +239,7 @@
 		<channel name="U189" freq="432362500" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
 		<channel name="U190" freq="432375000" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
 		<channel name="U191" freq="432387500" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
-		<channel name="U192" freq="432400000" ref="DE09"><mode name=""/></channel>
+		<channel name="U192" freq="432400000" ref="DE09"></channel>
 		<channel name="U193" freq="432412500" ref="DE09"></channel>
 		<channel name="U194" freq="432425000" ref="DE09"></channel>
 		<channel name="U195" freq="432437500" ref="DE09"></channel>
@@ -249,7 +250,7 @@
 		<channel name="U200" freq="432500000" ref="DE09"></channel>
 		<channel name="U201" freq="432512500" ref="DE09"></channel>
 		<channel name="U202" freq="432525000" ref="DE09"></channel>
-		<channel name="U203" freq="432537500" ref="DE09"><channel>
+		<channel name="U203" freq="432537500" ref="DE09"></channel>
 		<channel name="U204" freq="432550000" ref="DE09"></channel>
 		<channel name="U205" freq="432562500" ref="DE09"></channel>
 		<channel name="U206" freq="432575000" ref="DE09"></channel>
