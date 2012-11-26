@@ -249,29 +249,21 @@
 				<td>CEPT</td>
 				<td>Reference</td>
 			</tr>
-		<xsl:apply-templates select="country"/>
+			<xsl:apply-templates select="country"/>
 		</table>
 	</xsl:template>
 
 	<!-- Handle Refernces Files -->
 	<xsl:template match="references">
-		<xsl:choose>
-			<xsl:when test="@file"> <!-- Recursive processing of XML bandplans -->
-				<xsl:variable name="filename" select="@file"/>
-				<h1>References</h1>
-				<table>
-					<tr>
-						<td>ID</td>
-						<td>Name</td>
-						<td>Link</td>
-					</tr>
-					<xsl:apply-templates select="document($filename)/bandplan"/>
-				</table>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:apply-templates select="ref"/>
-			</xsl:otherwise>
-		</xsl:choose>
+		<h1>References</h1>
+		<table>
+			<tr>
+				<td>ID</td>
+				<td>Name</td>
+				<td>Link</td>
+			</tr>
+			<xsl:apply-templates select="ref"/>
+		</table>
 	</xsl:template>
 
 	<xsl:template match="ref">
