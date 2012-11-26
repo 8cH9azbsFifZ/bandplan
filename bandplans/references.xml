@@ -51,6 +51,10 @@
 			href="http://www.darc.de/uploads/media/Bandplan_70cm_Stand_10_2009.pdf"
 			localfile="DE08.pdf"
 			md5="54f4fe54da42f687725e79ff0c58e465"/>
+		<ref id="DE09" name="Funkamateur"
+			href="http://www.funkamateur.de/tl_files/downloads/hefte/2008/FM-Kanaele.pdf"
+			localfile="DE09.pdf"
+			md5="1fe5fbee48eb9c8df31ad4dbe3629306"/>
 		<ref id="DEPMR01" name="Bundesnetzagentur: Vfg 78 / 2003"
 			href="http://www.bundesnetzagentur.de/cae/servlet/contentblob/38172/publicationFile/2558/FundstelleId315pdf.pdf"
 			localfile="DEPMR01.pdf"

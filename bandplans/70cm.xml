@@ -47,6 +47,807 @@
 	</region>
 
 	<channels>
+
+		<channel name="U001" freq="430012500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U002" freq="430025000" ref="DE09"><mode name="FM"/><comment>Echolink</comment></channel>
+		<channel name="U003" freq="430037500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U004" freq="430050000" ref="DE09"><mode name="FM"/><comment>Echolink</comment></channel>
+		<channel name="U005" freq="430062500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U006" freq="430075000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U007" freq="430087500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U008" freq="430100000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U009" freq="430112500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U010" freq="430125000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U011" freq="430137500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U012" freq="430150000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U013" freq="430162500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U014" freq="430175000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U015" freq="430187500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U016" freq="430200000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U017" freq="430212500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U018" freq="430225000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U019" freq="430237500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U020" freq="430250000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U021" freq="430262500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U022" freq="430275000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U023" freq="430287500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U024" freq="430300000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U025" freq="430312500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U026" freq="430325000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U027" freq="430337500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U028" freq="430350000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U029" freq="430362500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U030" freq="430375000" ref="DE09"><mode name="FM"/><comment>DVR</comment></channel>
+		<channel name="U031" freq="430387500" ref="DE09"><mode name="FM"/><comment>DVR</comment></channel>
+		<channel name="U032" freq="430400000" ref="DE09"><mode name="FSK"/><comment>RU784</comment></channel>
+		<channel name="U033" freq="430412500" ref="DE09"><mode name="FSK"/><comment>RU785</comment></channel>
+		<channel name="U034" freq="430425000" ref="DE09"><mode name="FSK"/><comment>RU786</comment></channel>
+		<channel name="U035" freq="430437500" ref="DE09"><mode name="FSK"/><comment>RU787</comment></channel>
+		<channel name="U036" freq="430450000" ref="DE09"><mode name="FSK"/><comment>RU788</comment></channel>
+		<channel name="U037" freq="430462500" ref="DE09"><mode name="FSK"/><comment>RU789</comment></channel>
+		<channel name="U038" freq="430475000" ref="DE09"><mode name="FSK"/><comment>RU790</comment></channel>
+		<channel name="U039" freq="430487500" ref="DE09"><mode name="FSK"/><comment>RU791</comment></channel>
+		<channel name="U040" freq="430500000" ref="DE09"><mode name="FSK"/><comment>RU792</comment></channel>
+		<channel name="U041" freq="430512500" ref="DE09"><mode name="FSK"/><comment>RU793</comment></channel>
+		<channel name="U042" freq="430525000" ref="DE09"><mode name="FSK"/><comment>RU794</comment></channel>
+		<channel name="U043" freq="430537500" ref="DE09"><mode name="FSK"/><comment>RU795</comment></channel>
+		<channel name="U044" freq="430550000" ref="DE09"><mode name="FSK"/><comment>RU796</comment></channel>
+		<channel name="U045" freq="430562500" ref="DE09"><mode name="FSK"/><comment>RU797</comment></channel>
+		<channel name="U046" freq="430575000" ref="DE09"><mode name="FSK"/><comment>RU798</comment></channel>
+		<channel name="U047" freq="430587500" ref="DE09"></channel>
+		<channel name="U048" freq="430600000" ref="DE09"><mode name="FSK"/></channel>
+		<channel name="U049" freq="430612500" ref="DE09"><mode name="FSK"/></channel>
+		<channel name="U050" freq="430625000" ref="DE09"><mode name="FSK"/></channel>
+		<channel name="U051" freq="430637500" ref="DE09"><mode name="FSK"/></channel>
+		<channel name="U052" freq="430650000" ref="DE09"><mode name="FSK"/></channel>
+		<channel name="U053" freq="430662500" ref="DE09"><mode name="FSK"/></channel>
+		<channel name="U054" freq="430675000" ref="DE09"><mode name="FSK"/></channel>
+		<channel name="U055" freq="430687500" ref="DE09"></channel>
+		<channel name="U056" freq="430700000" ref="DE09"><mode name="FSK"/><comment>RU664</comment></channel>
+		<channel name="U057" freq="430712500" ref="DE09"><mode name="FSK"/><comment>RU665</comment></channel>
+		<channel name="U058" freq="430725000" ref="DE09"><mode name="FSK"/><comment>RU666</comment></channel>
+		<channel name="U059" freq="430737500" ref="DE09"><mode name="FSK"/><comment>RU667</comment></channel>
+		<channel name="U060" freq="430750000" ref="DE09"><mode name="FSK"/><comment>RU668</comment></channel>
+		<channel name="U061" freq="430762500" ref="DE09"><mode name="FSK"/><comment>RU669</comment></channel>
+		<channel name="U062" freq="430775000" ref="DE09"><mode name="FSK"/><comment>RU670</comment></channel>
+		<channel name="U063" freq="430787500" ref="DE09"><mode name="FSK"/><comment>RU671</comment></channel>
+		<channel name="U064" freq="430800000" ref="DE09"><mode name="FSK"/><comment>RU672</comment></channel>
+		<channel name="U065" freq="430812500" ref="DE09"><mode name="FSK"/><comment>RU673</comment></channel>
+		<channel name="U066" freq="430825000" ref="DE09"><mode name="FSK"/><comment>RU674</comment></channel>
+		<channel name="U067" freq="430837500" ref="DE09"><mode name="FSK"/><comment>RU675</comment></channel>
+		<channel name="U068" freq="430850000" ref="DE09"><mode name="FSK"/><comment>RU676</comment></channel>
+		<channel name="U069" freq="430862500" ref="DE09"><mode name="FSK"/><comment>RU677</comment></channel>
+		<channel name="U070" freq="430875000" ref="DE09"><mode name="FSK"/><comment>RU678</comment></channel>
+		<channel name="U071" freq="430887500" ref="DE09"><mode name="FSK"/><comment>RU679</comment></channel>
+		<channel name="U072" freq="430900000" ref="DE09"><mode name="FSK"/><comment>RU680</comment></channel>
+		<channel name="U073" freq="430912500" ref="DE09"><mode name="FSK"/><comment>RU681</comment></channel>
+		<channel name="U074" freq="430925000" ref="DE09"><mode name="FSK"/><comment>RU682</comment></channel>
+		<channel name="U075" freq="430937500" ref="DE09"></channel>
+		<channel name="U076" freq="430950000" ref="DE09"><mode name="MGM"/><comment>RU684</comment></channel>
+		<channel name="U077" freq="430962500" ref="DE09"><mode name="MGM"/><comment>RU685</comment></channel>
+		<channel name="U078" freq="430975000" ref="DE09"><mode name="MGM"/><comment>RU686</comment></channel>
+		<channel name="U079" freq="430987500" ref="DE09"><mode name="MGM"/><comment>RU687</comment></channel>
+		<channel name="U080" freq="431000000" ref="DE09"><mode name="MGM"/><comment>RU688</comment></channel>
+		<channel name="U081" freq="431012500" ref="DE09"><mode name="MGM"/><comment>RU689</comment></channel>
+		<channel name="U082" freq="431025000" ref="DE09"><mode name="MGM"/><comment>RU690</comment></channel>
+		<channel name="U083" freq="431037500" ref="DE09"></channel>
+		<channel name="U084" freq="431050000" ref="DE09"><mode name="FM"/><comment>RU692</comment></channel>
+		<channel name="U085" freq="431062500" ref="DE09"><mode name="FM"/><comment>RU693</comment></channel>
+		<channel name="U086" freq="431075000" ref="DE09"><mode name="FM"/><comment>RU694</comment></channel>
+		<channel name="U087" freq="431087500" ref="DE09"><mode name="FM"/><comment>RU695</comment></channel>
+		<channel name="U088" freq="431100000" ref="DE09"><mode name="FM"/><comment>RU696</comment></channel>
+		<channel name="U089" freq="431112500" ref="DE09"><mode name="FM"/><comment>RU697</comment></channel>
+		<channel name="U090" freq="431125000" ref="DE09"><mode name="FM"/><comment>RU698</comment></channel>
+		<channel name="U091" freq="431137500" ref="DE09"><mode name="FM"/><comment>RU699</comment></channel>
+		<channel name="U092" freq="431150000" ref="DE09"><mode name="FM"/><comment>RU700</comment></channel>
+		<channel name="U093" freq="431162500" ref="DE09"><mode name="FM"/><comment>RU701</comment></channel>
+		<channel name="U094" freq="431175000" ref="DE09"><mode name="FM"/><comment>RU702</comment></channel>
+		<channel name="U095" freq="431187500" ref="DE09"><mode name="FM"/><comment>RU703</comment></channel>
+		<channel name="U096" freq="431200000" ref="DE09"><mode name="FM"/><comment>RU704</comment></channel>
+		<channel name="U097" freq="431212500" ref="DE09"><mode name="FM"/><comment>RU705</comment></channel>
+		<channel name="U098" freq="431225000" ref="DE09"><mode name="FM"/><comment>RU706</comment></channel>
+		<channel name="U099" freq="431237500" ref="DE09"><mode name="FM"/><comment>RU707</comment></channel>
+		<channel name="U100" freq="431250000" ref="DE09"><mode name="FM"/><comment>RU708</comment></channel>
+		<channel name="U101" freq="431262500" ref="DE09"><mode name="FM"/><comment>RU709</comment></channel>
+		<channel name="U102" freq="431275000" ref="DE09"><mode name="FM"/><comment>RU700</comment></channel>
+		<channel name="U103" freq="431287500" ref="DE09"><mode name="FM"/><comment>RU711</comment></channel>
+		<channel name="U104" freq="431300000" ref="DE09"><mode name="FM"/><comment>RU712</comment></channel>
+		<channel name="U105" freq="431312500" ref="DE09"><mode name="FM"/><comment>RU713</comment></channel>
+		<channel name="U106" freq="431325000" ref="DE09"><mode name="FM"/><comment>RU714</comment></channel>
+		<channel name="U107" freq="431337500" ref="DE09"><mode name="FM"/><comment>RU715</comment></channel>
+		<channel name="U108" freq="431350000" ref="DE09"><mode name="FM"/><comment>RU716</comment></channel>
+		<channel name="U109" freq="431362500" ref="DE09"><mode name="FM"/><comment>RU717</comment></channel>
+		<channel name="U110" freq="431375000" ref="DE09"><mode name="FM"/><comment>RU718</comment></channel>
+		<channel name="U111" freq="431387500" ref="DE09"><mode name="FM"/><comment>RU719</comment></channel>
+		<channel name="U112" freq="431400000" ref="DE09"><mode name="FM"/><comment>RU720</comment></channel>
+		<channel name="U113" freq="431412500" ref="DE09"><mode name="FM"/><comment>RU721</comment></channel>
+		<channel name="U114" freq="431425000" ref="DE09"><mode name="FM"/><comment>RU722</comment></channel>
+		<channel name="U115" freq="431437500" ref="DE09"><mode name="FM"/><comment>RU723</comment></channel>
+		<channel name="U116" freq="431450000" ref="DE09"><mode name="FM"/><comment>RU724</comment></channel>
+		<channel name="U117" freq="431462500" ref="DE09"><mode name="FM"/><comment>RU725</comment></channel>
+		<channel name="U118" freq="431475000" ref="DE09"><mode name="FM"/><comment>RU726</comment></channel>
+		<channel name="U119" freq="431487500" ref="DE09"><mode name="FM"/><comment>RU727</comment></channel>
+		<channel name="U120" freq="431500000" ref="DE09"><mode name="FM"/><comment>RU728</comment></channel>
+		<channel name="U121" freq="431512500" ref="DE09"><mode name="FM"/><comment>RU729</comment></channel>
+		<channel name="U122" freq="431525000" ref="DE09"><mode name="FM"/><comment>RU730</comment></channel>
+		<channel name="U123" freq="431537500" ref="DE09"><mode name="FM"/><comment>RU731</comment></channel>
+		<channel name="U124" freq="431550000" ref="DE09"><mode name="FM"/><comment>RU732</comment></channel>
+		<channel name="U125" freq="431562500" ref="DE09"><mode name="FM"/><comment>RU733</comment></channel>
+		<channel name="U126" freq="431575000" ref="DE09"><mode name="FM"/><comment>RU734</comment></channel>
+		<channel name="U127" freq="431587500" ref="DE09"><mode name="FM"/><comment>RU735</comment></channel>
+		<channel name="U128" freq="431600000" ref="DE09"><mode name="FM"/><comment>RU736</comment></channel>
+		<channel name="U129" freq="431612500" ref="DE09"><mode name="FM"/><comment>RU737</comment></channel>
+		<channel name="U130" freq="431625000" ref="DE09"><mode name="FM"/><comment>RU738</comment></channel>
+		<channel name="U131" freq="431637500" ref="DE09"><mode name="FM"/><comment>RU739</comment></channel>
+		<channel name="U132" freq="431650000" ref="DE09"><mode name="FM"/><comment>RU740</comment></channel>
+		<channel name="U133" freq="431662500" ref="DE09"><mode name="FM"/><comment>RU741</comment></channel>
+		<channel name="U134" freq="431675000" ref="DE09"><mode name="FM"/><comment>RU742</comment></channel>
+		<channel name="U135" freq="431687500" ref="DE09"><mode name="FM"/><comment>RU743</comment></channel>
+		<channel name="U136" freq="431700000" ref="DE09"><mode name="FM"/><comment>RU744</comment></channel>
+		<channel name="U137" freq="431712500" ref="DE09"><mode name="FM"/><comment>RU745</comment></channel>
+		<channel name="U138" freq="431725000" ref="DE09"><mode name="FM"/><comment>RU746</comment></channel>
+		<channel name="U139" freq="431737500" ref="DE09"><mode name="FM"/><comment>RU747</comment></channel>
+		<channel name="U140" freq="431750000" ref="DE09"><mode name="FM"/><comment>RU748</comment></channel>
+		<channel name="U141" freq="431762500" ref="DE09"><mode name="FM"/><comment>RU749</comment></channel>
+		<channel name="U142" freq="431775000" ref="DE09"><mode name="FM"/><comment>RU750</comment></channel>
+		<channel name="U143" freq="431787500" ref="DE09"><mode name="FM"/><comment>RU751</comment></channel>
+		<channel name="U144" freq="431800000" ref="DE09"><mode name="FM"/><comment>RU752</comment></channel>
+		<channel name="U145" freq="431812500" ref="DE09"><mode name="FM"/><comment>RU753</comment></channel>
+		<channel name="U146" freq="431825000" ref="DE09"><mode name="FM"/><comment>RU754</comment></channel>
+		<channel name="U147" freq="431837500" ref="DE09"></channel>
+		<channel name="U148" freq="431850000" ref="DE09"><mode name="DV"/></channel>
+		<channel name="U149" freq="431862500" ref="DE09"><mode name="DV"/></channel>
+		<channel name="U150" freq="431875000" ref="DE09"><mode name="DV"/></channel>
+		<channel name="U151" freq="431887500" ref="DE09"><mode name="DV"/></channel>
+		<channel name="U152" freq="431900000" ref="DE09"><mode name="DV"/></channel>
+		<channel name="U153" freq="431912500" ref="DE09"><mode name="DV"/></channel>
+		<channel name="U154" freq="431925000" ref="DE09"><mode name="DV"/></channel>
+		<channel name="U155" freq="431937500" ref="DE09"><mode name="DV"/></channel>
+		<channel name="U156" freq="431950000" ref="DE09"><mode name="DV"/></channel>
+		<channel name="U157" freq="431962500" ref="DE09"><mode name="DV"/></channel>
+		<channel name="U158" freq="431975000" ref="DE09"><mode name="DV"/></channel>
+		<channel name="U159" freq="431987500" ref="DE09"></channel>
+		<channel name="U160" freq="432000000" ref="DE09"><mode name="CW"/></channel>
+		<channel name="U161" freq="432012500" ref="DE09"><mode name="CW"/></channel>
+		<channel name="U162" freq="432025000" ref="DE09"><mode name="CW"/></channel>
+		<channel name="U163" freq="432037500" ref="DE09"><mode name="CW"/></channel>
+		<channel name="U164" freq="432050000" ref="DE09"><mode name="CW"/></channel>
+		<channel name="U165" freq="432062500" ref="DE09"><mode name="CW"/></channel>
+		<channel name="U166" freq="432075000" ref="DE09"><mode name="CW"/></channel>
+		<channel name="U167" freq="432087500" ref="DE09"><mode name="CW"/><mode name="MGM"/></channel>
+		<channel name="U168" freq="432100000" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U169" freq="432112500" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U170" freq="432125000" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U171" freq="432137500" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U172" freq="432150000" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U173" freq="432162500" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U174" freq="432175000" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U175" freq="432187500" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U176" freq="432200000" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U177" freq="432212500" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U178" freq="432225000" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U179" freq="432237500" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U180" freq="432250000" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U181" freq="432262500" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U182" freq="432275000" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U183" freq="432287500" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U184" freq="432300000" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U185" freq="432312500" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U186" freq="432325000" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U187" freq="432337500" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U188" freq="432350000" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U189" freq="432362500" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U190" freq="432375000" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U191" freq="432387500" ref="DE09"><mode name="SSB"/><mode name="CW"/></channel>
+		<channel name="U192" freq="432400000" ref="DE09"></channel>
+		<channel name="U193" freq="432412500" ref="DE09"></channel>
+		<channel name="U194" freq="432425000" ref="DE09"></channel>
+		<channel name="U195" freq="432437500" ref="DE09"></channel>
+		<channel name="U196" freq="432450000" ref="DE09"></channel>
+		<channel name="U197" freq="432462500" ref="DE09"></channel>
+		<channel name="U198" freq="432475000" ref="DE09"></channel>
+		<channel name="U199" freq="432487500" ref="DE09"></channel>
+		<channel name="U200" freq="432500000" ref="DE09"></channel>
+		<channel name="U201" freq="432512500" ref="DE09"></channel>
+		<channel name="U202" freq="432525000" ref="DE09"></channel>
+		<channel name="U203" freq="432537500" ref="DE09"></channel>
+		<channel name="U204" freq="432550000" ref="DE09"></channel>
+		<channel name="U205" freq="432562500" ref="DE09"></channel>
+		<channel name="U206" freq="432575000" ref="DE09"></channel>
+		<channel name="U207" freq="432587500" ref="DE09"></channel>
+		<channel name="U208" freq="432600000" ref="DE09"></channel>
+		<channel name="U209" freq="432612500" ref="DE09"></channel>
+		<channel name="U210" freq="432625000" ref="DE09"></channel>
+		<channel name="U211" freq="432637500" ref="DE09"></channel>
+		<channel name="U212" freq="432650000" ref="DE09"></channel>
+		<channel name="U213" freq="432662500" ref="DE09"></channel>
+		<channel name="U214" freq="432675000" ref="DE09"></channel>
+		<channel name="U215" freq="432687500" ref="DE09"></channel>
+		<channel name="U216" freq="432700000" ref="DE09"></channel>
+		<channel name="U217" freq="432712500" ref="DE09"></channel>
+		<channel name="U218" freq="432725000" ref="DE09"></channel>
+		<channel name="U219" freq="432737500" ref="DE09"></channel>
+		<channel name="U220" freq="432750000" ref="DE09"></channel>
+		<channel name="U221" freq="432762500" ref="DE09"></channel>
+		<channel name="U222" freq="432775000" ref="DE09"></channel>
+		<channel name="U223" freq="432787500" ref="DE09"></channel>
+		<channel name="U224" freq="432800000" ref="DE09"><mode name="FM"/><comment>Echolink Simplex</comment></channel>
+		<channel name="U225" freq="432812500" ref="DE09"><mode name="FM"/><comment>Echolink Simplex</comment></channel>
+		<channel name="U226" freq="432825000" ref="DE09"><mode name="FM"/><comment>Echolink Simplex</comment></channel>
+		<channel name="U227" freq="432837500" ref="DE09"><mode name="FM"/><comment>Echolink Simplex</comment></channel>
+		<channel name="U228" freq="432850000" ref="DE09"><mode name="FM"/><comment>Echolink Simplex</comment></channel>
+		<channel name="U229" freq="432862500" ref="DE09"><mode name="FM"/><comment>Echolink Simplex</comment></channel>
+		<channel name="U230" freq="432875000" ref="DE09"><mode name="FM"/><comment>Echolink Simplex</comment></channel>
+		<channel name="U231" freq="432887500" ref="DE09"><mode name="FM"/><comment>Echolink Simplex</comment></channel>
+		<channel name="U232" freq="432900000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U233" freq="432912500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U234" freq="432925000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U235" freq="432937500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U236" freq="432950000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U237" freq="432962500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U238" freq="432975000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U239" freq="432987500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U240" freq="433000000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U241" freq="433012500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U242" freq="433025000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U243" freq="433037500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U244" freq="433050000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U245" freq="433062500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U246" freq="433075000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U247" freq="433087500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U248" freq="433100000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U249" freq="433112500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U250" freq="433125000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U251" freq="433137500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U252" freq="433150000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U253" freq="433162500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U254" freq="433175000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U255" freq="433187500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U256" freq="433200000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U257" freq="433212500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U258" freq="433225000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U259" freq="433237500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U260" freq="433250000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U261" freq="433262500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U262" freq="433275000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U263" freq="433287500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U264" freq="433300000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U265" freq="433312500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U266" freq="433325000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U267" freq="433337500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U268" freq="433350000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U269" freq="433362500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U270" freq="433375000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U271" freq="433387500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U272" freq="433400000" ref="DE09"><mode name="AFSK"/><comment>SSTV</comment></channel>
+		<channel name="U273" freq="433412500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U274" freq="433425000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U275" freq="433437500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U276" freq="433450000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U277" freq="433462500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U278" freq="433475000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U279" freq="433487500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U280" freq="433500000" ref="DE09"><mode name="FM"/><comment>Call mobile</comment></channel>
+		<channel name="U281" freq="433512500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U282" freq="433525000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U283" freq="433537500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U284" freq="433550000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U285" freq="433562500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U286" freq="433575000" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U287" freq="433587500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
+		<channel name="U288" freq="433600000" ref="DE09"><mode name="AFSK"/><comment>RTTY</comment></channel>
+		<channel name="U289" freq="433612500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U290" freq="433625000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U291" freq="433637500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U292" freq="433650000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U293" freq="433662500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U294" freq="433675000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U295" freq="433687500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U296" freq="433700000" ref="DE09"><mode name="AFSK"/><comment>FAX</comment></channel>
+		<channel name="U297" freq="433712500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U298" freq="433725000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U299" freq="433737500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U300" freq="433750000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U301" freq="433762500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U302" freq="433775000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U303" freq="433787500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U304" freq="433800000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U305" freq="433812500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U306" freq="433825000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U307" freq="433837500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U308" freq="433850000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U309" freq="433862500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U310" freq="433875000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U311" freq="433887500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U312" freq="433900000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U313" freq="433912500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U314" freq="433925000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U315" freq="433937500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U316" freq="433950000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U317" freq="433962500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U318" freq="433975000" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U319" freq="433987500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U320" freq="434000000" ref="DE09"></channel>
+		<channel name="U321" freq="434012500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U322" freq="434025000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U323" freq="434037500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U324" freq="434050000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U325" freq="434062500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U326" freq="434075000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U327" freq="434087500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U328" freq="434100000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U329" freq="434112500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U330" freq="434125000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U331" freq="434137500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U332" freq="434150000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U333" freq="434162500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U334" freq="434175000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U335" freq="434187500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U336" freq="434200000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U337" freq="434212500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U338" freq="434225000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U339" freq="434237500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U340" freq="434250000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U341" freq="434262500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U342" freq="434275000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U343" freq="434287500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U344" freq="434300000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U345" freq="434312500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U346" freq="434325000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U347" freq="434337500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U348" freq="434350000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U349" freq="434362500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U350" freq="434375000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U351" freq="434387500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U352" freq="434400000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U353" freq="434412500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U354" freq="434425000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U355" freq="434437500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U356" freq="434450000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U357" freq="434462500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U358" freq="434475000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U359" freq="434487500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U360" freq="434500000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U361" freq="434512500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U362" freq="434525000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U363" freq="434537500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U364" freq="434550000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U365" freq="434562500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U366" freq="434575000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U367" freq="434587500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U368" freq="434600000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U369" freq="434612500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U370" freq="434625000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U371" freq="434637500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U372" freq="434650000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U373" freq="434662500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U374" freq="434675000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U375" freq="434687500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U376" freq="434700000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U377" freq="434712500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U378" freq="434725000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U379" freq="434737500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U380" freq="434750000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U381" freq="434762500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U382" freq="434775000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U383" freq="434787500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U384" freq="434800000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U385" freq="434812500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U386" freq="434825000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U387" freq="434837500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U388" freq="434850000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U389" freq="434862500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U390" freq="434875000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U391" freq="434887500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U392" freq="434900000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U393" freq="434912500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U394" freq="434925000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U395" freq="434937500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U396" freq="434950000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U397" freq="434962500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U398" freq="434975000" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U399" freq="434987500" ref="DE09"><comment>ATV</comment></channel>
+		<channel name="U400" freq="435000000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U401" freq="435012500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U402" freq="435025000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U403" freq="435037500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U404" freq="435050000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U405" freq="435062500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U406" freq="435075000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U407" freq="435087500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U408" freq="435100000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U409" freq="435112500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U410" freq="435125000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U411" freq="435137500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U412" freq="435150000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U413" freq="435162500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U414" freq="435175000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U415" freq="435187500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U416" freq="435200000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U417" freq="435212500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U418" freq="435225000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U419" freq="435237500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U420" freq="435250000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U421" freq="435262500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U422" freq="435275000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U423" freq="435287500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U424" freq="435300000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U425" freq="435312500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U426" freq="435325000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U427" freq="435337500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U428" freq="435350000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U429" freq="435362500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U430" freq="435375000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U431" freq="435387500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U432" freq="435400000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U433" freq="435412500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U434" freq="435425000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U435" freq="435437500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U436" freq="435450000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U437" freq="435462500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U438" freq="435475000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U439" freq="435487500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U440" freq="435500000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U441" freq="435512500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U442" freq="435525000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U443" freq="435537500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U444" freq="435550000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U445" freq="435562500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U446" freq="435575000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U447" freq="435587500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U448" freq="435600000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U449" freq="435612500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U450" freq="435625000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U451" freq="435637500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U452" freq="435650000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U453" freq="435662500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U454" freq="435675000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U455" freq="435687500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U456" freq="435700000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U457" freq="435712500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U458" freq="435725000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U459" freq="435737500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U460" freq="435750000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U461" freq="435762500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U462" freq="435775000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U463" freq="435787500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U464" freq="435800000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U465" freq="435812500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U466" freq="435825000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U467" freq="435837500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U468" freq="435850000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U469" freq="435862500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U470" freq="435875000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U471" freq="435887500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U472" freq="435900000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U473" freq="435912500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U474" freq="435925000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U475" freq="435937500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U476" freq="435950000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U477" freq="435962500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U478" freq="435975000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U479" freq="435987500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U480" freq="436000000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U481" freq="436012500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U482" freq="436025000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U483" freq="436037500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U484" freq="436050000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U485" freq="436062500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U486" freq="436075000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U487" freq="436087500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U488" freq="436100000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U489" freq="436112500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U490" freq="436125000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U491" freq="436137500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U492" freq="436150000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U493" freq="436162500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U494" freq="436175000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U495" freq="436187500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U496" freq="436200000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U497" freq="436212500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U498" freq="436225000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U499" freq="436237500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U500" freq="436250000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U501" freq="436262500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U502" freq="436275000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U503" freq="436287500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U504" freq="436300000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U505" freq="436312500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U506" freq="436325000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U507" freq="436337500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U508" freq="436350000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U509" freq="436362500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U510" freq="436375000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U511" freq="436387500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U512" freq="436400000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U513" freq="436412500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U514" freq="436425000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U515" freq="436437500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U516" freq="436450000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U517" freq="436462500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U518" freq="436475000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U519" freq="436487500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U520" freq="436500000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U521" freq="436512500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U522" freq="436525000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U523" freq="436537500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U524" freq="436550000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U525" freq="436562500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U526" freq="436575000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U527" freq="436587500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U528" freq="436600000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U529" freq="436612500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U530" freq="436625000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U531" freq="436637500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U532" freq="436650000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U533" freq="436662500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U534" freq="436675000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U535" freq="436687500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U536" freq="436700000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U537" freq="436712500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U538" freq="436725000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U539" freq="436737500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U540" freq="436750000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U541" freq="436762500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U542" freq="436775000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U543" freq="436787500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U544" freq="436800000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U545" freq="436812500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U546" freq="436825000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U547" freq="436837500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U548" freq="436850000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U549" freq="436862500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U550" freq="436875000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U551" freq="436887500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U552" freq="436900000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U553" freq="436912500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U554" freq="436925000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U555" freq="436937500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U556" freq="436950000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U557" freq="436962500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U558" freq="436975000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U559" freq="436987500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U560" freq="437000000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U561" freq="437012500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U562" freq="437025000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U563" freq="437037500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U564" freq="437050000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U565" freq="437062500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U566" freq="437075000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U567" freq="437087500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U568" freq="437100000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U569" freq="437112500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U570" freq="437125000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U571" freq="437137500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U572" freq="437150000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U573" freq="437162500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U574" freq="437175000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U575" freq="437187500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U576" freq="437200000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U577" freq="437212500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U578" freq="437225000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U579" freq="437237500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U580" freq="437250000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U581" freq="437262500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U582" freq="437275000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U583" freq="437287500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U584" freq="437300000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U585" freq="437312500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U586" freq="437325000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U587" freq="437337500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U588" freq="437350000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U589" freq="437362500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U590" freq="437375000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U591" freq="437387500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U592" freq="437400000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U593" freq="437412500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U594" freq="437425000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U595" freq="437437500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U596" freq="437450000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U597" freq="437462500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U598" freq="437475000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U599" freq="437487500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U600" freq="437500000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U601" freq="437512500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U602" freq="437525000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U603" freq="437537500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U604" freq="437550000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U605" freq="437562500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U606" freq="437575000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U607" freq="437587500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U608" freq="437600000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U609" freq="437612500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U610" freq="437625000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U611" freq="437637500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U612" freq="437650000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U613" freq="437662500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U614" freq="437675000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U615" freq="437687500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U616" freq="437700000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U617" freq="437712500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U618" freq="437725000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U619" freq="437737500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U620" freq="437750000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U621" freq="437762500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U622" freq="437775000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U623" freq="437787500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U624" freq="437800000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U625" freq="437812500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U626" freq="437825000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U627" freq="437837500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U628" freq="437850000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U629" freq="437862500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U630" freq="437875000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U631" freq="437887500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U632" freq="437900000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U633" freq="437912500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U634" freq="437925000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U635" freq="437937500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U636" freq="437950000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U637" freq="437962500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U638" freq="437975000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U639" freq="437987500" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U640" freq="438000000" ref="DE09"><comment>Sat / ATV</comment></channel>
+		<channel name="U641" freq="438012500" ref="DE09"></channel>
+		<channel name="U642" freq="438025000" ref="DE09"><mode name="FSK"/><comment>PR Simplex</comment></channel>
+		<channel name="U643" freq="438037500" ref="DE09"><mode name="FSK"/><comment>PR Simplex</comment></channel>
+		<channel name="U644" freq="438050000" ref="DE09"><mode name="FSK"/><comment>PR Simplex</comment></channel>
+		<channel name="U645" freq="438062500" ref="DE09"><mode name="FSK"/><comment>PR Simplex</comment></channel>
+		<channel name="U646" freq="438075000" ref="DE09"><mode name="FSK"/><comment>PR Simplex</comment></channel>
+		<channel name="U647" freq="438087500" ref="DE09"><mode name="FSK"/><comment>PR Simplex</comment></channel>
+		<channel name="U648" freq="438100000" ref="DE09"><mode name="FSK"/><comment>PR Simplex</comment></channel>
+		<channel name="U649" freq="438112500" ref="DE09"><mode name="FSK"/><comment>PR Simplex</comment></channel>
+		<channel name="U650" freq="438125000" ref="DE09"><mode name="FSK"/><comment>PR Simplex</comment></channel>
+		<channel name="U651" freq="438137500" ref="DE09"><mode name="FSK"/><comment>PR Simplex</comment></channel>
+		<channel name="U652" freq="438150000" ref="DE09"><mode name="FSK"/><comment>PR Simplex</comment></channel>
+		<channel name="U653" freq="438162500" ref="DE09"><mode name="FSK"/><comment>PR Simplex</comment></channel>
+		<channel name="U654" freq="438175000" ref="DE09"><mode name="FSK"/><comment>PR Simplex</comment></channel>
+		<channel name="U655" freq="438187500" ref="DE09"><mode name="FSK"/><comment>PR Simplex</comment></channel>
+		<channel name="RU656" freq="438200000" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU657" freq="438212500" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU658" freq="438225000" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU659" freq="438237500" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU660" freq="438250000" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU661" freq="438262500" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU662" freq="438275000" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU663" freq="438287500" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU664" freq="438300000" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU665" freq="438312500" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU666" freq="438325000" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU667" freq="438337500" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU668" freq="438350000" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU669" freq="438362500" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU670" freq="438375000" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU671" freq="438387500" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU672" freq="438400000" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU673" freq="438412500" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU674" freq="438425000" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU675" freq="438437500" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU676" freq="438450000" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU677" freq="438462500" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU678" freq="438475000" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU679" freq="438487500" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU680" freq="438500000" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU681" freq="438512500" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU682" freq="438525000" ref="DE09"><mode name="FSK"/><shift>-7600000</shift><comment>PR Duplex</comment></channel>
+		<channel name="RU683" freq="438537500" ref="DE09"></channel>
+		<channel name="RU684" freq="438550000" ref="DE09"><mode name="FM"/><shift>-7600000</shift><comment>Multimode Duplex</comment></channel>
+		<channel name="RU685" freq="438562500" ref="DE09"><mode name="FM"/><shift>-7600000</shift><comment>Multimode Duplex</comment></channel>
+		<channel name="RU686" freq="438575000" ref="DE09"><mode name="FM"/><shift>-7600000</shift><comment>Multimode Duplex</comment></channel>
+		<channel name="RU687" freq="438587500" ref="DE09"><mode name="FM"/><shift>-7600000</shift><comment>Multimode Duplex</comment></channel>
+		<channel name="RU688" freq="438600000" ref="DE09"><mode name="FM"/><shift>-7600000</shift><comment>Multimode Duplex</comment></channel>
+		<channel name="RU689" freq="438612500" ref="DE09"><mode name="FM"/><shift>-7600000</shift><comment>Multimode Duplex</comment></channel>
+		<channel name="RU690" freq="438625000" ref="DE09"><mode name="FM"/><shift>-7600000</shift><comment>Multimode Duplex</comment></channel>
+		<channel name="RU691" freq="438637500" ref="DE09"></channel>
+		<channel name="RU692" freq="438650000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU693" freq="438662500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU694" freq="438675000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU695" freq="438687500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU696" freq="438700000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU697" freq="438712500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU698" freq="438725000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU699" freq="438737500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU700" freq="438750000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU701" freq="438762500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU702" freq="438775000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU703" freq="438787500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU704" freq="438800000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU705" freq="438812500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU706" freq="438825000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU707" freq="438837500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU708" freq="438850000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU709" freq="438862500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU710" freq="438875000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU711" freq="438887500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU712" freq="438900000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU713" freq="438912500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU714" freq="438925000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU715" freq="438937500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU716" freq="438950000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU717" freq="438962500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU718" freq="438975000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU719" freq="438987500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU720" freq="439000000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU721" freq="439012500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU722" freq="439025000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU723" freq="439037500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU724" freq="439050000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU725" freq="439062500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU726" freq="439075000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU727" freq="439087500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU728" freq="439100000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU729" freq="439112500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU730" freq="439125000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU731" freq="439137500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU732" freq="439150000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU733" freq="439162500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU734" freq="439175000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU735" freq="439187500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU736" freq="439200000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU737" freq="439212500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU738" freq="439225000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU739" freq="439237500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU740" freq="439250000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU741" freq="439262500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU742" freq="439275000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU743" freq="439287500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU744" freq="439300000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU745" freq="439312500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU746" freq="439325000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU747" freq="439337500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU748" freq="439350000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU749" freq="439362500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU750" freq="439375000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU751" freq="439387500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU752" freq="439400000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU753" freq="439412500" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="RU754" freq="439425000" ref="DE09"><mode name="FM"/><shift>-7600000</shift></channel>
+		<channel name="U755" freq="439437500" ref="DE09"><mode name="FM"/></channel>
+		<channel name="U756" freq="439450000" ref="DE09"><mode name="DV"/><shift>-7600000</shift><comment>D-STAR Duplex</comment></channel>
+		<channel name="U757" freq="439462500" ref="DE09"><mode name="DV"/><shift>-7600000</shift><comment>D-STAR Duplex</comment></channel>
+		<channel name="U758" freq="439475000" ref="DE09"><mode name="DV"/><shift>-7600000</shift><comment>D-STAR Duplex</comment></channel>
+		<channel name="U759" freq="439487500" ref="DE09"><mode name="DV"/><shift>-7600000</shift><comment>D-STAR Duplex</comment></channel>
+		<channel name="U760" freq="439500000" ref="DE09"><mode name="DV"/><shift>-7600000</shift><comment>D-STAR Duplex</comment></channel>
+		<channel name="U761" freq="439512500" ref="DE09"><mode name="DV"/><shift>-7600000</shift><comment>D-STAR Duplex</comment></channel>
+		<channel name="U762" freq="439525000" ref="DE09"><mode name="DV"/><shift>-7600000</shift><comment>D-STAR Duplex</comment></channel>
+		<channel name="U763" freq="439537500" ref="DE09"><mode name="DV"/><shift>-7600000</shift><comment>D-STAR Duplex</comment></channel>
+		<channel name="U764" freq="439550000" ref="DE09"><mode name="DV"/><shift>-7600000</shift><comment>D-STAR Duplex</comment></channel>
+		<channel name="U765" freq="439562500" ref="DE09"><mode name="DV"/><shift>-7600000</shift><comment>D-STAR Duplex</comment></channel>
+		<channel name="U766" freq="439575000" ref="DE09"><mode name="DV"/><shift>-7600000</shift><comment>D-STAR Duplex</comment></channel>
+		<channel name="U767" freq="439587500" ref="DE09"></channel>
+		<channel name="U768" freq="439600000" ref="DE09"><comment>Digital Experimental Radio</comment></channel>
+		<channel name="U769" freq="439612500" ref="DE09"><comment>Digital Experimental Radio</comment></channel>
+		<channel name="U770" freq="439625000" ref="DE09"><comment>Digital Experimental Radio</comment></channel>
+		<channel name="U771" freq="439637500" ref="DE09"><comment>Digital Experimental Radio</comment></channel>
+		<channel name="U772" freq="439650000" ref="DE09"><comment>Digital Experimental Radio</comment></channel>
+		<channel name="U773" freq="439662500" ref="DE09"><comment>Digital Experimental Radio</comment></channel>
+		<channel name="U774" freq="439675000" ref="DE09"><comment>Digital Experimental Radio</comment></channel>
+		<channel name="U775" freq="439687500" ref="DE09"><comment>Digital Experimental Radio</comment></channel>
+		<channel name="U776" freq="439700000" ref="DE09"><comment>Digital Experimental Radio</comment></channel>
+		<channel name="U777" freq="439712500" ref="DE09"><comment>Digital Experimental Radio</comment></channel>
+		<channel name="U778" freq="439725000" ref="DE09"><comment>Digital Experimental Radio</comment></channel>
+		<channel name="U779" freq="439737500" ref="DE09"><comment>Digital Experimental Radio</comment></channel>
+		<channel name="U780" freq="439750000" ref="DE09"><comment>Digital Experimental Radio</comment></channel>
+		<channel name="U781" freq="439762500" ref="DE09"><comment>Digital Experimental Radio</comment></channel>
+		<channel name="U782" freq="439775000" ref="DE09"><comment>Digital Experimental Radio</comment></channel>
+		<channel name="U783" freq="439787500" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
+		<channel name="U784" freq="439800000" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
+		<channel name="U785" freq="439812500" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
+		<channel name="U786" freq="439825000" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
+		<channel name="U787" freq="439837500" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
+		<channel name="U788" freq="439850000" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
+		<channel name="U789" freq="439862500" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
+		<channel name="U790" freq="439875000" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
+		<channel name="U791" freq="439887500" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
+		<channel name="U792" freq="439900000" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
+		<channel name="U793" freq="439912500" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
+		<channel name="U794" freq="439925000" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
+		<channel name="U795" freq="439937500" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
+		<channel name="U796" freq="439950000" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
+		<channel name="U797" freq="439962500" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
+		<channel name="U798" freq="439975000" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
+		<channel name="U799" freq="439987500" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
+
 		<repeater name="DB0VA" freq="439325000" ref="REPEATER01"><mode name="FM"/><shift>-7600000</shift>
 			<position locator="JO40bc" lat="50.109122" lon="8.133403"/>
 			<homepage href="http://www.qslnet.de/member/df6rk/db0va.html"/>

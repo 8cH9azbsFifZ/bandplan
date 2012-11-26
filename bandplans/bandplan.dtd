@@ -54,7 +54,7 @@
 	<!ATTLIST region ref CDATA #REQUIRED>
 	<!ATTLIST region bandwidth CDATA #IMPLIED>
 
-<!ELEMENT channel (mode*,comment*)>
+<!ELEMENT channel (mode*,comment*,shift*,comment*)>
 	<!ATTLIST channel name CDATA #REQUIRED>
 	<!ATTLIST channel freq CDATA #REQUIRED>
 	<!ATTLIST channel ref CDATA #REQUIRED>
@@ -83,7 +83,7 @@
 	<!ATTLIST operator call CDATA #REQUIRED>
 
 <!ELEMENT mode (#PCDATA|license)*>
-	<!ATTLIST mode name (All|AM|FM|NarrowFM|CW|SSB|USB|LSB|NarrowDigital|Digital|MGM|WSPR|SSTV|RTTY|Image|Satellite|SatelliteDownlink|Narrow) #REQUIRED>
+	<!ATTLIST mode name (All|AM|FM|NarrowFM|CW|SSB|USB|LSB|DV|NarrowDigital|Digital|MGM|WSPR|SSTV|RTTY|FSK|AFSK|Image|Satellite|SatelliteDownlink|Narrow) #REQUIRED>
 
 <!ELEMENT comment (#PCDATA)>
 	
