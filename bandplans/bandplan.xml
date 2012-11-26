@@ -34,9 +34,7 @@
 <source file="70cm.xml"/>
 <source file="lpd.xml"/>
 <source file="pmr.xml"/>
-
-<licenses file="licenses.xml"/>
-
-<references file="references.xml"/>
+<source file="licenses.xml"/>
+<source file="references.xml"/>
 
 </bandplan>
