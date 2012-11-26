@@ -13,6 +13,7 @@
     <![endif]-->
   </head>
   <body>
+
     <div class="wrapper">
       <header>
         <h1>Bandplan</h1>
@@ -30,9 +31,64 @@
       <section>
         <h3>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-TEST 12434
+		  # <XML>Bandplan.org - What is this?
+
+		  <XML>Bandplan.org is an attempt to create an Open Source standard for ham radio band plans. 
+		  * Only one central source for bandplan information
+		  * Worldwide coverage of bandplans
+		  * PDF, HTML bandplans can be created automatically
+		  * It is possible to create structures for further processing (i.e. in Arduino, any logging program)
+		  * Features foreign operations (license mappings, ...)
+		  * Comprehensive repeater database
+
+		  ## Releases
+
+		  Follow the download links for frozen version with a (yet) limited set of functionality:
+		  * Latest release: https://github.com/8cH9azbsFifZ/bandplan/archive/v0.7.8.zip
+
+		  # How to use it?
+
+		  ## Download and Install
+
+		  Down
+		  An example output can be found under html/ or the following link: [html bandplan](https://raw.github.com/8cH9azbsFifZ/bandplan/master/html/bandplan.html)
+
+		  #### Create the html output:
+		  From the main directory run:
+
+		      make html 
+
+				### FT817 Controller using Arduino
+
+				C structures for further use (i.e. in Arduino projects) can be created as well. Here we create the headers containing bandplans and channels for an Yaesu FT-817:
+
+				    make arduino
+
+
+
+
+					 # How to contribute?
+
+					 ## Bandplans
+					 As of today only the bandplans of Germany have been implemented. Other bandplans will follow soon: [bandplan issues](https://github.com/8cH9azbsFifZ/bandplan/issues?labels=bandplan&page=1&state=open). 
+
+					 Feel free to contact the author (g@ziegenhain.com) to find out how to contribute in this stage of development. 
+
+					 ## The Open <XML>Bandplan Standard
+
+					 ### Current Status
+					 The current standard is work in progess. Current issues concerning the standard definition: [standard issues](https://github.com/8cH9azbsFifZ/bandplan/issues?labels=standard&page=1&state=open). 
+
+					 ### Definition of the Standard
+					 * Example bandplan [40m](https://github.com/8cH9azbsFifZ/bandplan/blob/master/bandplans/40m.xml). 
+					 * DTD description [dtd](https://github.com/8cH9azbsFifZ/bandplan/blob/master/bandplans/bandplan.dtd).
+
+
+
+
+
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
 <pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin
