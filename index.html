@@ -20,7 +20,7 @@
 <p>Ham Radio Bandplans</p>
 <p class="view"><a href="https://github.com/8cH9azbsFifZ/bandplan">View the Project on GitHub <small>8cH9azbsFifZ/bandplan</small></a></p>
 <ul>
-<li><a href="https://github.com/8cH9azbsFifZ/bandplan/html/bandplan.html" target=_new>Example<strong>Bandplan</strong></a></li>
+<li><a href="http://8ch9azbsfifz.github.com/bandplan/html/bandplan.html" target=_new>Example<strong>Bandplan</strong></a></li>
 <li><a href="https://github.com/8cH9azbsFifZ/bandplan/archive/v0.7.8.zip">v0.7.8.zip<strong>ZIP File</strong></a></li>
 <li><a href="https://github.com/8cH9azbsFifZ/bandplan">View On <strong>GitHub</strong></a></li>
 </ul>
@@ -39,80 +39,39 @@
 	<li>Comprehensive repeater database
 
 
-		  Follow the download links for frozen version with a (yet) limited set of functionality:
-		  * Latest release: 
-
-		  # How to use it?
-
-		  ## Download and Install
-
-		  Down
-		  An example output can be found under html/ or the following link: [html bandplan](https://raw.github.com/8cH9azbsFifZ/bandplan/master/html/bandplan.html)
-
-		  #### Create the html output:
-		  From the main directory run:
-
-		      make html 
-
-				### FT817 Controller using Arduino
-
-				C structures for further use (i.e. in Arduino projects) can be created as well. Here we create the headers containing bandplans and channels for an Yaesu FT-817:
-
-				    make arduino
-
-
-
-
-					 # How to contribute?
-
-					 ## Bandplans
-					 As of today only the bandplans of Germany have been implemented. Other bandplans will follow soon: [bandplan issues](https://github.com/8cH9azbsFifZ/bandplan/issues?labels=bandplan&page=1&state=open). 
-
-					 Feel free to contact the author (g@ziegenhain.com) to find out how to contribute in this stage of development. 
-
-					 ## The Open <XML>Bandplan Standard
-
-					 ### Current Status
-					 The current standard is work in progess. Current issues concerning the standard definition: [standard issues](https://github.com/8cH9azbsFifZ/bandplan/issues?labels=standard&page=1&state=open). 
-
-					 ### Definition of the Standard
-					 * Example bandplan [40m](https://github.com/8cH9azbsFifZ/bandplan/blob/master/bandplans/40m.xml). 
-					 * DTD description [dtd](https://github.com/8cH9azbsFifZ/bandplan/blob/master/bandplans/bandplan.dtd).
-
-
-
-
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<h3>How to use it?</h3>
+<p>Create the a HTML bandplan:</p>
+<pre><code>$ make html 
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p> C structures for further use (i.e. in Arduino projects) can be created as well. 
+Here we create the headers containing bandplans and channels for an Yaesu FT-817:
+</p>
+<pre><code>$ make arduino 
+</code></pre>
 
-<h3>Designer Templates</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<h3>Contribute Bandplans</h3>
+<p>As of today only the bandplans of Germany have been implemented. 
+Other bandplans will follow soon: 
+<a href="https://github.com/8cH9azbsFifZ/bandplan/issues?labels=bandplan&page=1&state=open">bandplan issues</a>. 
+Feel free to contact the author (g@ziegenhain.com) to find out how to contribute in this stage of development. 
+</p>
 
-<h3>Rather Drive Stick?</h3>
+<h3>The Open <XML>Bandplan Standard</h3>
+<p>The current standard is work in progess. 
+Current issues concerning the standard definition: 
+<a href="https://github.com/8cH9azbsFifZ/bandplan/issues?labels=standard&page=1&state=open">issues</a>. 
+</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>
+The standard is defined in this 
+<a href="https://github.com/8cH9azbsFifZ/bandplan/blob/master/bandplans/bandplan.dtd">DTD file</a>.
+Updates to the standard will first be implemented in the
+<a href="https://github.com/8cH9azbsFifZ/bandplan/blob/master/bandplans/40m.xml">40m bandplan</a>.
+</p>
 
-<h3>Authors and Contributors</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/8cH9azbsFifZ">8cH9azbsFifZ</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
     <script src="javascripts/scale.fix.js"></script>
     
   </body>
