@@ -32,7 +32,7 @@
 	<xsl:template match="bandplan">
 		<xsl:choose>
 			<!-- Check version number  - abort? -->
-			<xsl:when test="@version = '0.7.5' ">
+			<xsl:when test="@version = '0.7.6' ">
 				<html>
 					<head>
 						<title> <xsl:value-of select="@name"/> </title>
@@ -49,28 +49,21 @@
 	<!-- Each Band -->
 	<xsl:template match="band">
 		<body>
-			<xsl:choose> <!-- Distinguish between bandplan.xml and single NNm.xml files -->
-				<xsl:when test="@ref">
-					<h1> <xsl:value-of select="@name"/> <xsl:text> Band for Country </xsl:text> <xsl:value-of select="country/@name"/> </h1>
-					<xsl:apply-templates select="source"/> 
-					<!-- Regions & Channels -->
-					<table>
-						<tr>
-							<td> <xsl:text>Frequency (MHz)</xsl:text></td>
-							<td> <xsl:text>Bandwidth (kHz)</xsl:text></td>
-							<td> <xsl:text>Mode</xsl:text></td>
-							<td> <xsl:text>License</xsl:text></td>
-							<td> <xsl:text>Reference</xsl:text></td>
-							<td> <xsl:text>Comment</xsl:text></td>
-						</tr>
-						<xsl:apply-templates select="region"/>
-						<xsl:apply-templates select="channels"/>
-					</table>
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:apply-templates/>
-				</xsl:otherwise>
-			</xsl:choose>
+			<h1> <xsl:value-of select="@name"/> <xsl:text> Band for Country </xsl:text> <xsl:value-of select="country/@name"/> </h1>
+			<xsl:apply-templates select="source"/> 
+			<!-- Regions & Channels -->
+			<table>
+				<tr>
+					<td> <xsl:text>Frequency (MHz)</xsl:text></td>
+					<td> <xsl:text>Bandwidth (kHz)</xsl:text></td>
+					<td> <xsl:text>Mode</xsl:text></td>
+					<td> <xsl:text>License</xsl:text></td>
+					<td> <xsl:text>Reference</xsl:text></td>
+					<td> <xsl:text>Comment</xsl:text></td>
+				</tr>
+				<xsl:apply-templates select="region"/>
+				<xsl:apply-templates select="channels"/>
+			</table>
 		</body>
 	</xsl:template>
 
@@ -234,47 +227,30 @@
 		<i> <xsl:value-of select="."/> </i>
 	</xsl:template>
 
-	<xsl:template match="countries">
-		<xsl:apply-templates select="country"/>
-	</xsl:template>
 
 	<xsl:template match="country">
 		<xsl:apply-templates select="license"/>
 	</xsl:template>
 
 	<xsl:template match="source">
-		<xsl:choose>
-			<xsl:when test="@file"> <!-- Recursive processing of XML bandplans -->
-				<xsl:variable name="filename" select="@file"/>
-				<xsl:apply-templates select="document($filename)/bandplan"/>
-			</xsl:when>
-			<xsl:when test="@name">
-				<xsl:variable name="link" select="@href"/>
-				<small><a href="{$link}"><xsl:value-of select="@name"/></a></small>
-			</xsl:when>
-		</xsl:choose>
+		<xsl:variable name="filename" select="@file"/>
+		<xsl:apply-templates select="document($filename)/bandplan"/>
 	</xsl:template>
 
 	<!-- Handle License Files -->
-	<xsl:template match="licenses">
-		<xsl:choose>
-			<xsl:when test="@file"> <!-- Recursive processing of XML bandplans -->
-				<xsl:variable name="filename" select="@file"/>
-				<h1>Licenses</h1>
-				<table>
-					<tr>
-						<td>Country</td>
-						<td>Prefix</td>
-						<td>License</td>
-						<td>CEPT</td>
-						<td>Reference</td>
-					</tr>
-					<xsl:apply-templates select="document($filename)/bandplan"/>
-				</table>
-			</xsl:when>
-			<xsl:otherwise>
-			</xsl:otherwise>
-		</xsl:choose>
+	<xsl:template match="countries">
+		<xsl:variable name="filename" select="@file"/>
+		<h1>Licenses</h1>
+		<table>
+			<tr>
+				<td>Country</td>
+				<td>Prefix</td>
+				<td>License</td>
+				<td>CEPT</td>
+				<td>Reference</td>
+			</tr>
+		<xsl:apply-templates select="country"/>
+		</table>
 	</xsl:template>
 
 	<!-- Handle Refernces Files -->
