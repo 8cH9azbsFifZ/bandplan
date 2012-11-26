@@ -26,7 +26,7 @@
 <!ELEMENT channels (channel*,repeater*)>
 
 <!ELEMENT country (license*,country*)>
-	<!ATTLIST country name (DE|US|IARU1|IARU2|IARU3|International) #REQUIRED>
+	<!ATTLIST country name (AL|AT|BE|BA|BG|HR|CY|CZ|DK|FO|GL|EE|FI|AX|GP|GY|MQ|BL|PM|MF|YT|FR|NC|WF|DE|GR|HU|IS|IT|LV|LI|LT|LU|MK|MC|ME|NL|NO|SJ|PL|PT|RO|RU|RS|SK|SI|ES|SE|CH|TR|UA|IM|IE|JE|GG|GB|US|IARU1|IARU2|IARU3) #REQUIRED>
 	<!ATTLIST country fullname CDATA #IMPLIED>
 	<!ATTLIST country ref CDATA #IMPLIED>
 	<!ATTLIST country prefix CDATA #IMPLIED>
