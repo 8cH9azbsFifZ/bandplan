@@ -36,11 +36,13 @@
 <!ELEMENT countries (country+)>
 
 <!ELEMENT license (#PCDATA|comment)*>
-	<!ATTLIST license name (Klasse_A|Klasse_E|Amateur_Extra|Advanced|General|Technician|Novice|PMR|LPD|CB) #REQUIRED>
+	<!ATTLIST license name CDATA #REQUIRED>
 	<!ATTLIST license ref CDATA #REQUIRED>
 	<!ATTLIST license power CDATA #IMPLIED>
+	<!ATTLIST license prefix CDATA #IMPLIED>
 	<!ATTLIST license powermeasure (PEP|ERP) #IMPLIED>
 	<!ATTLIST license cept (CEPT|CEPT-Novice) #IMPLIED>
+
 
 <!ELEMENT region (license*,mode*,comment*,region*)>
 	<!ATTLIST region min CDATA #REQUIRED>

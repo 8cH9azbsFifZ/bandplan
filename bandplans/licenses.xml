@@ -152,7 +152,7 @@
 	</country>
 
 	<country name="GR" fullname="Greece">
-		<licsense name="1" cept="CEPT" prefix="SV" ref="TR6101"/>
+		<license name="1" cept="CEPT" prefix="SV" ref="TR6101"/>
 	</country>
 
 	<country name="HU" fullname="Hungary">
