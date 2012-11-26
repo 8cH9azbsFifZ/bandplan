@@ -48,8 +48,7 @@
 
 <h3>How to use it?</h3>
 <p>Create the a HTML bandplan:</p>
-<pre><code>$ make html 
-</code></pre>
+<pre><code>$ make html </code></pre>
 
 <p> C structures for further use 
 (i.e. in Arduino projects) can be created as well. 
@@ -57,8 +56,7 @@ Here we create the headers
 containing bandplans and channels for an Yaesu FT-817
 (<a href="http://8ch9azbsfifz.github.com/arduino_ft817/">Arduino FT817</a>).
 </p>
-<pre><code>$ make arduino 
-</code></pre>
+<pre><code>$ make arduino </code></pre>
 
 
 <h3>Contribute Bandplans</h3>
@@ -68,7 +66,7 @@ Other bandplans will follow soon:
 <a href="https://github.com/8cH9azbsFifZ/bandplan/issues?labels=bandplan&page=1&state=open">bandplan issues</a>. 
 Feel free to contact the author (g@ziegenhain.com) to find out how to contribute in this stage of development. 
 All bandplan entries have author, date and reference tags. The references can be checked for updates using make:
-<pre><code>make check_references
+<pre> <code>$ make check_references </code> </pre>
 </p>
 
 <a name="standard"/>
@@ -83,8 +81,7 @@ Current issues concerning the standard definition:
 The standard is defined in this 
 <a href="https://github.com/8cH9azbsFifZ/bandplan/blob/master/bandplans/bandplan.dtd">DTD file</a>.
 Checking the validity
-<pre>
-<code>make xmltest</code></pre>
+<pre> <code>$ make xmltest </code> </pre>
 Updates to the standard will first be implemented in the
 <a href="https://github.com/8cH9azbsFifZ/bandplan/blob/master/bandplans/40m.xml">40m bandplan</a>,
 so it is a good idea to have a look at this example file on the development branch.
