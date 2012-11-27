@@ -205,6 +205,10 @@
 		<channel name="V077" freq="145962500" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
 		<channel name="V078" freq="145975000" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
 		<channel name="V079" freq="145987500" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
+
+
+		<channel name="DB0WAN" freq="144975000"><mode name="FM"/><comment>JO51CE: Echolink</comment></channel>
+		<channel name="DB0WAN" freq="144800000"><mode name="FM"/><comment>JO51CE: APRS</comment></channel> 
 	</channels>
 </band>
 </bandplan>
