@@ -8,7 +8,7 @@ check_references:
 
 html: html/bandplan.html 
 
-html/bandplan.html: $(DEP)
+html/bandplan.html: $(DEP) tools/html.xsl
 	xsltproc tools/html.xsl bandplans/bandplan.xml > html/bandplan.html 
 
 

@@ -136,8 +136,8 @@
 	<xsl:template match="channel">
 			<tr style="background-color:#8888bb">
 				<td> <xsl:value-of select='format-number(@freq*0.000001, "###0.000")'/> </td>
-				<td> <xsl:apply-templates select="mode"/> </td>
 				<td></td>
+				<td> <xsl:apply-templates select="mode"/> </td>
 				<td></td>
 				<td> 
 					<xsl:variable name="link" select="@ref"/>
