@@ -102,4 +102,8 @@
 			href="http://www.darc.de/echolink-bin/relais.pl" 
 			/>
 	</references>
+
+	<authors>
+		<author callsign="DG6FL" name="Gerolf Ziegenhain" email="g@ziegenhain.com"/>
+	</authors>
 </bandplan>

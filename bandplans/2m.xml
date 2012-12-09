@@ -210,5 +210,6 @@
 		<channel name="DB0WAN" freq="144975000"><mode name="FM"/><comment>JO51CE: Echolink</comment></channel>
 		<channel name="DB0WAN" freq="144800000"><mode name="FM"/><comment>JO51CE: APRS</comment></channel> 
 	</channels>
+
 </band>
 </bandplan>
