@@ -23,6 +23,10 @@
    	<xsl:copy><xsl:copy-of select="@*"/><xsl:apply-templates/></xsl:copy>
    </xsl:template>
 
+	<xsl:template match="bandplan">
+		<xsl:apply-templates/>
+	</xsl:template>
+
    <xsl:template match="source">
 		<xsl:variable name="filename" select="@file"/>
 		<xsl:apply-templates select="document($filename)/bandplan"/>
