@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!--
-	 This file is part of xmlbandplan.
+    This file is part of xmlbandplan.
 
     Xmlbandplan is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -13,15 +13,15 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
+    along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-	<xsl:output method="html" omit-xml-declaration="yes" />
+	<xsl:output method="text"/>
 
 	<xsl:template match="/">
 		<xsl:text>
 /*
-	 This file is part of xmlbandplan.
+    This file is part of xmlbandplan.
 
     Xmlbandplan is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -34,7 +34,7 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Xmlbandplan.  If not, see http://www.gnu.org/licenses/;.	  
+    along with Xmlbandplan.  If not, see http://www.gnu.org/licenses/;.
 */
 
 /*
@@ -53,7 +53,7 @@ typedef struct
   prog_char *qth;
 } t_channel;
 
-		</xsl:text>
+</xsl:text>
 		<xsl:apply-templates select="bandplan/source"/>
 	</xsl:template>
 
@@ -77,7 +77,7 @@ typedef struct
 
 
 	<xsl:template match="band">
-		<xsl:choose> <!-- Only germany is selected -->
+		<xsl:choose><!-- Only germany is selected -->
 			<xsl:when test="country/@name = 'DE'">
 				<xsl:apply-templates source="channels"/>
 			</xsl:when>
@@ -86,8 +86,8 @@ typedef struct
 
 
 	<xsl:template match="channels">
-		<xsl:apply-templates select="channel"/>>
-		<xsl:apply-templates select="repeater"/>>
+		<xsl:apply-templates select="channel"/>
+		<xsl:apply-templates select="repeater"/>
 	</xsl:template>
 
 
