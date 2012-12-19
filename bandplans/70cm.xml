@@ -47,7 +47,6 @@
 	</region>
 
 	<channels>
-
 		<channel name="U001" freq="430012500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
 		<channel name="U002" freq="430025000" ref="DE09"><mode name="FM"/><comment>Echolink</comment></channel>
 		<channel name="U003" freq="430037500" ref="DE09"><mode name="FM"/><comment>Simplex</comment></channel>
@@ -847,7 +846,9 @@
 		<channel name="U797" freq="439962500" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
 		<channel name="U798" freq="439975000" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
 		<channel name="U799" freq="439987500" ref="DE09"><mode name="FSK"/><shift>-9400000</shift><comment>PR Duplex</comment></channel>
+	</channels>
 
+	<channels>
 		<repeater name="DB0VA" freq="439325000" ref="REPEATER01"><mode name="FM"/><shift>-7600000</shift>
 			<position locator="JO40bc" lat="50.109122" lon="8.133403"/>
 			<homepage href="http://www.qslnet.de/member/df6rk/db0va.html"/>

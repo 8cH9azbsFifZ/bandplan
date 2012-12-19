@@ -124,7 +124,9 @@
 		<channel name="RTTY CQ" freq="144600000" ref="DE06"></channel>
 		<channel name="Fax CQ" freq="144700000" ref="DE06"></channel>
 		<channel name="ATV CQ / Callback" freq="144750000" ref="DE06"></channel>
-		
+	</channels>
+
+	<channels>
 		<channel name="V000" freq="145000000" ref="DE09"><mode name="FM"/><comment>RV48</comment></channel>
 		<channel name="V001" freq="145012500" ref="DE09"><mode name="FM"/><comment>RV49</comment></channel>
 		<channel name="V002" freq="145025000" ref="DE09"><mode name="FM"/><comment>RV50</comment></channel>
@@ -205,8 +207,9 @@
 		<channel name="V077" freq="145962500" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
 		<channel name="V078" freq="145975000" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
 		<channel name="V079" freq="145987500" ref="DE09"><mode name="FM"/><comment>Sattelite Exclusive</comment></channel>
+	</channels>
 
-
+	<channels>
 		<channel name="DB0WAN" freq="144975000"><mode name="FM"/><comment>JO51CE: Echolink</comment></channel>
 		<channel name="DB0WAN" freq="144800000"><mode name="FM"/><comment>JO51CE: APRS</comment></channel> 
 	</channels>
