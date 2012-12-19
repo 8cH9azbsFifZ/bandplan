@@ -23,7 +23,7 @@
 <band name="6m" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
 	<country name="DE"/> 
 
-	<region min="5000000" max="5100000">
+	<region min="5000000" max="5100000" ref="DE02">
 		<region min="5000000" max="5008000" ref="DE02"><comment>Beacon, no sending</comment></region>
 
 		<region min="5008000" max="5100000" ref="DE02">

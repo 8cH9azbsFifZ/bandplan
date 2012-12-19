@@ -27,8 +27,6 @@
 
 <!ELEMENT band (country,region*,channels*)>
 	<!ATTLIST band name CDATA #REQUIRED>
-	<!ATTLIST band min CDATA #REQUIRED>
-	<!ATTLIST band max CDATA #REQUIRED>
 	<!ATTLIST band ref CDATA #REQUIRED>
 	<!ATTLIST band author CDATA #REQUIRED>
 	<!ATTLIST band created CDATA #REQUIRED>
@@ -62,7 +60,7 @@
 	<!ATTLIST region ref CDATA #REQUIRED>
 	<!ATTLIST region bandwidth CDATA #IMPLIED>
 
-<!ELEMENT channel (mode*,comment*,shift*,comment*)>
+<!ELEMENT channel (mode*,shift*,comment*)>
 	<!ATTLIST channel name CDATA #REQUIRED>
 	<!ATTLIST channel freq CDATA #REQUIRED>
 	<!ATTLIST channel ref CDATA #REQUIRED>

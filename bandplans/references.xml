@@ -70,6 +70,10 @@
 		<ref id="DECB02" name="Wikipedia"
 			href="http://de.wikipedia.org/wiki/CB-Funk#Zwischenkan.C3.A4le"
 			/>
+		<ref id="DE10" name="Bundesnatzagentur"
+			href="http://ans.bundesnetzagentur.de/Amateurfunk/Rufzeichen.aspx"
+			localfile=""
+			md5=""/>
 
 		<!-- Country: SE -->
 		<ref id="SE01" name="Post- och telestyrelsens författningssamling"

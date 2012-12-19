@@ -23,7 +23,7 @@
 <band name="LPD" author="DG6FL" created="20131109" valid="20130101" ref="DELPD01">
 	<country name="DE"/>
 
-	<region min="433075000" max="433300000">
+	<region min="433075000" max="433300000" ref="DELPD01">
 		<region min="433075000" max="434790000" ref="DELPD01">
 			<license name="LPD" power="0.01" powermeasure="ERP" ref="DELPD01"/>
 		</region>

@@ -22,7 +22,7 @@
 <band name="10m" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
 	<country name="DE"/> 
 
-	<region min="28000000" max="28070000">
+	<region min="28000000" max="28070000" ref="DE02">
 		<region min="28000000" max="28070000" bandwidth="7000" ref="DE02">
 			<license name="Klasse_A" power="750" powermeasure="PEP" ref="DE02"/>
 			<license name="Klasse_E" power="100" powermeasure="PEP" ref="DE02"/>
