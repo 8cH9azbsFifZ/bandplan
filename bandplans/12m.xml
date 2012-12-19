@@ -18,7 +18,7 @@
 
 <!DOCTYPE note SYSTEM "bandplan.dtd">
 
-<bandplan version="0.7.6">
+<bandplan version="0.7.12">
 <band name="12m" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
 	<country name="DE"/> 
 

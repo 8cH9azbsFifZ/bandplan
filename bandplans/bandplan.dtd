@@ -1,4 +1,4 @@
-<!-- Standard 0.7.5 -->
+<!-- Standard 0.7.12 -->
 
 <!ELEMENT bandplan (band|countries|references|authors|source)*>
 	<!ATTLIST bandplan version CDATA #REQUIRED>

@@ -15,7 +15,7 @@
     You should have received a copy of the GNU General Public License
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
-<bandplan name="Band Plan" version="0.7.6">
+<bandplan name="Band Plan" version="0.7.12">
 
 <!-- External References -->
 <source file="2200m.xml"/>

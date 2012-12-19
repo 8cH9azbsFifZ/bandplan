@@ -18,7 +18,7 @@
 
 <!DOCTYPE note SYSTEM "bandplan.dtd">
 
-<bandplan version="0.7.6">
+<bandplan version="0.7.12">
 <band name="PMR" author="DG6FL" created="20131109" valid="20131231" ref="DEPMR01">
 	<country name="DE"/>
 

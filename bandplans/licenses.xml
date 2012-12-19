@@ -24,7 +24,7 @@
 
 <!DOCTYPE note SYSTEM "bandplan.dtd">
 
-<bandplan version="0.7.6">
+<bandplan version="0.7.12">
 
 <countries>
 	<country name="AL" fullname="Albania">
