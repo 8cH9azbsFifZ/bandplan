@@ -1,6 +1,6 @@
 
 /*
-	 This file is part of xmlbandplan.
+    This file is part of xmlbandplan.
 
     Xmlbandplan is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -13,7 +13,7 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Xmlbandplan.  If not, see http://www.gnu.org/licenses/;.	  
+    along with Xmlbandplan.  If not, see http://www.gnu.org/licenses/;.
 */
 
 /*
@@ -32,15 +32,13 @@ typedef struct
   prog_char *qth;
 } t_channel;
 
-		
+
 	 
 
 	
 
 	{"WSPR", 13600, NULL , 0, ""},
-&gt;
-		&gt;
-	
+
 
 	 
 
@@ -53,9 +51,7 @@ typedef struct
 
 	{"WSPR", 183660, NULL , 0, ""},
 {"QRP", 183600,FT817_MODE_CW_NARROW, 0, ""},
-&gt;
-		&gt;
-	
+
 	
 
 	 
@@ -69,9 +65,7 @@ typedef struct
 {"QRP", 356000,FT817_MODE_CW_NARROW, 0, ""},
 {"QRS", 355500,FT817_MODE_CW_NARROW, 0, ""},
 {"WSPR", 359260, NULL , 0, ""},
-&gt;
-		&gt;
-	
+
 
 	 
 
@@ -84,9 +78,7 @@ typedef struct
 {"Digital Speech", 707000, NULL , 0, ""},
 {"QRP", 709000, NULL , 0, ""},
 {"WSPR", 703860, NULL , 0, ""},
-&gt;
-		&gt;
-	
+
 
 	 
 
@@ -94,9 +86,7 @@ typedef struct
 
 	{"QRP", 1011600,FT817_MODE_CW_NARROW, 0, ""},
 {"WSPR", 1013870, NULL , 0, ""},
-&gt;
-		&gt;
-	
+
 
 	 
 
@@ -105,9 +95,7 @@ typedef struct
 	{"QRP", 1406000,FT817_MODE_CW_NARROW, 0, ""},
 {"Emergency", 1430000, NULL , 0, ""},
 {"WSPR", 1409560, NULL , 0, ""},
-&gt;
-		&gt;
-	
+
 
 	 
 	
@@ -118,9 +106,7 @@ typedef struct
 {"Digital Speech", 1815000, NULL , 0, ""},
 {"Emergency", 1816000, NULL , 0, ""},
 {"WSPR", 1810460, NULL , 0, ""},
-&gt;
-		&gt;
-	
+
 
 
 	 
@@ -131,9 +117,7 @@ typedef struct
 {"QRS", 2105500,FT817_MODE_CW_NARROW, 0, ""},
 {"Digital Speech", 2118000, NULL , 0, ""},
 {"WSPR", 2199460, NULL , 0, ""},
-&gt;
-		&gt;
-	
+
 
 	 
 	
@@ -141,9 +125,7 @@ typedef struct
 	{"QRP", 2490600,FT817_MODE_CW_NARROW, 0, ""},
 {"QRP", 2495000, NULL , 0, ""},
 {"WSPR", 2492460, NULL , 0, ""},
-&gt;
-		&gt;
-	
+
 
 	 
 
@@ -156,9 +138,7 @@ typedef struct
 {"QRP", 2806000,FT817_MODE_CW_NARROW, 0, ""},
 {"APRS", 2925000,FT817_MODE_FM, 0, ""},
 {"WSPR", 2812460, NULL , 0, ""},
-&gt;
-		&gt;
-	
+
 
 
 	
@@ -250,9 +230,7 @@ typedef struct
 {"78", 2693500,FT817_MODE_FM, 0, ""},
 {"79", 2694500,FT817_MODE_FM, 0, ""},
 {"80", 2695500,FT817_MODE_FM, 0, ""},
-&gt;
-		&gt;
-	
+
 
 	 
 
@@ -261,9 +239,7 @@ typedef struct
 	
 
 	{"WSPR", 502930, NULL , 0, ""},
-&gt;
-		&gt;
-	
+
 
 
 	 
@@ -366,9 +342,10 @@ typedef struct
 {"V077", 14596250,FT817_MODE_FM, 0, ""},
 {"V078", 14597500,FT817_MODE_FM, 0, ""},
 {"V079", 14598750,FT817_MODE_FM, 0, ""},
-&gt;
-		&gt;
-	
+{"DB0WAN", 14497500,FT817_MODE_FM, 0, ""},
+{"DB0WAN", 14480000,FT817_MODE_FM, 0, ""},
+
+
 
 	 
 
@@ -1173,11 +1150,9 @@ typedef struct
 {"U797", 43996250, NULL , -940000, ""},
 {"U798", 43997500, NULL , -940000, ""},
 {"U799", 43998750, NULL , -940000, ""},
-&gt;
-		{"DB0VA", 43932500,FT817_MODE_FM, -760000, "JO40bc"},
+{"DB0VA", 43932500,FT817_MODE_FM, -760000, "JO40bc"},
 {"DB0ESW", 43905000,FT817_MODE_FM, -760000, "JO51ae"},
-&gt;
-	
+
 
 	
 
@@ -1252,9 +1227,7 @@ typedef struct
 {"67", 43472500,FT817_MODE_FM, 0, ""},
 {"68", 43475000,FT817_MODE_FM, 0, ""},
 {"69", 43477500,FT817_MODE_FM, 0, ""},
-&gt;
-		&gt;
-	
+
 
 	
 
@@ -1271,7 +1244,4 @@ typedef struct
 {"6", 44606875,FT817_MODE_FM, 0, ""},
 {"7", 44608125,FT817_MODE_FM, 0, ""},
 {"8", 44609375,FT817_MODE_FM, 0, ""},
-&gt;
-		&gt;
-	
 
