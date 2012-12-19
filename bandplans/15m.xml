@@ -19,19 +19,22 @@
 <!DOCTYPE note SYSTEM "bandplan.dtd">
 
 <bandplan version="0.7.6">
-<band name="15m" min="21000000" max="21450000" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
+<band name="15m" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
 	<country name="DE"/> 
-	<region min="21000000" max="21070000" bandwidth="2700" ref="DE02">	
-		<license name="Klasse_A" power="750" powermeasure="PEP" ref="DE02"/>
-		<license name="Klasse_E" power="100" powermeasure="PEP" ref="DE02"/>
 
-		<region min="21000000" max="21070000" bandwidth="200" ref="DE01"><mode name="CW"/></region>
-		<region min="21070000" max="21090000" bandwidth="500" ref="DE01"><mode name="Narrow"/><comment>Digimode</comment></region>
-		<region min="21090000" max="21110000" bandwidth="500" ref="DE01"><mode name="Narrow"/><comment>Digimode, Automatic digital stations</comment></region>
-		<region min="21110000" max="21120000" bandwidth="2700" ref="DE01"><mode name="All"/><comment>No SSB, Digimode, Automatic digital stations</comment></region>
-		<region min="21120000" max="21149000" bandwidth="500" ref="DE01"><mode name="Narrow"/></region>
-		<region min="21149000" max="21151000" ref="DE01"><comment>Beacons, no sending</comment></region>
-		<region min="21151000" max="21450000" bandwidth="2700" ref="DE01"><mode name="All"/></region>
+	<region min="21000000" max="21450000">
+		<region min="21000000" max="21070000" bandwidth="2700" ref="DE02">	
+			<license name="Klasse_A" power="750" powermeasure="PEP" ref="DE02"/>
+			<license name="Klasse_E" power="100" powermeasure="PEP" ref="DE02"/>
+
+			<region min="21000000" max="21070000" bandwidth="200" ref="DE01"><mode name="CW"/></region>
+			<region min="21070000" max="21090000" bandwidth="500" ref="DE01"><mode name="Narrow"/><comment>Digimode</comment></region>
+			<region min="21090000" max="21110000" bandwidth="500" ref="DE01"><mode name="Narrow"/><comment>Digimode, Automatic digital stations</comment></region>
+			<region min="21110000" max="21120000" bandwidth="2700" ref="DE01"><mode name="All"/><comment>No SSB, Digimode, Automatic digital stations</comment></region>
+			<region min="21120000" max="21149000" bandwidth="500" ref="DE01"><mode name="Narrow"/></region>
+			<region min="21149000" max="21151000" ref="DE01"><comment>Beacons, no sending</comment></region>
+			<region min="21151000" max="21450000" bandwidth="2700" ref="DE01"><mode name="All"/></region>
+		</region>
 	</region>
 
 

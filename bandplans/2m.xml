@@ -21,7 +21,7 @@
 
 <bandplan version="0.7.6">
 
-<band name="2m" min="144000000" max="146000000" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
+<band name="2m" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
 	<country name="DE"/> 
 
 	<region min="144000000" max="146000000" bandwidth="40000" ref="DE02">

@@ -20,7 +20,7 @@
 
 <bandplan version="0.7.6" >
 
-<band name="17m" min="18068000" max="18168000" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
+<band name="17m" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
 	<country name="DE"/> 
 	
 	<region min="18068000" max="18168000" bandwidth="2700" ref="DE02">	
