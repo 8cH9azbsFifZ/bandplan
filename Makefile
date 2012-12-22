@@ -11,7 +11,7 @@ html: html/bandplan.html html/bandplan2.html
 html/bandplan.html: $(DEP) tools/html.xsl
 	xsltproc tools/html.xsl bandplans/bandplan.xml > html/bandplan.html 
 
-html/bandplan2.html: $(DEP) tools/html.xsl
+html/bandplan2.html: $(DEP) tools/html2.xsl
 	xsltproc tools/html2.xsl bandplans/bandplan.xml > html/bandplan2.html 
 
 

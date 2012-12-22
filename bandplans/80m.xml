@@ -48,7 +48,7 @@
 		<region min="3600000" max="3620000" bandwidth="2700" ref="DE01">
 			<mode name="All"/>
 		</region>
-		<region min="3600000" max="3650000" bandwidth="2700" ref="DE01">
+		<region min="3620000" max="3650000" bandwidth="2700" ref="DE01">
 			<mode name="All"/>
 			<comment>SSB contest</comment>
 		</region>

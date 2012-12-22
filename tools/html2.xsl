@@ -23,6 +23,11 @@
 		<xsl:apply-templates/>
 		<small><br/><br/><br/>
 		<xsl:text>
+			Document Version 
+		</xsl:text>
+		<xsl:value-of select="/bandplan/@version"/>	
+		<br/>
+		<xsl:text>
 				(C)opyright Gerolf Ziegenhain (DG6FL). &lt;XML&gt;Bandplan is released under GPLv3.
 		</xsl:text>
 		</small>
@@ -31,8 +36,8 @@
 	<!-- Main Bandplan -->
 	<xsl:template match="bandplan">
 		<xsl:choose>
-			<!-- Check version number  - abort? -->
-			<xsl:when test="@version = '0.7.6' ">
+			<!-- Check version number - abort? -->
+			<xsl:when test="@version = '0.7.12' ">
 				<html>
 					<head>
 						<title> <xsl:value-of select="@name"/> </title>
@@ -50,7 +55,7 @@
 	<xsl:template match="band">
 		<body>
 			<h1> <xsl:value-of select="@name"/> <xsl:text> Band for Country </xsl:text> <xsl:value-of select="country/@name"/> </h1>
-			<xsl:apply-templates select="source"/> 
+			<!--<xsl:apply-templates select="source"/> -->
 			<!-- Regions & Channels -->
 			<table>
 				<tr>
@@ -219,19 +224,22 @@
 		</xsl:choose>
 	</xsl:template>
 
+	<!-- Mode -->
 	<xsl:template match="mode">
 		<xsl:value-of select="@name"/><xsl:text> </xsl:text>
 	</xsl:template>
-
+	
+	<!-- Comments -->
 	<xsl:template match="comment">
 		<i> <xsl:value-of select="."/> </i>
 	</xsl:template>
 
-
+	<!-- Country -->
 	<xsl:template match="country">
 		<xsl:apply-templates select="license"/>
 	</xsl:template>
 
+	<!-- Recursively match files -->
 	<xsl:template match="source">
 		<xsl:variable name="filename" select="@file"/>
 		<xsl:apply-templates select="document($filename)/bandplan"/>
