@@ -99,7 +99,9 @@
           <xsl:text>Comment</xsl:text>
         </td>
       </tr>
-      <xsl:apply-templates select="region"/>
+      <xsl:apply-templates select="region">
+        <xsl:with-param name="level" select="0"/>
+      </xsl:apply-templates>
       <xsl:apply-templates select="channels"/>
     </table>
   </xsl:template>
@@ -107,13 +109,14 @@
   <!-- Region & Subregion -->
   <!-- Each (Frequency) Region -->
   <xsl:template match="region">
+    <xsl:param name="level" select="0"/>
     <tr>
       <!-- Choose colors for subregion -->
       <xsl:choose>
-        <xsl:when test="../../../region">
+        <xsl:when test="$level = 2">
           <xsl:attribute name="style">background-color:#bbb</xsl:attribute>
         </xsl:when>
-        <xsl:when test="../../region">
+        <xsl:when test="$level = 1">
           <xsl:attribute name="style">background-color:#999</xsl:attribute>
         </xsl:when>
         <xsl:otherwise>
@@ -121,6 +124,11 @@
         </xsl:otherwise>
       </xsl:choose>
       <td>
+        <xsl:attribute name="style">
+          <xsl:text>padding-left:</xsl:text>
+          <xsl:value-of select="$level*16"/>
+          <xsl:text>px;</xsl:text>
+        </xsl:attribute>
         <xsl:value-of select="format-number(@min*0.000001, &quot;###0.000&quot;)"/>
         <xsl:text> - </xsl:text>
         <xsl:value-of select="format-number(@max*0.000001, &quot;###0.000&quot;)"/>
@@ -160,7 +168,13 @@
       </td>
     </tr>
     <!-- Recursive handling of subregions -->
-    <xsl:apply-templates select="region"/>
+    <xsl:apply-templates select="region">
+      <xsl:with-param name="level" select="$level + 1"/>
+    </xsl:apply-templates>
+    <xsl:apply-templates select="ancestor::band/channels/channel[@freq &gt;= current()/@min and @freq &lt;= current()/@max and not(@freq &gt;= current()/region/@min and @freq &lt;= current()/region/@max)]">
+      <xsl:sort select="@freq"/>
+      <xsl:with-param name="level" select="$level + 1"/>
+    </xsl:apply-templates>
   </xsl:template>
   <!-- =================================================== -->
   <!-- Channel list -->
@@ -171,8 +185,14 @@
   <!-- =================================================== -->
   <!-- Each Channel -->
   <xsl:template match="channel">
+    <xsl:param name="level" select="0"/>
     <tr style="background-color:#8888bb">
       <td>
+        <xsl:attribute name="style">
+          <xsl:text>padding-left:</xsl:text>
+          <xsl:value-of select="$level*16"/>
+          <xsl:text>px;</xsl:text>
+        </xsl:attribute>
         <xsl:value-of select="format-number(@freq*0.000001, &quot;###0.000&quot;)"/>
       </td>
       <td/>
