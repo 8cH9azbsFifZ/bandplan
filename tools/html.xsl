@@ -17,6 +17,8 @@
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <!-- =================================================== -->
+  <xsl:variable name="acceptedversion">0.7.12</xsl:variable>
+  <!-- =================================================== -->
   <!-- Header & Footer -->
   <xsl:template match="/">
     <xsl:apply-templates mode="mainfile"/>
@@ -33,7 +35,7 @@
       <body>
         <xsl:choose>
           <!-- Check version number  - abort? -->
-          <xsl:when test="@version = &apos;0.7.12&apos;">
+          <xsl:when test="@version = $acceptedversion">
             <xsl:apply-templates/>
             <small>
               <br/>
@@ -58,7 +60,7 @@
   <xsl:template match="bandplan">
     <xsl:choose>
       <!-- Check version number  - abort? -->
-      <xsl:when test="@version = &apos;0.7.12&apos;">
+      <xsl:when test="@version = $acceptedversion">
         <xsl:apply-templates/>
       </xsl:when>
       <xsl:otherwise>
@@ -103,66 +105,58 @@
   </xsl:template>
   <!-- =================================================== -->
   <!-- Region & Subregion -->
-  <xsl:template match="region">
-    <!-- Choose colors for subregion -->
-    <xsl:choose>
-      <xsl:when test="../../../region">
-        <tr style="background-color:#bbb">
-          <xsl:call-template name="oneregion"/>
-        </tr>
-      </xsl:when>
-      <xsl:when test="../../region">
-        <tr style="background-color:#999">
-          <xsl:call-template name="oneregion"/>
-        </tr>
-      </xsl:when>
-      <xsl:otherwise>
-        <tr style="background-color:#777">
-          <xsl:call-template name="oneregion"/>
-        </tr>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
-  <!-- =================================================== -->
   <!-- Each (Frequency) Region -->
-  <xsl:template name="oneregion">
-    <td>
-      <xsl:value-of select="format-number(@min*0.000001, &quot;###0.000&quot;)"/>
-      <xsl:text> - </xsl:text>
-      <xsl:value-of select="format-number(@max*0.000001, &quot;###0.000&quot;)"/>
-    </td>
-    <td>
+  <xsl:template match="region">
+    <tr>
+      <!-- Choose colors for subregion -->
       <xsl:choose>
-        <xsl:when test="@bandwidth">
-          <xsl:value-of select="format-number(@bandwidth*0.001, &quot;#0.000&quot;)"/>
+        <xsl:when test="../../../region">
+          <xsl:attribute name="style">background-color:#bbb</xsl:attribute>
         </xsl:when>
-      </xsl:choose>
-    </td>
-    <td>
-      <xsl:apply-templates select="mode"/>
-    </td>
-    <td>
-      <!-- Default regulation is parent node -->
-      <xsl:choose>
-        <xsl:when test="license">
-          <xsl:apply-templates select="license"/>
+        <xsl:when test="../../region">
+          <xsl:attribute name="style">background-color:#999</xsl:attribute>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:apply-templates select="../license"/>
+          <xsl:attribute name="style">background-color:#777</xsl:attribute>
         </xsl:otherwise>
       </xsl:choose>
-    </td>
-    <td>
-      <xsl:variable name="link" select="@ref"/>
-      <a href="#{$link}">
-        <xsl:value-of select="@ref"/>
-      </a>
-    </td>
-    <td>
-      <xsl:apply-templates select="comment"/>
-      <!-- Recursive handling of subregions -->
-      <xsl:apply-templates select="region"/>
-    </td>
+      <td>
+        <xsl:value-of select="format-number(@min*0.000001, &quot;###0.000&quot;)"/>
+        <xsl:text> - </xsl:text>
+        <xsl:value-of select="format-number(@max*0.000001, &quot;###0.000&quot;)"/>
+      </td>
+      <td>
+        <xsl:choose>
+          <xsl:when test="@bandwidth">
+            <xsl:value-of select="format-number(@bandwidth*0.001, &quot;#0.000&quot;)"/>
+          </xsl:when>
+        </xsl:choose>
+      </td>
+      <td>
+        <xsl:apply-templates select="mode"/>
+      </td>
+      <td>
+        <!-- Default regulation is parent node -->
+        <xsl:choose>
+          <xsl:when test="license">
+            <xsl:apply-templates select="license"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:apply-templates select="../license"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </td>
+      <td>
+        <a href="#{@ref}">
+          <xsl:value-of select="@ref"/>
+        </a>
+      </td>
+      <td>
+        <xsl:apply-templates select="comment"/>
+        <!-- Recursive handling of subregions -->
+        <xsl:apply-templates select="region"/>
+      </td>
+    </tr>
   </xsl:template>
   <!-- =================================================== -->
   <!-- Channel list -->
@@ -183,8 +177,7 @@
       </td>
       <td/>
       <td>
-        <xsl:variable name="link" select="@ref"/>
-        <a href="#{$link}">
+        <a href="#{@ref}">
           <xsl:value-of select="@ref"/>
         </a>
       </td>
@@ -213,14 +206,12 @@
       <td/>
       <td/>
       <td>
-        <xsl:variable name="link" select="@ref"/>
-        <a href="#{$link}">
+        <a href="#{@ref}">
           <xsl:value-of select="@ref"/>
         </a>
         <xsl:choose>
           <xsl:when test="homepage">
-            <xsl:variable name="link1" select="homepage/@href"/>
-            <a href="{$link1}">
+            <a href="{homepage/@href}">
               <xsl:text>Homepage</xsl:text>
             </a>
           </xsl:when>
@@ -230,23 +221,22 @@
         <b>
           <xsl:value-of select="@name"/>
         </b>
-        <xsl:choose>
-          <xsl:when test="echolink">
-            <xsl:text>Echolink Node: </xsl:text>
-            <xsl:apply-templates select="echolink/@node"/>
-          </xsl:when>
-        </xsl:choose>
-        <xsl:choose>
-          <xsl:when test="position">
-            <xsl:text>Position: </xsl:text>
-            <xsl:apply-templates select="position/@locator"/>
-          </xsl:when>
-        </xsl:choose>
+        <xsl:text> </xsl:text>
+        <xsl:if test="echolink">
+          <xsl:text>Echolink Node: </xsl:text>
+          <xsl:value-of select="echolink/@node"/>
+        </xsl:if>
+        <xsl:text> </xsl:text>
+        <xsl:if test="position">
+          <xsl:text>Position: </xsl:text>
+          <xsl:value-of select="position/@locator"/>
+        </xsl:if>
         <xsl:text> </xsl:text>
         <xsl:apply-templates select="comment"/>
       </td>
     </tr>
   </xsl:template>
+  <!-- =================================================== -->
   <!-- License Information -->
   <xsl:template match="license">
     <xsl:choose>
@@ -265,8 +255,7 @@
             <xsl:value-of select="@cept"/>
           </td>
           <td>
-            <xsl:variable name="link" select="@ref"/>
-            <a href="#{$link}">
+            <a href="#{@ref}">
               <xsl:value-of select="@ref"/>
             </a>
           </td>
@@ -287,18 +276,19 @@
     <xsl:value-of select="@name"/>
     <xsl:text> </xsl:text>
   </xsl:template>
+  <!-- =================================================== -->
   <xsl:template match="comment">
     <i>
       <xsl:value-of select="."/>
     </i>
   </xsl:template>
+  <!-- =================================================== -->
   <xsl:template match="country">
     <xsl:apply-templates select="license"/>
   </xsl:template>
   <!-- =================================================== -->
   <!-- Handle License Files -->
   <xsl:template match="countries">
-    <xsl:variable name="filename" select="@file"/>
     <h1>Licenses</h1>
     <table>
       <tr>
@@ -311,6 +301,7 @@
       <xsl:apply-templates select="country"/>
     </table>
   </xsl:template>
+  <!-- =================================================== -->
   <!-- Handle Refernces Files -->
   <xsl:template match="references">
     <h1>References</h1>
@@ -323,11 +314,11 @@
       <xsl:apply-templates select="ref"/>
     </table>
   </xsl:template>
+  <!-- =================================================== -->
   <xsl:template match="ref">
     <tr style="background-color:#bbb">
       <td>
-        <xsl:variable name="link" select="@id"/>
-        <a name="{$link}">
+        <a name="{@id}">
           <xsl:value-of select="@id"/>
         </a>
       </td>
@@ -335,8 +326,7 @@
         <xsl:value-of select="@name"/>
       </td>
       <td>
-        <xsl:variable name="link" select="@href"/>
-        <a href="{$link}">Link</a>
+        <a href="{@href}">Link</a>
       </td>
     </tr>
   </xsl:template>
