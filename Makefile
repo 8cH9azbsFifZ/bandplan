@@ -6,10 +6,13 @@ xmltest:
 check_references:
 	./tools/check_references_for_changes.pl -filename=bandplans/references.xml 
 
-html: html/bandplan.html 
+html: html/bandplan.html html/bandplan2.html 
 
 html/bandplan.html: $(DEP) tools/html.xsl
 	xsltproc tools/html.xsl bandplans/bandplan.xml > html/bandplan.html 
+
+html/bandplan2.html: $(DEP) tools/html.xsl
+	xsltproc tools/html2.xsl bandplans/bandplan.xml > html/bandplan2.html 
 
 
 arduino:
