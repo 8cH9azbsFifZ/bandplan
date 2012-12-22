@@ -139,10 +139,14 @@
         <!-- Default regulation is parent node -->
         <xsl:choose>
           <xsl:when test="license">
-            <xsl:apply-templates select="license"/>
+            <table>
+              <xsl:apply-templates select="license"/>
+            </table>
           </xsl:when>
           <xsl:otherwise>
-            <xsl:apply-templates select="../license"/>
+            <table>
+              <xsl:apply-templates select="../license"/>
+            </table>
           </xsl:otherwise>
         </xsl:choose>
       </td>
@@ -153,10 +157,10 @@
       </td>
       <td>
         <xsl:apply-templates select="comment"/>
-        <!-- Recursive handling of subregions -->
-        <xsl:apply-templates select="region"/>
       </td>
     </tr>
+    <!-- Recursive handling of subregions -->
+    <xsl:apply-templates select="region"/>
   </xsl:template>
   <!-- =================================================== -->
   <!-- Channel list -->
@@ -262,12 +266,16 @@
         </tr>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:value-of select="@name"/>
-        <xsl:text>: </xsl:text>
-        <xsl:value-of select="@power"/>
-        <xsl:text>W (</xsl:text>
-        <xsl:value-of select="@powermeasure"/>
-        <xsl:text>) </xsl:text>
+        <tr>
+          <td>
+            <xsl:value-of select="@name"/>
+            <xsl:text>: </xsl:text>
+            <xsl:value-of select="@power"/>
+            <xsl:text>W (</xsl:text>
+            <xsl:value-of select="@powermeasure"/>
+            <xsl:text>) </xsl:text>
+          </td>
+        </tr>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
