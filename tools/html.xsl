@@ -16,71 +16,92 @@
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <!-- =================================================== -->
   <!-- Header & Footer -->
   <xsl:template match="/">
-    <xsl:apply-templates/>
-    <small>
-      <br/>
-      <br/>
-      <br/>
-      <xsl:text>(C)opyright Gerolf Ziegenhain (DG6FL). &lt;XML&gt;Bandplan is released under GPLv3.</xsl:text>
-    </small>
+    <xsl:apply-templates mode="mainfile"/>
   </xsl:template>
+  <!-- =================================================== -->
   <!-- Main Bandplan -->
+  <xsl:template match="bandplan" mode="mainfile">
+    <html>
+      <head>
+        <title>
+          <xsl:value-of select="@name"/>
+        </title>
+      </head>
+      <body>
+        <xsl:choose>
+          <!-- Check version number  - abort? -->
+          <xsl:when test="@version = &apos;0.7.12&apos;">
+            <xsl:apply-templates/>
+            <small>
+              <br/>
+              <br/>
+              <br/>
+              <xsl:text>(C)opyright Gerolf Ziegenhain (DG6FL). &lt;XML&gt;Bandplan is released under GPLv3.</xsl:text>
+            </small>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:text>Error: Wrong version.</xsl:text>
+          </xsl:otherwise>
+        </xsl:choose>
+      </body>
+    </html>
+  </xsl:template>
+  <!-- =================================================== -->
+  <xsl:template match="source">
+    <xsl:apply-templates select="document(@file)/bandplan"/>
+  </xsl:template>
+  <!-- =================================================== -->
+  <!-- Embedded Sub-Bandplans -->
   <xsl:template match="bandplan">
     <xsl:choose>
       <!-- Check version number  - abort? -->
       <xsl:when test="@version = &apos;0.7.12&apos;">
-        <html>
-          <head>
-            <title>
-              <xsl:value-of select="@name"/>
-            </title>
-          </head>
-          <xsl:apply-templates/>
-        </html>
+        <xsl:apply-templates/>
       </xsl:when>
       <xsl:otherwise>
         <xsl:text>Error: Wrong version.</xsl:text>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
+  <!-- =================================================== -->
   <!-- Each Band -->
   <xsl:template match="band">
-    <body>
-      <h1>
-        <xsl:value-of select="@name"/>
-        <xsl:text> Band for Country </xsl:text>
-        <xsl:value-of select="country/@name"/>
-      </h1>
-      <xsl:apply-templates select="source"/>
-      <!-- Regions & Channels -->
-      <table>
-        <tr>
-          <td>
-            <xsl:text>Frequency (MHz)</xsl:text>
-          </td>
-          <td>
-            <xsl:text>Bandwidth (kHz)</xsl:text>
-          </td>
-          <td>
-            <xsl:text>Mode</xsl:text>
-          </td>
-          <td>
-            <xsl:text>License</xsl:text>
-          </td>
-          <td>
-            <xsl:text>Reference</xsl:text>
-          </td>
-          <td>
-            <xsl:text>Comment</xsl:text>
-          </td>
-        </tr>
-        <xsl:apply-templates select="region"/>
-        <xsl:apply-templates select="channels"/>
-      </table>
-    </body>
+    <h1>
+      <xsl:value-of select="@name"/>
+      <xsl:text> Band for Country </xsl:text>
+      <xsl:value-of select="country/@name"/>
+    </h1>
+    <xsl:apply-templates select="source"/>
+    <!-- Regions & Channels -->
+    <table>
+      <tr>
+        <td>
+          <xsl:text>Frequency (MHz)</xsl:text>
+        </td>
+        <td>
+          <xsl:text>Bandwidth (kHz)</xsl:text>
+        </td>
+        <td>
+          <xsl:text>Mode</xsl:text>
+        </td>
+        <td>
+          <xsl:text>License</xsl:text>
+        </td>
+        <td>
+          <xsl:text>Reference</xsl:text>
+        </td>
+        <td>
+          <xsl:text>Comment</xsl:text>
+        </td>
+      </tr>
+      <xsl:apply-templates select="region"/>
+      <xsl:apply-templates select="channels"/>
+    </table>
   </xsl:template>
+  <!-- =================================================== -->
   <!-- Region & Subregion -->
   <xsl:template match="region">
     <!-- Choose colors for subregion -->
@@ -102,6 +123,7 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
+  <!-- =================================================== -->
   <!-- Each (Frequency) Region -->
   <xsl:template name="oneregion">
     <td>
@@ -142,11 +164,13 @@
       <xsl:apply-templates select="region"/>
     </td>
   </xsl:template>
+  <!-- =================================================== -->
   <!-- Channel list -->
   <xsl:template match="channels">
     <xsl:apply-templates select="channel"/>
     <xsl:apply-templates select="repeater"/>
   </xsl:template>
+  <!-- =================================================== -->
   <!-- Each Channel -->
   <xsl:template match="channel">
     <tr style="background-color:#8888bb">
@@ -173,6 +197,7 @@
       </td>
     </tr>
   </xsl:template>
+  <!-- =================================================== -->
   <!-- Each Repeater -->
   <xsl:template match="repeater">
     <tr style="background-color:#8888dd">
@@ -257,6 +282,7 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
+  <!-- =================================================== -->
   <xsl:template match="mode">
     <xsl:value-of select="@name"/>
     <xsl:text> </xsl:text>
@@ -269,10 +295,7 @@
   <xsl:template match="country">
     <xsl:apply-templates select="license"/>
   </xsl:template>
-  <xsl:template match="source">
-    <xsl:variable name="filename" select="@file"/>
-    <xsl:apply-templates select="document($filename)/bandplan"/>
-  </xsl:template>
+  <!-- =================================================== -->
   <!-- Handle License Files -->
   <xsl:template match="countries">
     <xsl:variable name="filename" select="@file"/>
@@ -317,5 +340,6 @@
       </td>
     </tr>
   </xsl:template>
+  <!-- =================================================== -->
 </xsl:stylesheet>
 
