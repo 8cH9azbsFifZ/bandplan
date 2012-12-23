@@ -6,7 +6,7 @@ xmltest:
 check_references:
 	./tools/check_references_for_changes.pl -filename=bandplans/references.xml 
 
-html: html/bandplan.html html/bandplan2.html 
+html: html/bandplan.html 
 
 html/bandplan.html: $(DEP) tools/html.xsl
 	xsltproc tools/html.xsl bandplans/bandplan.xml > html/bandplan.html 
