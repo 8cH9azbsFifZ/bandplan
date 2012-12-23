@@ -278,7 +278,9 @@
 		<license name="A" cept="CEPT" prefix="TA" ref="TR6101"/>
 	</country>
 
-	<country name="UA" fullname="Ulraine">
+	<country name="ZA" fullname="South Africa"/>
+
+	<country name="UA" fullname="Ukraine">
 		<license name="1" cept="CEPT" prefix="UT" ref="TR6101"/>
 		<license name="2" cept="CEPT" prefix="UT" ref="TR6101"/>
 	</country>
