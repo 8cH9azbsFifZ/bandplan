@@ -76,7 +76,6 @@
       <xsl:text> Band for Country </xsl:text>
       <xsl:value-of select="country/@name"/>
     </h1>
-    <xsl:apply-templates select="source"/>
     <!-- Regions & Channels -->
     <table>
       <tr>
@@ -101,8 +100,8 @@
       </tr>
       <xsl:apply-templates select="region">
         <xsl:with-param name="level" select="0"/>
+        <xsl:sort select="@min"/>
       </xsl:apply-templates>
-      <xsl:apply-templates select="channels"/>
     </table>
   </xsl:template>
   <!-- =================================================== -->
@@ -134,11 +133,9 @@
         <xsl:value-of select="format-number(@max*0.000001, &quot;###0.000&quot;)"/>
       </td>
       <td>
-        <xsl:choose>
-          <xsl:when test="@bandwidth">
-            <xsl:value-of select="format-number(@bandwidth*0.001, &quot;#0.000&quot;)"/>
-          </xsl:when>
-        </xsl:choose>
+        <xsl:if test="@bandwidth">
+          <xsl:value-of select="format-number(@bandwidth*0.001, &quot;#0.000&quot;)"/>
+        </xsl:if>
       </td>
       <td>
         <xsl:apply-templates select="mode"/>
@@ -169,9 +166,10 @@
     </tr>
     <!-- Recursive handling of subregions -->
     <xsl:apply-templates select="region">
+      <xsl:sort select="@min"/>
       <xsl:with-param name="level" select="$level + 1"/>
     </xsl:apply-templates>
-    <xsl:apply-templates select="ancestor::band/channels/channel[@freq &gt;= current()/@min and @freq &lt;= current()/@max and not(@freq &gt;= current()/region/@min and @freq &lt;= current()/region/@max)]">
+    <xsl:apply-templates select="ancestor::band/channels/channel[@freq &gt;= current()/@min and @freq &lt;= current()/@max and not(@freq &gt;= current()//region/@min and @freq &lt;= current()//region/@max)]">
       <xsl:sort select="@freq"/>
       <xsl:with-param name="level" select="$level + 1"/>
     </xsl:apply-templates>
