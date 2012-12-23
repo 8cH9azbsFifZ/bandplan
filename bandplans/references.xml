@@ -81,6 +81,12 @@
 			localfile="SE01.pdf"
 			md5="bad2dadc5480b5a612f00920f9f5cbfe"/>
 
+		<!-- Country FI -->
+		<ref id="FI01" name="Regulation: GOVERNING AMATEUR RADIO STATIONS AND THEIR USE"
+			href="http://www.ficora.fi/attachments/5nwmKykzw/6H_2009_M_englanniksi_Radioamatoorimaarays.pdf"
+			localfile="FI01.pdf"
+			md5="a1903c2b4120c570bd5df2b378305aa7"/>
+
 		<!-- Country: US -->
 		<ref id="US01" name="ARRL" 
 			href="http://www.arrl.org/files/file/Hambands_color.pdf" 
