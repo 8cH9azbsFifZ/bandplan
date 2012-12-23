@@ -11,10 +11,6 @@ html: html/bandplan.html html/bandplan2.html
 html/bandplan.html: $(DEP) tools/html.xsl
 	xsltproc tools/html.xsl bandplans/bandplan.xml > html/bandplan.html 
 
-html/bandplan2.html: $(DEP) tools/html2.xsl
-	xsltproc tools/html2.xsl bandplans/bandplan.xml > html/bandplan2.html 
-
-
 arduino:
 	echo "Obsolete - subject to removal"
 	xsltproc tools/ft817_struct.xsl bandplans/bandplan.xml > c_structures/ft817_struct.h
