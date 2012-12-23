@@ -102,7 +102,6 @@
       <xsl:apply-templates select="region">
         <xsl:with-param name="level" select="0"/>
       </xsl:apply-templates>
-      <xsl:apply-templates select="channels"/>
     </table>
   </xsl:template>
   <!-- =================================================== -->
@@ -175,12 +174,6 @@
       <xsl:sort select="@freq"/>
       <xsl:with-param name="level" select="$level + 1"/>
     </xsl:apply-templates>
-  </xsl:template>
-  <!-- =================================================== -->
-  <!-- Channel list -->
-  <xsl:template match="channels">
-    <xsl:apply-templates select="channel"/>
-    <xsl:apply-templates select="repeater"/>
   </xsl:template>
   <!-- =================================================== -->
   <!-- Each Channel -->
