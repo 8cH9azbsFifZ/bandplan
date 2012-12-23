@@ -139,6 +139,10 @@
 
 	<!-- Each Channel -->
 	<xsl:template match="channel">
+		<xsl:call-template name="onechannel"/>
+	</xsl:template>
+
+	<xsl:template name="onechannel">
 			<tr style="background-color:#8888bb">
 				<td> <xsl:value-of select='format-number(@freq*0.000001, "###0.000")'/> </td>
 				<td></td>
