@@ -138,6 +138,11 @@
 			href="http://www.arrl.org/files/file/Hambands_color.pdf" 
 			localfile="US01.pdf"
 			md5="a254f68eeae6ebb3f24c3e5b61f26dff"/>
+
+		<ref id="US02" name="HamLog"
+			href=""
+			localfile=""
+			md5=""/>
 		<!--<ref id="US02" name="ARRL" href="http://www.arrl.org/frequency-allocations" md5=""/>-->
 
 		<!-- CEPT -->
