@@ -33,7 +33,18 @@
         </title>
       </head>
       <body>
-        <xsl:choose>
+			<h1>XML Bandplan</h1>
+			<p>
+				<xsl:text>
+					This document contains bandplan information for amateur radio use.
+					It has been created automatically by xmlbandplan. But xmlbandplan is more than
+					just a HTML file containing bandplan information.
+					For further information visit 
+				</xsl:text>
+				<a href="http://xmlbandplan.org">xmlbandplan.org</a>
+				<xsl:text>.</xsl:text>
+			</p>
+        	<xsl:choose>
           <!-- Check version number  - abort? -->
           <xsl:when test="@version = $acceptedversion">
             <xsl:apply-templates/>
@@ -41,7 +52,10 @@
               <br/>
               <br/>
               <br/>
-              <xsl:text>(C)opyright Gerolf Ziegenhain (DG6FL). &lt;XML&gt;Bandplan is released under GPLv3.</xsl:text>
+				  <xsl:text>(C)opyright Gerolf Ziegenhain (DG6FL) et al.</xsl:text>
+				  <xsl:text> - Document Version </xsl:text>
+				  <xsl:value-of select="@version"/>
+				  <xsl:text> - &lt;XML&gt;Bandplan is released under GPLv3.</xsl:text>
             </small>
           </xsl:when>
           <xsl:otherwise>
