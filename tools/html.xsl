@@ -85,6 +85,7 @@
   <!-- =================================================== -->
   <!-- Each Band -->
   <xsl:template match="band">
+	  <a name="{@name}"/>
     <h1>
       <xsl:value-of select="@name"/>
       <xsl:text> Band for Country </xsl:text>
