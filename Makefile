@@ -20,5 +20,5 @@ test:
 	xmltest
 	check_references
 
-all: html arduino
+all: xmltest html 
 
