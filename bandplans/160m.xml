@@ -67,6 +67,10 @@
 		<mode name="Image"/>
 	</region>
 
+	<channels>
+		<channel name="WSPR" freq="1836600" ref="WSPR01"><mode name="WSPR"/></channel>
+		<channel name="QRP" freq="1910000" ref="US02"><mode name="SSB"/></channel>
+	</channels>
 </band>
 
 </bandplan>
