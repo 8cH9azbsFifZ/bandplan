@@ -65,10 +65,39 @@
 		<mode name="Digital"/>
 		<mode name="SSB"/>
 		<mode name="Image"/>
+		<region min="1800000" max="1810000" ref="US02">
+			<mode name="Digital"/>
+			<comment>Digital Modes</comment>
+		</region>
+		<region min="1810000" max="1830000" ref="US02">
+			<mode name="CW"/>
+			<comment>CW</comment>
+		</region>
+		<region min="1830000" max="1840000" ref="US02">
+			<mode name="CW"/>
+			<comment>CW DX</comment>
+		</region>
+		<region min="1840000" max="1850000" ref="US02">
+			<mode name="SSB"/>
+			<comment>SSB DX</comment>
+		</region>
+		<region min="1843000" max="2000000" ref="US02">
+			<comment>SSB, SSTV and Wideband</comment>
+		</region>
+		<region min="1995000" max="2000000" ref="US02">
+			<comment>Experimental</comment>
+		</region>
+		<region min="1999000" max="2000000" ref="US02">
+			<comment>Beacons</comment>
+		</region>
 	</region>
 
 	<channels>
+		<channel name="QRP" freq="1810000" ref="US02"><mode name="CW"/></channel>
+		<channel name="W1AW Code" freq="1817500" ref="US02"><mode name="CW"/></channel>
 		<channel name="WSPR" freq="1836600" ref="WSPR01"><mode name="WSPR"/></channel>
+		<channel name="PSK31" freq="1838000" ref="US02"><mode name="Digital"/></channel>
+		<channel name="W1AW Voice" freq="1855000" ref="US02"><mode name="SSB"/></channel>
 		<channel name="QRP" freq="1910000" ref="US02"><mode name="SSB"/></channel>
 	</channels>
 </band>
