@@ -15,30 +15,21 @@
     You should have received a copy of the GNU General Public License
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
 -->
-<bandplan name="Band Plan" version="0.7.12">
 
-<!-- External References -->
-<source file="2200m.xml"/>
-<source file="160m.xml"/>
-<source file="80m.xml"/>
-<source file="60m.xml"/>
-<source file="40m.xml"/>
-<source file="30m.xml"/>
-<source file="20m.xml"/>
-<source file="17m.xml"/>
-<source file="15m.xml"/>
-<source file="12m.xml"/>
-<source file="10m.xml"/>
-<source file="cb.xml"/>
-<source file="6m.xml"/>
-<source file="2m.xml"/>
-<source file="1.25m.xml"/>
-<source file="70cm.xml"/>
-<source file="33cm.xml"/>
-<source file="23cm.xml"/>
-<source file="lpd.xml"/>
-<source file="pmr.xml"/>
-<source file="licenses.xml"/>
-<source file="references.xml"/>
+<!DOCTYPE note SYSTEM "bandplan.dtd">
+
+<bandplan version="0.7.12">
+<band name="33cm" author="DG6FL" created="20121225" valid="20130101" ref="US01">
+	<country name="US"/> 
+
+	<region min="902000000" max="928000000" ref="US01">
+			<license name="Amateur_Extra" ref="US01"/>
+			<license name="Advanced" ref="US01"/>
+			<license name="General" ref="US01"/>
+			<license name="Technician" ref="US01"/>
+			<mode name="All"/>
+	</region>
+
+</band>
 
 </bandplan>
