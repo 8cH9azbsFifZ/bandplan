@@ -19,6 +19,45 @@
 <!DOCTYPE note SYSTEM "bandplan.dtd">
 
 <bandplan version="0.7.12">
+<band name="15m" author="DG6FL" created="20121225" valid="20130101" ref="US01">
+	<country name="DE"/> 
+	
+	<region min="21000000" max="21450000" ref="US01">
+		<region min="21000000" max="21025000" ref="US01">
+			<license name="Amateur_Extra" ref="US01"/>
+			<mode name="CW"/>
+			<mode name="RTTY"/>
+			<mode name="Digital"/>
+		</region>
+		<region min="21025000" max="21200000" ref="US01">
+			<license name="Amateur_Extra" ref="US01"/>
+			<license name="Advanced" ref="US01"/>
+			<license name="General" ref="US01"/>
+			<mode name="CW">
+				<license name="Technician" power="200" measure="PEP" ref="US01"/>
+				<license name="Novice" power="200" measure="PEP" ref="US01"/>
+			</mode>
+			<mode name="RTTY"/>
+			<mode name="Digital"/>		</region>
+		<region min="21200000" max="21225000" ref="US01">
+			<license name="Amateur_Extra" ref="US01"/>
+			<mode name="All"/>
+		</region>
+		<region min="21225000" max="21275000" ref="US01">
+			<license name="Amateur_Extra" ref="US01"/>
+			<license name="Advanced" ref="US01"/>
+			<mode name="All"/>
+		</region>
+		<region min="21275000" max="21450000" ref="US01">
+			<license name="Amateur_Extra" ref="US01"/>
+			<license name="Advanced" ref="US01"/>
+			<license name="General" ref="US01"/>
+			<mode name="All"/>
+		</region>
+	</region>
+
+</band>
+
 <band name="15m" author="DG6FL" created="20121109" valid="20130101" ref="DE02">
 	<country name="DE"/> 
 

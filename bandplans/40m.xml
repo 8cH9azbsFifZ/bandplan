@@ -75,7 +75,6 @@
 	<region min="7000000" max="7300000" ref="US01">
 		<region min="7000000" max="7025000" bandwidth="1000" ref="US01">
 			<license name="Amateur_Extra" ref="US01"/>
-			<license name="Amateur_Extra" ref="US01"/>
 			<mode name="CW"/>
 			<mode name="RTTY"/>
 			<mode name="Digital"/>
