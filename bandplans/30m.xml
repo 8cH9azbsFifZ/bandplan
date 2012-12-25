@@ -19,7 +19,10 @@
 <!DOCTYPE note SYSTEM "bandplan.dtd">
 
 <bandplan version="0.7.12">
-<band name="30m" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
+<band name="30m" author="DG6FL" created="20121225" valid="20130101" ref="DE02">
+</band>
+
+<band name="30m" author="DG6FL" created="20121109" valid="20130101" ref="DE02">
 	<country name="DE"/> 
 
 	<region min="10100000" max="10150000" bandwidth="800" ref="DE02">
