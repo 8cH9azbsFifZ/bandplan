@@ -27,8 +27,8 @@
 			<license name="Amateur_Extra" ref="US01"/>
 			<license name="Advanced" ref="US01"/>
 			<license name="General" ref="US01"/>
-			<license name="Technician" power="200" measure="PEP" ref="US01"/>
-			<license name="Novice" power="200" measure="PEP" ref="US01"/>
+			<license name="Technician" power="200" powermeasure="PEP" ref="US01"/>
+			<license name="Novice" power="200" powermeasure="PEP" ref="US01"/>
 			<mode name="CW"/>
 			<mode name="RTTY"/>
 			<mode name="Digital"/>
@@ -39,8 +39,8 @@
 			<license name="General" ref="US01"/>
 			<mode name="All"/>
 			<mode name="SSB">
-				<license name="Technician" power="200" measure="PEP" ref="US01"/>
-				<license name="Novice" power="200" measure="PEP" ref="US01"/>
+				<license name="Technician" power="200" powermeasure="PEP" ref="US01"/>
+				<license name="Novice" power="200" powermeasure="PEP" ref="US01"/>
 			</mode>
 		</region>
 		<region min="28500000" max="29700000" ref="US01">

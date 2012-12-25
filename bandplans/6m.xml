@@ -29,14 +29,14 @@
 			<license name="Advanced" ref="US01"/>
 			<license name="General" ref="US01"/>
 			<license name="Technician" ref="US01"/>
-			<mode name="CW">
+			<mode name="CW"/>
 		</region>
 		<region min="5010000" max="5100000" ref="US01">
 			<license name="Amateur_Extra" ref="US01"/>
 			<license name="Advanced" ref="US01"/>
 			<license name="General" ref="US01"/>
 			<license name="Technician" ref="US01"/>
-			<mode name="All">
+			<mode name="All"/>
 		</region>
 	</region>
 </band>
