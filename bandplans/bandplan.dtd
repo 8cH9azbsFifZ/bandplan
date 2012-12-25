@@ -25,7 +25,7 @@
 	<!ATTLIST author name CDATA #REQUIRED>
 	<!ATTLIST author email CDATA #REQUIRED>
 
-<!ELEMENT band (country,region*,channels*)>
+<!ELEMENT band (country*,region*,channels*,comment*)>
 	<!ATTLIST band name CDATA #REQUIRED>
 	<!ATTLIST band ref CDATA #REQUIRED>
 	<!ATTLIST band author CDATA #REQUIRED>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+	 This file is part of xmlbandplan.
+
+    Xmlbandplan is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Xmlbandplan is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.	  
+-->
+
+<!DOCTYPE note SYSTEM "bandplan.dtd">
+
+<bandplan version="0.7.12">
+<band name="120m" author="DG6FL" created="20121225" valid="20130101" ref="SWBANDS01">
+	<region min="2300000" max="2495000" ref="SWBANDS01"/>
+	<comment>Broadcast</comment>
+</band>
+<band name="90m" author="DG6FL" created="20121225" valid="20130101" ref="SWBANDS01">
+	<region min="3200000" max="3400000" ref="SWBANDS01"/>
+	<comment>Broadcast</comment>
+</band>
+<band name="75m" author="DG6FL" created="20121225" valid="20130101" ref="SWBANDS01">
+	<region min="3900000" max="4000000" ref="SWBANDS01"/>
+	<comment>Broadcast</comment>
+</band>
+<band name="60m" author="DG6FL" created="20121225" valid="20130101" ref="SWBANDS01">
+	<region min="4750000" max="5060000" ref="SWBANDS01"/>
+	<comment>Broadcast</comment>
+</band>
+<band name="49m" author="DG6FL" created="20121225" valid="20130101" ref="SWBANDS01">
+	<region min="5900000" max="6200000" ref="SWBANDS01"/>
+	<comment>Broadcast</comment>
+</band>
+<band name="41m" author="DG6FL" created="20121225" valid="20130101" ref="SWBANDS01">
+	<region min="7200000" max="7450000" ref="SWBANDS01"/>
+	<comment>Broadcast</comment>
+</band>
+<band name="31m" author="DG6FL" created="20121225" valid="20130101" ref="SWBANDS01">
+	<region min="9400000" max="9900000" ref="SWBANDS01"/>
+	<comment>Broadcast</comment>
+</band>
+<band name="25m" author="DG6FL" created="20121225" valid="20130101" ref="SWBANDS01">
+	<region min="11600000" max="12100000" ref="SWBANDS01"/>
+	<comment>Broadcast</comment>
+</band>
+<band name="22m" author="DG6FL" created="20121225" valid="20130101" ref="SWBANDS01">
+	<region min="13570000" max="13870000" ref="SWBANDS01"/>
+	<comment>Broadcast</comment>
+</band>
+<band name="19m" author="DG6FL" created="20121225" valid="20130101" ref="SWBANDS01">
+	<region min="15100000" max="15800000" ref="SWBANDS01"/>
+	<comment>Broadcast</comment>
+</band>
+<band name="16m" author="DG6FL" created="20121225" valid="20130101" ref="SWBANDS01">
+	<region min="17480000" max="17900000" ref="SWBANDS01"/>
+	<comment>Broadcast</comment>
+</band>
+<band name="15m" author="DG6FL" created="20121225" valid="20130101" ref="SWBANDS01">
+	<region min="18900000" max="19200000" ref="SWBANDS01"/>
+	<comment>Broadcast</comment>
+</band>
+<band name="13m" author="DG6FL" created="20121225" valid="20130101" ref="SWBANDS01">
+	<region min="21450000" max="21850000" ref="SWBANDS01"/>
+	<comment>Broadcast</comment>
+</band>
+<band name="11m" author="DG6FL" created="20121225" valid="20130101" ref="SWBANDS01">
+	<region min="25600000" max="26100000" ref="SWBANDS01"/>
+	<comment>Broadcast</comment>
+</band>
+</bandplan>
