@@ -69,7 +69,7 @@
 </band>
 
 
-<band name="40m" author="DG6FL" created="20131109" valid="20130101" ref="US01">
+<band name="40m" author="DG6FL" created="20121209" valid="20130101" ref="US01">
 	<country name="US"/>
 
 	<region min="7000000" max="7300000" ref="US01">
