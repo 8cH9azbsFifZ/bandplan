@@ -72,7 +72,7 @@
 		<channel name="SSTV" freq="21340000" ref="US02"><mode name="SSTV"/></channel>
 		<channel name="QRB SSB" freq="21385000" ref="US02"><mode name="SSB"/></channel>
 		<channel name="W1AW Voice" freq="21390000" ref="US02"><mode name="AM"/></channel>
-	</channel>
+	</channels>
 </band>
 
 <band name="15m" author="DG6FL" created="20121109" valid="20130101" ref="DE02">
