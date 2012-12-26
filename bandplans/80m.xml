@@ -32,12 +32,6 @@
 				<mode name="CW"/>
 				<comment>CW DX</comment>
 			</region>
-			<region min="3570000" max="3600000" ref="US02">
-				<mode name="RTTY"/>
-			</region>
-			<region min="3585000" max="3600000" ref="US02">
-				<comment>Auto-controlled Data</comment>
-			</region>
 		</region>
 		<region min="3525000" max="3600000" ref="US01">
 			<license name="Amateur_Extra" ref="US01"/>
@@ -49,6 +43,12 @@
 			</mode>
 			<mode name="RTTY"/>
 			<mode name="Digital"/>
+			<region min="3570000" max="3600000" ref="US02">
+				<mode name="RTTY"/>
+			</region>
+			<region min="3585000" max="3600000" ref="US02">
+				<comment>Auto-controlled Data</comment>
+			</region>
 		</region>
 		<region min="3600000" max="3700000" ref="US01">
 			<license name="Amateur_Extra" ref="US01"/>
