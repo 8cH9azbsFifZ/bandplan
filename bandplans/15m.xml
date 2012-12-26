@@ -38,7 +38,14 @@
 				<license name="Novice" power="200" powermeasure="PEP" ref="US01"/>
 			</mode>
 			<mode name="RTTY"/>
-			<mode name="Digital"/>		</region>
+			<mode name="Digital"/>		
+			<region min="21070000" max="21100000" ref="US02">
+				<mode name="RTTY"/>
+				<region min="21090000" max="21100000" ref="US02">
+					<comment>Auto-controlled Data</comment>
+				</region>
+			</region>
+		</region>
 		<region min="21200000" max="21225000" ref="US01">
 			<license name="Amateur_Extra" ref="US01"/>
 			<mode name="All"/>
@@ -56,6 +63,16 @@
 		</region>
 	</region>
 
+	<channels>
+		<channel name="QRP" freq="21060000" ref="US02"><mode name="CW"/></channel>
+		<channel name="W1AW Code" freq="21067500" ref="US02"><mode name="CW"/></channel>
+		<channel name="PSK31" freq="21070500" ref="US02"><mode name="Digital"/></channel>
+		<channel name="W1AW RTTY" freq="21095000" ref="US02"><mode name="RTTY"/></channel>
+		<channel name="Beacons" freq="21150000" ref="US02"></channel>
+		<channel name="SSTV" freq="21340000" ref="US02"><mode name="SSTV"/></channel>
+		<channel name="QRB SSB" freq="21385000" ref="US02"><mode name="SSB"/></channel>
+		<channel name="W1AW Voice" freq="21390000" ref="US02"><mode name="AM"/></channel>
+	</channel>
 </band>
 
 <band name="15m" author="DG6FL" created="20121109" valid="20130101" ref="DE02">
