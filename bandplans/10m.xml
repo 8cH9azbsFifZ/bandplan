@@ -20,7 +20,7 @@
 
 <bandplan version="0.7.12">
 <band name="10m" author="DG6FL" created="20121225" valid="20130101" ref="US01">
-	<country name="DE"/> 
+	<country name="US"/> 
 
 	<region min="28000000" max="29700000" ref="US01">
 		<region min="28000000" max="28300000" ref="US01">
@@ -32,6 +32,15 @@
 			<mode name="CW"/>
 			<mode name="RTTY"/>
 			<mode name="Digital"/>
+			<region min="28200000" max="28300000" ref="US02">
+				<comment>Beacons</comment>
+			</region>
+			<region min="28700000" max="28150000" ref="US02">
+				<mode name="RTTY"/>
+			</region>
+			<region min="28120000" max="28189000" ref="US02">
+				<comment>Auto-controlled Data</comment>
+			</region>
 		</region>
 		<region min="28300000" max="28500000" ref="US01">
 			<license name="Amateur_Extra" ref="US01"/>
@@ -48,8 +57,28 @@
 			<license name="Advanced" ref="US01"/>
 			<license name="General" ref="US01"/>
 			<mode name="All"/>
+			<region min="29000000" max="29200000" ref="US02">
+				<mode name="AM"/>
+			</region>
+			<region min="29300000" max="29510000" ref="US02">
+				<comment>Repeater Inputs</comment>
+			</region>
+			<region min="29610000" max="29700000" ref="US02">
+				<comment>Repeater Outputs</comment>
+			</region>
 		</region>
 	</region>
+
+	<channels>
+		<channel name="QRP CW" freq="28060000" ref="US02"><mode name="CW"/></channel>
+		<channel name="W1AW Code" freq="28067500" ref="US02"><mode name="CW"/></channel>
+		<channel name="W1AW RTTY" freq="28095000" ref="US02"><mode name="RTTY"/></channel>
+		<channel name="PSK31" freq="28120000" ref="US02"><mode name="Digital"/></channel>
+		<channel name="QRP SSB" freq="28385000" ref="US02"><mode name="SSB"/></channel>
+		<channel name="W1AW Voice" freq="28590000" ref="US02"><mode name="SSB"/></channel>
+		<channel name="SSTV" freq="28680000" ref="US02"><mode name="SSTV"/></channel>
+		<channel name="FM Simples" freq="29600000" ref="US02"><mode name="FM"/></channel>
+	</channels>
 </band>
 
 <band name="10m" author="DG6FL" created="20121109" valid="20130101" ref="DE02">

@@ -29,7 +29,18 @@
 		<mode name="CW"/>
 		<mode name="RTTY"/>
 		<mode name="Digital"/>
+		<region min="10130000" max="10140000" bandwidth="800" ref="US02">
+			<mode name="RTTY"/>
+		</region>
+		<region min="10140000" max="10150000" bandwidth="800" ref="US02">
+			<comment>Auto-controlled Data</comment>
+		</region>
 	</region>
+	
+	<channels>
+		<channel name="QRP" freq="10106000" ref="US02"><mode name="CW"/></channel>
+		<channel name="PSK31" freq="10142000" ref="US02"><mode name="Digital"/></channel>
+	</channels>
 </band>
 
 <band name="30m" author="DG6FL" created="20121109" valid="20130101" ref="DE02">
