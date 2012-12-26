@@ -78,6 +78,10 @@
 			<mode name="CW"/>
 			<mode name="RTTY"/>
 			<mode name="Digital"/>
+			<region min="7000000" max="7025000" bandwidth="500" ref="US02">
+				<mode name="CW"/>
+				<comment>CW DX</comment>
+			</region>
 		</region>
 
 		<region min="7025000" max="7125000" bandwidth="1000" ref="US01">
@@ -90,6 +94,12 @@
 			</mode>
 			<mode name="RTTY"/>
 			<mode name="Digital"/>
+			<region min="7080000" max="7105000" bandwidth="1000" ref="US02">
+				<mode name="RTTY"/>
+			</region>
+			<region min="7100000" max="7105000" bandwidth="1000" ref="US02">
+				<comment>Auto-controlled Data</comment>
+			</region>
 		</region>
 
 		<region min="7125000" max="7175000" bandwidth="2700" ref="US01">
@@ -106,6 +116,15 @@
 		</region>
 	</region>
 
+	<channels>
+		<channel name="PSK31" freq="7035000" ref="US02"><mode name="Digital"/></channel>
+		<channel name="QRP CW" freq="7040000" ref="US02"><mode name="CW"/></channel>
+		<channel name="W1AW Code" freq="7047500" ref="US02"><mode name="CW"/></channel>
+		<channel name="SSTV" freq="7171000" ref="US02"><mode name="SSTV"/></channel>
+		<channel name="QRP SSB" freq="7285000" ref="US02"><mode name="SSB"/></channel>
+		<channel name="AM Calling" freq="7290000" ref="US02"><mode name="AM"/></channel>
+		<channel name="W1AW Voice" freq="7290000" ref="US02"><mode name="AM"/></channel>
+	</channels>
 </band>
 
 </bandplan>
