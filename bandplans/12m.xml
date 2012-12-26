@@ -20,7 +20,7 @@
 
 <bandplan version="0.7.12">
 <band name="12m" author="DG6FL" created="20121225" valid="20130101" ref="US01">
-	<country name="DE"/> 
+	<country name="US"/> 
 
 	<region min="24890000" max="24990000" bandwidth="2700" ref="US01">
 		<region min="24890000" max="24930000" bandwidth="2700" ref="US01">
@@ -30,6 +30,12 @@
 			<mode name="CW"/>
 			<mode name="RTTY"/>
 			<mode name="Digital"/>
+			<region min="24920000" max="24925000" ref="US02">
+				<mode name="RTTY"/>
+			</region>
+			<region min="24925000" max="24930000" ref="US02">
+				<comment>Auto-controlled Data</comment>
+			</region>
 		</region>
 		<region min="24930000" max="24990000" bandwidth="2700" ref="US01">
 			<license name="Amateur_Extra" ref="US01"/>
@@ -38,6 +44,11 @@
 			<mode name="All"/>
 		</region>
 	</region>
+
+	<channels>
+		<channel name="PSK31" freq="24920000" ref="US02"><mode name="Digital"/></channel>
+		<channel name="Beacons" freq="24930000" ref="US02"></channel>
+	</channels>
 
 </band>
 
@@ -57,8 +68,8 @@
 	</region>
 	
 	<channels>
-		<channel name="QRP" freq="24906000" ref="DE01"><mode name="CW"/></channel>
-		<channel name="QRP" freq="24950000" ref="DE01"><mode name="SSB"/></channel>
+		<channel name="CW QRP" freq="24906000" ref="DE01"><mode name="CW"/></channel>
+		<channel name="SSB QRP" freq="24950000" ref="DE01"><mode name="SSB"/></channel>
 		<channel name="WSPR" freq="24924600" ref="WS01"><mode name="WSPR"/></channel>
 	</channels>
 </band>
