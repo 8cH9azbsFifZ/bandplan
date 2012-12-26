@@ -54,6 +54,18 @@
 			<mode name="All"/>	
 		</region>
 	</region>
+
+	<channels>
+		<channel name="W1AW Code" freq="14047500" ref="US02"><mode name="CW"/></channel>
+		<channel name="QRP CW" freq="14060000" ref="US02"><mode name="CW"/></channel>
+		<channel name="PSK31" freq="14070000" ref="US02"><mode name="Digital"/></channel>
+		<channel name="W1AW RTTY" freq="14095000" ref="US02"><mode name="RTTY"/></channel>
+		<channel name="Beacons" freq="14010000" ref="US02"><mode name="Digital"/></channel>
+		<channel name="SSTV" freq="14230000" ref="US02"><mode name="SSTV"/></channel>
+		<channel name="QRP SSB" freq="14285000" ref="US02"><mode name="SSB"/></channel>
+		<channel name="AM Calling" freq="14286000" ref="US02"><mode name="AM"/></channel>
+		<channel name="W1AW Voice" freq="14290000" ref="US02"><mode name="AM"/></channel>
+	</channels>
 </band>
 	
 
