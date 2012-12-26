@@ -31,7 +31,13 @@
 			<mode name="CW"/>
 			<mode name="RTTY"/>
 			<mode name="Digital"/>
-	</region>		
+			<region min="18100000" max="18105000" bandwidth="2700" ref="US02">	
+				<mode name="RTTY"/>
+			</region>
+			<region min="18105000" max="18105000" bandwidth="2700" ref="US02">	
+				<comment>Auto-controlled Data</comment>
+			</region>
+		</region>		
 		<region min="18110000" max="18168000" bandwidth="2700" ref="US01">	
 			<license name="Amateur_Extra" ref="US01"/>
 			<license name="Advanced" ref="US01"/>
@@ -40,6 +46,13 @@
 		</region>		
 	</region>
 
+	<channels>
+		<channel name="W1AW Code" freq="18097500" ref="US02"><mode name="CW"/></channel>
+		<channel name="PSK31" freq="18100000" ref="US02"><mode name="Digital"/></channel>
+		<channel name="W1AW RTTY" freq="18102500" ref="US02"><mode name="RTTY"/></channel>
+		<channel name="Beacons" freq="18100000" ref="US02"></channel>
+		<channel name="W1AW Voice" freq="18160000" ref="US02"><mode name="AM"/></channel>
+	</channels>
 </band>
 
 <band name="17m" author="DG6FL" created="20121109" valid="20130101" ref="DE02">
