@@ -37,6 +37,15 @@
 			<mode name="CW"/>
 			<mode name="RTTY"/>
 			<mode name="Digital"/>
+			<region min="14070000" max="14095000" ref="US02">
+				<mode name="RTTY"/>
+			</region>
+			<region min="14095000" max="14099500" ref="US02">
+				<comment>Auto-controlled Data</comment>
+			</region>
+			<region min="14100500" max="14112000" ref="US02">
+				<comment>Auto-controlled Data</comment>
+			</region>
 		</region>
 		<region min="14150000" max="14175000" ref="US01">
 			<license name="Amateur_Extra" ref="US01"/>
