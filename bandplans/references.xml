@@ -164,6 +164,9 @@
 			/>
 		<ref id="SWBANDS01" name="Shortwave Bands"
 			href="http://en.wikipedia.org/wiki/Shortwave_bands"/>
+		<ref id="REPEATERDARC" name="DARC Repeater List"
+			href="http://www.darc.de/echolink-bin/relais.pl"
+			/>
 	</references>
 
 	<authors>
