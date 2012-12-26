@@ -42,7 +42,11 @@
 					For further information visit 
 				</xsl:text>
 				<a href="http://xmlbandplan.org">xmlbandplan.org</a>
-				<xsl:text>.</xsl:text>
+				<xsl:text>. 
+					Please keep in mind: this is not an official bandplan. Nevertheless references are included
+					for all entries - typos or sources of wrong information can be traced easily.
+					Feel free to contribute :)
+				</xsl:text>
 			</p>
         	<xsl:choose>
           <!-- Check version number  - abort? -->
