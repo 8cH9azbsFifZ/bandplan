@@ -39,6 +39,7 @@
 <source file="lpd.xml"/>
 <source file="pmr.xml"/>
 <source file="radio.xml"/>
+<source file="repeaters.xml"/>
 <source file="licenses.xml"/>
 <source file="references.xml"/>
 
