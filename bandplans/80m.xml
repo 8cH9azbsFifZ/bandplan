@@ -19,6 +19,68 @@
 <!DOCTYPE note SYSTEM "bandplan.dtd">
 
 <bandplan version="0.7.12"> 
+
+<band name="80m" author="DG6FL" created="20121225" valid="20130101" ref="US01">
+	<country name="US"/> 
+	<region min="3500000" max="4000000" bandwidth="2700" ref="US01">
+		<region min="3500000" max="3525000" ref="US01">
+			<license name="Amateur_Extra" ref="US01"/>
+			<mode name="CW"/>
+			<mode name="RTTY"/>
+			<mode name="Digital"/>
+			<region min="3500000" max="3510000" ref="US02">
+				<mode name="CW"/>
+				<comment>CW DX</comment>
+			</region>
+		</region>
+		<region min="3525000" max="3600000" ref="US01">
+			<license name="Amateur_Extra" ref="US01"/>
+			<license name="Advanced" ref="US01"/>
+			<license name="General" ref="US01"/>
+			<mode name="CW">
+				<license name="Technician" power="200" powermeasure="PEP" ref="US01"/>
+				<license name="Novice" power="200" powermeasure="PEP" ref="US01"/>
+			</mode>
+			<mode name="RTTY"/>
+			<mode name="Digital"/>
+			<region min="3570000" max="3600000" ref="US02">
+				<mode name="RTTY"/>
+				<region min="3585000" max="3600000" ref="US02">
+					<comment>Auto-controlled Data</comment>
+				</region>
+			</region>
+		</region>
+		<region min="3600000" max="3700000" ref="US01">
+			<license name="Amateur_Extra" ref="US01"/>
+			<mode name="All"/>
+		</region>
+		<region min="3700000" max="3800000" ref="US01">
+			<license name="Amateur_Extra" ref="US01"/>
+			<license name="Advanced" ref="US01"/>
+			<mode name="All"/>
+		</region>
+		<region min="3800000" max="4000000" ref="US01">
+			<license name="Amateur_Extra" ref="US01"/>
+			<license name="Advanced" ref="US01"/>
+			<license name="General" ref="US01"/>
+			<mode name="All"/>
+		</region>
+	</region>
+
+	<channels>
+		<channel freq="3555000" name="QRS CW" ref="US02"><mode name="CW"/></channel>
+		<channel freq="3560000" name="QRP CW" ref="US02"><mode name="CW"/></channel>
+		<channel freq="3580000" name="PSK31" ref="US02"><mode name="Digital"/></channel>
+		<channel freq="3581500" name="W1AW Code" ref="US02"><mode name="CW"/></channel>
+		<channel freq="3590000" name="RTTY DX" ref="US02"><mode name="RTTY"/></channel>
+		<channel freq="3597500" name="W1AW RTTY" ref="US02"><mode name="RTTY"/></channel>
+		<channel freq="3845000" name="SSTV" ref="US02"><mode name="SSTV"/></channel>
+		<channel freq="3885000" name="AM Calling" ref="US02"><mode name="AM"/></channel>
+		<channel freq="3985000" name="QRP SSB Calling" ref="US02"><mode name="SSB"/></channel>
+		<channel freq="3990000" name="W1AW Voice" ref="US02"><mode name="SSB"/></channel>
+	</channels>
+</band>
+
 <band name="80m" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
 	<country name="DE"/> 
 

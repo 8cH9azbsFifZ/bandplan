@@ -25,7 +25,7 @@
 	<!ATTLIST author name CDATA #REQUIRED>
 	<!ATTLIST author email CDATA #REQUIRED>
 
-<!ELEMENT band (country,region*,channels*)>
+<!ELEMENT band (country*,region*,channels*,comment*)>
 	<!ATTLIST band name CDATA #REQUIRED>
 	<!ATTLIST band ref CDATA #REQUIRED>
 	<!ATTLIST band author CDATA #REQUIRED>
@@ -36,7 +36,7 @@
 <!ELEMENT channels (channel*,repeater*)>
 
 <!ELEMENT country (license*,country*)>
-	<!ATTLIST country name (AL|AT|BE|BA|BG|HR|CY|CZ|DK|FO|GL|EE|FI|AX|GP|GY|MQ|BL|PM|MF|YT|FR|NC|WF|DE|GR|HU|IS|IT|LV|LI|LT|LU|MK|MC|ME|NL|NO|SJ|PL|PT|RO|RU|RS|SK|SI|ES|SE|CH|TR|UA|IM|IE|JE|GG|GB|US|IARU1|IARU2|IARU3) #REQUIRED>
+	<!ATTLIST country name (AL|AT|BE|BA|BG|HR|CY|CZ|DK|FO|GL|EE|FI|AX|GP|GY|MQ|BL|PM|MF|YT|FR|NC|WF|DE|GR|HU|IS|IT|LV|LI|LT|LU|MK|MC|ME|NL|NO|SJ|PL|PT|RO|RU|RS|SK|SI|ES|SE|CH|TR|UA|IM|ZA|IE|JE|GG|GB|US|IARU1|IARU2|IARU3) #REQUIRED>
 	<!ATTLIST country fullname CDATA #IMPLIED>
 	<!ATTLIST country ref CDATA #IMPLIED>
 	<!ATTLIST country prefix CDATA #IMPLIED>

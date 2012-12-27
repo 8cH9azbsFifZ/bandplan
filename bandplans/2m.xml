@@ -20,7 +20,28 @@
 
 <bandplan version="0.7.12">
 
-<band name="2m" author="DG6FL" created="20131109" valid="20130101" ref="DE02">
+<band name="2m" author="DG6FL" created="20121209" valid="25130101" ref="US01">
+	<country name="US"/> 
+
+	<region min="144000000" max="148000000" ref="US01">
+		<region min="144000000" max="144100000" ref="US01">
+			<license name="Amateur_Extra" ref="US01"/>
+			<license name="Advanced" ref="US01"/>
+			<license name="General" ref="US01"/>
+			<license name="Technician" ref="US01"/>
+			<mode name="CW"/>
+		</region>
+		<region min="144100000" max="148000000" ref="US01">
+			<license name="Amateur_Extra" ref="US01"/>
+			<license name="Advanced" ref="US01"/>
+			<license name="General" ref="US01"/>
+			<license name="Technician" ref="US01"/>
+			<mode name="All"/>
+		</region>
+	</region>
+</band>
+
+<band name="2m" author="DG6FL" created="20121109" valid="20130101" ref="DE02">
 	<country name="DE"/> 
 
 	<region min="144000000" max="146000000" bandwidth="40000" ref="DE02">

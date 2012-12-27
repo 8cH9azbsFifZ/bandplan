@@ -48,5 +48,9 @@
 		<channel name="7" freq="446081250" ref="DEPMR01"><mode name="FM"/></channel>
 		<channel name="8" freq="446093750" ref="DEPMR01"><mode name="FM"/></channel>
 	</channels>
+	<comment>
+		This is a public band.
+	</comment>
+
 </band>
 </bandplan>

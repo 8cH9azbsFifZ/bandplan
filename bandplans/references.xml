@@ -81,11 +81,68 @@
 			localfile="SE01.pdf"
 			md5="bad2dadc5480b5a612f00920f9f5cbfe"/>
 
+		<!-- Country FI -->
+		<ref id="FI01" name="Regulation: GOVERNING AMATEUR RADIO STATIONS AND THEIR USE"
+			href="http://www.ficora.fi/attachments/5nwmKykzw/6H_2009_M_englanniksi_Radioamatoorimaarays.pdf"
+			localfile="FI01.pdf"
+			md5="a1903c2b4120c570bd5df2b378305aa7"/>
+
+		<!-- Country UA -->
+		<ref id="UA01" name=""
+			href="http://uarl.org.ua/load/vitjag_z_dodotku_do_reglamentu_quot_tablicja_dozvolenikh_smug_radiochastot_maksi malnikh_rivniv_vikhidnoji_potuzhnosti_quot/2-1-0-233"
+			localfile=""
+			md5=""/>
+
+		<!-- Country RO -->
+		<ref id="RO01" name=""
+			href="http://www.ancom.org.ro/uploads/links_files/FORMA_CONSOLIDATA_RADIOAMATOR_FINAL.pdf"
+			localfile="RO01.pdf"
+			md5="da74707d8ca442a5fd46f2c49a2f600d"/>
+
+		<!-- Country CH -->
+		<ref id="CH01" name=""
+			href="http://www.bakom.admin.ch/themen/frequenzen/00689/01560/index.html?lang=de"
+			localfile=""
+			md5=""/>
+
+		<!-- Country SK -->
+		<ref id="SK01" name=""
+			href="http://www.hamradio.sk/zacinajucim/pov_podm.htm"
+			localfile=""
+			md5=""/>
+
+		<!-- Country ZA -->
+		<ref id="ZA01" name=""
+			href="http://www.zs6mrk.org/RAE%20Handleiding/RadioRegs_2005.pdf"
+			localfile="ZA01.pdf"
+			md5="11e0aed1ea46002c2c85afea59d8131b"/>
+
+		<!-- Country ES -->
+		<ref id="ES01" name=""
+			href="http://www.ure.es/legislacion/4-reglamentacion/2-reglamento-radioaficionados.html"
+			localfile=""
+			md5=""/>	
+		<ref id="ES02" name=""
+			href="http://www.minetur.gob.es/telecomunicaciones/Espectro/radioaficionados/Legislacin/OrdenITC4096_2006.pdf"
+			localfile="ES02.pdf"
+			md5="9c0261d3aec9ae1283a15b040797fe78"/>
+
+		<!-- Country GB -->
+		<ref id="GB01" name="Amateur Radio License"
+			href="http://licensing.ofcom.org.uk/binaries/spectrum/amateur-radio/guidance-for-licensees/samplelicence07.pdf"
+			localfile="GB01.pdf"
+			md5="ea8f5a28ea173286e06f9ae0807e8eef"/>
+
 		<!-- Country: US -->
 		<ref id="US01" name="ARRL" 
 			href="http://www.arrl.org/files/file/Hambands_color.pdf" 
 			localfile="US01.pdf"
 			md5="a254f68eeae6ebb3f24c3e5b61f26dff"/>
+
+		<ref id="US02" name="HamLog"
+			href=""
+			localfile=""
+			md5=""/>
 		<!--<ref id="US02" name="ARRL" href="http://www.arrl.org/frequency-allocations" md5=""/>-->
 
 		<!-- CEPT -->
@@ -105,6 +162,8 @@
 		<ref id="REPEATER01" name="DARC Repeater List" 
 			href="http://www.darc.de/echolink-bin/relais.pl" 
 			/>
+		<ref id="SWBANDS01" name="Shortwave Bands"
+			href="http://en.wikipedia.org/wiki/Shortwave_bands"/>
 	</references>
 
 	<authors>
