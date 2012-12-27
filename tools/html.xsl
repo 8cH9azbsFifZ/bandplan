@@ -70,6 +70,7 @@
     </html>
   </xsl:template>
   <!-- =================================================== -->
+  <!-- External Files -->
   <xsl:template match="source">
     <xsl:apply-templates select="document(@file)/bandplan"/>
   </xsl:template>
