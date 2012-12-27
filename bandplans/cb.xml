@@ -119,6 +119,11 @@
 		<channel name="79" freq="26945000" ref="DECB01"><mode name="FM"/></channel>
 		<channel name="80" freq="26955000" ref="DECB01"><mode name="FM"/></channel>
 	</channels>
+
+	<comment>
+		This is a public band.
+	</comment>
+
 </band>
 
 </bandplan>
