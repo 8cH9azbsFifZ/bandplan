@@ -33,9 +33,9 @@
 			<mode name="Digital"/>
 			<region min="18100000" max="18105000" bandwidth="2700" ref="US02">	
 				<mode name="RTTY"/>
-			</region>
-			<region min="18105000" max="18105000" bandwidth="2700" ref="US02">	
-				<comment>Auto-controlled Data</comment>
+				<region min="18105000" max="18105000" bandwidth="2700" ref="US02">	
+					<comment>Auto-controlled Data</comment>
+				</region>
 			</region>
 		</region>		
 		<region min="18110000" max="18168000" bandwidth="2700" ref="US01">	

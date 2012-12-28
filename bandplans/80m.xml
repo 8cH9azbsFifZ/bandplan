@@ -45,9 +45,9 @@
 			<mode name="Digital"/>
 			<region min="3570000" max="3600000" ref="US02">
 				<mode name="RTTY"/>
-			</region>
-			<region min="3585000" max="3600000" ref="US02">
-				<comment>Auto-controlled Data</comment>
+				<region min="3585000" max="3600000" ref="US02">
+					<comment>Auto-controlled Data</comment>
+				</region>
 			</region>
 		</region>
 		<region min="3600000" max="3700000" ref="US01">

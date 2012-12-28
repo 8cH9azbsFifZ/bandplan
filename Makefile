@@ -8,8 +8,13 @@ check_references:
 
 html: html/bandplan.html 
 
+html_de: html/bandplan_de.html 
+
 html/bandplan.html: $(DEP) tools/html.xsl
 	xsltproc tools/html.xsl bandplans/bandplan.xml > html/bandplan.html 
+
+html/bandplan_de.html: $(DEP) tools/html_country.xsl
+	xsltproc tools/html_country.xsl bandplans/bandplan.xml > html/bandplan_de.html 
 
 arduino:
 	echo "Obsolete - subject to removal"
@@ -20,5 +25,5 @@ test:
 	xmltest
 	check_references
 
-all: xmltest html 
+all: xmltest html html_de
 

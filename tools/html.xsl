@@ -70,6 +70,7 @@
     </html>
   </xsl:template>
   <!-- =================================================== -->
+  <!-- External Files -->
   <xsl:template match="source">
     <xsl:apply-templates select="document(@file)/bandplan"/>
   </xsl:template>
@@ -95,6 +96,9 @@
       <xsl:text> Band for Country </xsl:text>
       <xsl:value-of select="country/@name"/>
     </h1>
+	 <p>
+      <xsl:value-of select="comment"/>
+	 </p>
     <xsl:apply-templates select="source"/>
     <!-- Regions & Channels -->
     <table>
