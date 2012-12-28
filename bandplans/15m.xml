@@ -20,7 +20,7 @@
 
 <bandplan version="0.7.12">
 <band name="15m" author="DG6FL" created="20121225" valid="20130101" ref="US01">
-	<country name="DE"/> 
+	<country name="US"/> 
 	
 	<region min="21000000" max="21450000" ref="US01">
 		<region min="21000000" max="21025000" ref="US01">
