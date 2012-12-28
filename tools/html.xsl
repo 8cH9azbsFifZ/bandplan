@@ -15,9 +15,20 @@
     You should have received a copy of the GNU General Public License
     along with Xmlbandplan.  If not, see <http://www.gnu.org/licenses/>.
 -->
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:exsl="http://exslt.org/common" extension-element-prefixes="exsl">
   <!-- =================================================== -->
   <xsl:variable name="acceptedversion">0.7.12</xsl:variable>
+  <!-- =================================================== -->
+  <xsl:variable name="navigation">
+    <xsl:for-each select="document(/bandplan/source/@file)/bandplan/band">
+      <td>
+        <a href="#{country/@name}{@name}">
+          <xsl:value-of select="country/@name"/>
+          <xsl:value-of select="@name"/>
+        </a>
+      </td>
+    </xsl:for-each>
+  </xsl:variable>
   <!-- =================================================== -->
   <!-- Header & Footer -->
   <xsl:template match="/">
@@ -33,22 +44,23 @@
         </title>
       </head>
       <body>
-			<h1>XML Bandplan</h1>
-			<p>
-				<xsl:text>
+        <xsl:call-template name="navigation"/>
+        <h1>XML Bandplan</h1>
+        <p>
+          <xsl:text>
 					This document contains bandplan information for amateur radio use.
 					It has been created automatically by xmlbandplan. But xmlbandplan is more than
 					just a HTML file containing bandplan information.
 					For further information visit 
 				</xsl:text>
-				<a href="http://xmlbandplan.org">xmlbandplan.org</a>
-				<xsl:text>. 
+          <a href="http://xmlbandplan.org">xmlbandplan.org</a>
+          <xsl:text>. 
 					Please keep in mind: this is not an official bandplan. Nevertheless references are included
 					for all entries - typos or sources of wrong information can be traced easily.
 					Feel free to contribute :)
 				</xsl:text>
-			</p>
-        	<xsl:choose>
+        </p>
+        <xsl:choose>
           <!-- Check version number  - abort? -->
           <xsl:when test="@version = $acceptedversion">
             <xsl:apply-templates/>
@@ -56,10 +68,10 @@
               <br/>
               <br/>
               <br/>
-				  <xsl:text>(C)opyright Gerolf Ziegenhain (DG6FL) et al.</xsl:text>
-				  <xsl:text> - Document Version </xsl:text>
-				  <xsl:value-of select="@version"/>
-				  <xsl:text> - &lt;XML&gt;Bandplan is released under GPLv3.</xsl:text>
+              <xsl:text>(C)opyright Gerolf Ziegenhain (DG6FL) et al.</xsl:text>
+              <xsl:text> - Document Version </xsl:text>
+              <xsl:value-of select="@version"/>
+              <xsl:text> - &lt;XML&gt;Bandplan is released under GPLv3.</xsl:text>
             </small>
           </xsl:when>
           <xsl:otherwise>
@@ -89,15 +101,23 @@
   <!-- =================================================== -->
   <!-- Each Band -->
   <xsl:template match="band">
-	  <a name="{@name}"/>
+    <br/>
+    <a name="{country/@name}{@name}"/>
+    <!--     <xsl:copy-of select="$navigation"/> -->
+    <xsl:call-template name="navigation">
+      <xsl:with-param name="name">
+        <xsl:value-of select="country/@name"/>
+        <xsl:value-of select="@name"/>
+      </xsl:with-param>
+    </xsl:call-template>
     <h1>
       <xsl:value-of select="@name"/>
       <xsl:text> Band for Country </xsl:text>
       <xsl:value-of select="country/@name"/>
     </h1>
-	 <p>
+    <p>
       <xsl:value-of select="comment"/>
-	 </p>
+    </p>
     <!-- Regions & Channels -->
     <table>
       <tr>
@@ -186,13 +206,14 @@
         <xsl:apply-templates select="comment"/>
       </td>
     </tr>
+    <!-- now handle all channels which do not belong to any subregion -->
+    <xsl:apply-templates select="ancestor::band/channels/channel[@freq &gt;= current()/@min and @freq &lt;= current()/@max and not(@freq &gt;= current()//region/@min and @freq &lt;= current()//region/@max)]">
+      <xsl:sort select="@freq"/>
+      <xsl:with-param name="level" select="$level + 1"/>
+    </xsl:apply-templates>
     <!-- Recursive handling of subregions -->
     <xsl:apply-templates select="region">
       <xsl:sort select="@min"/>
-      <xsl:with-param name="level" select="$level + 1"/>
-    </xsl:apply-templates>
-    <xsl:apply-templates select="ancestor::band/channels/channel[@freq &gt;= current()/@min and @freq &lt;= current()/@max and not(@freq &gt;= current()//region/@min and @freq &lt;= current()//region/@max)]">
-      <xsl:sort select="@freq"/>
       <xsl:with-param name="level" select="$level + 1"/>
     </xsl:apply-templates>
   </xsl:template>
@@ -371,6 +392,27 @@
         <a href="{@href}">Link</a>
       </td>
     </tr>
+  </xsl:template>
+  <!-- =================================================== -->
+  <xsl:template name="navigation">
+    <xsl:param name="name"/>
+    <table>
+      <tr>
+        <xsl:for-each select="exsl:node-set($navigation)/td">
+          <td>
+            <xsl:choose>
+              <xsl:when test="a/@href = concat(&apos;#&apos;,$name)">
+                <xsl:attribute name="style">background-color:#ffc;</xsl:attribute>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:attribute name="style">background-color:#ccc;</xsl:attribute>
+              </xsl:otherwise>
+            </xsl:choose>
+            <xsl:copy-of select="a"/>
+          </td>
+        </xsl:for-each>
+      </tr>
+    </table>
   </xsl:template>
   <!-- =================================================== -->
 </xsl:stylesheet>
