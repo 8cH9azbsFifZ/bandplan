@@ -23,15 +23,15 @@
 <band name="6m" author="DG6FL" created="20121225" valid="20130101" ref="US01">
 	<country name="US"/> 
 
-	<region min="5000000" max="5100000" ref="US01">
-		<region min="5000000" max="5010000" ref="US01">
+	<region min="50000000" max="51000000" ref="US01">
+		<region min="50000000" max="50100000" ref="US01">
 			<license name="Amateur_Extra" ref="US01"/>
 			<license name="Advanced" ref="US01"/>
 			<license name="General" ref="US01"/>
 			<license name="Technician" ref="US01"/>
 			<mode name="CW"/>
 		</region>
-		<region min="5010000" max="5100000" ref="US01">
+		<region min="50100000" max="51000000" ref="US01">
 			<license name="Amateur_Extra" ref="US01"/>
 			<license name="Advanced" ref="US01"/>
 			<license name="General" ref="US01"/>
@@ -44,20 +44,20 @@
 <band name="6m" author="DG6FL" created="20121109" valid="20130101" ref="DE02">
 	<country name="DE"/> 
 
-	<region min="5000000" max="5100000" ref="DE02">
-		<region min="5000000" max="5008000" ref="DE02"><comment>Beacon, no sending</comment></region>
+	<region min="50000000" max="51000000" ref="DE02">
+		<region min="50000000" max="50080000" ref="DE02"><comment>Beacon, no sending</comment></region>
 
-		<region min="5008000" max="5100000" ref="DE02">
+		<region min="50080000" max="51000000" ref="DE02">
 			<license name="Klasse_A" power="25" powermeasure="ERP" ref="DE02"/>
 
-			<region min="5008000" max="5010000" bandwidth="500" ref="DE07"><mode name="CW"/></region>
-			<region min="5010000" max="5050000" bandwidth="2700" ref="DE07"><mode name="CW"/><mode name="SSB"/></region>
-			<region min="5050000" max="5100000" bandwidth="2700" ref="DE07"><comment>Digimode, no allowed in DE</comment></region>
+			<region min="50080000" max="50100000" bandwidth="500" ref="DE07"><mode name="CW"/></region>
+			<region min="50100000" max="50500000" bandwidth="2700" ref="DE07"><mode name="CW"/><mode name="SSB"/></region>
+			<region min="50500000" max="51000000" bandwidth="2700" ref="DE07"><comment>Digimode, no allowed in DE</comment></region>
 		</region>
 	</region>
 
 	<channels>
-		<channel name="WSPR" freq="5029300" ref="WSPR01"><mode name="WSPR"/></channel>
+		<channel name="WSPR" freq="50293000" ref="WSPR01"><mode name="WSPR"/></channel>
 	</channels>
 
 </band>
