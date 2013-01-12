@@ -35,13 +35,17 @@
 
 <!ELEMENT channels (channel*,repeater*)>
 
-<!ELEMENT country (license*,country*)>
+<!ELEMENT country (iaru*,license*,country*)>
 	<!ATTLIST country name (AL|AT|BE|BA|BG|HR|CY|CZ|DK|FO|GL|EE|FI|AX|GP|GY|MQ|BL|PM|MF|YT|FR|NC|WF|DE|GR|HU|IS|IT|LV|LI|LT|LU|MK|MC|ME|NL|NO|SJ|PL|PT|RO|RU|RS|SK|SI|ES|SE|CH|TR|UA|IM|ZA|IE|JE|GG|GB|US|IARU1|IARU2|IARU3) #REQUIRED>
 	<!ATTLIST country fullname CDATA #IMPLIED>
 	<!ATTLIST country ref CDATA #IMPLIED>
 	<!ATTLIST country prefix CDATA #IMPLIED>
 	<!ATTLIST country cept CDATA #IMPLIED>
 	<!-- Follow the two letter ISO 3166 code (http://en.wikipedia.org/wiki/ISO_3166-1) -->
+
+<!ELEMENT iaru (#PCDATA)>
+	<!ATTLIST iaru region CDATA #REQUIRED>
+	<!ATTLIST iaru ref CDATA #REQUIRED>
 
 <!ELEMENT countries (country+)>
 

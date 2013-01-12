@@ -28,38 +28,47 @@
 
 <countries>
 	<country name="AL" fullname="Albania">
+		<iaru region="1" ref="IARU1"/>
 		<license name="CEPT" cept="CEPT" prefix="ZA" ref="TR6101"/>
 	</country>
 
 	<country name="AT" fullname="Austria">
+		<iaru region="1" ref="IARU1"/>
 		<license name="1" cept="CEPT" prefix="OE" ref="TR6101"/>
 	</country>
 
 	<country name="BE" fullname="Belgium">
+		<iaru region="1" ref="IARU1"/>
 		<license name="A" cept="CEPT" prefix="ON" ref="TR6101"/>
 	</country>
 
 	<country name="BA" fullname="Bosnia and Herzegovina">
+		<iaru region="1" ref="IARU1"/>
 		<license name="CEPT 1" cept="CEPT" prefix="E7" ref="TR6101"/>
 	</country>
 
 	<country name="BG" fullname="Bulgaria">
+		<iaru region="1" ref="IARU1"/>
 		<license name="Class 1" cept="CEPT" prefix="LZ" ref="TR6101"/>
 	</country>
 
 	<country name="HR" fullname="Croatia">
+		<iaru region="1" ref="IARU1"/>
 		<license name="CEPT" cept="CEPT" prefix="9A" ref="TR6101"/>
 	</country>
 
 	<country name="CY" fullname="Cyprus">
+		<iaru region="1" ref="IARU1"/>
 		<license name="Radioamateur Authorisation" cept="CEPT" prefix="5B" ref="TR6101"/>
 	</country>
 
 	<country name="CZ" fullname="Czech Republic">
+		<iaru region="1" ref="IARU1"/>
 		<license name="A" cept="CEPT" prefix="OK" ref="TR6101"/>
 	</country>
 
 	<country name="DK" fullname="Denmark">
+		<iaru region="1" ref="IARU1"/>
 		<license name="A" cept="CEPT" prefix="OZ" ref="TR6101"/>
 		<country name="FO" fullname="Faroe Islands">
 			<license name="A" cept="CEPT" prefix="OY" ref="TR6101"/>
@@ -70,11 +79,13 @@
 	</country>
 
 	<country name="EE" fullname="Estonia">
+		<iaru region="1" ref="IARU1"/>
 		<license name="A" cept="CEPT" prefix="ES" ref="TR6101"/>
 		<license name="B" cept="CEPT" prefix="ES" ref="TR6101"/>
 	</country>
 
 	<country name="FI" fullname="Finnland">
+		<iaru region="1" ref="IARU1"/>
 		<license name="L" cept="CEPT" prefix="OH" ref="TR6101"/>
 		<license name="P" cept="CEPT" prefix="OH" ref="TR6101"/>
 		<license name="T" cept="CEPT" prefix="OH" ref="TR6101"/>
@@ -88,6 +99,7 @@
 	</country>
 
 	<country name="FR" fullname="France">
+		<iaru region="1" ref="IARU1"/>
 		<license name="1" cept="CEPT" prefix="F" ref="TR6101"/>
 		<license name="2" cept="CEPT" prefix="F" ref="TR6101"/>
 		<country name="FR" fullname="Corsica">
@@ -145,6 +157,7 @@
 	</country>
 
 	<country name="DE" fullname="Germany">
+		<iaru region="1" ref="IARU1"/>
 		<license name="Klasse_A" cept="CEPT" prefix="DL" ref="TR6101"/>
 		<license name="Klasse_E" cept="CEPT-Novice" prefix="DO" ref="REC0506"/>
 		<license name="PMR" prefix="" ref="DEPMR01"/>
@@ -152,65 +165,79 @@
 	</country>
 
 	<country name="GR" fullname="Greece">
+		<iaru region="1" ref="IARU1"/>
 		<license name="1" cept="CEPT" prefix="SV" ref="TR6101"/>
 	</country>
 
 	<country name="HU" fullname="Hungary">
+		<iaru region="1" ref="IARU1"/>
 		<license name="CEPT" cept="CEPT" prefix="HA" ref="TR6101"/>
 		<license name="CEPT" cept="CEPT" prefix="HG" ref="TR6101"/>
 	</country>
 
 	<country name="IS" fullname="Iceland">
+		<iaru region="1" ref="IARU1"/>
 		<license name="G" cept="CEPT" prefix="TF" ref="TR6101"/>
 	</country>
 
 	<country name="IE" fullname="Ireland">
+		<iaru region="1" ref="IARU1"/>
 		<license name="CEPT 1" cept="CEPT" prefix="EI" ref="TR6101"/>
 		<license name="CEPT 2" cept="CEPT" prefix="EJ" ref="TR6101"/>
 	</country>
 
 	<country name="IT" fullname="Italy">
+		<iaru region="1" ref="IARU1"/>
 		<license name="General" cept="CEPT" prefix="I" ref="TR6101"/>
 	</country>
 
 	<country name="LV" fullname="Latvia">
+		<iaru region="1" ref="IARU1"/>
 		<license name="1" cept="CEPT" prefix="YL" ref="TR6101"/>
 		<license name="2" cept="CEPT" prefix="YL" ref="TR6101"/>
 	</country>
 
 	<country name="LI" fullname="Liechtenstein">
+		<iaru region="1" ref="IARU1"/>
 		<license name="CEPT" cept="CEPT" prefix="HB0" ref="TR6101"/>
 	</country>
 
 	<country name="LT" fullname="Lithuania">
+		<iaru region="1" ref="IARU1"/>
 		<license name="A" cept="CEPT" prefix="LY" ref="TR6101"/>
 	</country>
 
 	<country name="LU" fullname="Louxembourgh">
+		<iaru region="1" ref="IARU1"/>
 		<license name="CEPT" cept="CEPT" prefix="LX" ref="TR6101"/>
 	</country>
 
 	<country name="MK" fullname="Macedonia (FYROM)">
+		<iaru region="1" ref="IARU1"/>
 		<license name="A" cept="CEPT" prefix="Z3" ref="TR6101"/>
 		<license name="P" cept="CEPT" prefix="Z3" ref="TR6101"/>
 	</country>
 
 	<country name="MC" fullname="Monaco">
+		<iaru region="1" ref="IARU1"/>
 		<license name="General" cept="CEPT" prefix="3A" ref="TR6101"/>
 	</country>
 
 	<country name="ME" fullname="Montenegro">
+		<iaru region="1" ref="IARU1"/>
 		<license name="A" cept="CEPT" prefix="4O" ref="TR6101"/>
 		<license name="N" cept="CEPT" prefix="4O" ref="TR6101"/>
 	</country>
 
 	<country name="NL" fullname="Netherlands">
+		<iaru region="1" ref="IARU1"/>
 		<license name="A" cept="CEPT" prefix="PA" ref="TR6101"/>
 		<license name="C" cept="CEPT" prefix="PA" ref="TR6101"/>
 		<license name="F" cept="CEPT" prefix="PA" ref="TR6101"/>
 	</country>
 
 	<country name="NO" fullname="Norway">
+		<iaru region="1" ref="IARU1"/>
 		<license name="A" cept="CEPT" prefix="LA" ref="TR6101"/>
 		<country name="SJ" fullname="Svalbard">
 			<license name="A" cept="CEPT" prefix="JW" ref="TR6101"/>
@@ -218,10 +245,12 @@
 	</country>
 
 	<country name="PL" fullname="Poland">
+		<iaru region="1" ref="IARU1"/>
 		<license name="1" cept="CEPT" prefix="SP" ref="TR6101"/>
 	</country>
 
 	<country name="PT" fullname="Portugal">
+		<iaru region="1" ref="IARU1"/>
 		<license name="1" cept="CEPT" prefix="CT7" ref="TR6101"/>
 		<license name="A" cept="CEPT" prefix="CT7" ref="TR6101"/>
 		<license name="B" cept="CEPT" prefix="CT7" ref="TR6101"/>
@@ -238,54 +267,67 @@
 	</country>
 
 	<country name="RO" fullname="Romania">
+		<iaru region="1" ref="IARU1"/>
 		<license name="I" cept="CEPT" prefix="YO" ref="TR6101"/>
 		<license name="II" cept="CEPT" prefix="YO" ref="TR6101"/>
 	</country>
 	
 	<country name="RU" fullname="Russian Federation">
+		<iaru region="1" ref="IARU1"/>
 		<license name="1" cept="CEPT" prefix="RA" ref="TR6101"/>
 		<license name="2" cept="CEPT" prefix="RA" ref="TR6101"/>
 	</country>
 
 	<country name="RS" fullname="Serbia">
+		<iaru region="1" ref="IARU1"/>
 		<license name="1" cept="CEPT" prefix="YU" ref="TR6101"/>
 	</country>
 
 	<country name="SK" fullname="Slovak Republic">
+		<iaru region="1" ref="IARU1"/>
 		<license name="E" cept="CEPT" prefix="OM" ref="TR6101"/>
 	</country>
 
 	<country name="SI" fullname="Slovenia">
+		<iaru region="1" ref="IARU1"/>
 		<license name="A" cept="CEPT" prefix="S5" ref="TR6101"/>
 	</country>
 
 	<country name="ES" fullname="Spain">
+		<iaru region="1" ref="IARU1"/>
 		<license name="A" cept="CEPT" prefix="EA" ref="TR6101"/>
 	</country>
 
 	<country name="SE" fullname="Sweden">
+		<iaru region="1" ref="IARU1"/>
 		<license name="All" cept="CEPT" prefix="SM" ref="TR6101"/>
 		<license name="All" cept="CEPT" prefix="SA" ref="TR6101"/>
 	</country>
 
 	<country name="CH" fullname="Switzerland">
+		<iaru region="1" ref="IARU1"/>
 		<license name="1" cept="CEPT" prefix="HB9" ref="TR6101"/>
 		<license name="2" cept="CEPT" prefix="HB9" ref="TR6101"/>
 		<license name="CEPT" cept="CEPT" prefix="HB9" ref="TR6101"/>
 	</country>
 	
 	<country name="TR" fullname="Turkey">
+		<iaru region="1" ref="IARU1"/>
 		<license name="A" cept="CEPT" prefix="TA" ref="TR6101"/>
 	</country>
 
-	<country name="ZA" fullname="South Africa"/>
+	<country name="ZA" fullname="South Africa">
+		<iaru region="1" ref="IARU1"/>
+	</country>
 
 	<country name="UA" fullname="Ukraine">
+		<iaru region="1" ref="IARU1"/>
 		<license name="1" cept="CEPT" prefix="UT" ref="TR6101"/>
 		<license name="2" cept="CEPT" prefix="UT" ref="TR6101"/>
 	</country>
 
 	<country name="GB" fullname="United Kingdom">
+		<iaru region="1" ref="IARU1"/>
 		<license name="FULL" cept="CEPT" prefix="M" ref="TR6101"/>
 		<country name="IM" fullname="Isle of Man">
 			<license name="FULL" cept="CEPT" prefix="MD" ref="TR6101"/>
@@ -310,6 +352,7 @@
 
 
 	<country name="US" fullname="USA">
+		<iaru region="2" ref="IARU2"/>
 		<license name="Amateur_Extra" prefix="" ref="US01"/>
 		<license name="Advanced" prefix="" ref="US01"/>
 		<license name="General" prefix="" ref="US01"/>
