@@ -166,10 +166,22 @@
 			href="http://en.wikipedia.org/wiki/Shortwave_bands"/>
 		<ref id="IARU1" name="IARU Region 1 - Member Countries"
 			href='http://www.iaru-r1.org/index.php?option=com_mqcontacts&amp;view=category&amp;catid=38&amp;Itemid=83'/>
-		<ref id="IARU2" name="IARU Region Map"
-			href="http://commons.wikimedia.org/wiki/File:International_Telecommunication_Union_region.svg"/>
-		<ref id="IARU1HF" name="IARU Region 1 - HF Bandplan"
-			href="http://www.iaru-r1.org/index.php?option=com_content&amp;view=article&amp;id=175&amp;Itemid=127"/>
+		<ref id="IARU_Map" name="IARU Region Map"
+			href="http://commons.wikimedia.org/wiki/File:International_Telecommunication_Union_region.svg"
+			localfile="IARU_Map.svg"
+			md5="c9d8e4d311d4851d23cfa2e0171bae1a"/>
+		<ref id="IARU1_HF" name="IARU Region 1 - HF Bandplan"
+			href="http://www.iaru-r1.org/index.php?option=com_content&amp;view=article&amp;id=175&amp;Itemid=127"
+			localfile="IARU1_HF.html"
+			md5="834634f85fce7a5b23ea4552b59b0f21"/>
+		<ref id="IARU1_160m" name="IARU Region 1 - 160m Bandplan"
+			href="http://www.iaru-r1.org/index.php?option=com_remository&amp;Itemid=173&amp;func=download&amp;id=364&amp;chk=dd7de81e40594e1dd2764427737f5893&amp;no_html=1"
+			localfile="IARU1_160m"
+			md5="f1ff8342421145a8983a74cf0ce1532a"/>
+		<ref name="IARU1_2m" 
+			href="http://www.iaru-r1.org/index.php?option=com_content&amp;view=article&amp;id=173&amp;Itemid=126"
+			localfile="IARU1_2m.html"
+			md5="1ae53b5ab617cd6954d865b78039e0f1"/>
 	</references>
 
 	<authors>
