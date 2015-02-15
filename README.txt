@@ -2,3 +2,9 @@
 
 For more information see the homepage:
 http://8ch9azbsfifz.github.com/bandplan/
+
+
+Code Quality
+============
+This is experimental code.
+
